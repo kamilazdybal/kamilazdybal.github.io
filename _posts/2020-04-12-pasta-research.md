@@ -18,13 +18,13 @@ One of my research interests includes studying mechanical and thermo-physical pr
 Please contact us if you would like to collaborate on any of these research topics.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/lengthTime.png">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/lengthTime.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/resistanceTime.png">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/resistanceTime.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/young-modulus-of-pasta.jpg">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/young-modulus-of-pasta.jpg">
 </p>
