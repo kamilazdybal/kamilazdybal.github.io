@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 <p>
-   <a href="/science-docs/#blog">
+   <a href="/kamilazdybal.github.io/#blog">
       < Go back
   </a>
 </p>
@@ -16,14 +16,14 @@ categories: jekyll update
 I was plotting the Archimedean spiral in Python, which should look something like this:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/archimedean_spiral_100_1000.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/archimedean_spiral_100_1000.png" width="400">
 </p>
 
 The spiral can be drawn using polar coordinates, where it is defined as `r = phi`. I noticed that if you discretize the angle `phi` using `np.linspace` but make your step too big, lines are drawn between too distant points to result in a spiral. Instead, you get all sorts of really cool patterns!
 I made an animation changing the final angle `phi` but keeping the number of points in `np.linspace` small (100):
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/archimedean-spiral.gif" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/archimedean-spiral.gif" width="400">
 </p>
 
 The code to re-create the animation above is quite simple:
@@ -98,5 +98,5 @@ plt.savefig('archimedean_spiral_' + str(end) + '_' + str(n_points) + '.png')
 Finally, if you get the ratio of `end` to `n_points` right, you still pick up the spiral pattern, but at a larger scale than the original spiral! This can be seen below with the sufficiently discretized spiral plotted in gray in the background:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/archimedean_spiral_60_10.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/archimedean_spiral_60_10.png" width="400">
 </p>

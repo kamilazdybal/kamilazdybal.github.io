@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 <p>
-   <a href="/science-docs/#blog">
+   <a href="/kamilazdybal.github.io/#blog">
       < Go back
   </a>
 </p>
@@ -26,7 +26,7 @@ I first started to ponder about this when I was trying to understand the proof t
 A way to prove it, is to show that we arrive at a contradiction in two excluding cases: assuming that **A** contains itself as its member and assuming that **A** does not contain itself as its member. Here's the full proof:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/A-set.png" width="700">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/A-set.png" width="700">
 </p>
 
 That's a reasoning that requires certain processing in your head before you "get convinced" that it is reasonable. It took me some time at the whiteboard before I had the "aha" moment when the whole reasoning started to make sense to me. Today I can recite it from my head, but I don't feel that I am reciting it from memory. Rather, I feel that I'm inventing it on the spot from some underlying scheme that my brain generated during the "aha" moment. If I memorized everything without understanding it, to the outside world there would be no difference. There is only a difference in your brain that only you know about.

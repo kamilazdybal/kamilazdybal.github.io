@@ -60,7 +60,7 @@ When it comes to learning, I believe in the quote of Einstein: *you do not reall
 
 <sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: *kamilazdybal at gmail dot com*. Did I mention that I like tanks?</sup>
 
-<img src="https://github.com/kamilazdybal/science-docs/blob/master/_posts/sherman.jpg?raw=true" alt="about-me" style="width:300px">
+<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/master/_posts/sherman.jpg?raw=true" alt="about-me" style="width:300px">
 
 -----------------------
 
@@ -74,7 +74,7 @@ In this seminar talk, we demonstrate a quantitative metric for characterizing ma
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
@@ -91,7 +91,7 @@ Stay tuned for our book chapter in collection *Lecture notes in Energy:  Machine
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-code"></span><a href="https://nbviewer.org/github/kamilazdybal/ROM-of-reacting-flows-Springer/blob/main/PCAfold-programming-examples.ipynb" target="_blank"> Jupyter notebook</a></h4>
@@ -108,7 +108,7 @@ Check out the beta version of our educational Python library intended to support
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/blob/master/_posts/multipy.png?raw=true" alt="multipy" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/master/_posts/multipy.png?raw=true" alt="multipy" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-book"></span><a href="https://multipy-lib.readthedocs.io/" target="_blank"> Documentation</a></h4>
@@ -127,7 +127,7 @@ Stay tuned for our book chapter in collection *Data-Driven Fluid Dynamics: Combi
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.datadrivenfluidmechanics.com/index.php/about" target="_blank"> Book chapter</a></h4>
@@ -152,7 +152,7 @@ Reach out to the documentation for many illustrative tutorials! You can also run
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/PCAfold-logo.png" alt="PCAfold" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/PCAfold-logo.png" alt="PCAfold" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.sciencedirect.com/science/article/pii/S2352711020303435" target="_blank"> Publication</a></h4>
@@ -317,7 +317,7 @@ We perform experimental measurements using Arduino and fit the results with Newt
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/science-docs/raw/master/_posts/newtons-law-of-cooling.png" alt="neutrino" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/newtons-law-of-cooling.png" alt="neutrino" style="width:150px"></a>
   </div>
   <div class="column">
   <h4><span class="fa fa-file-pdf-o"></span><a href="http://www.neutrino.if.uj.edu.pl/archiwum/2016/33" target="_blank"> Neutrino no. 33</a></h4>
@@ -378,7 +378,7 @@ I collected few interesting computational examples in transport phenomena in a f
   {% endfor %}
 </ul>
 
-<sup><a href="/science-docs/#intro">Jump to the top of the page ^</a></sup>
+<sup><a href="/kamilazdybal.github.io/#intro">Jump to the top of the page ^</a></sup>
 
 <footer class="site-footer">
 
