@@ -74,7 +74,7 @@ In this seminar talk, we demonstrate a quantitative metric for characterizing ma
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
@@ -91,7 +91,7 @@ Stay tuned for our book chapter in collection *Lecture notes in Energy:  Machine
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-code"></span><a href="https://nbviewer.org/github/kamilazdybal/ROM-of-reacting-flows-Springer/blob/main/PCAfold-programming-examples.ipynb" target="_blank"> Jupyter notebook</a></h4>
@@ -127,7 +127,7 @@ Stay tuned for our book chapter in collection *Data-Driven Fluid Dynamics: Combi
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.datadrivenfluidmechanics.com/index.php/about" target="_blank"> Book chapter</a></h4>
@@ -152,7 +152,7 @@ Reach out to the documentation for many illustrative tutorials! You can also run
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/PCAfold-logo.png" alt="PCAfold" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PCAfold-logo.png" alt="PCAfold" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.sciencedirect.com/science/article/pii/S2352711020303435" target="_blank"> Publication</a></h4>
@@ -317,7 +317,7 @@ We perform experimental measurements using Arduino and fit the results with Newt
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/master/_posts/newtons-law-of-cooling.png" alt="neutrino" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/newtons-law-of-cooling.png" alt="neutrino" style="width:150px"></a>
   </div>
   <div class="column">
   <h4><span class="fa fa-file-pdf-o"></span><a href="http://www.neutrino.if.uj.edu.pl/archiwum/2016/33" target="_blank"> Neutrino no. 33</a></h4>
