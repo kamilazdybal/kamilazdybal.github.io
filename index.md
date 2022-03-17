@@ -71,7 +71,7 @@ When it comes to learning, I believe in the quote of Einstein: *you do not reall
 
 # Cost function for low-dimensional manifold topology optimization
 
-Stay tuned for my seminar talk at The von Karman Institute for Fluid Dynamics, available online soon!
+Check out my seminar talk at The von Karman Institute for Fluid Dynamics!
 
 In this seminar talk, we demonstrate a quantitative metric for characterizing manifold topologies and delineate its few interesting applications to mitigate manifold challenges. Using the metric as a cost function in optimization algorithms, optimal low-dimensional projections can be found. Quality of these projections can be ranked for various linear and nonlinear dimensionality reduction techniques. We show applications of the cost function to datasets in reacting flows, plasma flows and atmospheric physics and demonstrate how it can assess different data preprocessing and dimensionality reduction strategies in their capacity to yield well-defined manifolds. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space.
 
