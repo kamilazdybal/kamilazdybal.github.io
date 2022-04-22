@@ -150,7 +150,7 @@ It can be used for data clustering and sampling, dimensionality reduction, nonli
 Reach out to the documentation for many illustrative tutorials! You can also run the tutorials as interactive Jupyter notebooks by clicking below:
 
 <a href="https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.multiscale.utah.edu%2Fcommon%2FPCAfold/master?filepath=docs%2Ftutorials%2F">
-  <img src="https://mybinder.org/badge_logo.svg" alt="MyBinder Badge" style="width:125px; border:0px" height=40px/>
+  <img src="https://mybinder.org/badge_logo.svg" alt="MyBinder Badge" style="width:150px; border:0px" height=40px/>
 </a>  
 
 <sup>This work has been produced during my PhD at Université libre de Bruxelles and my research stay at the University of Utah.</sup>
