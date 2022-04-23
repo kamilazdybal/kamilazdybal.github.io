@@ -56,12 +56,12 @@ img {
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-Hi, I'm Kamila and I'm currently a 4th year PhD student at Université libre de Bruxelles.
+Hi, I'm Kamila Zdybał and I'm currently a 4th year PhD student at Université libre de Bruxelles.
 This website is a collection of tutorials, articles, coding projects and study notes that are the product of most of my passion that I have for life, Universe and everything else. Many of the materials gathered here are related to my research work and I have hopes that by sharing them you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifolds methods, fluid dynamics, reacting flows and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
 When it comes to learning, I believe in the quote of Einstein: *you do not really understand something unless you can explain it to your grandmother*. My aim is to implement that level of understanding into the documents I write (although many times I will assume certain prerequisites that your grandmother should have). Of course, if you wish to profit from the materials presented here, you will need to incorporate them in your journey. I have hopes that you will find doing science fascinating, rewarding and inspiring!
 
-<sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: *kamilazdybal at gmail dot com*. Did I mention that I like tanks?</sup>
+<sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**. Did I mention that I like tanks?</sup>
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/sherman.jpg?raw=true" alt="about-me" style="width:300px">
 
@@ -175,6 +175,21 @@ Reach out to the documentation for many illustrative tutorials! You can also run
   </div>
 </div>
 
+<ul id="tensornecessity"></ul>
+
+# The tensor necessity - a short story about momentum transport in fluids
+
+At first encounter, tensors can seem like strange mathematical objects. It can be challenging to grasp their meaning and their relevance might not be immediately obvious. At the same time, tensors are indispensable when studying fluid dynamics. So what's with the tensors and why do we need them?
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/tensor-necessity/plots/thumbnail.png?raw=true" alt="Tensor-necessity" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/tensor-necessity/tensor-necessity.pdf" target="_blank"> Article</a></h4>
+  </div>
+</div>
+
 <ul id="heatconduction"></ul>
 
 # Steady-state heat conduction
@@ -188,23 +203,6 @@ A computational example of steady-state heat conduction in a lengthwise-insulate
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/transport-phenomena-with-Python/example-heat-transfer-in-a-rod.pdf" target="_blank"> Tutorial</a></h4>
     <h4><span class="fa fa-code"></span><a href="https://mybinder.org/v2/gh/kamilazdybal/fluid-dynamics-and-transport-phenomena/master?filepath=transport-phenomena-with-Python%2Fcode%2F01-heat-conduction.ipynb" target="_blank"> Jupyter notebook</a></h4>
-  </div>
-</div>
-
-<ul id="tensornecessity"></ul>
-
-# The tensor necessity - a short story about momentum transport in fluids
-
-At first encounter, tensors can seem like strange mathematical objects. It can be challenging to grasp their meaning and their relevance might not be immediately obvious. At the same time, tensors are indispensable when studying fluid dynamics. So what's with the tensors and why do we need them?
-
-*This is a beta version of an article. You can help me make it better by spotting errors or suggesting improvements!*
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/tensor-necessity/plots/thumbnail.png?raw=true" alt="Tensor-necessity" style="width:150px"></a>
-  </div>
-  <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/tensor-necessity/tensor-necessity.pdf" target="_blank"> Article</a></h4>
   </div>
 </div>
 
