@@ -361,6 +361,19 @@ I collected few interesting computational examples in transport phenomena in a f
   </div>
 </div>
 
+# Condensed notes on combustion
+
+These are dense notes on combustion concepts. They are a collection of knowledge that I acquired at the beginning of my PhD, being completely unfamiliar with the combustion science.
+They start from the preliminary notions that are needed in understanding the combustion language. Next, they introduce the elements of thermodynamics relevant to the study of combustion, and finally present the governing differential relations for reactive flows in various systems.
+
+<sup>This document is still under construction... Would you like to help in completing it?</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/combustion.png?raw=true" alt="combustion" style="width:150px"></a>
+  </div>
+</div>
+
 -----------------------
 
 <ul id="tools"></ul>
