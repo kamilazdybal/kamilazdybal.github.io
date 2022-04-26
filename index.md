@@ -61,9 +61,7 @@ This website is a collection of tutorials, articles, coding projects and study n
 
 When it comes to learning, I believe in the quote of Einstein: *you do not really understand something unless you can explain it to your grandmother*. My aim is to implement that level of understanding into the documents I write (although many times I will assume certain prerequisites that your grandmother should have). Of course, if you wish to profit from the materials presented here, you will need to incorporate them in your journey. I have hopes that you will find doing science fascinating, rewarding and inspiring!
 
-<sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**. Did I mention that I like tanks?</sup>
-
-<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/sherman.jpg?raw=true" alt="about-me" style="width:300px">
+<sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.</sup>
 
 -----------------------
 
