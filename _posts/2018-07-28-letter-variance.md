@@ -31,6 +31,6 @@ Is there any difference in the amount of information that the vowels and consona
 
 Can we say that consonants contribute to the most variance in words?
 
-Surely this also has something to do with lengths of words and a larger number of consonants than vowels. But maybe also with how our brain function and with the brain's ability to interpolate through the missing information?
+Surely this also has something to do with lengths of words and a larger number of consonants than vowels. But maybe also with how our brains function and with the brain's ability to interpolate through the missing information?
 
 And what about speech? Which sounds contribute to carrying most information? Are they also sounds attributed to pronouncing consonants?

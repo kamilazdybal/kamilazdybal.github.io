@@ -347,7 +347,7 @@ Fluid Toolbox is a collection of human-readable, pseudo-random study notes. It c
 
 # Computational examples in transport phenomena with Python
 
-I collected few interesting computational examples in transport phenomena in a form of a tutorial and created a set of Python codes to accompany a better understanding of the results.
+I collected a few interesting computational examples in transport phenomena in a form of a tutorial and created a set of Python codes to accompany a better understanding of the results.
 
 <sup>This tutorial has been produced after taking two great courses offered by TU Delft: *The Basics of Transport Phenomena* and *Advanced Transport Phenomena*.</sup>
 

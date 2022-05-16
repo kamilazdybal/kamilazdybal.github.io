@@ -13,7 +13,7 @@ categories: jekyll update
 
 # Everything was created in a Big Bang
 
-Two-dimensional plane of an immense density started to expand in an exponential rate. The Universe increased its volume, creating new space and maintaining a constant amount of matter inside. During the enormous inflation, the primordial plasma of tiny irregularities started to arrange itself into distinguishable collections of matter.
+Two-dimensional plane of immense density started to expand in an exponential rate. The Universe increased its volume, creating new space and maintaining a constant amount of matter inside. During the enormous inflation, the primordial plasma of tiny granular irregularities started to arrange itself into distinguishable collections of matter.
 
 Smaller object were first created, which expanded, forming larger Galaxies.
 
@@ -28,9 +28,5 @@ And then, the Universe stopped.
 Galaxies were standing still.
 
 -Biip-biip - said the microwave. Popcorn was ready.
-
-
-
-
 
 *Dedicated to those who want to find out what this whole Universe is all about. Even if you're an inhabitant of a bag of corn.*
