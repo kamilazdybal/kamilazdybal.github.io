@@ -1,5 +1,5 @@
 ---
-title: Science Docs
+title: Science Doc(k)s
 layout: default
 ---
 <head>
