@@ -65,6 +65,46 @@ When it comes to learning, I believe in the quote of Einstein: *you do not reall
 
 -----------------------
 
+<ul id="local-manifold-learning"></ul>
+
+# Local manifold learning and its link to domain-based physics knowledge
+
+In many reacting flow systems, the thermo-chemical state-space is known or assumed to evolve close to a low-dimensional manifold (LDM). Various approaches are available to obtain those manifolds and subsequently express the original high-dimensional space with fewer parameterizing variables. Principal component analysis (PCA) is one of the dimensionality reduction methods that can be used to obtain LDMs. PCA does not make prior assumptions about the parameterizing variables and retrieves them empirically from the training data. In this paper, we show that PCA applied in local clusters of data (local PCA) is capable of detecting the intrinsic parameterization of the thermo-chemical state-space. We first demonstrate that utilizing three common combustion models of varying complexity: the Burke-Schumann model, the chemical equilibrium model and the homogeneous reactor. Parameterization of these models is known *a priori* which allows for benchmarking with the local PCA approach. We further extend the application of local PCA to a more challenging case of a turbulent non-premixed *n*-heptane/air jet flame for which the parameterization is no longer obvious. Our results suggest that meaningful parameterization can be obtained also for more complex datasets. We show that local PCA finds variables that can be linked to local stoichiometry, reaction progress and soot formation processes.
+
+<sup>K. Zdybał, G. D'Alessio, A. Attili, A. Coussement, J. C. Sutherland, A. Parente, *Local manifold learning and its link to domain-based physics knowledge*, 2022 </sup>
+
+<sup>This work has been produced during my PhD at Université libre de Bruxelles.</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/local-manifold-learning.png" alt="local-manifold-learning" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/local-manifold-learning" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
+<ul id="manifold-informed-state-vector"></ul>
+
+# Manifold-informed state vector subset for reduced-order modeling
+
+Reduced-order models (ROMs) for turbulent combustion rely on identifying a small number of parameters that can effectively describe the complexity of reacting flows. With the advent of data-driven approaches, ROMs can be trained on datasets representing the thermo-chemical state-space in simple reacting systems. For low-Mach flows, the full state vector that serves as a training dataset is typically composed of temperature and chemical composition. The dataset is projected onto a lower-dimensional basis and the evolution of the complex system is tracked on a lower-dimensional manifold. This approach allows for substantial reduction of the number of transport equations to solve in combustion simulations, but the quality of the manifold topology is a decisive aspect in successful modeling. To mitigate manifold challenges, several authors advocate reducing the state vector to only a subset of major variables when training ROMs. However, this reduction is often done *ad hoc* and without giving detailed insights into the effect of removing certain variables on the resulting low-dimensional data projection. In this work, we present a quantitative manifold-informed method for selecting the subset of state variables that minimizes unwanted behaviors in manifold topologies. While many authors in the past have focused on selecting major species, we show that a mixture of major and minor species can be beneficial to improving the quality of low-dimensional data representations. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space. Finally, we demonstrate improvements in regressibility of manifolds built from the optimal state vector subset as opposed to the full state vector.
+
+<sup>K. Zdybał, J. C. Sutherland, A. Parente, *Manifold-informed state vector subset for reduced-order modeling*, Proceedings of the Combustion Institute, 2022 </sup>
+
+<sup>This work has been produced during my PhD at Université libre de Bruxelles.</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/state-vector-subset.png" alt="local-manifold-learning" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/manifold-informed-state-vector-subset" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="cost-function"></ul>
 
 # Cost function for low-dimensional manifold topology optimization
