@@ -107,7 +107,11 @@ Reduced-order models (ROMs) for turbulent combustion rely on identifying a small
 
 Check out my seminar talk at The von Karman Institute for Fluid Dynamics!
 
-In this seminar talk, we demonstrate a quantitative metric for characterizing manifold topologies and delineate its few interesting applications to mitigate manifold challenges. Using the metric as a cost function in optimization algorithms, optimal low-dimensional projections can be found. Quality of these projections can be ranked for various linear and nonlinear dimensionality reduction techniques. We show applications of the cost function to datasets in reacting flows, plasma flows and atmospheric physics and demonstrate how it can assess different data preprocessing and dimensionality reduction strategies in their capacity to yield well-defined manifolds. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space.
+In this seminar talk, I demonstrate our novel quantitative metric for characterizing manifold topologies and delineate its few interesting applications to mitigate manifold challenges. Using the metric as a cost function in optimization algorithms, optimal low-dimensional projections can be found. Quality of these projections can be ranked for various linear and nonlinear dimensionality reduction techniques. I show applications of the cost function to datasets in reacting flows, plasma flows and atmospheric physics and demonstrate how it can assess different data preprocessing and dimensionality reduction strategies in their capacity to yield well-defined manifolds. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space.
+
+The journal publication associated with this talk is currently in peer review. Stay tuned!
+
+<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold assessment*, 2022 </sup>
 
 <div class="row">
   <div class="column">
@@ -115,6 +119,7 @@ In this seminar talk, we demonstrate a quantitative metric for characterizing ma
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/cost-function-manifold-assessment" target="_blank"> Code</a></h4>
   </div>
 </div>
 
