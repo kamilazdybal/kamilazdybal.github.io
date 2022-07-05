@@ -111,7 +111,7 @@ In this seminar talk, I demonstrate our novel quantitative metric for characteri
 
 The journal publication associated with this talk is currently in peer review. Stay tuned!
 
-<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold assessment*, 2022 </sup>
+<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold topology assessment*, 2022 </sup>
 
 <div class="row">
   <div class="column">
