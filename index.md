@@ -63,6 +63,12 @@ When it comes to learning, I believe in the quote of Einstein: *you do not reall
 
 <sup>This site is always alive. The documents and the associated repositories get updated from time to time. Even though a document is completed, it does not mean that its content will not change in the future. Any corrections or update proposals are welcome. Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.</sup>
 
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/kamila.jpg" alt="kamila" style="width:300px"></a>
+  </div>
+</div>
+
 -----------------------
 
 <ul id="manifold-informed-state-vector"></ul>
