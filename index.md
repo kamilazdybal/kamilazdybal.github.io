@@ -81,6 +81,7 @@ Reduced-order models (ROMs) for turbulent combustion rely on identifying a small
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://authors.elsevier.com/a/1fPcv5UKsGBnCP" target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=MMldWMduCp0" target="_blank"> Talk</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/manifold-informed-state-vector-subset" target="_blank"> Code</a></h4>
   </div>
 </div>
