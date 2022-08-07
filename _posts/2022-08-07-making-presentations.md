@@ -15,12 +15,14 @@ categories: jekyll update
 
 After a number of talks that I've given during my PhD, I often receive a feedback from the audience that they enjoyed and understood my talk. At the same time, I often struggle to pay attention to conference talks, even those given by senior academics. That altogether made me reflect on what is it that I'm doing that "works" and what doesn't work for me in some presentations I hear. In this post, I share my workflow of preparing presentation slides, with hopes that our conferences and meetings can start changing for the better, one presentation at a time :)
 
+While preparing your talk is a lot of work and practice, it can also be a lot of fun and can help you clarify your own thoughts about your research!
+
 ## Remove distractions
 
 Before adding any results, graphs, etc., your slide should look plain white with nothing on it. There is no need to have decorations, institutional logos, etc. I often find that these act mostly as distractions in getting the message across. Start with a slide that looks like this:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-01.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-01.png" width="600">
 </p>
 
 ## Reduce, or ideally remove, text
@@ -30,7 +32,7 @@ There rarely is any need in putting text on your slides. The audience can only p
 The most lengthy text that I ever use on my slides is the slide "topic sentence", which I put at the top of the slide, left-aligned. While introducing the slide, I will often say that topic sentence, either exactly how it appears on the slide, or paraphrasing it. This creates a redundancy of information, to increase the chances that the audience will "get the message".
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-02.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-02.png" width="600">
 </p>
 
 My last tip here is to create meaningful line breaks when presenting text. A line break like this:
@@ -58,7 +60,7 @@ Oftentimes, there's an inspiring and engaging story that you can tell even from 
 For example, a slide like this, which shows a possible pitfall of a dimensionality reduction technique, does not need any text. While I talk, I can describe in words how the technique left two data points "outside" of the locations where they belong and how that is the result of the objective function that the technique is using under the hood. This can give the audience an intuitive understanding of the technique. A figure like this supported my speech very effectively, so I didn't have to talk too much.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-04.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-04.png" width="600">
 </p>
 
 ## ...but don't overdo it
@@ -68,7 +70,7 @@ Too much graphics popping at the audience all at once can be overwhelming. Chanc
 My approach that I've found to work effectively is to make new graphics appear gradually as you talk. So, instead of showing this slide all at once:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-05.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-05.png" width="600">
 </p>
 
 I would show a series of slides that lead to the final figure, each time describing in words what is happening:
@@ -87,14 +89,14 @@ I've observed that some academics tend to include detailed information on their 
 
 ## Make visual pointers or highlights
 
-If you're presenting close to the projector screen, you might use your hands to point the relevant things on your slides. If you know you'll be presenting in a big room, it might be helpful to draw visual pointers on your slides to direct the audience attention. These can be made in forms of arrows, dots, boxes... I also found that they work most effectively if they appear gradually on your slide and are in synch with what you're currently saying. This is also where I might break the text rule, and add some brief note close to the arrow to help make my point.
+If you're presenting close to the projector screen, you might use your hands to point the relevant things on your slides. If you know you'll be presenting in a big room, it might be helpful to anticipate things you'd like to point out and draw visual pointers on your slides early on to direct the audience attention. These can be made in forms of arrows, dots, boxes... I also found that they work most effectively if they appear gradually on your slide and are in synch with what you're currently saying. This is also where I might break the text rule, and add some brief note close to the arrows to help make my point.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-08.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-08.png" width="600">
 </p>
 
 ## Take-away message
 
-Giving a talk, especially at a conference, is a great opportunity to spread the word about your research or a recently published paper. That does not necessarily mean that you need to include all the information that you would in a scientific paper. In fact, what the audience mostly want is to hear a more accessible and intuitive overview of your work. If you grab their attention, they will look up and read your paper anyway!
+Giving a talk, especially at a conference, is a great opportunity to spread the word about your research or a recently published paper. That does not necessarily mean that you need to include all the information that you would in a scientific paper. In fact, what the audience mostly wants to hear is a more accessible and intuitive overview of your work. If you grab their attention, they will look up and read your paper anyway!
 
-At conferences, people are often stressed, jetlagged, tired from all the scientific conversations they've had with other researchers or, just grumpy because they didn't have their morning coffee yet :) If you can give people an entertaining talk that has as many shortcuts to help them understand what you're talking about as possible, I'm sure that you will succeed! Good luck with your next talk!
+At conferences, people are often stressed, jetlagged, tired from all the scientific conversations they've had with other researchers or, just grumpy because they didn't have their morning coffee yet :) If you can give people an entertaining talk that has as many shortcuts as possible to help them understand what you're talking about, I'm sure that you will succeed! Good luck with your next talk!
