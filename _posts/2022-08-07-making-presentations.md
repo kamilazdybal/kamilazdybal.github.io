@@ -47,13 +47,13 @@ reads more naturally than:
 
 ## Reduce, or ideally remove, equations
 
-As with text, the same goes with equations. For every equation that you decide to put on your slide, ask yourself: what story do I plan to convey with this equation? Will I have time to explain this equations and all its terms? (And if not, there's no reason to include the equation.) Equations that just pop up on the slide for 30 seconds and you never elaborate on are just distractions. Chances are that your audience, instead of listening to what you have to say, will think: why did they include that equation? what do they want me to see in that equation? will I miss something important if I don't understand this equation?
+As with text, the same goes with equations. For every equation that you decide to put on your slide, ask yourself: what story do I plan to convey with this equation? Will I have time to explain this equations and all its terms? (And if not, there's no reason to include the equation.) Equations that pop up on the slide for 30 seconds and you never elaborate on are just distractions. Chances are that your audience, instead of listening to what you have to say, will think: why did they include that equation? what do they want me to see in that equation? will I miss something important if I don't understand this equation?
 
 Sometimes, you might decide that adding an equation is worth it, and that's alright. But be sure to spend a reasonable amount of time elaborating on the equation during your talk.
 
 ## Make your slides very visual...
 
-Oftentimes, there's an inspiring and engaging story that you can tell even from one figure. In fact, slides should mostly support you in everything that you can't convey in speech (or that would at least take you long time to convey in speech). Showing an interesting image or graph based on which you discuss research insights is the best way to utilize slides.
+Oftentimes, there's an inspiring and engaging story that you can tell even from one figure. In fact, slides should mostly support you in everything that you can't convey in speech (or that would at least take you a long time to convey in speech). Showing an interesting image or graph based on which you discuss research insights is the best way to utilize slides.
 
 For example, a slide like this, which shows a possible pitfall of a dimensionality reduction technique, does not need any text. While I talk, I can describe in words how the technique left two data points "outside" of the locations where they belong and how that is the result of the objective function that the technique is using under the hood. This can give the audience an intuitive understanding of the technique. A figure like this supported my speech very effectively, so I didn't have to talk too much.
 
@@ -77,23 +77,21 @@ I would show a series of slides that lead to the final figure, each time describ
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-06.png" width="900">
 </p>
 
-
-
 ## Remove irrelevant information
 
-I've observed that some academics tend to include detailed information on their slides, that they normally would in a scientific paper. Too much information that is not super helpful in understanding the main message is just another distraction. My advice would be: if it's not absolutely crucial to understanding the message, or if I won't even mention or elaborate on that piece of information, remove it.
+I've observed that some academics tend to include detailed information on their slides, that they normally would in a scientific paper. Too much information that is not super helpful in understanding the main message is just another distraction. Such irrelevant information can for instance be specific settings with which you ran your simulation, or specific conditions with which you generated your dataset. My advice would be: if it's not absolutely crucial to understanding the message, or if you won't mention or elaborate on that piece of information, remove it.
 
-
-
-
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-07.png" width="800">
+</p>
 
 ## Make visual pointers or highlights
 
+If you're presenting close to the projector screen, you might use your hands to point the relevant things on your slides. If you know you'll be presenting in a big room, it might be helpful to draw visual pointers on your slides to direct the audience attention. These can be made in forms of arrows, dots, boxes... I also found that they work most effectively if they appear gradually on your slide and are in synch with what you're currently saying. This is also where I might break the text rule, and add some brief note close to the arrow to help make my point.
 
-
-
-
-
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-08.png" width="500">
+</p>
 
 ## Take-away message
 
