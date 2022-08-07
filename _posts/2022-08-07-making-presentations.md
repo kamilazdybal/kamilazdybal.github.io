@@ -25,7 +25,7 @@ Before adding any results, graphs, etc., your slide should look plain white with
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-01.png" width="600">
 </p>
 
-## Reduce, or ideally remove, text
+## Reduce or, ideally, remove text
 
 There rarely is any need in putting text on your slides. The audience can only pay attention to one thing at a time: either to listening what you're saying, or to reading the text on your slide. By putting text on your slide, you risk loosing the audience's attention. Prepare your speech well and you will not need much text at all.
 
@@ -47,7 +47,7 @@ reads more naturally than:
 >
 > dimensions can introduce non-uniqueness.
 
-## Reduce, or ideally remove, equations
+## Reduce or, ideally, remove equations
 
 As with text, the same goes with equations. For every equation that you decide to put on your slide, ask yourself: what story do I plan to convey with this equation? Will I have time to explain the equation and all its terms? (And if not, there's no reason to include the equation.) Equations that pop up on a slide for 30 seconds that you never elaborate on are just distractions. Chances are that your audience, instead of listening to what you have to say, will think: why did they include that equation? what do they want me to see in that equation? will I miss something important if I don't understand this equation?
 
@@ -99,7 +99,7 @@ I would show a series of slides that lead to the final figure, each time describ
 
 ## Remove irrelevant information
 
-I've observed that some academics tend to include detailed information on their slides that they would in a scientific paper. Too much information that is not super helpful in understanding the main message is just another distraction. Such irrelevant information can for instance be specific settings with which you ran your simulation, or specific conditions with which you generated your dataset. My advice would be: if it's not absolutely crucial to understanding the message, or if you won't mention or elaborate on that piece of information, remove it.
+I've observed that some academics tend to include detailed information on their slides as they would in a scientific paper. Too much information that is not super helpful in understanding the main message is just another distraction. Such irrelevant information can for instance be specific settings with which you ran your simulation, or specific conditions with which you generated your dataset. My advice would be: if it's not absolutely crucial to understanding the message, or if you won't mention or elaborate on that piece of information, remove it.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-07.png" width="800">
