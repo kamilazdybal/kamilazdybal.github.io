@@ -107,7 +107,7 @@ I've observed that some academics tend to include detailed information on their 
 
 ## Make visual pointers or highlights
 
-If you're presenting close to the projector screen, you might use your hands to point the relevant things on your slides. If you know you'll be presenting in a big room, it might be helpful to anticipate things you'd like to point out to direct the audience's attention. In that case, draw any visual pointers directly on your slides. These can be made in forms of arrows, dots, boxes... I also found that they work most effectively if they appear gradually on your slide and are in synch with what you're currently saying. This is also where I might break the text rule, and add a brief note close to an arrow to help make my point and, again, add extra redundancy in the conveyed information.
+If you're presenting close to the projector screen, you might use your hands to point the relevant things on your slides. If you know you'll be presenting in a big room, it might be helpful to anticipate things you'd like to point out to direct the audience's attention. In that case, draw any visual pointers directly on your slides. These can be made in forms of arrows, dots, boxes... I also found that they work most effectively if they appear gradually on your slide and are in synch with what you're currently saying. This is also where I might break the text rule, and add a brief note close to an arrow to help make my point and, again, add information redundancy.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-08.png" width="600">
