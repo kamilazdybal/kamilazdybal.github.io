@@ -65,7 +65,7 @@ For example, a slide like this, which shows a possible pitfall of a dimensionali
 
 Too much graphics popping at the audience all at once can be overwhelming. Chances are the audience will wonder: what should I be paying attention to? What are they trying to show me here?
 
-My approach that I found works effectively is to make new graphics appear gradually as you talk. Instead of showing this slide:
+My approach that I've found to work effectively is to make new graphics appear gradually as you talk. So, instead of showing this slide all at once:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-05.png" width="500">
@@ -73,13 +73,21 @@ My approach that I found works effectively is to make new graphics appear gradua
 
 I would show a series of slides that lead to the final figure, each time describing in words what is happening:
 
-
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/slides-06.png" width="900">
+</p>
 
 
 
 ## Remove irrelevant information
 
 I've observed that some academics tend to include detailed information on their slides, that they normally would in a scientific paper. Too much information that is not super helpful in understanding the main message is just another distraction. My advice would be: if it's not absolutely crucial to understanding the message, or if I won't even mention or elaborate on that piece of information, remove it.
+
+
+
+
+
+## Make visual pointers or highlights
 
 
 
