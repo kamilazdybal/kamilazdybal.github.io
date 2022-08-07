@@ -15,7 +15,7 @@ categories: jekyll update
 
 After a number of talks that I've given during my PhD, I often receive feedback from the audience that they enjoyed and understood my talk. At the same time, I often struggle to pay attention to conference talks, even those given by senior academics. That altogether made me reflect on what is it that I'm doing that "works" and what doesn't work for me in some presentations that I hear. In this post, I share my workflow for preparing presentation slides, with hopes that our conferences and meetings can start changing for the better, one presentation at a time :) Most of the tips that I present here have been adopted from [this great talk](https://www.youtube.com/watch?v=meBXuTIPJQk).
 
-While preparing your talk is a lot of work and practice, it can also be a lot of fun and can help you clarify your own thoughts about your research!
+While preparing your talk is a lot of work and practice, it can also be a lot of fun and can help you clarify your own thoughts about your research! So, let's begin!
 
 ## Remove distractions
 
