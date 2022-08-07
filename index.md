@@ -53,7 +53,7 @@ img {
   </a>
 </div>
 
-<span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf" target="_blank"> Download my CV</a>
+<h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf" target="_blank"> Download my CV</a></h4>
 
 <ul id="intro"></ul>
 
