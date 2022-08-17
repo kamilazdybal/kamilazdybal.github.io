@@ -70,6 +70,25 @@ When it comes to learning, I believe in the quote of Einstein: *you do not reall
 
 -----------------------
 
+<ul id="cost-function"></ul>
+
+# Cost function for low-dimensional manifold topology assessment
+
+In reduced-order modeling, complex systems that exhibit high state-space dimensionality are described and evolved using a small number of parameters. These parameters can be obtained in a data-driven way, where a high-dimensional dataset is projected onto a lower-dimensional basis. A complex system is then restricted to states on a low-dimensional manifold where it can be efficiently modeled. While this approach brings computational benefits, obtaining a good quality of the manifold topology becomes a crucial aspect when models, such as nonlinear regression, are built on top of the manifold. Here, we present a quantitative metric for characterizing manifold topologies. Our metric pays attention to non-uniqueness and spatial gradients in physical quantities of interest, and can be applied to manifolds of arbitrary dimensionality. Using the metric as a cost function in optimization algorithms, we show that optimized low-dimensional projections can be found. We delineate a few applications of the cost function to datasets representing argon plasma, reacting flows and atmospheric pollutant dispersion. We demonstrate how the cost function can assess various dimensionality reduction and manifold learning techniques as well as data preprocessing strategies in their capacity to yield quality low-dimensional projections. We show that improved manifold topologies can facilitate building nonlinear regression models.
+
+<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold topology assessment*, Scientific Reports, 2022 </sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href=" " target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/cost-function-manifold-assessment" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="manifold-informed-state-vector"></ul>
 
 # Manifold-informed state vector subset for reduced-order modeling
@@ -104,28 +123,6 @@ In many reacting flow systems, the thermo-chemical state-space is known or assum
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://arxiv.org/abs/2207.00275" target="_blank"> Preprint</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/local-manifold-learning" target="_blank"> Code</a></h4>
-  </div>
-</div>
-
-<ul id="cost-function"></ul>
-
-# Cost function for low-dimensional manifold topology optimization
-
-Check out my seminar talk at The von Karman Institute for Fluid Dynamics!
-
-In this seminar talk, I demonstrate our novel quantitative metric for characterizing manifold topologies and delineate its few interesting applications to mitigate manifold challenges. Using the metric as a cost function in optimization algorithms, optimal low-dimensional projections can be found. Quality of these projections can be ranked for various linear and nonlinear dimensionality reduction techniques. I show applications of the cost function to datasets in reacting flows, plasma flows and atmospheric physics and demonstrate how it can assess different data preprocessing and dimensionality reduction strategies in their capacity to yield well-defined manifolds. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space.
-
-The journal publication associated with this talk is currently in peer review. Stay tuned!
-
-<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold topology assessment*, 2022 </sup>
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
-  </div>
-  <div class="column">
-    <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
-    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/cost-function-manifold-assessment" target="_blank"> Code</a></h4>
   </div>
 </div>
 
