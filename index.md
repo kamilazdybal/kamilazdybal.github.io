@@ -83,7 +83,7 @@ In reduced-order modeling, complex systems that exhibit high state-space dimensi
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/cost-function-manifold-topology-optimization.png" alt="Cost-function-seminar" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href=" " target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.nature.com/articles/s41598-022-18655-1" target="_blank"> Publication</a></h4>
     <h4><span class="fa fa-video-camera"></span><a href="https://www.vki.ac.be/index.php/vki-seminars" target="_blank"> Talk</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/cost-function-manifold-assessment" target="_blank"> Code</a></h4>
   </div>
