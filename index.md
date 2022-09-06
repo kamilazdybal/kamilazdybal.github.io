@@ -72,6 +72,24 @@ Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.
 
 -----------------------
 
+<ul id="2022-vki-ulb-cup"></ul>
+
+# Advancing reacting flow simulations with data-driven models
+
+The use of machine learning algorithms to predict behaviors of complex systems is booming. However, the key to an effective use of machine learning tools in multi-physics problems, including combustion, is to couple them to physical and computer models. The performance of these tools is enhanced if all the prior knowledge and the physical constraints are embodied. In other words, the scientific method must be adapted to bring machine learning into the picture, and make the best use of the massive amount of data we have produced, thanks to the advances in numerical computing. The present chapter reviews some of the open opportunities for the application of data-driven reduced-order modeling of combustion systems. We provide examples of feature extraction in turbulent combustion data, empirical low-dimensional manifold (ELDM) identification, classification, regression, and reduced-order modeling.
+
+<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press, 2022</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.datadrivenfluidmechanics.com/download/book/DataDrivenFluidMechanicsBook_TableofContent.pdf" target="_blank"> Book chapter</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.cambridge.org/core/books/datadriven-fluid-mechanics/0327A1A43F7C67EE88BB13743FD9DC8D" target="_blank"> Entire book</a></h4>
+  </div>
+</div>
+
 <ul id="cost-function"></ul>
 
 # Cost function for low-dimensional manifold topology assessment
@@ -161,24 +179,6 @@ Check out the beta version of our educational Python library intended to support
     <h4><span class="fa fa-book"></span><a href="https://multipy-lib.readthedocs.io/" target="_blank"> Documentation</a></h4>
     <h4><span class="fa fa-code"></span><a href="https://mybinder.org/v2/gh/kamilazdybal/multipy/main?labpath=%2Fdocs%2Ftutorials" target="_blank"> Jupyter tutorials</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/multipy" target="_blank"> Code</a></h4>
-  </div>
-</div>
-
-<ul id="2022-vki-ulb-cup"></ul>
-
-# Advancing reacting flow simulations with data-driven models
-
-Stay tuned for our book chapter in collection *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning* by me and co-workers, coming soon!
-
-<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press, 2022</sup>
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
-  </div>
-  <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.datadrivenfluidmechanics.com/download/book/DataDrivenFluidMechanicsBook_TableofContent.pdf" target="_blank"> Book chapter</a></h4>
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.cambridge.org/core/books/datadriven-fluid-mechanics/0327A1A43F7C67EE88BB13743FD9DC8D" target="_blank"> Entire book</a></h4>
   </div>
 </div>
 
