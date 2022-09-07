@@ -85,7 +85,7 @@ The use of machine learning algorithms to predict behaviors of complex systems i
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/flame.png" alt="CUP-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.datadrivenfluidmechanics.com/download/book/DataDrivenFluidMechanicsBook_TableofContent.pdf" target="_blank"> Book chapter</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://arxiv.org/abs/2209.02051" target="_blank"> Book chapter</a></h4>
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.cambridge.org/core/books/datadriven-fluid-mechanics/0327A1A43F7C67EE88BB13743FD9DC8D" target="_blank"> Entire book</a></h4>
   </div>
 </div>
