@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Research is hard"
-date:   2022-10-09 15:00:00 +0100
+date:   2022-10-08 15:00:00 +0100
 categories: jekyll update
 ---
 
