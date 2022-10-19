@@ -59,7 +59,7 @@ img {
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-Hi, I'm Kamila Zdybał and I'm currently a 4th year PhD student at Université libre de Bruxelles.
+Hi, I'm Kamila Zdybał and I'm currently a 5th year PhD student at Université libre de Bruxelles.
 This website is a collection of tutorials, articles, coding projects and study notes that are the product of most of my passion that I have for life, Universe and everything else. Many of the materials gathered here are related to my research work and I have hopes that by sharing them you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifolds methods, fluid dynamics, reacting flows and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
 When it comes to learning, I believe in the quote of Einstein: *you do not really understand something unless you can explain it to your grandmother*. My aim is to implement that level of understanding into the documents I write (although many times I will assume certain prerequisites that your grandmother should have!). Of course, if you wish to profit from the materials presented here, you will need to incorporate them in your journey. I have hopes that you will find doing science fascinating, rewarding and inspiring!
