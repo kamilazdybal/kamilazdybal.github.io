@@ -69,6 +69,11 @@ If you like these materials and you'd like to support me, you can [**buy me a co
 Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
+<div class="row">
+  <div class="column">
+    <sup>That's me at the Capilano suspension bridge in Vancouver, Canada.</sup>
+  </div>
+</div>
 
 -----------------------
 
