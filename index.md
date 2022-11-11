@@ -70,9 +70,8 @@ Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
 
-<sup>That's me at the Capilano suspension bridge</sup>
-
-<sup>in Vancouver, Canada.</sup>
+<sup>That's me at the Capilano suspension bridge<br>
+in Vancouver, Canada, 2022.</sup>
 
 -----------------------
 
