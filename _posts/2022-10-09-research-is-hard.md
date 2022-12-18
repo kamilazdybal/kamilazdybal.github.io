@@ -14,7 +14,7 @@ categories: jekyll update
 # Research is hard
 
 A Ph.D. student inevitably learns the tough truth sooner or later in their candidature: **Research is hard.**
-It's harder then you thought it would be. It's hard enough, that you begin to wonder how does anyone manage to publish anything?
+It's harder then you thought it would be. It's hard enough, that you begin to wonder: How does anyone manage to publish anything?
 
 The ideal research pathway that a Ph.D. student fantasizes about is like this:
 
