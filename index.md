@@ -159,7 +159,7 @@ Data-driven modeling of complex dynamical systems is becoming increasingly popul
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
+    <a><img src="https://link.springer.com/chapter/10.1007/978-3-031-16248-0_9" alt="Springer-book-chapter" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href=" " target="_blank"> Book chapter</a></h4>
