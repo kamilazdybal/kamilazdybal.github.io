@@ -75,6 +75,25 @@ in Vancouver, Canada, 2022.</sup>
 
 -----------------------
 
+<ul id="2023-springer"></ul>
+
+# Reduced-order modeling of reacting flows using data-driven approaches
+
+Data-driven modeling of complex dynamical systems is becoming increasingly popular across various domains of science and engineering. This is thanks to advances in numerical computing, which provides high fidelity data, and to algorithm development in data science and machine learning. Simulations of multicomponent reacting flows can particularly profit from data-based reduced-order modeling (ROM). The original system of coupled partial differential equations that describes a reacting flow is often large due to high number of chemical species involved. While the datasets from reacting flow simulation have high state-space dimensionality, they also exhibit attracting low-dimensional manifolds (LDMs). Data-driven approaches can be used to obtain and parameterize these LDMs. Evolving the reacting system using a smaller number of parameters can yield substantial model reduction and savings in computational cost. In this chapter, we review recent advances in ROM of turbulent reacting flows. We demonstrate the entire ROM workflow with a particular focus on obtaining the training datasets and data science and machine learning techniques such as dimensionality reduction and nonlinear regression. We present recent results from ROM-based simulations of experimentally measured Sandia flames D and F. We also delineate a few remaining challenges and possible future directions to address them. This chapter is accompanied by illustrative examples using the recently developed Python software, PCAfold. The software can be used to obtain, analyze and improve low-dimensional data representations. The examples provided herein can be helpful to students and researchers learning to apply dimensionality reduction, manifold approaches and nonlinear regression to their problems.
+
+<sup>K. Zdybał, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Reduced-order modeling of reacting flows using data-driven approaches*, In N. Swaminathan, A. Parente, editors, *Lecture notes in Energy:  Machine Learning and its Application to Reacting Flows*, Springer, 2023</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://link.springer.com/chapter/10.1007/978-3-031-16248-0_9" target="_blank"> Book chapter</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://link.springer.com/book/9783031162473" target="_blank"> Entire book</a></h4>
+    <h4><span class="fa fa-code"></span><a href="https://nbviewer.org/github/kamilazdybal/ROM-of-reacting-flows-Springer/blob/main/PCAfold-programming-examples.ipynb" target="_blank"> Jupyter notebook</a></h4>
+  </div>
+</div>
+
 <ul id="2022-vki-ulb-cup"></ul>
 
 # Advancing reacting flow simulations with data-driven models
@@ -146,25 +165,6 @@ In many reacting flow systems, the thermo-chemical state-space is known or assum
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://arxiv.org/abs/2207.00275" target="_blank"> Preprint</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/local-manifold-learning" target="_blank"> Code</a></h4>
-  </div>
-</div>
-
-<ul id="2022-springer"></ul>
-
-# Reduced-order modeling of reacting flows using data-driven approaches
-
-Data-driven modeling of complex dynamical systems is becoming increasingly popular across various domains of science and engineering. This is thanks to advances in numerical computing, which provides high fidelity data, and to algorithm development in data science and machine learning. Simulations of multicomponent reacting flows can particularly profit from data-based reduced-order modeling (ROM). The original system of coupled partial differential equations that describes a reacting flow is often large due to high number of chemical species involved. While the datasets from reacting flow simulation have high state-space dimensionality, they also exhibit attracting low-dimensional manifolds (LDMs). Data-driven approaches can be used to obtain and parameterize these LDMs. Evolving the reacting system using a smaller number of parameters can yield substantial model reduction and savings in computational cost. In this chapter, we review recent advances in ROM of turbulent reacting flows. We demonstrate the entire ROM workflow with a particular focus on obtaining the training datasets and data science and machine learning techniques such as dimensionality reduction and nonlinear regression. We present recent results from ROM-based simulations of experimentally measured Sandia flames D and F. We also delineate a few remaining challenges and possible future directions to address them. This chapter is accompanied by illustrative examples using the recently developed Python software, PCAfold. The software can be used to obtain, analyze and improve low-dimensional data representations. The examples provided herein can be helpful to students and researchers learning to apply dimensionality reduction, manifold approaches and nonlinear regression to their problems.
-
-<sup>K. Zdybał, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Reduced-order modeling of reacting flows using data-driven approaches*, In N. Swaminathan, A. Parente, editors, *Lecture notes in Energy:  Machine Learning and its Application to Reacting Flows*, Springer, 2022</sup>
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/Springer-chapter.png" alt="Springer-book-chapter" style="width:150px"></a>
-  </div>
-  <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://link.springer.com/chapter/10.1007/978-3-031-16248-0_9" target="_blank"> Book chapter</a></h4>
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://link.springer.com/book/9783031162473" target="_blank"> Entire book</a></h4>
-    <h4><span class="fa fa-code"></span><a href="https://nbviewer.org/github/kamilazdybal/ROM-of-reacting-flows-Springer/blob/main/PCAfold-programming-examples.ipynb" target="_blank"> Jupyter notebook</a></h4>
   </div>
 </div>
 
