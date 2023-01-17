@@ -100,7 +100,7 @@ Data-driven modeling of complex dynamical systems is becoming increasingly popul
 
 The use of machine learning algorithms to predict behaviors of complex systems is booming. However, the key to an effective use of machine learning tools in multi-physics problems, including combustion, is to couple them to physical and computer models. The performance of these tools is enhanced if all the prior knowledge and the physical constraints are embodied. In other words, the scientific method must be adapted to bring machine learning into the picture, and make the best use of the massive amount of data we have produced, thanks to the advances in numerical computing. The present chapter reviews some of the open opportunities for the application of data-driven reduced-order modeling of combustion systems. We provide examples of feature extraction in turbulent combustion data, empirical low-dimensional manifold (ELDM) identification, classification, regression, and reduced-order modeling.
 
-<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press, 2022</sup>
+<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press, 2023</sup>
 
 <div class="row">
   <div class="column">
@@ -109,6 +109,7 @@ The use of machine learning algorithms to predict behaviors of complex systems i
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://arxiv.org/abs/2209.02051" target="_blank"> Book chapter</a></h4>
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.cambridge.org/core/books/datadriven-fluid-mechanics/0327A1A43F7C67EE88BB13743FD9DC8D" target="_blank"> Entire book</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.datadrivenfluidmechanics.com/" target="_blank"> VKI Lecture Series</a></h4>
   </div>
 </div>
 
@@ -138,6 +139,8 @@ In reduced-order modeling, complex systems that exhibit high state-space dimensi
 Reduced-order models (ROMs) for turbulent combustion rely on identifying a small number of parameters that can effectively describe the complexity of reacting flows. With the advent of data-driven approaches, ROMs can be trained on datasets representing the thermo-chemical state-space in simple reacting systems. For low-Mach flows, the full state vector that serves as a training dataset is typically composed of temperature and chemical composition. The dataset is projected onto a lower-dimensional basis and the evolution of the complex system is tracked on a lower-dimensional manifold. This approach allows for substantial reduction of the number of transport equations to solve in combustion simulations, but the quality of the manifold topology is a decisive aspect in successful modeling. To mitigate manifold challenges, several authors advocate reducing the state vector to only a subset of major variables when training ROMs. However, this reduction is often done *ad hoc* and without giving detailed insights into the effect of removing certain variables on the resulting low-dimensional data projection. In this work, we present a quantitative manifold-informed method for selecting the subset of state variables that minimizes unwanted behaviors in manifold topologies. While many authors in the past have focused on selecting major species, we show that a mixture of major and minor species can be beneficial to improving the quality of low-dimensional data representations. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space. Finally, we demonstrate improvements in regressibility of manifolds built from the optimal state vector subset as opposed to the full state vector.
 
 <sup>K. Zdybał, J. C. Sutherland, A. Parente, *Manifold-informed state vector subset for reduced-order modeling*, Proceedings of the Combustion Institute 39 (2022) 1-10</sup>
+
+<sup>**This publication has received the Distinguished Paper Award for Numerical Combustion from The Combustion Institute.**</sup>
 
 <div class="row">
   <div class="column">
