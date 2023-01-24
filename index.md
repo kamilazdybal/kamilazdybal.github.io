@@ -87,6 +87,7 @@ Stay tuned for my Ph.D. dissertation titled "*Reduced-order modeling of turbulen
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Coming soon!</a></h4>
+  </div>
 </div>
 
 <ul id="2023-springer"></ul>
