@@ -86,7 +86,7 @@ Stay tuned for my Ph.D. dissertation titled "*Reduced-order modeling of turbulen
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/phd-dissertation.png" alt="PhD-dissertation" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/phd-dissertation/raw/master/dissertation/Kamila-Zdybal-PhD-dissertation-abstract-and-table-of-contents.pdf" target="_blank"> Abstract & TOC</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/phd-dissertation/raw/main/dissertation/Kamila-Zdybal-PhD-dissertation-abstract-and-table-of-contents.pdf" target="_blank"> Abstract & TOC</a></h4>
   </div>
 </div>
 
