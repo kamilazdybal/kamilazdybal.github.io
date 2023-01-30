@@ -79,14 +79,14 @@ in Vancouver, Canada, 2022.</sup>
 
 # My Ph.D. dissertation
 
-Stay tuned for my Ph.D. dissertation titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
+Stay tuned for my Ph.D. dissertation titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"! For now, you can download the abstract and the table of contents below:
 
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/phd-dissertation.png" alt="PhD-dissertation" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Coming soon!</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/phd-dissertation/raw/master/dissertation/Kamila-Zdybal-PhD-dissertation-abstract-and-table-of-contents.pdf" target="_blank"> Abstract & TOC</a></h4>
   </div>
 </div>
 
