@@ -75,6 +75,18 @@ in Vancouver, Canada, 2022.</sup>
 
 -----------------------
 
+# Science blog & thoughts
+
+<ul id="blog">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+-----------------------
+
 <ul id="2023-phd-dissertation"></ul>
 
 # My Ph.D. dissertation
@@ -448,18 +460,6 @@ They start from the preliminary notions that are needed in understanding the com
 # Tools
 
 ## [Standard Atmosphere Calculator](https://kamilazdybal.github.io/standard-atmosphere-calculator/standard-atmosphere-calculator.html)
-
------------------------
-
-# Science blog & thoughts
-
-<ul id="blog">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
 <sup><a href="/kamilazdybal.github.io/#intro">Jump to the top of the page ^</a></sup>
 
