@@ -27,3 +27,5 @@ The difficulty of research does not come from getting negative results. That wou
 The challenge of research is due to the following, third path, that too often turns out to be reality:
 
 *Have a novel hypothesis -> test it -> arrive at this huge mess that you don't even know how to make sense of, and realize that you don't know what true or wrong means anymore*
+
+Keep calm and $\frac{\partial \rho Y_i}{\partial t} = - \nabla \cdot (\rho Y_i \mathbf{v}) - \nabla \cdot \mathbf{j}_i + \omega_i$!
