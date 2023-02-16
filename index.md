@@ -7,6 +7,9 @@ layout: default
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 <style>
 img {
     border: 1px solid #ddd;
@@ -460,6 +463,12 @@ They start from the preliminary notions that are needed in understanding the com
 # Tools
 
 ## [Standard Atmosphere Calculator](https://kamilazdybal.github.io/standard-atmosphere-calculator/standard-atmosphere-calculator.html)
+
+-----------------------
+
+<p>Keep calm and <span class="math display">$$\frac{\partial \rho Y_i}{\partial t} = -
+\nabla \cdot (\rho Y_i \mathbf{v}) - \nabla \cdot \mathbf{j}_i +
+\omega_i$$</span> !</p>
 
 <sup><a href="/kamilazdybal.github.io/#intro">Jump to the top of the page ^</a></sup>
 

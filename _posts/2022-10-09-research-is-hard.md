@@ -5,9 +5,6 @@ date:   2022-10-08 15:00:00 +0100
 categories: jekyll update
 ---
 
-<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 <p>
    <a href="/kamilazdybal.github.io/#blog">
       < Go back
@@ -30,5 +27,3 @@ The difficulty of research does not come from getting negative results. That wou
 The challenge of research is due to the following, third path, that too often turns out to be reality:
 
 *Have a novel hypothesis -> test it -> arrive at this huge mess that you don't even know how to make sense of, and realize that you don't know what true or wrong means anymore*
-
-<p><span class="math display">\[y = \frac{a}{b} + c^2 + d\]</span></p>
