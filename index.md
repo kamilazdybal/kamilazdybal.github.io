@@ -466,9 +466,11 @@ They start from the preliminary notions that are needed in understanding the com
 
 -----------------------
 
-<p>Keep calm and <span class="math display">$$\frac{\partial \rho Y_i}{\partial t} = -
+Keep calm and
+
+<span class="math display">$$\frac{\partial \rho Y_i}{\partial t} = -
 \nabla \cdot (\rho Y_i \mathbf{v}) - \nabla \cdot \mathbf{j}_i +
-\omega_i$$</span> !</p>
+\omega_i$$</span>
 
 <sup><a href="/kamilazdybal.github.io/#intro">Jump to the top of the page ^</a></sup>
 
