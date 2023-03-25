@@ -196,6 +196,7 @@ In many reacting flow systems, the thermo-chemical state-space is known or assum
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/local-manifold-learning.png" alt="local-manifold-learning" style="width:150px"></a>
   </div>
   <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.jaecs.2023.100131" target="_blank"> Publication</a></h4>
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://arxiv.org/abs/2207.00275" target="_blank"> Preprint</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/local-manifold-learning" target="_blank"> Code</a></h4>
   </div>
