@@ -62,7 +62,7 @@ img {
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-Hi, I'm Kamila Zdybał and I just completed my Ph.D. at Université libre de Bruxelles, supervised by Professor Alessandro Parente and co-supervised by Professor James C. Sutherland.
+Hi, I'm Kamila Zdybał and I just completed my Ph.D. at Université libre de Bruxelles! I was supervised by Professor Alessandro Parente and co-supervised by Professor James C. Sutherland. Previously, I was a research student at The von Karman Institute for Fluid Dynamics supervised by Professor Miguel A. Mendez.
 
 This website is a collection of tutorials, articles, coding projects and study notes that are the product of most of my passion that I have for life, Universe and everything else. Many of the materials gathered here are related to my research work and I have hopes that by sharing them you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifolds methods, fluid dynamics, reacting flows and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
@@ -95,14 +95,16 @@ in Vancouver, Canada, 2022.</sup>
 
 # My Ph.D. dissertation
 
-I defended my Ph.D. thesis on 17 April 2023! My dissertation titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*" is freely available for download below:
+I defended my Ph.D. thesis on 17 April 2023!
+
+My dissertation titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*" is freely available for download below:
 
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/phd-dissertation.png" alt="PhD-dissertation" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.researchgate.net/publication/370097058_Reduced-order_modeling_of_turbulent_reacting_flows_using_data-driven_approaches" target="_blank"> Abstract & TOC</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.researchgate.net/publication/370097058_Reduced-order_modeling_of_turbulent_reacting_flows_using_data-driven_approaches" target="_blank"> Dissertation</a></h4>
   </div>
 </div>
 
