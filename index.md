@@ -95,11 +95,11 @@ in Vancouver, Canada, 2022.</sup>
 
 # My Ph.D. dissertation
 
-I defended my Ph.D. thesis on 17 April 2023!
+I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*" on 17 April 2023!
 
-<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:800px">
+<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:900px">
 
-My dissertation titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*" is freely available for download below:
+My dissertation is freely available for download below:
 
 <div class="row">
   <div class="column">
