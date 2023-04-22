@@ -91,6 +91,23 @@ in Vancouver, Canada, 2022.</sup>
 
 -----------------------
 
+<ul id="ML-lecture"></ul>
+
+# Introduction to machine learning and artificial neural networks
+
+Check out my invited lecture on machine learning and artificial neural networks at the University of Utah. Thanks to Professor Tony Saad for inviting me!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ML-lecture.png" alt="ML-lecture" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=wPL2l1K6KPM" target="_blank"> Lecture</a></h4>
+  </div>
+</div>
+
+-----------------------
+
 <ul id="2023-phd-dissertation"></ul>
 
 # My Ph.D. dissertation
