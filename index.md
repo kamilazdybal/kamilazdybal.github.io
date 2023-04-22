@@ -106,8 +106,6 @@ Check out my invited lecture on machine learning and artificial neural networks 
   </div>
 </div>
 
------------------------
-
 <ul id="2023-phd-dissertation"></ul>
 
 # My Ph.D. dissertation
