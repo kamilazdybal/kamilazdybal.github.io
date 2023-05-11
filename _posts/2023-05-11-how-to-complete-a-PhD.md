@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "How to complete a Ph.D."
-date:   2023-05-11 15:00:00 +0100
+date:   2023-05-10 15:00:00 +0100
 categories: jekyll update
 ---
 
