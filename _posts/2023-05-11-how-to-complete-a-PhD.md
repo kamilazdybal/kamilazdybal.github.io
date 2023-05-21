@@ -46,18 +46,18 @@ Your advisor is likely juggling a few research projects at a time, teaching resp
     - Whenever possible, aim to send short messages asking for a very specific feedback. Instead of sending a 10-page paper asking for comments, take a screenshot of a specific result and ask: Do you think with this result I can make a claim in the paper that ... ?
     - Don't contact your advisor during weekends or holidays. They have the right to take time off and spend time with their family too!
 - Your advisor will struggle to maintain an overview of your work. Therefore:
-    - Try to convey a story with the results that you show your advisor on a weekly basis. A storyline lets you convince your advisor of certain outcomes in support of your hypotheses. Stories are also naturally easier to follow and memorize.
-    - Prepare efficient slides for your weekly meetings where you explain or even re-explain certain theoretical concepts or ideas.
+    - Try to convey a story with the results that you show your advisor on a weekly basis. A storyline lets you convince your advisor of certain outcomes in support of your hypotheses. Stories are also naturally easier to follow and memorize. They help your advisor to "connect the dots".
+    - Prepare efficient slides for your weekly meetings where you explain or even re-explain important theoretical concepts or ideas.
     - Remind your advisor of the big picture: What hypothesis are you currently trying to prove? What results do you aim to collect in the next months? How would you present the main storyline in the paper that you're writing?
 
 Of course, significant level of neglect from your advisor is unacceptable and should be resolved as soon as possible. This includes if you haven't received feedback on your written work for a month or longer or if your advisor hasn't met with you for a month or longer. However, the important thing is that you understand that when it's been a week and you haven't heard back from your advisor or when your advisor seems to have lost connection with your research when they meet with you, *it's not about you*. It's simply about how demanding an academic job is nowadays.
 
 ### 4. Take initiative. Be proactive.
 
-This point largely links with the previous one. You need to take responsibility for your research project. There are two reasons for this:
+You need to take responsibility of your research project. There are two main reasons for this:
 
 1. The purpose of a Ph.D. training is to develop skills that will allow you to lead a research project yourself. (Some people call this becoming an "independent researcher".)
-2. Your advisor likely doesn't have the time to take full responsibility of your research project!
+2. Your advisor likely doesn't have the time to take full responsibility of your research project! (See the previous advice.)
 
 So, for example, instead of waiting for your advisor to tell you -- How about we write a paper on XYZ? -- monitor your results and find possible venues where you might want to send them to at some point. Discuss those paper ideas with your advisor. Suggest a sketch for the first draft. Instead of waiting for the next weekly meeting to hear your advisor suggest the next checks to be performed, try to think if there's any extra checks that you could do until then that would be helpful for your upcoming discussion. As you progress in your Ph.D., you'll find that more often than not you're able to make good decisions on what needs to be checked next! Remember that it's your Ph.D. and you are at the driver seat of your research. Your advisor is not your manager, but rather a resource to help you complete your Ph.D. You largely get to decide where your research takes you!
 
@@ -153,6 +153,6 @@ that you can copy and paste into your LaTeX file. Now imagine that you needed a 
 
 ### My last two cents
 
-Remember that no Ph.D. student is a perfect student, and also no advisor is a perfect advisor! Accept that you'll make mistakes or fall behind, and accept that other times your advisor will make mistakes or fall behind. But there's many things that you have control over in your Ph.D. journey. You can improve your experience enormously with the ideas that I gathered here.
+Remember that no Ph.D. student is a perfect student but also no advisor is a perfect advisor! Accept that you'll make mistakes or fall behind, and accept that other times your advisor will make mistakes or fall behind. But there's many things that you have control over in your Ph.D. journey. You can improve your experience enormously with the ideas that I gathered here.
 
 Good luck!
