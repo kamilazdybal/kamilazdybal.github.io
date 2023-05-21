@@ -46,7 +46,9 @@ Your advisor is likely juggling a few research projects at a time, teaching resp
     - Whenever possible, aim to send short messages asking for a very specific feedback. Instead of sending a 10-page paper asking for comments, take a screenshot of a specific result and ask: Do you think with this result I can make a claim in the paper that ... ?
     - Don't contact your advisor during weekends or holidays. They have the right to take time off and spend time with their family too!
 - Your advisor will struggle to maintain an overview of your work. Therefore:
-    - Prepare efficient slides for your weekly meetings, where you explain or even re-explain certain theoretical concepts or ideas. Try to convey a story with the results that you show your advisor on weekly basis. A storyline lets you convince your advisor of certain outcomes in support of your hypotheses. Stories are naturally easier to follow and memorize.
+    - Try to convey a story with the results that you show your advisor on a weekly basis. A storyline lets you convince your advisor of certain outcomes in support of your hypotheses. Stories are also naturally easier to follow and memorize.
+    - Prepare efficient slides for your weekly meetings where you explain or even re-explain certain theoretical concepts or ideas.
+    - Remind your advisor of the big picture: What hypothesis are you currently trying to prove? What results do you aim to collect in the next months? How would you present the main storyline in the paper that you're writing?
 
 Of course, significant level of neglect from your advisor is unacceptable and should be resolved as soon as possible. This includes if you haven't received feedback on your written work for a month or longer or if your advisor hasn't met with you for a month or longer. However, the important thing is that you understand that when it's been a week and you haven't heard back from your advisor or when your advisor seems to have lost connection with your research when they meet with you, *it's not about you*. It's simply about how demanding an academic job is nowadays.
 
