@@ -155,6 +155,11 @@ You can find some automation ideas in my [GitHub repo](https://github.com/kamila
 
 ### My last two cents
 
-Remember that no Ph.D. student is a perfect student but also no advisor is a perfect advisor! Accept that you'll make mistakes or fall behind, and accept that other times your advisor will make mistakes or fall behind. But there's many things that you have control over in your Ph.D. journey. You can improve your experience enormously with the ideas that I gathered here.
+Remember that no Ph.D. student is a perfect student but also no advisor is a perfect advisor! Accept that you'll make mistakes or fall behind, and accept that other times your advisor will make mistakes or fall behind. But there's many things that you have control over in your Ph.D. journey. You can improve your experience enormously with the ideas that I gathered here. If you're still hungry for more guidance, watch these two YouTube videos:
+
+- [**Who are the most challenging students to supervise**](https://youtu.be/WNzwwTYysTU)
+- [**The characteristics of the best PhD students**](https://youtu.be/WokV1JYgqZo)
+
+I kept re-watching these two videos during my Ph.D. to remind myself of what student not to be towards my advisors, and what student to try to become.
 
 Good luck!
