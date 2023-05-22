@@ -113,7 +113,7 @@ I have a personal hypothesis that accepting failure is harder for students who s
 Here are some of the failures that you can expect during your Ph.D. and some ways of handling them:
 
 1. Paper rejections will come your way. They happen to all of us. Heck, they even happen to senior and renowned scientists! I still remember my first paper rejection. It was Saturday and I spent the whole morning crying in bed :-) The second paper rejection was easier. When the third paper rejection came my way, I went outside to breath some fresh air and 15 minutes later I texted my advisors: What do you think about sending our paper to journal XYZ? The upshot is: You will learn to cope with it, or as one professor once told me: You will grow a thick skin. Does it still suck to get your paper rejected? Sure. But it's not the end of your research! Here's what you can do after the rejection:
-  - Take the opportunity to learn and improve your work. Rejections after peer review give you access to reviewers' comments. Read those comments for any suggestions and ideas on improving your work, and implement them before re-submitting your paper. Looking back at my rejected papers, I'm very glad that they were rejected! I can now see the ways in which my work wasn't up to par, my statements weren't thoroughly supported by results. If those papers were accepted at the state that I first submitted them, I would feel embarrassed today! Reviewers saved me from that embarrassment, and, more importantly, saved the research community from research that was incomplete and might have been misleading! That's the role of the peer review process.
+  - Take the opportunity to learn and improve your work. Rejections after peer review give you access to reviewers' comments. Read those comments for any suggestions and ideas on improving your work, and implement them before re-submitting your paper. Looking back at my rejected papers, I'm very glad that they were rejected! I can now see the ways in which my work wasn't up to par, my statements weren't thoroughly supported by results. If those papers were accepted at the state that I first submitted them, I would feel embarrassed today! Reviewers saved me from that embarrassment, and, more importantly, saved the research community from research that was incomplete and might have been misleading! That's the role of the peer review process. To paraphrase Oscar Wilde: There is only one thing in the world worse than having your paper rejected and that is having your paper retracted!
   - There is a great piece of advice that I once found online: "If your papers always get accepted, it means you're aiming too low." This means that, as a researcher, you should aim to have your papers rejected every once in a while! Otherwise you'll never know which impactful journals your papers might be accepted in.
 
 2. You will get negative results, *i.e.* you will try to prove something and the results you'll get just won't show any evidence in support of your hypotheses.
@@ -137,7 +137,7 @@ Your future-self will thank you for any automation that you did today. I usually
 
 Say you need to run a post-processing tool after you collect files with some results. Say that your results files arrive incrementally as you decide to test new scenarios. You can manually check if a given scenario has finished running and then run your post-processing tool. Or, you can parameterize your cases and automatically check if a results file for a given case is already there (the Python way: `os.path.exists()`) and if yes, run the post-processing, if not, just keep going to the next case. You can run such script once a day, and that's all you need to do from now on!
 
-The same thing goes with other dull tasks such as renaming many files, organizing files, running various scenarios, generating figures. It's worth spending time at the beginning of your Ph.D. to learn how to do those things (*e.g.*, in Python). Learn basic operation on files (creating, renaming, saving, moving), learn operation on strings (regular expressions), and learn list comprehensions. For example, say you need to generate a header for a LaTeX table that says *Case*-# where # is an even number from 2 to 20. With this list comprehension in Python:
+The same thing goes with other dull tasks such as renaming many files, organizing files, running various scenarios, generating figures. It's worth spending time at the beginning of your Ph.D. to learn how to do those things (*e.g.*, in Python). Learn basic operation on files (creating, renaming, appending, saving, moving), learn operation on strings (regular expressions), and learn list comprehensions. For example, say you need to generate a header for a LaTeX table that says *Case*-# where # is an even number from 2 to 20. With this list comprehension in Python:
 
 ```python
 ' & '.join(['Case-' + str(i) for i in range(1,21) if i%2==0])
@@ -150,6 +150,8 @@ Case-2 & Case-4 & Case-6 & Case-8 & Case-10 & Case-12 & Case-14 & Case-16 & Case
 ```
 
 that you can copy and paste into your LaTeX file. Now imagine that you needed a similar header but for one million numbers!
+
+You can find some automation ideas in my [GitHub repo](https://github.com/kamilazdybal/PyhD).
 
 ### My last two cents
 
