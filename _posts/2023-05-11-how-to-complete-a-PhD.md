@@ -56,7 +56,7 @@ Of course, significant level of neglect from your advisor is unacceptable and sh
 
 You need to take responsibility of your research project. There are two main reasons for this:
 
-1. The purpose of a Ph.D. training is to develop skills that will allow you to lead a research project yourself. (Some people call this becoming an "independent researcher".)
+1. The purpose of a Ph.D. training is for you to develop skills that will allow you to lead a research project yourself in the future. (Some people call this becoming an "independent researcher".)
 2. Your advisor likely doesn't have the time to take full responsibility of your research project! (See the previous advice.)
 
 So, for example, instead of waiting for your advisor to tell you -- How about we write a paper on XYZ? -- monitor your results and find possible venues where you might want to send them to at some point. Discuss those paper ideas with your advisor. Suggest a sketch for the first draft. Instead of waiting for the next weekly meeting to hear your advisor suggest the next checks to be performed, try to think if there's any extra checks that you could do until then that would be helpful for your upcoming discussion. As you progress in your Ph.D., you'll find that more often than not you're able to make good decisions on what needs to be checked next! Remember that it's your Ph.D. and you are at the driver seat of your research. Your advisor is not your manager, but rather a resource to help you complete your Ph.D. You largely get to decide where your research takes you!
