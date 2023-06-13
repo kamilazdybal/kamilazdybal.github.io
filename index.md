@@ -50,9 +50,12 @@ img {
   </a>
   <a href="https://github.com/kamilazdybal/">
   <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" style="width:105px; border:0px" height=40/>
-</a>
+  </a>
   <a href="https://twitter.com/kamilazdybal">
-    <img src="https://img.shields.io/badge/Twitter-dodgerblue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge" style="width:115px; border:0px" height=40/>
+    <img src="https://img.shields.io/badge/Twitter-dodgerblue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge" style="width:115px; border:0px" height=40/>  
+  </a>
+  <a href="https://www.youtube.com/channel/UCv_HIIdhPlJKdew31vXgt4g">
+    <img src="https://img.shields.io/badge/youtube-firebrick?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="width:125px; border:0px" height=40/>
   </a>
 </div>
 
