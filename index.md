@@ -36,6 +36,9 @@ img {
 </style>
 
 <div id="badges">
+  <a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf">
+    <img src="https://img.shields.io/badge/download_my_CV-gainsboro?style=for-the-badge&logo=latex&logoColor=black" alt="CV" style="width:180px; border:0px" height=40/>
+  </a>
   <a href="https://www.linkedin.com/in/kamila-zdybal/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="width:125px; border:0px" height=40px/>
   </a>  
@@ -56,9 +59,6 @@ img {
   </a>
   <a href="https://www.youtube.com/channel/UCv_HIIdhPlJKdew31vXgt4g">
     <img src="https://img.shields.io/badge/youtube-firebrick?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="width:125px; border:0px" height=40/>
-  </a>
-  <a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf">
-    <img src="https://img.shields.io/badge/download_my_CV-white?style=for-the-badge&logo=file&logoColor=black" alt="CV" style="width:180px; border:0px" height=40/>
   </a>
 </div>
 
