@@ -57,9 +57,8 @@ img {
   <a href="https://www.youtube.com/channel/UCv_HIIdhPlJKdew31vXgt4g">
     <img src="https://img.shields.io/badge/youtube-firebrick?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="width:125px; border:0px" height=40/>
   </a>
+  <span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf" target="_blank"> Download my CV</a>
 </div>
-
-<h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/CV-kamila-zdybal.pdf" target="_blank"> Download my CV</a></h4>
 
 <ul id="intro"></ul>
 
