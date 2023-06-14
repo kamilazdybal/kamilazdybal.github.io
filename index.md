@@ -96,6 +96,20 @@ in Vancouver, Canada, 2022.</sup>
 </ul>
 
 -----------------------
+<ul id="Python-for-ac"></ul>
+
+# Python for academics
+
+I'm launching a series of YouTube tutorials called "*Python for academics*" where I teach how to automate the everyday academic life with Python!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/python-for-academics.png" alt="PyforAc" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KEuRQfwFeI_RH3EZr87nslf" target="_blank"> Tutorials</a></h4>
+  </div>
+</div>
 
 <ul id="ML-lecture"></ul>
 
@@ -116,7 +130,7 @@ Check out my invited lecture on machine learning and artificial neural networks 
 
 # My Ph.D. dissertation
 
-I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*" on 17 April 2023!
+On 17 April 2023 I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:900px">
 
