@@ -30,3 +30,5 @@ The difficulty of research does not come from getting negative results. That wou
 The challenge of research is due to the following, third path, that too often turns out to be reality:
 
 > *Have a novel hypothesis -> test it -> arrive at this huge mess that you don't even know how to make sense of, and realize that you don't know what true or wrong means anymore*
+
+Sometimes you're going to have to spend a considerable amount of time walking in the fog until you find the lights that will *guide you to the nearest exit*.

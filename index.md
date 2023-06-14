@@ -108,6 +108,7 @@ I'm launching a series of YouTube tutorials called "*Python for academics*" wher
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KEuRQfwFeI_RH3EZr87nslf" target="_blank"> Tutorials</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/python-for-academics" target="_blank"> Code</a></h4>
   </div>
 </div>
 
