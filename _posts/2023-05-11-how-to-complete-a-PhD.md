@@ -61,52 +61,7 @@ You need to take responsibility of your research project. There are two main rea
 
 So, for example, instead of waiting for your advisor to tell you -- How about we write a paper on XYZ? -- monitor your results and find possible venues where you might want to send them to at some point. Discuss those paper ideas with your advisor. Suggest a sketch for the first draft. Instead of waiting for the next weekly meeting to hear your advisor suggest the next checks to be performed, try to think if there's any extra checks that you could do until then that would be helpful for your upcoming discussion. As you progress in your Ph.D., you'll find that more often than not you're able to make good decisions on what needs to be checked next! Remember that it's your Ph.D. and you are at the driver seat of your research. Your advisor is not your manager, but rather a resource to help you complete your Ph.D. You largely get to decide where your research takes you!
 
-### 5. Write regularly.
-
-As academics, part of our job is to disseminate our research. There would be no point in making a new discovery if no one ever finds out about it, right? Writing for an audience is therefore carved in our job description. Throughout your Ph.D., you're going to have to learn academic writing. You're not expected to be good at it at the start, but, like with every other skill, you're going to be making progress in it. The only way to learn writing is to write. As you write more, you'll start getting better at it. Schedule time to write regularly. It can be one paragraph for your next paper describing your current results. It can be one paragraph describing theory for your dissertation. It can be an idea for a conference abstract. Write throughout your Ph.D. and learn the rules of good academic writing. Check out this [Notion page](https://kamilazdybal.notion.site/Improving-your-academic-writing-42da2498f8f14e3a9c9e20a068cbe472) where I collected many resources on improving your academic writing.
-
-### 6. Learn to make effective visuals.
-
-Efficient communication of your research and your ideas not only increases the impact of your work and makes you more memorable, but it also saves you and your audience a lot of time. In particular, effective visualization can help you convey your ideas with clarity and speed. This applies to presentations that you give throughout your Ph.D. but also to your weekly discussions with your advisor or even email exchanges with collaborators. Spend time at the beginning of your Ph.D. to learn the rules of creating clear figures. Give some thought when preparing visual aids and slides. Implement efficient visualization in your journal articles and your dissertation. You will not only help yourself gain clarity, but, perhaps more importantly, you will help your audience grasp the ideas faster. Imagine that 100 researchers will read your paper. Imagine that with poor explanation or visualization, they will each have to spend extra 15 minutes trying to understand your methodology. By implementing the rules of clearer communication, you're saving 25 hours of other people's grant money! That's around 3 working days. Now imagine that your great paper will be read by 1000 researchers (which I hope will be the case!) Now you're saving over a month worth of taxpayers' money! Worth spending that extra hour or two polishing that figure, huh?
-
-A good diagnosis of the clarity of your communication is asking the question: Does your advisor frequently needs to ask you for clarifications while you present? If the answer is yes, it's likely that you're presenting your results in a confusing way. Here's some items that you can think of implementing:
-- Keep your notation consistent. Make it clear what variables you're plotting or what variable is being visualized in a colorbar. Don't change the notation halfway through your slides.
-- Make visual pointers to the most significant results supporting/rejecting your hypothesis.
-- In your informal communication with your advisor, it's okay to use unscientific terms like "bad result" or "great result". When you work closely with your advisor, you both know what a "bad result" or a "good result" means for you. Such human-readable statements, especially supported by appropriate coloring, help increase the speed of conveying a message. Just remember to formalize your wording in a journal article, or at a conference talk.
-- Make reasonably big figures. Increase font sizes, increase marker sizes, increase line thickness. Slide space costs nothing, so use it well!
-- Remove visual clutter.
-- For any materials that might be printed, use colors and colormaps that will be clear in black and white.
-
-You can also check out my earlier post on [*Making effective presentations*](https://kamilazdybal.github.io/jekyll/update/2022/08/07/making-presentations.html) for more ideas for your consideration.
-
-### 7. Understand that once you get into the unknowns of research, even your advisor doesn't have all the answers.
-
-Doing research is doing what no one has done yet. The purpose of your Ph.D. is to produce new knowledge. Your advisor can often provide advice or helpful perspective, but there will be times when even your advisor won't have a good intuition, won't know a particular theory or method that can be helpful. Sometimes, you're going to have to spend time to check, debug, and test things, so that both you and your advisor learns the answer to a particular question. Other times, you're going to have to engage other academics to help you out. Those could be other researchers in your department, other scientists worldwide, or people you meet at conferences. A phrase I've once heard that I like is: "Don't put all your eggs in the supervisory basket". I think it summarizes my point quite well. Use resources other than your advisor to move your research forward.
-
-### 8. Schedule time for thought work.
-
-Sometimes our workday as Ph.D. students looks like this: we come to the lab, open our laptops, start running simulations, collect results, post-process results, read, write, close our laptops and go home. But we tend to forget that simply *thinking* is part of our job too. Sometimes things simply need thinking through, away from our computers or equipment, and we need to schedule time to do that kind of work. I find that I need a quiet and dedicated space to do the *thought work*. It's hard to do the thought work when in the lab, when there are other people around talking. You might therefore need to schedule that work when at home when you can fully focus and nothing in your surrounding can distract you. Having a whiteboard, or pen and paper, can help. Types of research problems that frequently benefit from thought work:
-- When you need to nail down how a certain algorithm/method you're developing needs to work.
-- When you need to understand an existing method.
-- When you need to plan steps for an experiment to execute.
-- When you need to come up with cases or scenarios that you need to test/run.
-- When you need to recall an important theory.
-
-Being a researcher is that extraordinary occupation, where a person from outside can catch you simply sitting in your chair, and you are, in fact, working!
-
-### 9. Take breaks.
-
-Your mind and your body need some time off from your research, time off from your lab bench, time off from your desk. This is primarily to keep you healthy and happy. But also, no one can be focused for 10 hours a day! Research shows, and my personal experiments confirm that, that we can have at most ~4 hours of focused work a day. Any work that's done beyond that can still be useful, but it's not a deep focused work. Scheduling short breaks throughout the day lets you have those 4 hours of focused work. Scheduling longer breaks from your work, *e.g.* by taking the weekend off or taking holidays, keeps you energized and keeps your Ph.D. fresh. Most of my workdays, I break the 8-hour workday into 1 or 2 hour long chunks, and go out for a walk, go out for a run, cook lunch listening to a podcast, or do laundry in between those chunks. I often use the pomodoro timer too and aim to be at my desk for 30 minutes, and stand up and move for 5 minutes. Taking those short breaks helps me be much less exhausted at the end of the day, compared to days when I come to the lab in the morning and sit at my desk for 8 hours. There's also a side-effect of taking breaks. Some of my most precious research ideas or solutions to coding problems came to me while I was away from my desk and enjoying a run in the forest or a long meditation.
-
-### 10. Accept that some days or even some weeks will be unproductive. And that's alright.
-
-In every four or five year long Ph.D. candidature there are days when you get nothing done, for whatever reason. Don't beat yourself for that, and don't feel guilty for that. It's normal and happens to everyone, even the "best" students. No one can be at 100% energy 5 days a week for four or five years. Every once in a while, you're going to come to your weekly meeting with your advisor and say: *I wasn't able to do much work these days, I think I don't have much to discuss today.* There were certainly times when I had to say that to my advisors. It sucked to have to say that. But that's just how life is. And, as long as this doesn't happen every week, they will understand.
-
-### 11. Prioritize your growth.
-
-Once you get your hands dirty with research, there can be months when all you do is try to nail down a particular problem, write extra code, wait for cases to finish running, produce plots, and start all over again. It's easy to get into a rut of research and forget why you wanted to pursue a Ph.D. in the first place. Maybe you were hoping to learn a particular skill or theory? Read a particular textbook? Take a particular class? Or, write that "How to complete a Ph.D." guide for future generations that you've been putting off for so long! Throughout your Ph.D., try to remember about your own growth and what you wanted to get out of it for yourself. Ideally you should aim to have that "me-time" every workday -- you could, for example, plan that the first hour of every day is for learning and experimenting that you truly want for yourself. In other words, you shouldn't just aim to make your advisor happy. A little of such *selfishness* along the way is going to do wonders to your sense of purpose and growth! It might even make the rest of your workday much more pleasant and energized.
-
-### 12. Learn to accept and welcome failure.
+### 5. Learn to accept and welcome failure.
 
 I have a personal hypothesis that accepting failure is harder for students who start a Ph.D. right after their undergraduate degree, and less difficult for students who had some research or work experience before starting a Ph.D. (I'll be curious to hear what research says about that hypothesis though!) If failure is hard for you to handle, that's normal! There are reasons for why it's hard. When we're at school and we get a bad grade, fail a test, or fail a class, it can be very definite. Often we're not even allowed for a second chance to improve and try again -- the bad grade just stays there until the end of the school year. Sometimes our teachers don't take the time to explain to us what we've done wrong, or where are the flaws in our understanding. Other times, we might be given a chance to re-take a test, or re-take a class, but the consequences can still be enormous. At my university, failing a course meant that the student was forbidden to take certain other courses next semester, and the debt of missed courses kept accumulating over the undergrad years. This caused some of my classmates to be severely overtime, and some of them to drop out. The good news is: the real life is quite different! The Ph.D. journey is different too. Failure will come your way sooner or later in your Ph.D. and that's alright and expected! Unlike at school, you will be given the chance to learn, improve, and try again. Other researchers will give you feedback and advice on how to improve your work and try again. Failures won't deprive you of opportunities, or at least not for long. Failures will not be listed on your Ph.D. diploma!
 
@@ -131,7 +86,7 @@ Here are some of the failures that you can expect during your Ph.D. and some way
 
 I wish you to have your first failures as early as possible in your Ph.D.! You will learn a lot from them.
 
-### 13. Write code to automate your work.
+### 6. Write code to automate your work.
 
 Your future-self will thank you for any automation that you did today. I usually find that the time spend to write a Python script to automate a task saves me ten times more time later.
 
@@ -151,7 +106,52 @@ Case-2 & Case-4 & Case-6 & Case-8 & Case-10 & Case-12 & Case-14 & Case-16 & Case
 
 that you can copy and paste into your LaTeX file. Now imagine that you needed a similar header but for one million numbers!
 
-You can find some automation ideas in my [GitHub repo](https://github.com/kamilazdybal/PyhD).
+You can find more automation ideas in my [YouTube tutorials](https://www.youtube.com/playlist?list=PL7gWbAt3_3KEuRQfwFeI_RH3EZr87nslf).
+
+### 7. Write regularly.
+
+As academics, part of our job is to disseminate our research. There would be no point in making a new discovery if no one ever finds out about it, right? Writing for an audience is therefore carved in our job description. Throughout your Ph.D., you're going to have to learn academic writing. You're not expected to be good at it at the start, but, like with every other skill, you're going to be making progress in it. The only way to learn writing is to write. As you write more, you'll start getting better at it. Schedule time to write regularly. It can be one paragraph for your next paper describing your current results. It can be one paragraph describing theory for your dissertation. It can be an idea for a conference abstract. Write throughout your Ph.D. and learn the rules of good academic writing. Check out this [Notion page](https://kamilazdybal.notion.site/Improving-your-academic-writing-42da2498f8f14e3a9c9e20a068cbe472) where I collected many resources on improving your academic writing.
+
+### 8. Learn to make effective visuals.
+
+Efficient communication of your research and your ideas not only increases the impact of your work and makes you more memorable, but it also saves you and your audience a lot of time. In particular, effective visualization can help you convey your ideas with clarity and speed. This applies to presentations that you give throughout your Ph.D. but also to your weekly discussions with your advisor or even email exchanges with collaborators. Spend time at the beginning of your Ph.D. to learn the rules of creating clear figures. Give some thought when preparing visual aids and slides. Implement efficient visualization in your journal articles and your dissertation. You will not only help yourself gain clarity, but, perhaps more importantly, you will help your audience grasp the ideas faster. Imagine that 100 researchers will read your paper. Imagine that with poor explanation or visualization, they will each have to spend extra 15 minutes trying to understand your methodology. By implementing the rules of clearer communication, you're saving 25 hours of other people's grant money! That's around 3 working days. Now imagine that your great paper will be read by 1000 researchers (which I hope will be the case!) Now you're saving over a month worth of taxpayers' money! Worth spending that extra hour or two polishing that figure, huh?
+
+A good diagnosis of the clarity of your communication is asking the question: Does your advisor frequently needs to ask you for clarifications while you present? If the answer is yes, it's likely that you're presenting your results in a confusing way. Here's some items that you can think of implementing:
+- Keep your notation consistent. Make it clear what variables you're plotting or what variable is being visualized in a colorbar. Don't change the notation halfway through your slides.
+- Make visual pointers to the most significant results supporting/rejecting your hypothesis.
+- In your informal communication with your advisor, it's okay to use unscientific terms like "bad result" or "great result". When you work closely with your advisor, you both know what a "bad result" or a "good result" means for you. Such human-readable statements, especially supported by appropriate coloring, help increase the speed of conveying a message. Just remember to formalize your wording in a journal article, or at a conference talk.
+- Make reasonably big figures. Increase font sizes, increase marker sizes, increase line thickness. Slide space costs nothing, so use it well!
+- Remove visual clutter.
+- For any materials that might be printed, use colors and colormaps that will be clear in black and white.
+
+You can also check out my earlier post on [*Making effective presentations*](https://kamilazdybal.github.io/jekyll/update/2022/08/07/making-presentations.html) for more ideas for your consideration.
+
+### 9. Understand that once you get into the unknowns of research, even your advisor doesn't have all the answers.
+
+Doing research is doing what no one has done yet. The purpose of your Ph.D. is to produce new knowledge. Your advisor can often provide advice or helpful perspective, but there will be times when even your advisor won't have a good intuition, won't know a particular theory or method that can be helpful. Sometimes, you're going to have to spend time to check, debug, and test things, so that both you and your advisor learns the answer to a particular question. Other times, you're going to have to engage other academics to help you out. Those could be other researchers in your department, other scientists worldwide, or people you meet at conferences. A phrase I've once heard that I like is: "Don't put all your eggs in the supervisory basket". I think it summarizes my point quite well. Use resources other than your advisor to move your research forward.
+
+### 10. Schedule time for thought work.
+
+Sometimes our workday as Ph.D. students looks like this: we come to the lab, open our laptops, start running simulations, collect results, post-process results, read, write, close our laptops and go home. But we tend to forget that simply *thinking* is part of our job too. Sometimes things simply need thinking through, away from our computers or equipment, and we need to schedule time to do that kind of work. I find that I need a quiet and dedicated space to do the *thought work*. It's hard to do the thought work when in the lab, when there are other people around talking. You might therefore need to schedule that work when at home when you can fully focus and nothing in your surrounding can distract you. Having a whiteboard, or pen and paper, can help. Types of research problems that frequently benefit from thought work:
+- When you need to nail down how a certain algorithm/method you're developing needs to work.
+- When you need to understand an existing method.
+- When you need to plan steps for an experiment to execute.
+- When you need to come up with cases or scenarios that you need to test/run.
+- When you need to recall an important theory.
+
+Being a researcher is that extraordinary occupation, where a person from outside can catch you simply sitting in your chair, and you are, in fact, working!
+
+### 11. Take breaks.
+
+Your mind and your body need some time off from your research, time off from your lab bench, time off from your desk. This is primarily to keep you healthy and happy. But also, no one can be focused for 10 hours a day! Research shows, and my personal experiments confirm that, that we can have at most ~4 hours of focused work a day. Any work that's done beyond that can still be useful, but it's not a deep focused work. Scheduling short breaks throughout the day lets you have those 4 hours of focused work. Scheduling longer breaks from your work, *e.g.* by taking the weekend off or taking holidays, keeps you energized and keeps your Ph.D. fresh. Most of my workdays, I break the 8-hour workday into 1 or 2 hour long chunks, and go out for a walk, go out for a run, cook lunch listening to a podcast, or do laundry in between those chunks. I often use the pomodoro timer too and aim to be at my desk for 30 minutes, and stand up and move for 5 minutes. Taking those short breaks helps me be much less exhausted at the end of the day, compared to days when I come to the lab in the morning and sit at my desk for 8 hours. There's also a side-effect of taking breaks. Some of my most precious research ideas or solutions to coding problems came to me while I was away from my desk and enjoying a run in the forest or a long meditation.
+
+### 12. Accept that some days or even some weeks will be unproductive. And that's alright.
+
+In every four or five year long Ph.D. candidature there are days when you get nothing done, for whatever reason. Don't beat yourself for that, and don't feel guilty for that. It's normal and happens to everyone, even the "best" students. No one can be at 100% energy 5 days a week for four or five years. Every once in a while, you're going to come to your weekly meeting with your advisor and say: *I wasn't able to do much work these days, I think I don't have much to discuss today.* There were certainly times when I had to say that to my advisors. It sucked to have to say that. But that's just how life is. And, as long as this doesn't happen every week, they will understand.
+
+### 13. Prioritize your growth and your own goals.
+
+Once you get your hands dirty with research, there can be months when all you do is try to nail down a particular problem, write extra code, wait for cases to finish running, produce plots, and start all over again. It's easy to get into a rut of research and forget why you wanted to pursue a Ph.D. in the first place. Maybe you were hoping to learn a particular skill or theory? Read a particular textbook? Take a particular class? Or, write that "How to complete a Ph.D." guide for future generations that you've been putting off for so long! Throughout your Ph.D., try to remember about your own growth, your own goals and what you wanted to get out of it for yourself. Ideally you should aim to have that "me-time" every workday -- you could, for example, plan that the first hour of every day is for learning and experimenting that you truly want for yourself. In other words, you shouldn't just aim to make your advisor happy. A little of such *selfishness* along the way is going to do wonders to your sense of purpose and growth! It might even make the rest of your workday much more pleasant and energized.
 
 ### My last two cents
 
