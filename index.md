@@ -102,6 +102,8 @@ in Vancouver, Canada, 2022.</sup>
 
 I'm launching a series of YouTube tutorials called "*Python for academics*" where I teach how to automate the everyday academic life with Python!
 
+My goal is to provide you with extra tools and ideas that you haven't thought about using or implementing before. The best use of these tutorials, as I see it, is that you take those tools and ideas and start building your own Python toolbox that can help you in your everyday academic life. My hope is that you'll find pieces of useful advice that can help you automate your work, your own way! The audience I think will benefit a lot from these tutorials are Ph.D. students, especially at the beginning of their Ph.D. I believe that the earlier you learn how to automate dull tasks the better! My motivation is to teach you things that I wish I had learned early in my Ph.D. But, of course, academics at all stages of their careers are welcome to join along!
+
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/python-for-academics.png" alt="PyforAc" style="width:150px"></a>
