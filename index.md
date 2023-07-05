@@ -94,6 +94,21 @@ in Vancouver, Canada, 2022.</sup>
     </li>
   {% endfor %}
 </ul>
+-----------------------
+<ul id="PCAfold-tutorials"></ul>
+
+# PCAfold tutorials
+
+PCAfold is our open-source Python library for handling high-dimensional datasets and modeling high-dimensional systems with computational efficiency. In this new series of videos, I provide an overview of possible functionalities in generating, analyzing, and improving low-dimensional data projections, as well as building efficient regression models based on those projections. Stay tuned for more!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PCAfold-tutorials.png" alt="PCAfold" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KFYchpPZKv2xJHD8q1Wjr-i" target="_blank"> Tutorials</a></h4>
+  </div>
+</div>
 
 -----------------------
 <ul id="Python-for-ac"></ul>
