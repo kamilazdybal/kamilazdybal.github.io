@@ -115,7 +115,7 @@ We describe an update to our open-source Python package, **PCAfold**, designed t
 
 <ul id="PCAfold-tutorials"></ul>
 
-# PCAfold tutorials
+## Check out **PCAfold** video tutorials!
 
 PCAfold is our open-source Python library for handling high-dimensional datasets and modeling high-dimensional systems with computational efficiency. In this new series of videos, I provide an overview of possible functionalities in generating, analyzing, and improving low-dimensional data projections, as well as building efficient regression models based on those projections. Stay tuned for more!
 
