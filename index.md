@@ -95,6 +95,24 @@ in Vancouver, Canada, 2022.</sup>
   {% endfor %}
 </ul>
 -----------------------
+
+<ul id="PCAfold-2.0"></ul>
+
+# Introducing **PCAfold 2.0**! Novel tools and algorithms for low-dimensional manifold assessment and optimization
+
+We describe an update to our open-source Python package, **PCAfold**, designed to help researchers generate, analyze and improve low-dimensional data manifolds. In the current version, **PCAfold 2.0**, we introduce novel tools and algorithms for assessing and optimizing low-dimensional manifolds. This includes a method that generates a “map” of local feature sizes that can help pinpoint researchers to problematic regions on a manifold. We introduce a novel cost function that characterizes the quality of a manifold topology with a single number. We develop two algorithms for feature selection based on principal component analysis (PCA) that use the cost function as an objective function to minimize. We introduce a quantity of interest (QoI)-aware dimensionality reduction strategy where data projections are computed using an artificial neural network and are directly optimized towards representing various projection-independent and projection-dependent QoIs. We also introduce an implementation of partition of unity networks (POUnets) for efficient reconstruction of QoIs from low-dimensional manifolds based on combining neural network classification with localized polynomial regression. Our software can be broadly applicable in all domains of science and engineering that aim to reduce data dimensionality, as well as in the fundamental research on representation learning.
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PCAfold-2.0.png" alt="PCAfold" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.sciencedirect.com/science/article/pii/S2352711023001437" target="_blank"> Publication</a></h4>
+    <h4><span class="fa fa-book"></span><a href="https://pcafold.readthedocs.io/" target="_blank"> Documentation</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://gitlab.multiscale.utah.edu/common/PCAfold" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="PCAfold-tutorials"></ul>
 
 # PCAfold tutorials
@@ -110,7 +128,6 @@ PCAfold is our open-source Python library for handling high-dimensional datasets
   </div>
 </div>
 
------------------------
 <ul id="Python-for-ac"></ul>
 
 # Python for academics
