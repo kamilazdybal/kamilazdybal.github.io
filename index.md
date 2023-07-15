@@ -68,7 +68,7 @@ img {
 
 Hi, I'm Kamila Zdybał and I just completed my Ph.D. at Université libre de Bruxelles! I was supervised by Professor Alessandro Parente and co-supervised by Professor James C. Sutherland. Previously, I was a research student at The von Karman Institute for Fluid Dynamics supervised by Professor Miguel A. Mendez.
 
-In my research, I develop tools and algorithms to help understand high-dimensional datasets and model high-dimensional systems with computational efficiency.
+In my research, I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
 
 This website is a collection of tutorials, articles, coding projects and study notes that are the product of most of my passion that I have for life, Universe and everything else. Many of the materials gathered here are related to my research work and I have hopes that by sharing them you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifolds methods, fluid dynamics, reacting flows and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
