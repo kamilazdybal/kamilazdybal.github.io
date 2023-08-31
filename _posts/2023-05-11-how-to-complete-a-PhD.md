@@ -146,7 +146,7 @@ Your mind and your body need some time off from your research, time off from you
 
 ### 12. Accept that some days or even some weeks will be unproductive. And that's alright.
 
-In every four or five year long Ph.D. candidature there are days when you get nothing done, for whatever reason. Don’t beat yourself for that, and don’t feel guilty for that. It’s normal and happens to everyone, even the “best” students. No one can be at 100\% energy 5 days a week for four or five years. Every once in a while, you’re going to come to your weekly meeting with your advisor and say: *I wasn’t able to do much work these days, I think I don’t have much to discuss today.* There were certainly times when I had to say that to my advisors. It sucked to have to say that. But that’s just how life is. And, as long as this doesn’t happen every week, they will understand.
+In every four or five year long Ph.D. candidature there are days when you get nothing done, for whatever reason. Don’t beat yourself for that, and don’t feel guilty for that. It’s normal and happens to everyone, even the “best” students. No one can be at 100% energy 5 days a week for four or five years. Every once in a while, you’re going to come to your weekly meeting with your advisor and say: *I wasn’t able to do much work these days, I think I don’t have much to discuss today.* There were certainly times when I had to say that to my advisors. It sucked to have to say that. But that’s just how life is. And, as long as this doesn’t happen every week, they will understand.
 
 ### 13. Prioritize your growth and your own goals.
 

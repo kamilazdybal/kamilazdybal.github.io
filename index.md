@@ -96,6 +96,24 @@ in Vancouver, Canada, 2022.</sup>
 </ul>
 -----------------------
 
+<ul id="nonlinear-decoding"></ul>
+
+# Improving reduced-order models through nonlinear decoding of projection-dependent outputs
+
+Stay tuned for our new publication where we show benefits of nonlinear decoding in improving latent space data representations.
+Coming soon at the journal *Patterns* from Cell Press!
+
+<sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, 2023</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/nonlinear-decoding.png" alt="nonlinear-decoding" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/nonlinear-decoding" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="PCAfold-2.0"></ul>
 
 # Introducing **PCAfold 2.0**! Novel tools and algorithms for low-dimensional manifold assessment and optimization
