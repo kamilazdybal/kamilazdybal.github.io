@@ -114,6 +114,21 @@ Coming soon at the journal *Patterns* from Cell Press!
   </div>
 </div>
 
+<ul id="how-to-phd"></ul>
+
+# How to complete a Ph.D.
+
+Doing a Ph.D. has been an immensely rewarding journey for me. It has been really difficult at times, and I mean sobbing-at-my-desk difficult. And at other times, I felt like conquering the top of the world! I’m grateful for every experience from my Ph.D. Those experiences taught me so much, made me more resilient and more confident. This note is a collection of items that helped me complete my Ph.D. and thrive in a Ph.D. program. I’m sharing those with you in hopes that they will help you complete your own journey! You can absolutely end your Ph.D. with a smile on your face and a great sense of accomplishment!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/how-to-phd.png" alt="how-to-phd" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/how-to-complete-a-phd/how-to-complete-a-PhD.pdf" target="_blank"> Article</a></h4>
+  </div>
+</div>
+
 <ul id="PCAfold-2.0"></ul>
 
 # Introducing **PCAfold 2.0**! Novel tools and algorithms for low-dimensional manifold assessment and optimization
