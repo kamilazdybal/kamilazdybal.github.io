@@ -103,6 +103,8 @@ in Vancouver, Canada, 2022.</sup>
 Stay tuned for our new publication where we show benefits of nonlinear decoding in improving latent space data representations.
 Coming soon at the journal *Patterns* from Cell Press!
 
+Large datasets are increasingly abundant in various scientific and engineering disciplines. Multiple physical variables are frequently gathered into one dataset, leading to high data dimensionality. Visualizing and modeling multivariate datasets can be achieved through dimensionality reduction. However, in many reduction techniques to date, there is no guarantee that the reduced data representation will possess certain desired topological qualities. We show that the quality of reduced data representations can be significantly improved by informing data projections by target quantities of interest (QoIs), some of which are functions of the projection itself. The target QoIs can include closure terms required in modeling, important physical variables other than the collected state variables, or class labels in the case of categorical data. This work can have particular relevance in efficient data visualization and in efficient modeling of dynamical systems with many degrees of freedom, as well as in fundamental research of representation learning.
+
 <sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, 2023</sup>
 
 <div class="row">
