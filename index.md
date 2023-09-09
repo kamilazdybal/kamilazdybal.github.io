@@ -112,7 +112,9 @@ Large datasets are increasingly abundant in various scientific and engineering d
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/nonlinear-decoding.png" alt="nonlinear-decoding" style="width:150px"></a>
   </div>
   <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/nonlinear-decoding" target="_blank"> Code</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
   </div>
 </div>
 
