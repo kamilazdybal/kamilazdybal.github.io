@@ -62,6 +62,8 @@ img {
   </a>
 </div>
 
+You can contact me at: **`kamilazdybal at gmail dot com`**
+
 <ul id="intro"></ul>
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
@@ -75,8 +77,6 @@ This website is a collection of tutorials, articles, coding projects, and study 
 When it comes to learning, I believe in the quote of Einstein: *You do not really understand something unless you can explain it to your grandmother*. My aim is to implement that level of understanding into the documents I write (although many times I will assume certain prerequisites that your grandmother should have!). Of course, if you wish to profit from the materials presented here, you will need to incorporate them into your journey. I have hopes that you will find doing science fascinating, rewarding, and inspiring!
 
 If you like these materials and you'd like to support me, you can [**buy me a coffee**](https://www.buymeacoffee.com/kamilazdybal)! 🚀
-
-Feel free to drop me a line at: **`kamilazdybal at gmail dot com`**.
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
 
@@ -100,21 +100,18 @@ in Vancouver, Canada, 2022.</sup>
 
 # Improving reduced-order models through nonlinear decoding of projection-dependent outputs
 
-Stay tuned for our new publication where we show benefits of nonlinear decoding in improving latent space data representations.
-Coming soon at the journal *Patterns* from Cell Press!
-
 Large datasets are increasingly abundant in various scientific and engineering disciplines. Multiple physical variables are frequently gathered into one dataset, leading to high data dimensionality. Visualizing and modeling multivariate datasets can be achieved through dimensionality reduction. However, in many reduction techniques to date, there is no guarantee that the reduced data representation will possess certain desired topological qualities. We show that the quality of reduced data representations can be significantly improved by informing data projections by target quantities of interest (QoIs), some of which are functions of the projection itself. The target QoIs can include closure terms required in modeling, important physical variables other than the collected state variables, or class labels in the case of categorical data. This work can have particular relevance in efficient data visualization and in efficient modeling of dynamical systems with many degrees of freedom, as well as in fundamental research of representation learning.
 
-<sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, 2023</sup>
+<sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, Patterns 4 (2023)</sup>
 
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/nonlinear-decoding.png" alt="nonlinear-decoding" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article -- coming soon!</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/nonlinear-decoding" target="_blank"> Code</a></h4>
-    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video -- coming soon!</a></h4>
   </div>
 </div>
 
