@@ -109,9 +109,9 @@ Large datasets are increasingly abundant in various scientific and engineering d
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/nonlinear-decoding.png" alt="nonlinear-decoding" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article -- coming soon!</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.patter.2023.100859" target="_blank"> Article</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/nonlinear-decoding" target="_blank"> Code</a></h4>
-    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video -- coming soon!</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
   </div>
 </div>
 
@@ -202,6 +202,8 @@ Check out my invited lecture on machine learning and artificial neural networks 
 On 17 April 2023 I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:900px">
+
+My Ph.D. thesis has recently been selected as one of the top five contributions at the [**18th ERCOFTAC da Vinci competition**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/)!
 
 My dissertation is freely available for download below:
 
