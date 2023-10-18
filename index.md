@@ -68,7 +68,7 @@ You can contact me at: **`kamilazdybal at gmail dot com`**
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-Hi, I'm Kamila Zdybał and I just completed my Ph.D. at Université libre de Bruxelles where I was supervised by Prof. Alessandro Parente and co-supervised by Prof. James C. Sutherland. My Ph.D. work has just been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/)! Previously, I was a research student at The von Karman Institute for Fluid Dynamics, supervised by Prof. Miguel A. Mendez.
+Hi, I'm Kamila Zdybał. In April 2023, I completed my Ph.D. at Université libre de Bruxelles where I was supervised by Prof. Alessandro Parente and co-supervised by Prof. James C. Sutherland. My Ph.D. work has just been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/)! Previously, I was a research student at The von Karman Institute for Fluid Dynamics, supervised by Prof. Miguel A. Mendez.
 
 In my research, I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
 
