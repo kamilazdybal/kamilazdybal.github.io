@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "A story about my pen"
+title:  "A story about my fountain pen"
 date:   2023-10-27 10:00:00 +0100
 categories: jekyll update
 ---
