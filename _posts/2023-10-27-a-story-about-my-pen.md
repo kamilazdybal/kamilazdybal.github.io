@@ -20,5 +20,5 @@ Since primary school, I used this same pen in all the stages of my education tha
 On 17 April, 2023, on the day of my graduation from a Ph.D. program, my family bought me a new Parker Sonnet fountain pen as a graduation gift. They didn't know that I still had the old one. I think it turned out to be a wonderful gift to commemorate the end of my entire education cycle, from primary school to becoming a doctor of engineering. Now that my education is over, it feels right to have a new pen for whatever comes next. I decided to retire my old Parker Vector pen and let the new pen be the one that I use from now on.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/parker-pens.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/parker-pens.jpg" width="400">
 </p>
