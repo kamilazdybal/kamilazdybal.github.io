@@ -71,9 +71,7 @@ You can contact me at: **`kamilazdybal at gmail dot com`**
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-Hi, I'm Kamila Zdybał. In April 2023, I completed my Ph.D. at Université libre de Bruxelles where I was supervised by Prof. Alessandro Parente and co-supervised by Prof. James C. Sutherland. My Ph.D. work has just been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/)! Previously, I was a research student at The von Karman Institute for Fluid Dynamics, supervised by Prof. Miguel A. Mendez. In February 2024, I will be starting my next scientific journey as a postdoctoral researcher at Empa, a Swiss Federal Laboratory for Materials Science and Technology 🇨🇭!
-
-In my research, I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
+I'm a postdoctoral researcher in the Computational Engineering lab at Empa, a Swiss Federal Laboratory for Materials Science and Technology 🇨🇭. In my research, I combine machine learning and data-driven modeling with fluid dynamics. I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
 
 This website is a collection of tutorials, articles, coding projects, and study notes that are the product of most of my passions that I have for life, the universe, and everything else. Many of the materials gathered here are related to my research work, and I have hopes that by sharing them, you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifold methods, fluid dynamics, reacting flows, and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
@@ -203,6 +201,7 @@ Check out my invited lecture on machine learning and artificial neural networks 
 # My Ph.D. dissertation
 
 On 17 April 2023 I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
+My Ph.D. work has recently been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/).
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:900px">
 
