@@ -71,7 +71,7 @@ You can contact me at: **`kamilazdybal at gmail dot com`**
 
 ### **Hi, I'm Kamila, welcome to my personal website!**
 
-I'm a postdoctoral researcher in the Computational Engineering lab at Empa, a Swiss Federal Laboratory for Materials Science and Technology 🇨🇭. In my research, I combine machine learning and data-driven modeling with fluid dynamics. I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
+I'm a postdoctoral researcher in the Computational Engineering lab at Empa, a Swiss Federal Laboratory for Materials Science and Technology 🇨🇭. In my research, I combine machine learning and data-driven modeling with fluid dynamics and I develop tools and algorithms that help understand high-dimensional datasets and model high-dimensional systems with computational efficiency.
 
 This website is a collection of tutorials, articles, coding projects, and study notes that are the product of most of my passions that I have for life, the universe, and everything else. Many of the materials gathered here are related to my research work, and I have hopes that by sharing them, you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifold methods, fluid dynamics, reacting flows, and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
 
