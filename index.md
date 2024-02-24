@@ -63,6 +63,9 @@ img {
   <a href="https://kamilazdybal.academia.edu/">
     <img src="https://img.shields.io/badge/academia.edu-darkgrey?style=for-the-badge&logo=academia&logoColor=black" alt="Academia.edu Badge" style="width:165px; border:0px" height=40/>
   </a>
+  <a href="https://www.buymeacoffee.com/kamilazdybal">
+    <img src="https://img.shields.io/badge/buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="buymeacoffee Badge"/>
+  </a>
 </div>
 
 You can contact me at: **`kamilazdybal at gmail dot com`**
@@ -73,11 +76,9 @@ You can contact me at: **`kamilazdybal at gmail dot com`**
 
 I'm a postdoctoral researcher in the Computational Engineering lab at Empa 🇨🇭. In my research, I combine machine learning and data-driven modeling with fluid dynamics. I develop tools and algorithms that help **understand high-dimensional datasets** and **model high-dimensional systems** with computational efficiency.
 
-This website is a collection of tutorials, articles, coding projects, and study notes that are the product of most of my passions that I have for life, the universe, and everything else. Many of the materials gathered here are related to my research work, and I have hopes that by sharing them, you might find pursuing science fascinating! Some of my research interests (which typically spice the materials you will find here) are: dimensionality reduction, reduced-order modeling, low-dimensional manifold methods, fluid dynamics, reacting flows, and multicomponent mass transport. I have a dream that the PDFs will now enrich your journey through learning and experimenting!
+This website is a collection of tutorials, articles, coding projects, and study notes that are the product of most of my passions that I have for life, the universe, and everything else. Many of the materials gathered here are related to my research work, and I have hopes that by sharing them, you might find pursuing science fascinating!
 
 When it comes to learning, I believe in the quote of Einstein: *You do not really understand something unless you can explain it to your grandmother*. My aim is to implement that level of understanding into the documents I write (although many times I will assume certain prerequisites that your grandmother should have!). Of course, if you wish to profit from the materials presented here, you will need to incorporate them into your journey. I have hopes that you will find doing science fascinating, rewarding, and inspiring!
-
-If you like these materials and you'd like to support me, you can [**buy me a coffee**](https://www.buymeacoffee.com/kamilazdybal)! 🚀
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
 
