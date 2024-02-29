@@ -13,10 +13,12 @@ categories: jekyll update
 
 # Learn the scale: Custom data scaling layers in Keras
 
+## Custom scaling layer
+
 Here's an example of how to construct the following neural architecture in Keras:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/centering-scaling-layer.png" width="700">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/keras-scaling-layer.png" width="700">
 </p>
 
 ```python
@@ -38,7 +40,7 @@ tf.keras.utils.set_random_seed(random_seed)
 kernel_initializer = tf.keras.initializers.GlorotUniform(seed=random_seed)
 ```
 
-## Custom scaling layer
+The custom scaling layer inherits after the general Keras `Layer`:
 
 ```python
 class ScalingLayer(tf.keras.layers.Layer):
@@ -94,6 +96,14 @@ _________________________________________________________________
 ```
 
 ## Custom centering-scaling layer
+
+Here's an example of how to construct the following neural architecture in Keras:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/keras-centering-scaling-layer.png" width="700">
+</p>
+
+The custom centering-scaling layer inherits after the general Keras `Layer`:
 
 ```python
 class CenteringScalingLayer(tf.keras.layers.Layer):
