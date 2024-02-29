@@ -16,7 +16,7 @@ categories: jekyll update
 Here's an example of how to construct the following neural architecture in Keras:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/centering-scaling-layer.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/centering-scaling-layer.png" width="700">
 </p>
 
 ```python
@@ -76,16 +76,16 @@ _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
  input_1 (InputLayer)        [(None, 10)]              0         
-                                                                 
+
  scaling_layer (ScalingLaye  (None, 10)                10        
  r)                                                              
-                                                                 
+
  dense (Dense)               (None, 10)                110       
-                                                                 
+
  dense_1 (Dense)             (None, 10)                110       
-                                                                 
+
  dense_2 (Dense)             (None, 10)                110       
-                                                                 
+
 =================================================================
 Total params: 340 (1.33 KB)
 Trainable params: 340 (1.33 KB)
@@ -132,16 +132,16 @@ _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
  input_2 (InputLayer)        [(None, 10)]              0         
-                                                                 
+
  centering_scaling_layer (C  (None, 10)                20        
  enteringScalingLayer)                                           
-                                                                 
+
  dense_3 (Dense)             (None, 10)                110       
-                                                                 
+
  dense_4 (Dense)             (None, 10)                110       
-                                                                 
+
  dense_5 (Dense)             (None, 10)                110       
-                                                                 
+
 =================================================================
 Total params: 350 (1.37 KB)
 Trainable params: 350 (1.37 KB)
