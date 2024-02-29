@@ -38,7 +38,7 @@ tf.keras.utils.set_random_seed(random_seed)
 kernel_initializer = tf.keras.initializers.GlorotUniform(seed=random_seed)
 ```
 
-### Custom scaling layer
+## Custom scaling layer
 
 ```python
 class ScalingLayer(tf.keras.layers.Layer):
@@ -93,7 +93,7 @@ Non-trainable params: 0 (0.00 Byte)
 _________________________________________________________________
 ```
 
-### Custom centering-scaling layer
+## Custom centering-scaling layer
 
 ```python
 class CenteringScalingLayer(tf.keras.layers.Layer):
