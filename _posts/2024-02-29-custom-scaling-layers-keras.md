@@ -49,7 +49,8 @@ class ScalingLayer(tf.keras.layers.Layer):
         super().__init__()
 
     def build(self, input_shape):
-        self.scaling_factors = self.add_weight(shape=(int(input_shape[-1]),), initializer=kernel_initializer)
+        self.scaling_factors = self.add_weight(shape=(int(input_shape[-1]),),
+                                               initializer=kernel_initializer)
 
     def call(self, inputs):
         return tf.multiply(inputs, self.scaling_factors)
@@ -112,8 +113,12 @@ class CenteringScalingLayer(tf.keras.layers.Layer):
         super().__init__()
 
     def build(self, input_shape):
-        self.scaling_factors = self.add_weight(shape=(int(input_shape[-1]),), initializer=kernel_initializer)
-        self.centering_factors = self.add_weight(shape=(int(input_shape[-1]),), initializer='zeros')
+        
+        self.scaling_factors = self.add_weight(shape=(int(input_shape[-1]),),
+                                               initializer=kernel_initializer)
+        
+        self.centering_factors = self.add_weight(shape=(int(input_shape[-1]),),
+                                                 initializer='zeros')
 
     def call(self, inputs):
         return tf.multiply(inputs, self.scaling_factors) + self.centering_factors
