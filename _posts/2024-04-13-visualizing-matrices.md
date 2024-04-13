@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Visualizing matrices"
-date:   2024-04-13 10:00:00 +0100
+date:   2024-04-12 10:00:00 +0100
 categories: jekyll update
 ---
 
