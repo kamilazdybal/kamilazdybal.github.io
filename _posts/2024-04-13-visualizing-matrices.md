@@ -34,7 +34,7 @@ the dot products are computed between the rows of <span class="math display">$$\
 of <span class="math display">$$\mathbf{B}$$</span>:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-A-times-B.png" width="700">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-A-times-B.png" width="750">
 </p>
 
 The remaining dimensions, <span class="math display">$$p$$</span> and <span class="math display">$$r$$</span>, are "free",
@@ -74,10 +74,10 @@ and <span class="math display">$$\mathbf{b} \in \mathbb{R}^{p}$$</span> and crea
 
 <span class="math display">$$u = \mathbf{a} \cdot \mathbf{b}^{\top}$$</span>
 
-This multiplication of vectors results in a single value - a scalar:
+This multiplication of vectors results in a single value (a scalar), <span class="math display">$$u$$</span>:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-a-times-bT.png" width="800">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-a-times-bT.png" width="750">
 </p>
 
 Note that from the picture above it becomes clear that we couldn't multiply 
@@ -96,11 +96,12 @@ simply because it's still the interior dimension of two multiplied vectors that 
 dimension is equal to 1! The result of such multiplication of two vectors is an entire matrix of shape
 <span class="math display">$$\mathbf{U} \in \mathbb{R}^{p \times q}$$</span>:
 
-<p align="center">visualizing-matrices-aT-times-b.png
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-aT-times-b.png" width="800">
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-aT-times-b.png" width="750">
 </p>
 
-
+Similarly to the matrix-matrix multiplication examples, <span class="math display">$$p$$</span> and <span class="math display">$$s$$</span> are "free dimensions".
+They can be anything and they dictate the dimensions of the resulting matrix.
 
 
 
