@@ -18,7 +18,8 @@ categories: jekyll update
 
 Ever since I started studying data science, I got into a habit of visualizing matrices, 
 either on paper or in my head. Visualizing the shapes of matrices that take part in an algebraic expression 
-is a really neat way to debug your operations on matrices! In this note, I show you a couple of examples!
+is a really neat way to debug your operations on matrices! This is handy when working with Numpy or Matlab, 
+when reading literature and when writing papers. In this note, I show you a couple of examples!
 
 ## Multiplying two matrices
 
@@ -37,9 +38,9 @@ of <span class="math display">$$\mathbf{B}$$</span>:
 </p>
 
 The remaining dimensions, <span class="math display">$$p$$</span> and <span class="math display">$$r$$</span>, are "free",
-in a sense that they can be anything and they dictate the dimensions on the resulting matrix, <span class="math display">$$\mathbf{U}$$</span>.
+in a sense that they can be anything and they dictate the dimensions of the resulting matrix, <span class="math display">$$\mathbf{U}$$</span>.
 
-So finally, <span class="math display">$$\mathbf{U} \in \mathbb{R}^{p \times r}$$</span>.
+So in this example <span class="math display">$$\mathbf{U} \in \mathbb{R}^{p \times r}$$</span>.
 
 ## Multiplying three or more matrices
 
@@ -49,7 +50,7 @@ Let's take <span class="math display">$$\mathbf{A} \in \mathbb{R}^{p \times q}$$
 <span class="math display">$$\mathbf{B} \in \mathbb{R}^{q \times r}$$</span> and 
 <span class="math display">$$\mathbf{C} \in \mathbb{R}^{r \times s}$$</span>. The matrix multiplication is as follows:
 
-<span class="math display">$$\mathbf{U} = \mathbf{C} \cdot \mathbf{B} \cdot \mathbf{A}$$</span>
+<span class="math display">$$\mathbf{U} = \mathbf{A} \cdot \mathbf{B} \cdot \mathbf{C}$$</span>
 
 Now consider your matrix multiplication equation from right to left and draw it from top to bottom, stacking the consecutive matrices: 
 
@@ -58,4 +59,5 @@ Now consider your matrix multiplication equation from right to left and draw it 
 </p>
 
 Here, <span class="math display">$$p$$</span> and <span class="math display">$$s$$</span> are "free dimensions", _i.e._, they can be anything
-and that anything dictates the dimensions of the resulting matrix -- <span class="math display">$$\mathbf{U} \in \mathbb{R}^{p \times s}$$</span>.
+and that anything dictates the dimensions of the resulting matrix. 
+In this example <span class="math display">$$\mathbf{U} \in \mathbb{R}^{p \times s}$$</span>.
