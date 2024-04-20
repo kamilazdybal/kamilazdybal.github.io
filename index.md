@@ -108,8 +108,6 @@ Check out my invited lecture on machine learning and artificial neural networks 
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=IGEWE81FWMA" target="_blank"> 2024 Lecture</a></h4>
-  </div>
-  <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=wPL2l1K6KPM" target="_blank"> 2023 Lecture</a></h4>
   </div>
 </div>
