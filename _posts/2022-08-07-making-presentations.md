@@ -49,7 +49,7 @@ reads more naturally than:
 
 ## Reduce or, ideally, remove equations
 
-As with text, the same goes with equations. For every equation that you decide to put on your slide, ask yourself: What story do I plan to convey with this equation? Will I have time to explain the equation and all its terms? And if not, there's no reason to include the equation! Equations that pop up on a slide for 30 seconds that you never elaborate on are just distractions. Chances are that your audience, instead of listening to what you have to say, will think: Why did they include that equation? What do they want me to see in that equation? Will I miss something important if I don't understand this equation?
+As with text, the same goes with equations. For every equation that you decide to put on your slide, ask yourself: What story do I plan to convey with this equation? Will I have time to explain the equation and all its terms? And if not, there's no reason to include the equation! Equations that pop up on a slide for 30 seconds (or worse, 2 seconds!) that you never elaborate on are just distractions. Chances are that your audience, instead of listening to what you have to say, will think: Why did they include that equation? What do they want me to see in that equation? Will I miss something important if I don't understand this equation?
 
 Sometimes, you might decide that adding an equation is worth it, and that's alright. But be sure to spend a reasonable amount of time elaborating on the equation during your talk. For example, if I decided to include an equation that describes our novel metric, instead of just throwing the equation at the audience like this:
 
