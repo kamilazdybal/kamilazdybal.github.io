@@ -96,6 +96,23 @@ in Vancouver, Canada, 2022.</sup>
 </ul>
 -----------------------
 
+<ul id="literature-talk"></ul>
+
+# Grad school advice: Finding, reading & using literature as a Ph.D. student
+
+How much effort should you dedicate to finding, reading, and using scientific literature throughout your Ph.D.?
+Check out my talk on staying on top of literature as a Ph.D. student! 
+My goal was to share with you the tips that worked for me in my Ph.D. journey.
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/literature-talk.png" alt="literature-talk" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://youtu.be/qum8UQoP2kI" target="_blank"> Talk</a></h4>
+  </div>
+</div>
+
 <ul id="ML-lecture"></ul>
 
 # Introduction to machine learning and artificial neural networks
