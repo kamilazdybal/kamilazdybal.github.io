@@ -96,6 +96,24 @@ in Vancouver, Canada, 2022.</sup>
 </ul>
 -----------------------
 
+<ul id="t-SNE"></ul>
+
+# The beauty and pitfalls of t-SNE
+
+Check out my recent lecture on t-SNE, a manifold learning method used for data visualization!
+Part 1 introduces t-SNE and shows applications to biomedical data. Part 2 connects with my research on manifold quality.
+I talk about the strengths of t-SNE and about the things to watch out for when creating t-SNE embeddings.
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/t-SNE-talk.png" alt="t-SNE-talk" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://youtu.be/tfk6Jo0pUQ8" target="_blank"> Part 1</a></h4>
+<h4><span class="fa fa-video-camera"></span><a href="https://youtu.be/8fqk-3Z7J4Y" target="_blank"> Part 2</a></h4>
+  </div>
+</div>
+
 <ul id="literature-talk"></ul>
 
 # Grad school advice: Finding, reading & using literature as a Ph.D. student
