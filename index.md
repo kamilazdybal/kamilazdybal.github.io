@@ -78,8 +78,8 @@ I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www
 where I combine reinforcement learning and data-driven modeling with experimental fluid dynamics.
 Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
 working on reduced-order modeling of reacting flows.
-I develop tools and algorithms that help **understand high-dimensional datasets** and 
-**model high-dimensional systems** with computational efficiency. I am passionate about science outreach, academic writing, 
+My research interests are in **understanding high-dimensional datasets** and 
+**modeling high-dimensional systems** with computational efficiency. I am passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 Check out the recent [interview with me](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/kamila-zdybal/)!
 
