@@ -30,8 +30,16 @@ but also it might help someone else to follow the same study resources and get a
 
 - I've read Chapter 1 & finished its exercises.
 - I've watched [this lecture](https://youtu.be/UwTQdOop-nU).
-- I went back to exercises of Chapter 1 after some things became clearer to me.
-- I'm in Chapter 2 ...
+- I went back to exercises of Chapter 1 after some things became clearer to me:
+
+> Chapter 1 did not make it clear that:
+> (1) There seems to be an assumption that there always exists a "non-action" which is "do nothing". It seems to me that this should have been noted as part of rule 1.5!
+> (2) If a sequence of actions lead to the state we have already visited with a generator, or with a different
+> sequence of actions, then we do not count that action -- In other words, we only count those actions that lead
+> to unique states. A consequence of this is that there can be finite set of actions. I initially thought that the
+> set of actions will always be infinite, because you can always add one more generator to a sequence.
+ 
+- I've read Chapter 2 & I'm working on its exercises.
 
 #### Week 2 (20 May - 26 May, 2024)
 
