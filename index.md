@@ -78,10 +78,10 @@ I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www
 where I combine reinforcement learning and data-driven modeling with experimental fluid dynamics.
 Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
 working on reduced-order modeling of reacting flows.
-My research interests are in **understanding high-dimensional datasets** and 
-**modeling high-dimensional systems** with computational efficiency. I am passionate about science outreach, academic writing, 
+
+My research interests revolve around using **representation learning** to **understand high-dimensional datasets** and 
+**model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
-Check out the recent [interview with me](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/kamila-zdybal/)!
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
 
@@ -250,8 +250,8 @@ My goal is to provide you with extra tools and ideas that you haven't thought ab
 
 # My Ph.D. dissertation
 
-On 17 April 2023 I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
-My Ph.D. work has recently been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/).
+On 17 April, 2023, I defended my Ph.D. thesis titled "*Reduced-order modeling of turbulent reacting flows using data-driven approaches*"!
+My Ph.D. work has recently been awarded the [**18th ERCOFTAC da Vinci prize**](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/). Check out the recent [interview with me](https://www.ercoftac.org/about/ercoftac-da-vinci-competition/18th-da-vinci-2023/kamila-zdybal/)!
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/defense-presentation.jpg?raw=true" alt="about-me" style="width:900px">
 
