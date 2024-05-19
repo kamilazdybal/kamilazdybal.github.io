@@ -33,7 +33,6 @@ but also it might help someone else to follow the same study resources and get a
 - I went back to exercises of Chapter 1 after some things became clearer to me.
 - I'm in Chapter 2 ...
 
-
 #### Week 2 (20 May - 26 May, 2024)
 
 
