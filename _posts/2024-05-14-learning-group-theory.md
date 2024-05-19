@@ -22,11 +22,13 @@ One of my postdoc study goals is to learn the basics of group theory (GT) to the
 This note is a record of my study that I put together mostly to hold myself accountable and monitor my progress, 
 but also it might help someone else to follow the same study resources and get a sense of how much time can it take.
 
-## Step 1: Reading [*Visual group theory* by Nathan Carter](https://github.com/liwei766/visual-group-theory/blob/master/visual%20group%20theory.pdf)
+### Step 1: Reading [*Visual group theory* by Nathan Carter](https://github.com/liwei766/visual-group-theory/blob/master/visual%20group%20theory.pdf)
 
-### Week 1 (13 May - 19 May, 2024)
+#### Week 1 (13 May - 19 May, 2024)
 
 - I've read Chapter 1 & finished its exercises.
+- I've watched [this lecture](https://youtu.be/UwTQdOop-nU).
+- I went back to exercises of Chapter 1 after some things became clearer to me.
 - I'm in Chapter 2 ...
 
 
