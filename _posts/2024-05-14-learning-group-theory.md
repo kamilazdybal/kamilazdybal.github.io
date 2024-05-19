@@ -24,11 +24,16 @@ but also it might help someone else to follow the same study resources and get a
 
 ### Step 1: Reading [*Visual group theory* by Nathan Carter](https://github.com/liwei766/visual-group-theory/blob/master/visual%20group%20theory.pdf)
 
+### Step 2: Watching [Visual group theory](https://www.youtube.com/playlist?list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv)
+
 #### Week 1 (13 May - 19 May, 2024)
 
 - I've read Chapter 1 & finished its exercises.
 - I've watched [this lecture](https://youtu.be/UwTQdOop-nU).
 - I went back to exercises of Chapter 1 after some things became clearer to me.
 - I'm in Chapter 2 ...
+
+
+#### Week 2 (20 May - 26 May, 2024)
 
 
