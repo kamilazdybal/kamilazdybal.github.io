@@ -24,6 +24,11 @@ but also it might help someone else to follow the same study resources and get a
 
 ### Step 1: Reading [*Visual group theory* by Nathan Carter](https://github.com/liwei766/visual-group-theory/blob/master/visual%20group%20theory.pdf)
 
+My recommendations to someone reading this textbook:
+
+- This textbook leaves out formalism, and it's helpful to have another resource to fill-in the gaps. I find certain sections lacking rigor and it makes understanding what "X" really is more difficult. It's good to have another rigorous math textbook on the side.
+- You absolutely should do all the exercises at the end of each chapter! They are actually pretty quick to do and also fun to think about. Exercises are referred to later in the text, so it helps to have them done before moving forward.
+
 ### Step 2: Watching [Visual group theory](https://www.youtube.com/playlist?list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv)
 
 #### Week 1 (13 May - 19 May, 2024)
@@ -41,7 +46,13 @@ but also it might help someone else to follow the same study resources and get a
  
 - I've read Chapter 2 & I'm working on its exercises.
 - I've watched [this lecture](https://youtu.be/vzEObOzsSKY).
-- 
+
 #### Week 2 (20 May - 26 May, 2024)
+
+- I've finished exercises in Chapter 2.
+- I'm reading Chapter 3...
+- I started thinking if group theory can be useful for representation learning and I'm reading [this publication](https://proceedings.mlr.press/v206/marchetti23b.html).
+
+
 
 
