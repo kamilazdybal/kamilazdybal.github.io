@@ -100,7 +100,7 @@ dimension is equal to 1! The result of such multiplication of two vectors is an 
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/visualizing-matrices-aT-times-b.png" width="750">
 </p>
 
-Similarly to the matrix-matrix multiplication examples, <span class="math display">$$p$$</span> and <span class="math display">$$s$$</span> are "free dimensions".
+Similarly to the matrix-matrix multiplication examples, <span class="math display">$$p$$</span> and <span class="math display">$$q$$</span> are "free dimensions".
 They can be anything and they dictate the dimensions of the resulting matrix.
 
 
