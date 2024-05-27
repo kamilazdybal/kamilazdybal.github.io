@@ -85,7 +85,7 @@ creating open-source educational content, and developing open-source scientific 
 
 **Would you like to support my efforts in creating open-source science and education?** 
 You can now make a small donation of €3 on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal) or become a member for €3/month.
-My supporters gain access to extra materials on being a researcher, making effective graphics, academic writing, and being a life-long learner!
+As a supporter, you gain access to extra materials on being a researcher, making effective graphics, academic writing, being a life-long learner, and the like!
 Many thanks for your support! 🚀
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
