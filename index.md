@@ -83,7 +83,10 @@ My research interests revolve around using **representation learning** to **unde
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
-**Would you like to support my efforts in creating open-source science and education?** You can now become a member on [my buymeacoffee page](https://buymeacoffee.com/kamilazdybal) and gain access to exclusive posts about my scientific journey, my process of making effective visuals, and plans for future videos. Many thanks for your support!
+**Would you like to support my efforts in creating open-source science and education?** 
+You can now make a small donation of €3 on [https://buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal) or become a member for €3/month.
+My supporters gain access to extra materials on being a researcher, making effective graphics, academic writing, and being a life-long learner!
+Many thanks for your support! 🚀
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
 
