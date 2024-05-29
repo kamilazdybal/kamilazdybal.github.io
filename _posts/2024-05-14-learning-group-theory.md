@@ -20,7 +20,9 @@ One of my postdoc study goals is to learn the basics of group theory (GT) to the
 3. Be able to fully understand [G-CNN lectures](https://www.youtube.com/playlist?list=PL8FnQMH2k7jzPrxqdYufoiYVHim8PyZWd) by Erik Bekkers.
 
 This note is a record of my study that I put together mostly to hold myself accountable and monitor my progress, 
-but also it might help someone else to follow the same study resources and get a sense of how much time can it take.
+but also it might help someone else to follow the same study resources and get a sense of how much time it can take.
+
+## Resources
 
 ### Step 1: Reading [*Visual group theory* by Nathan Carter](https://github.com/liwei766/visual-group-theory/blob/master/visual%20group%20theory.pdf)
 
@@ -30,6 +32,8 @@ My recommendations to someone reading this textbook:
 - You absolutely should do all the exercises at the end of each chapter! They are actually pretty quick to do and also fun to think about. Exercises are referred to later in the text, so it helps to have them done before moving forward.
 
 ### Step 2: Watching [Visual group theory](https://www.youtube.com/playlist?list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv)
+
+## Week-by-week self-study
 
 #### Week 1 (13 May - 19 May, 2024)
 
@@ -52,6 +56,8 @@ My recommendations to someone reading this textbook:
 - I've finished exercises in Chapter 2.
 - I'm reading Chapter 3...
 - I started thinking if group theory can be useful for representation learning and I'm reading [this publication](https://proceedings.mlr.press/v206/marchetti23b.html).
+
+#### Week 3 (27 May - 02 June, 2024)
 
 
 
