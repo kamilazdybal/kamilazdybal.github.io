@@ -116,6 +116,24 @@ I write (although many times I will assume certain prerequisites that your grand
 Of course, if you wish to profit from the materials presented here, you will need to incorporate them into your journey. 
 I have hopes that you will find doing science fascinating, rewarding, and inspiring!
 
+<ul id="Python-for-ac"></ul>
+
+# Python for academics 🐍 → 🎓
+
+I've launched a series of YouTube tutorials called "*Python for academics*" where I teach you how to automate the everyday academic life with Python! The first 20 videos are here!
+
+My goal is to provide you with extra tools and ideas that you haven't thought about using or implementing before. The best use of these tutorials, as I see it, is that you take those tools and ideas and start building your own Python toolbox that can help you in your everyday academic life. My hope is that you'll find pieces of useful advice that can help you automate your work, your own way! The audience I think will benefit a lot from these tutorials are Ph.D. students, especially at the beginning of their Ph.D. I believe that the earlier you learn how to automate dull tasks the better! My motivation is to teach you things that I wish I had learned early in my Ph.D. But, of course, academics at all stages of their careers are welcome to join along!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/python-for-academics.png" alt="PyforAc" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KEuRQfwFeI_RH3EZr87nslf" target="_blank"> Tutorials</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/python-for-academics" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="t-SNE"></ul>
 
 # The beauty and pitfalls of t-SNE
@@ -230,24 +248,6 @@ PCAfold is our open-source Python library for handling high-dimensional datasets
   </div>
   <div class="column">
     <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KFYchpPZKv2xJHD8q1Wjr-i" target="_blank"> Tutorials</a></h4>
-  </div>
-</div>
-
-<ul id="Python-for-ac"></ul>
-
-# Python for academics
-
-I'm launching a series of YouTube tutorials called "*Python for academics*" where I teach how to automate the everyday academic life with Python!
-
-My goal is to provide you with extra tools and ideas that you haven't thought about using or implementing before. The best use of these tutorials, as I see it, is that you take those tools and ideas and start building your own Python toolbox that can help you in your everyday academic life. My hope is that you'll find pieces of useful advice that can help you automate your work, your own way! The audience I think will benefit a lot from these tutorials are Ph.D. students, especially at the beginning of their Ph.D. I believe that the earlier you learn how to automate dull tasks the better! My motivation is to teach you things that I wish I had learned early in my Ph.D. But, of course, academics at all stages of their careers are welcome to join along!
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/python-for-academics.png" alt="PyforAc" style="width:150px"></a>
-  </div>
-  <div class="column">
-    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KEuRQfwFeI_RH3EZr87nslf" target="_blank"> Tutorials</a></h4>
-    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/python-for-academics" target="_blank"> Code</a></h4>
   </div>
 </div>
 
