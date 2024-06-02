@@ -59,6 +59,14 @@ My recommendations to someone reading this textbook:
 
 #### Week 3 (27 May - 02 June, 2024)
 
+- 📕 I've finished reading Chapter 3 & I'm working on its exercises.
+- I've watched [this video by 3Blue1Brown](https://www.youtube.com/watch?v=mH0oCDa74tE). This video indeed mentions that "do-nothing" is always an admissible action!
 
+> At this point, I'm still unsure what the textbook means by an object "occupying the same space" after group action.
+> I initially thought that it means that actions that distort the inherent shape of an object are not allowed (e.g., folding the corner of the rectangle puzzle).
+> But after reading Chapter 3, I think it's actually even more restrictive: the object literally has to occupy the same space if we were to attach an inherent coordinates to the initial object.
+> So, for example, 90 degree rotation of a rectangle puzzle is not allowed. I'm curious what the formalism of this constraint looks like!
+> I wonder if group theory introduces a notion of a coordinate system to define the space initially occupied by an object!
+> Let's keep reading and we'll see :-)
 
 
