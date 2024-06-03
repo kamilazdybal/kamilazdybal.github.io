@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Bellman equation"
+title:  "Solving the Bellman equation with a numerical solver"
 date:   2024-06-02 10:00:00 +0100
 categories: jekyll update
 ---
@@ -28,13 +28,14 @@ $$</span>
 
 The goal of the optimal policy is to maximize the expected value of the total pay-off.
 
-We'll denote the expected total pay-off under policy $\pi$ as $v^{\pi}(s)$. The agent starts in state $s$ and executes the policy $\pi$:
+We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>. 
+The agent starts in state <span class="math display">$$s$$</span> and executes the policy <span class="math display">$$\pi$$</span>:
 
-<span class="math display">$$ 
+<span class="math display">$$
 v^{\pi}(s) = R(s) + \gamma \sum_{s'} P v^{\pi} (s')
 $$</span>
 
-where $P$ is the transition probability and $s'$ is the future state.
+where <span class="math display">$$P$$</span> is the transition probability and <span class="math display">$$s'$$</span> is the future state.
 
 ## The environment
 
@@ -79,9 +80,12 @@ v^{\pi}((3,2)) = R((3, 2))
 \end{cases}
 $$</span>
 
-Of all the immediate rewards present in this set of equations, only $R((3,2)) \neq 0$. We know that $R((3,2)) = 1$.
+Of all the immediate rewards present in this set of equations, only <span class="math display">$$R((3,2)) \neq 0$$</span>. 
+We know that <span class="math display">$$R((3,2)) = 1$$</span>.
 
-This system can easily be solved in your head starting from $v^{\pi}((3,2)) = 1$ and successively computing the remaining values. This leads to:
+This system can easily be solved in your head starting from <span class="math display">$$v^{\pi}((3,2)) = 1$$</span> 
+and successively computing the remaining values. 
+Assuming <span class="math display">$$\gamma = 0.9$$</span>, this leads to:
 
 ```
  _______ _______ _______
