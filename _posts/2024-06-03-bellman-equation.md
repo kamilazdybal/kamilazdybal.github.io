@@ -29,13 +29,13 @@ $$</span>
 The goal of the optimal policy is to maximize the expected value of the total pay-off.
 
 We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>. 
-The agent starts in state <span class="math display">$$s$$</span> and executes the policy <span class="math display">$$\pi$$</span>:
+The agent starts in a state <span class="math display">$$s$$</span> and executes a policy <span class="math display">$$\pi$$</span>:
 
 <span class="math display">$$
 v^{\pi}(s) = R(s) + \gamma \sum_{s'} P v^{\pi} (s')
 $$</span>
 
-where <span class="math display">$$P$$</span> is the transition probability and <span class="math display">$$s'$$</span> is the future state.
+where <span class="math display">$$\gamma$$</span> is the discount factor, <span class="math display">$$P$$</span> is the transition probability, and <span class="math display">$$s'$$</span> is the future state.
 
 ## The environment
 
@@ -65,7 +65,7 @@ with a policy <span class="math display">$$\pi$$</span>:
 
 and with all transition probabilities equal to 1. The +1 tile is a terminal state at which the agent receives the +1 reward.
 
-## The system of linear Bellman equations for this environment
+## The system of Bellman equations for this environment
 
 In order to compute the value function for this policy, we solve the following system of six linear equations:
 
@@ -80,12 +80,12 @@ v^{\pi}((3,2)) = R((3, 2))
 \end{cases}
 $$</span>
 
-Of all the immediate rewards present in this set of equations, only <span class="math display">$$R((3,2)) \neq 0$$</span>. 
+Of all the immediate rewards present in this set of equations only <span class="math display">$$R((3,2)) \neq 0$$</span>. 
 We know that <span class="math display">$$R((3,2)) = 1$$</span>.
 
 This system can easily be solved in your head starting from <span class="math display">$$v^{\pi}((3,2)) = 1$$</span> 
 and successively computing the remaining values. 
-Assuming <span class="math display">$$\gamma = 0.9$$</span>, this leads to:
+Assuming <span class="math display">$$\gamma = 0.9$$</span>, this leads to the following value function for each state:
 
 ```
  _______ _______ _______
@@ -126,7 +126,7 @@ v_{32}
 \end{bmatrix}
 $$</span>
 
-and let's solve it with ``np.linalg.solve()``.
+and let's solve it with ``numpy.linalg.solve()``.
 
 ## Python code
 
