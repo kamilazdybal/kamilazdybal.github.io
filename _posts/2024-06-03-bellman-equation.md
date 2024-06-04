@@ -43,6 +43,10 @@ The summation loops through all possible future states that are achievable direc
 This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
 because only a handful of states are immediately adjacent to any current state <span class="math display">$$s$$</span>.
 
+<span class="math display">$$ v^{\pi}(s)$$</span> is known as the value function. 
+You can think of it as a value of being at state <span class="math display">$$s$$</span> under the policy <span class="math display">$$\pi$$</span>.
+For example, there is a higher value of states that are near the states that reward the agent with a positive reward.
+
 ## The environment
 
 Consider a simple environment with only 6 states:
@@ -77,7 +81,7 @@ The agent's goal is to reach the +1 tile, irrespective of the starting position:
 ```
  _______ _______ _______
 |       |       |       |
-|   ____|_______|___✨  |
+|    ___|_______|___✨  |
 |___|___|_______|_______|
 |   |   |       |       |
 |   🤖  |       |       |
