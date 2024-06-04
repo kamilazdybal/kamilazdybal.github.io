@@ -39,6 +39,7 @@ v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma \sum_{s'} P \cdot v^{\pi} (s') \big)
 $$</span>
 
 where <span class="math display">$$P$$</span> is the transition probability and <span class="math display">$$s'$$</span> is the immediate future state.
+This is known as the Bellman equation.
 The summation loops through all possible future states that are achievable directly from the current state <span class="math display">$$s$$</span>.
 This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
 because only a handful of states are immediately adjacent to any current state <span class="math display">$$s$$</span>.
