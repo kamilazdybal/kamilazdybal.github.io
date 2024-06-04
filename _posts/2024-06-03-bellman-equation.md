@@ -16,7 +16,8 @@ categories: jekyll update
 
 # Solving the Bellman equation with a numerical solver
 
-This is a simple example of solving the Bellman equation with a numerical solver for a very simple reinforcement learning environment.
+This is a simple example of solving the Bellman equation with a numerical solver for a very small reinforcement learning environment.
+For such small environments it is possible to obtain the optimal policy without much effort. So let's do that!
 
 ## The Bellman equation
 
@@ -70,15 +71,16 @@ with a policy <span class="math display">$$\pi$$</span>:
 
 and with all transition probabilities equal to 1. The +1 tile is a terminal state at which the agent receives the +1 reward.
 
-The agent travels the environment according to the policy:
+The agent travels the environment according to the policy starting from some initial position. 
+The agent's goal is to reach the +1 tile, irrespective of the starting position:
 
 ```
  _______ _______ _______
 |       |       |       |
-|  ->   |  ->   |  +1   |
-|_______|_______|_______|
-|       |       |       |
-|  ^ 🤖 |  ^    |  <-   |
+|   ____|_______|___✨  |
+|___|___|_______|_______|
+|   |   |       |       |
+|   🤖  |       |       |
 |_______|_______|_______|
 ```
 
