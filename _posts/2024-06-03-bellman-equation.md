@@ -26,16 +26,21 @@ The total pay-off is a sum of discounted rewards:
 R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots 
 $$</span>
 
+where <span class="math display">$$R(s)$$</span> is the reward the agent receives in state <span class="math display">$$s$$</span> and <span class="math display">$$\gamma \in \langle 0,1)$$</span> is the discount factor.
+
 The goal of the optimal policy is to maximize the expected value of the total pay-off.
 
 We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>. 
 The agent starts in a state <span class="math display">$$s$$</span> and executes a policy <span class="math display">$$\pi$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s) = R(s) + \gamma \sum_{s'} P v^{\pi} (s')
+v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma \sum_{s'} P \cdot v^{\pi} (s') \big)
 $$</span>
 
-where <span class="math display">$$\gamma$$</span> is the discount factor, <span class="math display">$$P$$</span> is the transition probability, and <span class="math display">$$s'$$</span> is the future state.
+where <span class="math display">$$P$$</span> is the transition probability and <span class="math display">$$s'$$</span> is the immediate future state.
+The summation loops through all possible future states that are achievable directly from the current state <span class="math display">$$s$$</span>.
+This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
+because only a handful of states are immediately adjacent to any current state <span class="math display">$$s$$</span>.
 
 ## The environment
 
@@ -64,6 +69,18 @@ with a policy <span class="math display">$$\pi$$</span>:
 ```
 
 and with all transition probabilities equal to 1. The +1 tile is a terminal state at which the agent receives the +1 reward.
+
+The agent travels the environment according to the policy:
+
+```
+ _______ _______ _______
+|       |       |       |
+|  ->   |  ->   |  +1   |
+|_______|_______|_______|
+|       |       |       |
+|  ^ 🤖 |  ^    |  <-   |
+|_______|_______|_______|
+```
 
 ## The system of Bellman equations for this environment
 
