@@ -17,7 +17,7 @@ categories: jekyll update
 # Solving the Bellman equation with a numerical solver
 
 This is a simple example of solving the Bellman equation with a numerical solver for a very small reinforcement learning environment.
-For such small environments it is possible to obtain the optimal policy without much effort. So let's do that!
+For such a small environment, it is possible to obtain the optimal policy without much effort. So let's do that!
 
 ## The Bellman equation
 
@@ -27,7 +27,7 @@ The total pay-off is a sum of discounted rewards:
 R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots 
 $$</span>
 
-where <span class="math display">$$R(s)$$</span> is the reward the agent receives in state <span class="math display">$$s$$</span> and <span class="math display">$$\gamma \in \langle 0,1)$$</span> is the discount factor.
+where <span class="math display">$$R(s)$$</span> is the reward the agent receives in state <span class="math display">$$s$$</span> and <span class="math display">$$\gamma \in \langle 0,1 \rangle$$</span> is the discount factor.
 
 The goal of the optimal policy is to maximize the expected value of the total pay-off.
 
@@ -55,10 +55,10 @@ Consider a simple environment with only 6 states:
 ```
  _______ _______ _______
 |       |       |       |
-| (1,2) | (2,2) | (3,2) |
+| (0,0) | (0,1) | (0,2) |
 |_______|_______|_______|
 |       |       |       |
-| (1,1) | (2,1) | (3,1) |
+| (1,0) | (1,1) | (1,2) |
 |_______|_______|_______|
 ```
 
@@ -74,7 +74,12 @@ with a policy <span class="math display">$$\pi$$</span>:
 |_______|_______|_______|
 ```
 
-and with all transition probabilities equal to 1. The +1 tile is a terminal state at which the agent receives the +1 reward.
+and with all transition probabilities equal to 1. The +1 tile is a terminal state at which the agent receives the +1 reward 
+and no further transition from that state is possible.
+You can already see that this can't be the optimal policy because in <span class="math display">$$s = (1,2)$$</span> it would be
+best to move up, since the terminal state is one hop away in that direction. Instead, the current policy makes the terminal state reachable
+within three hops from <span class="math display">$$s = (1,2)$$</span>. 
+But it also isn't a terribly bad policy -- the terminal state is reachable from every other state within at most three hops.
 
 The agent travels the environment according to the policy starting from some initial position. 
 The agent's goal is to reach the +1 tile, irrespective of the starting position:
@@ -95,19 +100,19 @@ In order to compute the value function for this policy, we solve the following s
 
 <span class="math display">$$
 \begin{cases}
-v^{\pi}((1,1)) = R((1, 1)) + \gamma v^{\pi}((1,2)) \\
-v^{\pi}((2,1)) = R((2, 1)) + \gamma v^{\pi}((2,2)) \\
-v^{\pi}((3,1)) = R((3, 1)) + \gamma v^{\pi}((2,1)) \\
-v^{\pi}((1,2)) = R((1, 2)) + \gamma v^{\pi}((2,2)) \\
-v^{\pi}((2,2)) = R((2, 2)) + \gamma v^{\pi}((3,2)) \\
-v^{\pi}((3,2)) = R((3, 2))
+v^{\pi}((0,0)) = R((0, 0)) + \gamma v^{\pi}((0,1)) \\
+v^{\pi}((0,1)) = R((0, 1)) + \gamma v^{\pi}((0,2)) \\
+v^{\pi}((0,2)) = R((0, 2)) \\
+v^{\pi}((1,0)) = R((1, 0)) + \gamma v^{\pi}((0,0)) \\
+v^{\pi}((1,1)) = R((1, 1)) + \gamma v^{\pi}((0,1)) \\
+v^{\pi}((1,2)) = R((1, 2)) + \gamma v^{\pi}((1,1))
 \end{cases}
 $$</span>
 
-Of all the immediate rewards present in this set of equations only <span class="math display">$$R((3,2)) \neq 0$$</span>. 
-We know that <span class="math display">$$R((3,2)) = 1$$</span>.
+Of all the immediate rewards present in this set of equations only <span class="math display">$$R((0,2)) \neq 0$$</span>. 
+We know that <span class="math display">$$R((0,2)) = +1$$</span>.
 
-This system can easily be solved in your head starting from <span class="math display">$$v^{\pi}((3,2)) = 1$$</span> 
+This system can easily be solved in your head starting from <span class="math display">$$v^{\pi}((0,2)) = 1$$</span> 
 and successively computing the remaining values. 
 Assuming <span class="math display">$$\gamma = 0.9$$</span>, this leads to the following value function for each state:
 
@@ -125,28 +130,28 @@ But let's write out the Bellman equation in a matrix form:
 
 <span class="math display">$$
 \begin{bmatrix}
-1 & 0 & 0 & -\gamma & 0 & 0 \\
-0 & 1 & 0 & 0 & -\gamma & 0 \\
-0 & -\gamma & 1 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & -\gamma & 0 \\
-0 & 0 & 0 & 0 & 1 & -\gamma \\
-0 & 0 & 0 & 0 & 0 & 1
+1 & -\gamma & 0 & 0 & 0 & 0 \\
+0 & 1 & -\gamma & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 \\
+-\gamma & 0 & 0 & 1 & 0 & 0 \\
+0 & -\gamma & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & -\gamma & 1
 \end{bmatrix}
 \begin{bmatrix}
-v_{11} \\
-v_{21} \\
-v_{31} \\
-v_{12} \\
-v_{22} \\
-v_{32}
+v_{0,0} \\
+v_{0,1} \\
+v_{0,2} \\
+v_{1,0} \\
+v_{1,1} \\
+v_{1,2}
 \end{bmatrix} = 
 \begin{bmatrix}
 0 \\
 0 \\
+1 \\
 0 \\
 0 \\
-0 \\
-1
+0
 \end{bmatrix}
 $$</span>
 
@@ -161,11 +166,13 @@ import matplotlib.pyplot as plt
 discount = 0.9
 
 A = np.eye(6,6)
-discounts_idx = [3, 4, 1, 4, 5]
-for i, idx in enumerate(discounts_idx):
-    A[i,idx] = -discount
+A[0,1] = -discount
+A[1,2] = -discount
+A[3,0] = -discount
+A[4,1] = -discount
+A[5,4] = -discount
 
-b = np.array([0,0,0,0,0,1])
+b = np.array([0,0,1,0,0,0])
 
 value_function = np.linalg.solve(A, b)
 value_function = np.reshape(value_function, (2,3))
@@ -183,7 +190,7 @@ plt.savefig('RL-environement-with-value-functions.png', dpi=300, bbox_inches='ti
 This results in the following value function:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/RL-environement-with-value-functions.png" width="300">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/small-RL-environement-with-value-function.pdf" width="300">
 </p>
 
 Just like we've computed manually before!
