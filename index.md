@@ -84,8 +84,10 @@ My research interests revolve around using **representation learning** to **unde
 creating open-source educational content, and developing open-source scientific software.
 
 **Would you like to support my efforts in creating open-source science and education?** 
-You can now make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal) or become a member for €3/month.
-As a supporter, you gain access to extra materials on being a researcher, making effective graphics, academic writing, life-long learning, and the like!
+You can buy me a croissant 🥐 on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!
+As a supporter, you gain access to extra materials on being a researcher, making effective graphics, 
+academic writing, life-long learning, and the like!
+Also, be sure to get your free [Notion cover with fancy manifolds 🌀](https://buymeacoffee.com/kamilazdybal/extras)! 
 Many thanks for your support! 🚀
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
