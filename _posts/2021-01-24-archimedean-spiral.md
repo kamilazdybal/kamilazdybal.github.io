@@ -100,3 +100,5 @@ plt.axis('equal')
 
 plt.savefig('archimedean_spiral_' + str(end) + '_' + str(n_points) + '.png')
 ```
+
+> Yes, this is how the [PCAfold logo](https://pcafold.readthedocs.io/en/latest/index.html) has been created!
