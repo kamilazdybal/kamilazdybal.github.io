@@ -190,7 +190,7 @@ plt.savefig('RL-environement-with-value-functions.png', dpi=300, bbox_inches='ti
 This results in the following value function:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/small-RL-environement-with-value-function.pdf" width="300">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/small-RL-environement-with-value-function.png" width="300">
 </p>
 
 Just like we've computed manually before!
