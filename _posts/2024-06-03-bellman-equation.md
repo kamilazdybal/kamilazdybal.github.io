@@ -69,7 +69,8 @@ because only a handful of states are immediately adjacent to any current state <
 
 <span class="math display">$$ v^{\pi}(s)$$</span> is known as the value function. 
 You can think of it as a value of being at state <span class="math display">$$s$$</span> under the policy <span class="math display">$$\pi$$</span>.
-For example, there is a higher value of states that are near the states that reward the agent with a positive reward.
+For example, there is a higher value of states that are just one hop away from the states that reward the agent with a positive reward,
+compared to states that are a couple of hops away.
 
 ## The environment
 
