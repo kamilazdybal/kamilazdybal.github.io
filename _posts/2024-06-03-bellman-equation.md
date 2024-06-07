@@ -55,7 +55,10 @@ any *next state*, a state immediately following the current state, as <span clas
 v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma v^{\pi} (s') \big)
 $$</span>
 
-The last thing we need to do is to get rid of the expected value. We can do that by summing over all probable immediate future states
+The last thing we need to do is to get rid of the expected value. 
+First of all, the immediate reward for being in state <span class="math display">$$s$$</span> is certain.
+Therefore, its expected value is simply equal to <span class="math display">$$R(s)$$</span>.
+To tackle the second term, we can sum over all probable immediate future states
 where each of them might be entered with its transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>:
 
 <span class="math display">$$
