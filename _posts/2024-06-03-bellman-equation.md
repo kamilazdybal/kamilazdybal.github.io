@@ -45,7 +45,7 @@ But we can do a neat math trick to make it way more tractable!
 We first notice that if we factor out <span class="math display">$$\gamma$$</span>, we get:
 
 <span class="math display">$$
-v^{\pi}(s) = \mathbb{E} \big( R(s_0) + \gamma ( \underbrace{R(s_1) + \gamma R(s_2) + \dots}_{\text{this is $v^{\pi}(s_1)$}} ) \big)
+v^{\pi}(s) = \mathbb{E} \big( R(s_0) + \gamma ( R(s_1) + \gamma R(s_2) + \dots ) \big) = \mathbb{E} \big( R(s_0) \Big) + \gamma ( \underbrace{ \mathbb{E} \big( R(s_1) + \gamma R(s_2) + \dots \big) }_{\text{this is $v^{\pi}(s_1)$}} ) \big)
 $$</span>
 
 To make things more general, we denote any *current state* as <span class="math display">$$s$$</span> and 
