@@ -31,16 +31,39 @@ where <span class="math display">$$R(s)$$</span> is the reward the agent receive
 
 The goal of the optimal policy is to maximize the expected value of the total pay-off.
 
-We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>. 
-The agent starts in a state <span class="math display">$$s$$</span> and executes a policy <span class="math display">$$\pi$$</span>:
+We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma \sum_{s'} P \cdot v^{\pi} (s') \big)
+v^{\pi}(s) = \mathbb{E} \big( R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots \big)
 $$</span>
 
-where <span class="math display">$$P$$</span> is the transition probability and <span class="math display">$$s'$$</span> is the immediate future state.
+The agent starts in a state <span class="math display">$$s$$</span> and executes a policy <span class="math display">$$\pi$$</span>.
+
+The above equation seems like a super tedious equation to compute, because we need to account for all possible future states...
+But we can do a neat math trick to make it way more tractable! 
+
+We first notice that if we factor out <span class="math display">$$\gamma$$</span>, we get:
+
+<span class="math display">$$
+v^{\pi}(s) = \mathbb{E} \big( R(s_0) + \gamma ( \underbrace{R(s_1) + \gamma R(s_2) + \dots}_{\text{this is $$v^{\pi}(s_1)$$}} ) \big)
+$$</span>
+
+To make things more general, we denote any *current state* as <span class="math display">$$s$$</span> and 
+any *next state*, a state immediately following the current state, as <span class="math display">$$s'$$</span>:
+
+<span class="math display">$$
+v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma v^{\pi} (s') \big)
+$$</span>
+
+The last thing we need to do is to get rid of the expected value. We can do that by summing over all probable immediate future states
+where each of them might be entered with its transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>:
+
+<span class="math display">$$
+v^{\pi}(s) = R(s) + \gamma \sum_{s'} P_{s, \pi(s)} \cdot v^{\pi} (s')
+$$</span>
+
 This is known as the Bellman equation.
-The summation loops through all possible future states that are achievable directly from the current state <span class="math display">$$s$$</span>.
+The summation loops through all possible next states, <span class="math display">$$s'$$</span>, that are achievable directly from the current state <span class="math display">$$s$$</span>.
 This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
 because only a handful of states are immediately adjacent to any current state <span class="math display">$$s$$</span>.
 
