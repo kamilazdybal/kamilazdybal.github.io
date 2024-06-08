@@ -53,26 +53,27 @@ We first notice that if we factor out <span class="math display">$$\gamma$$</spa
 v^{\pi}(s_0) = \mathbb{E} \big( R(s_0) \big) + \gamma \Big( \underbrace{ \mathbb{E} \big(  R(s_1) + \gamma R(s_2) + \dots \big) }_{\text{this is $v^{\pi}(s_1)$}} \Big)
 $$</span>
 
-The last thing we need to do is to get rid of the expected value on <span class="math display">$$R(s_0)$$</span>.
+We can get rid of the expected value on <span class="math display">$$R(s_0)$$</span>.
 The immediate reward for being in state <span class="math display">$$s_0$$</span> is certain.
 Therefore, its expected value is simply equal to <span class="math display">$$R(s_0)$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s_0) = R(s_0) + \gamma v^{\pi} (s_1) \big)
+v^{\pi}(s_0) = R(s_0) + \gamma v^{\pi} (s_1)
 $$</span>
 
 To make things more general, we denote any *current state* as <span class="math display">$$s$$</span> and 
-any *next state*, a state immediately following the current state, as <span class="math display">$$s'$$</span>:
+any *next state* -- a state immediately following the current state -- as <span class="math display">$$s'$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s) = R(s) + \gamma v^{\pi} (s') \big)
+v^{\pi}(s) = R(s) + \gamma v^{\pi} (s')
 $$</span>
 
 This makes the equation work for any current state. 
+
 The last thing we need to do is to elaborate on the second term in the above equation.
 We need to account for situations where there are several possible future states accessible from the current state and
-that each can be entered with ha certain transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>.
-Hence, we sum over all probable immediate future states where each of them might be entered with 
+that each can be entered with a certain transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>.
+Hence, we sum over all probable immediate future states where each of them is weighted by
 its transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>:
 
 <span class="math display">$$
@@ -80,7 +81,8 @@ v^{\pi}(s) = R(s) + \gamma \sum_{s'} P_{s, \pi(s)} \cdot v^{\pi} (s')
 $$</span>
 
 This is known as the Bellman equation.
-The summation loops over all possible next states, <span class="math display">$$s'$$</span>, that are achievable directly from the current state <span class="math display">$$s$$</span>.
+
+The summation in the above equation loops over all possible next states, <span class="math display">$$s'$$</span>, that are achievable directly from the current state <span class="math display">$$s$$</span>.
 This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
 because only a handful of states are immediately achievable from any current state <span class="math display">$$s$$</span>.
 
