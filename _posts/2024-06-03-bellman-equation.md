@@ -19,59 +19,73 @@ categories: jekyll update
 This is a simple example of solving the Bellman equation with a numerical solver for a very small reinforcement learning environment.
 For such a small environment, it is possible to obtain the optimal policy without much effort. So let's do that!
 
+## Pre-requisites
+
+I'm assuming that you know what an agent, state, action, and reward are in reinforcement learning.
+
 ## The Bellman equation
 
-The total pay-off is a sum of discounted rewards:
+The total pay-off after starting in some state <span class="math display">$$s_0$$</span> is a sum of discounted rewards:
 
-<span class="math display">$$ 
+<span class="math display">$$
 R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots 
 $$</span>
 
 where <span class="math display">$$R(s)$$</span> is the reward the agent receives in state <span class="math display">$$s$$</span> and <span class="math display">$$\gamma \in \langle 0,1 \rangle$$</span> is the discount factor.
 
-The goal of the optimal policy is to maximize the expected value of the total pay-off.
+The goal of the optimal policy is to maximize the *expected value* of the total pay-off.
 
-We'll denote the expected total pay-off under policy <span class="math display">$$\pi$$</span> as <span class="math display">$$v^{\pi}(s)$$</span>:
+We'll denote the expected value of the total pay-off under policy <span class="math display">$$\pi$$</span> 
+and starting in state <span class="math display">$$s_0$$</span> as <span class="math display">$$v^{\pi}(s_0)$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s) = \mathbb{E} \big( R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots \big)
+v^{\pi}(s_0) = \mathbb{E} \big( R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + \dots \big)
 $$</span>
 
-The agent starts in a state <span class="math display">$$s$$</span> and executes a policy <span class="math display">$$\pi$$</span>.
+The agent starts in a state <span class="math display">$$s_0$$</span> and executes a policy <span class="math display">$$\pi$$</span>.
 
 The above equation seems like a super tedious equation to compute, because we need to account for all possible future states...
-But we can do a neat math trick to make it way more tractable! 
+But we can do a neat math trick to make it way more tractable!
 
 We first notice that if we factor out <span class="math display">$$\gamma$$</span>, we get:
 
 <span class="math display">$$
-v^{\pi}(s) = \mathbb{E} \Big( R(s_0) + \gamma \big( \underbrace{ R(s_1) + \gamma R(s_2) + \dots }_{\text{this is $v^{\pi}(s_1)$}} \big) \Big)
+v^{\pi}(s_0) = \mathbb{E} \big( R(s_0) \big) + \gamma \Big( \underbrace{ \mathbb{E} \big(  R(s_1) + \gamma R(s_2) + \dots \big) }_{\text{this is $v^{\pi}(s_1)$}} \Big)
+$$</span>
+
+The last thing we need to do is to get rid of the expected value on <span class="math display">$$R(s_0)$$</span>.
+The immediate reward for being in state <span class="math display">$$s_0$$</span> is certain.
+Therefore, its expected value is simply equal to <span class="math display">$$R(s_0)$$</span>:
+
+<span class="math display">$$
+v^{\pi}(s_0) = R(s_0) + \gamma v^{\pi} (s_1) \big)
 $$</span>
 
 To make things more general, we denote any *current state* as <span class="math display">$$s$$</span> and 
 any *next state*, a state immediately following the current state, as <span class="math display">$$s'$$</span>:
 
 <span class="math display">$$
-v^{\pi}(s) = \mathbb{E} \big( R(s) + \gamma v^{\pi} (s') \big)
+v^{\pi}(s) = R(s) + \gamma v^{\pi} (s') \big)
 $$</span>
 
-The last thing we need to do is to get rid of the expected value. 
-First of all, the immediate reward for being in state <span class="math display">$$s$$</span> is certain.
-Therefore, its expected value is simply equal to <span class="math display">$$R(s)$$</span>.
-To tackle the second term, we can sum over all probable immediate future states
-where each of them might be entered with its transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>:
+This makes the equation work for any current state. 
+The last thing we need to do is to elaborate on the second term in the above equation.
+We need to account for situations where there are several possible future states accessible from the current state and
+that each can be entered with ha certain transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>.
+Hence, we sum over all probable immediate future states where each of them might be entered with 
+its transition probability, <span class="math display">$$P_{s, \pi(s)}$$</span>:
 
 <span class="math display">$$
 v^{\pi}(s) = R(s) + \gamma \sum_{s'} P_{s, \pi(s)} \cdot v^{\pi} (s')
 $$</span>
 
 This is known as the Bellman equation.
-The summation loops through all possible next states, <span class="math display">$$s'$$</span>, that are achievable directly from the current state <span class="math display">$$s$$</span>.
+The summation loops over all possible next states, <span class="math display">$$s'$$</span>, that are achievable directly from the current state <span class="math display">$$s$$</span>.
 This will typically be a sum over a small number of elements -- typically much smaller then the total number of states in an environment --
-because only a handful of states are immediately adjacent to any current state <span class="math display">$$s$$</span>.
+because only a handful of states are immediately achievable from any current state <span class="math display">$$s$$</span>.
 
 <span class="math display">$$ v^{\pi}(s)$$</span> is known as the value function. 
-You can think of it as a value of being at state <span class="math display">$$s$$</span> under the policy <span class="math display">$$\pi$$</span>.
+You can think of it as a value of being in state <span class="math display">$$s$$</span> under the policy <span class="math display">$$\pi$$</span>.
 For example, there is a higher value of states that are just one hop away from the states that reward the agent with a positive reward,
 compared to states that are a couple of hops away.
 
