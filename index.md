@@ -136,6 +136,25 @@ My goal is to provide you with extra tools and ideas that you haven't thought ab
   </div>
 </div>
 
+<ul id="RL-Bellman"></ul>
+
+# Can we give machines a growth mindset? 🤔 A gentle introduction to the Bellman equation
+
+This video is a gentle introduction to the Bellman equation - a big deal equation in reinforcement learning.
+I give you an intuitive and illustrative mathy introduction to the Bellman equation and then we solve a linear
+system of Bellman equations using a linear algebra solver. Stay tuned for part 2, where we extend our code 
+to a more general learning environment.
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/RL-Bellman.png" alt="RL-Bellman" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=ookYeokJPiA" target="_blank"> Video</a></h4>
+<h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/teaching/blob/main/reinforcement-learning-101/Bellman-equation-numerical-solver.ipynb" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="t-SNE"></ul>
 
 # The beauty and pitfalls of t-SNE
