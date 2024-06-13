@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Ajar windows"
+title:  "Why do ajar windows open wide when you close the door?"
 date:   2024-06-13 10:00:00 +0100
 categories: jekyll update
 ---
@@ -90,6 +90,4 @@ zero pressure outside. In fact, the air escaping from the room will have a tende
 rather than open if further. This is because the air inside your room pushes on the window from the inside. 
 And you should appreciate it -- your window is trying to save your life! 🛰️
 
-> 📄 This post is an English translation of my old blog post:
->
-> https://wszechswiatnauki.wordpress.com/2015/07/31/dlaczego-okna-otwieraja-sie-gdy-zamykamy-drzwi/
+> 📄 This post is an English translation of [my old blog post](https://wszechswiatnauki.wordpress.com/2015/07/31/dlaczego-okna-otwieraja-sie-gdy-zamykamy-drzwi/).
