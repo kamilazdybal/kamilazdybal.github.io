@@ -83,17 +83,12 @@ My research interests revolve around using **representation learning** to **unde
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
-**Would you like to support my efforts in creating open-source science and education?** 
-You can buy me a croissant 🥐 on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!
-As a supporter, you gain access to extra materials on being a researcher, making effective graphics, 
-academic writing, life-long learning, and the like!
-Also, be sure to get your free [Notion cover with fancy manifolds 🌀](https://buymeacoffee.com/kamilazdybal/extras)! 
+**If you'd like to support my efforts in creating open-source science and education,
+you can buy me a croissant 🥐 on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
+Be sure to get your free [Notion cover with fancy manifolds 🌀](https://buymeacoffee.com/kamilazdybal/extras)! 
 Many thanks for your support! 🚀
 
-<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/kamila.jpg?raw=true" alt="about-me" style="width:300px">
-
-<sup>That's me at the Capilano suspension bridge<br>
-in Vancouver, Canada, 2022.</sup>
+<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg?raw=true" alt="about-me" style="width:300px">
 
 -----------------------
 
