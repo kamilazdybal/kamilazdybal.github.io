@@ -83,10 +83,6 @@ My research interests are in using **representation learning** to **understand h
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
-**If you'd like to support my efforts in creating open-source science and education,
-you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
-As a thank you for your support, be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🚀
-
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg?raw=true" alt="about-me" style="width:300px">
 
 -----------------------
@@ -111,6 +107,10 @@ My aim is to implement that level of understanding into the documents
 I write (although many times I will assume certain prerequisites that your grandmother should have!). 
 Of course, if you wish to profit from the materials presented here, you will need to incorporate them into your journey. 
 I have hopes that you will find doing science fascinating, rewarding, and inspiring!
+
+**If you'd like to support my efforts in creating open-source science and education,
+you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
+As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
 <ul id="Python-for-ac"></ul>
 
