@@ -79,14 +79,13 @@ where I combine reinforcement learning and data-driven modeling with experimenta
 Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
 working on reduced-order modeling of reacting flows.
 
-My research interests revolve around using **representation learning** to **understand high-dimensional datasets** and 
+My research interests are in using **representation learning** to **understand high-dimensional datasets** and 
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
 **If you'd like to support my efforts in creating open-source science and education,
-you can buy me a croissant 🥐 on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
-Be sure to get your free [Notion cover with fancy manifolds 🌀](https://buymeacoffee.com/kamilazdybal/extras)! 
-Many thanks for your support! 🚀
+you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
+As a thank you for your support, be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🚀
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg?raw=true" alt="about-me" style="width:300px">
 
