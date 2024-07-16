@@ -132,6 +132,21 @@ My goal is to provide you with extra tools and ideas that you haven't thought ab
 
 <ul id="RL-Bellman"></ul>
 
+<ul id="norm-flow"></ul>
+
+# Intro to normalizing flows (with Python examples)
+
+This is an illustrative tutorial on normalizing flows with a bunch of practical Python examples!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/intro-to-normalizing-flows.png" alt="norm-flow" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Tutorial</a></h4>
+  </div>
+</div>
+
 # Can we give machines a growth mindset? 🤔 A gentle introduction to the Bellman equation
 
 This video is a gentle introduction to the Bellman equation - a big deal equation in reinforcement learning.
