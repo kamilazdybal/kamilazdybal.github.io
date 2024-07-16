@@ -136,14 +136,16 @@ My goal is to provide you with extra tools and ideas that you haven't thought ab
 
 # Intro to normalizing flows (with Python examples)
 
-This is an illustrative tutorial on normalizing flows with a bunch of practical Python examples!
+Normalizing flows transform continuously one probability distribution into another. 
+Their core concept is behind *generative models*. 
+This is an illustrative tutorial providing a gentle introduction to normalizing flows with a bunch of practical Python examples!
 
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/intro-to-normalizing-flows.png" alt="norm-flow" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/normalizing-flows/raw/master/tutorial/intro-to-normalizing-flows.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
