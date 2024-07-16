@@ -145,7 +145,7 @@ This is an illustrative tutorial providing a gentle introduction to normalizing 
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/intro-to-normalizing-flows.png" alt="norm-flow" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/normalizing-flows/raw/master/tutorial/intro-to-normalizing-flows.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/normalizing-flows/blob/main/tutorial/intro-to-normalizing-flows.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
