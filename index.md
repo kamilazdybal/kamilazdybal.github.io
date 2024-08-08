@@ -149,20 +149,20 @@ This is an illustrative tutorial providing a gentle introduction to normalizing 
   </div>
 </div>
 
-# Can we give machines a growth mindset? 🤔 A gentle introduction to the Bellman equation
+# Reinforcement learning 101 (with Numpy only!)
 
-This video is a gentle introduction to the Bellman equation - a big deal equation in reinforcement learning.
+Learn the core concepts of reinforcement learning (RL) while coding in Python! 
+The first videos give you a gentle introduction to the Bellman equation - a big deal equation in reinforcement learning.
 I give you an intuitive and illustrative mathy introduction to the Bellman equation and then we solve a linear
-system of Bellman equations using a linear algebra solver. Stay tuned for part 2, where we extend our code 
-to a more general learning environment.
+system of Bellman equations using a linear algebra solver.
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/RL-Bellman.png" alt="RL-Bellman" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/RL101.png" alt="RL-Bellman" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=ookYeokJPiA" target="_blank"> Video</a></h4>
-<h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/teaching/blob/main/reinforcement-learning-101/Bellman-equation-numerical-solver.ipynb" target="_blank"> Code</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/playlist?list=PL7gWbAt3_3KFBWhT2Dm7Y8OxXlTKmYgHG" target="_blank"> Videos</a></h4>
+<h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/teaching/blob/main/reinforcement-learning-101" target="_blank"> Code</a></h4>
   </div>
 </div>
 
