@@ -149,7 +149,7 @@ This is an illustrative tutorial providing a gentle introduction to normalizing 
   </div>
 </div>
 
-# Reinforcement learning 101 (with Numpy only!)
+# Reinforcement learning 101 (with Numpy)
 
 Learn the core concepts of reinforcement learning (RL) while coding in Python! 
 The first videos give you a gentle introduction to the Bellman equation - a big deal equation in reinforcement learning.
