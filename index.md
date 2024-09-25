@@ -1,5 +1,5 @@
 ---
-title: Science Doc(k)s
+title: Hi, I’m Kamila, welcome to my personal website!
 layout: default
 ---
 <head>
@@ -71,8 +71,6 @@ img {
 You can contact me at: **`kamilazdybal at gmail dot com`**
 
 <ul id="intro"></ul>
-
-### **Hi, I'm Kamila, welcome to my personal website!**
 
 I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www.empa.ch/web/s305) at Empa, a Swiss federal laboratory,
 where I combine reinforcement learning and data-driven modeling with experimental fluid dynamics.
