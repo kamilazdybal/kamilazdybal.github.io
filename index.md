@@ -77,7 +77,7 @@ where I combine reinforcement learning and data-driven modeling with experimenta
 Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
 working on reduced-order modeling of reacting flows.
 
-My research interests are in using **representation learning** to **understand high-dimensional datasets** and 
+My research interests are in **improving representation learning** to **understand high-dimensional datasets** and 
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
