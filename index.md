@@ -60,9 +60,6 @@ img {
   <a href="https://www.youtube.com/channel/UCv_HIIdhPlJKdew31vXgt4g">
     <img src="https://img.shields.io/badge/youtube-firebrick?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="width:125px; border:0px" height=40/>
   </a>
-  <a href="https://kamilazdybal.academia.edu/">
-    <img src="https://img.shields.io/badge/academia.edu-darkgrey?style=for-the-badge&logo=academia&logoColor=black" alt="Academia.edu Badge" style="width:165px; border:0px" height=40/>
-  </a>
   <a href="https://www.buymeacoffee.com/kamilazdybal">
     <img src="https://img.shields.io/badge/buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="buymeacoffee Badge" style="width:175px; border:0px" height=40/>
   </a>
