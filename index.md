@@ -41,7 +41,7 @@ img {
   </a>
   <a href="https://www.linkedin.com/in/kamila-zdybal/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="width:125px; border:0px" height=40px/>
-  </a>  
+  </a>
   <a href="https://scholar.google.com/citations?user=EI_up1gAAAAJ&hl=en&oi=ao">
     <img src="https://img.shields.io/badge/GoogleScholar-critical?style=for-the-badge&logo=googlescholar&logoColor=white" alt="GoogleScholar Badge" style="width:175px; border:0px" height=40/>
   </a>
@@ -71,7 +71,7 @@ where I combine reinforcement learning and data-driven modeling with experimenta
 Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
 working on reduced-order modeling of reacting flows.
 
-My research interests are in **improving representation learning** to **understand high-dimensional datasets** and 
+My research interests are in using **representation learning** to **understand high-dimensional datasets** and 
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
 
