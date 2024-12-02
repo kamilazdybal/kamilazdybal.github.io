@@ -62,18 +62,21 @@ img {
   </a>
 </div>
 
-You can contact me at: **`kamilazdybal at gmail dot com`**
-
 <ul id="intro"></ul>
 
-I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www.empa.ch/web/s305) at Empa, a Swiss federal laboratory,
+I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www.empa.ch/web/s305/autonomous-optical-velocimetry-with-a-reinforcement-learning-agent) at Empa, a Swiss federal laboratory,
 where I combine reinforcement learning and data-driven modeling with experimental fluid dynamics.
-Previously, I was a Ph.D. student at Université Libre de Bruxelles in the group of Prof. [Alessandro Parente](https://brite-research.be/), 
-working on reduced-order modeling of reacting flows.
+Previously, I was a Ph.D. student at Université Libre de Bruxelles and The University of Utah, working with 
+Prof. [Alessandro Parente](https://brite-research.be/) and 
+Prof. [James C. Sutherland](https://sutherland.che.utah.edu/) on reduced-order modeling of reacting flows.
+Even before that, I've spent some great time working with Prof. [Miguel A. Mendez](https://www.mendezma.com/) at
+The von Karman Institute.
 
 My research interests are in using **representation learning** to **understand high-dimensional datasets** and 
 **model high-dimensional systems** with computational efficiency. I'm passionate about science outreach, academic writing, 
 creating open-source educational content, and developing open-source scientific software.
+
+You can contact me at: **`kamilazdybal at gmail dot com`**
 
 <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg?raw=true" alt="about-me" style="width:300px">
 
@@ -103,6 +106,20 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 **If you'd like to support my efforts in creating open-source science and education,
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
+
+<ul id="fluidtoolbox"></ul>
+
+# Fluid Toolbox
+
+Fluid Toolbox is a collection of human-readable, pseudo-random study notes. It contains descriptions and explanations of various fluid mechanics concepts. It is meant to be used complimentary to the regular textbook since it may provide additional insights but it will not substitute the thoroughness of the standard course in the subject. I believe that working side by side with the course, it can become a useful toolbox of concepts that are ready-to-use and ready-to-understand.
+
+<sup>This document is still under construction but you can check the preview of where I'm going with it!</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/fluid-toolbox/cover-fluid-toolbox.png?raw=true" alt="transport_phenomena" style="width:150px"></a>
+  </div>
+</div>
 
 <ul id="Python-for-ac"></ul>
 
@@ -604,20 +621,6 @@ We perform experimental measurements using Arduino and fit the results with Newt
 
 ## Under construction
 
-<ul id="fluidtoolbox"></ul>
-
-# Fluid Toolbox
-
-Fluid Toolbox is a collection of human-readable, pseudo-random study notes. It contains descriptions and explanations of various fluid mechanics concepts. It is meant to be used complimentary to the regular textbook since it may provide additional insights but it will not substitute the thoroughness of the standard course in the subject. I believe that working side by side with the course, it can become a useful toolbox of concepts that are ready-to-use and ready-to-understand.
-
-<sup>This document is still under construction... Would you like to help in completing it?</sup>
-
-<div class="row">
-  <div class="column">
-    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/fluid-toolbox/cover-fluid-toolbox.png?raw=true" alt="transport_phenomena" style="width:150px"></a>
-  </div>
-</div>
-
 <ul id="transportphenomena"></ul>
 
 # Computational examples in transport phenomena with Python
@@ -637,7 +640,6 @@ I collected a few interesting computational examples in transport phenomena in a
 # Condensed notes on combustion
 
 These are dense notes on combustion concepts. They are a collection of knowledge that I acquired at the beginning of my PhD, being completely unfamiliar with the combustion science.
-They start from the preliminary notions that are needed in understanding the combustion language. Next, they introduce the elements of thermodynamics relevant to the study of combustion, and finally present the governing differential relations for reactive flows in various systems.
 
 <sup>This document is still under construction... Would you like to help in completing it?</sup>
 
