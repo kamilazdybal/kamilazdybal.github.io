@@ -124,7 +124,7 @@ that are ready-to-understand and ready-to-use.
     <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/fluid-toolbox/cover-fluid-toolbox.png?raw=true" alt="transport_phenomena" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/main/fluid-toolbox/fluid-toolbox.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/fluid-toolbox/fluid-toolbox.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
