@@ -111,13 +111,20 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Fluid Toolbox
 
-Fluid Toolbox is a collection of human-readable, pseudo-random study notes. It contains descriptions and explanations of various fluid mechanics concepts. It is meant to be used complimentary to the regular textbook since it may provide additional insights but it will not substitute the thoroughness of the standard course in the subject. I believe that working side by side with the course, it can become a useful toolbox of concepts that are ready-to-use and ready-to-understand.
+Fluid Toolbox is a collection of human-readable, pseudo-random study notes that inspires you to think a bit deeper 
+about various fluid dynamics concepts. It is meant to be used complimentary to the regular textbook since it may 
+provide additional insights, but it will not substitute the thoroughness of a standard course in the subject. 
+I believe that working side by side with the course it can become a useful toolbox of concepts 
+that are ready-to-understand and ready-to-use.
 
 <sup>This document is still under construction but you can check the preview of where I'm going with it!</sup>
 
 <div class="row">
   <div class="column">
     <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/blob/master/fluid-toolbox/cover-fluid-toolbox.png?raw=true" alt="transport_phenomena" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/main/fluid-toolbox/fluid-toolbox.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
