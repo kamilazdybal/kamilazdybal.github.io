@@ -111,7 +111,7 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Fluid Toolbox
 
-Fluid Toolbox is a collection of human-readable, pseudo-random study notes that inspires you to think a bit deeper 
+Fluid Toolbox is a collection of human-readable, pseudo-random study notes that inspires you to think deeper 
 about various fluid dynamics concepts. It is meant to be used complimentary to the regular textbook since it may 
 provide additional insights, but it will not substitute the thoroughness of a standard course in the subject. 
 I believe that working side by side with the course it can become a useful toolbox of concepts 
@@ -125,6 +125,7 @@ that are ready-to-understand and ready-to-use.
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-toolbox/raw/main/fluid-toolbox.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/fluid-toolbox" target="_blank"> Code</a></h4>
   </div>
 </div>
 
