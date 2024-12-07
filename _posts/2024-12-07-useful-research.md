@@ -48,7 +48,7 @@ With each paper we wrote, he prompted me to imagine that another grad student wi
 What information then, would a grad student need and appreciate if they wanted to reproduce our results 
 and learn something new from our research that could fuel their own? 
 This helped me to write papers with grad students as my main audience in mind. 
-I strive to teach the reader something interesting about our field of research 
+I since strive to teach the reader something interesting about our field of research 
 by writing sections that are illustrative and didactic. 
 I've made it a personal goal for myself to share all the code that can be used to reproduce figures from our papers. 
 I also make sure to provide all the details on our work, 
