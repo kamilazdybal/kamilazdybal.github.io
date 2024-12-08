@@ -12,8 +12,7 @@ layout: default
 
 <style>
 body {
-    font-size: 10px;
-    line-height: 1;
+    font-size: 6px;
 }
 
 img {
