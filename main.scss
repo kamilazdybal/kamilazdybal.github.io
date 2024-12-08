@@ -1,21 +1,4 @@
 ---
 ---
 
-.container {
-  max-width: 2200px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
 @import "custom";
