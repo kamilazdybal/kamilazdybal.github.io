@@ -35,11 +35,11 @@ img {
 }
 
 body {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
-.page-content {
-    max-width: 800px;
+.container {
+    width: 1500px;
     margin: 0 auto;
 }
 </style>
