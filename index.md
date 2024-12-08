@@ -33,6 +33,15 @@ img {
     clear: both;
     display: table;
 }
+
+body {
+    font-size: 10px;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 </style>
 
 <div id="badges">
