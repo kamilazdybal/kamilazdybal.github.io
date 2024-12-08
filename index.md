@@ -11,6 +11,10 @@ layout: default
 </script>
 
 <style>
+body .page-content {
+    max-width: 2200px;
+    margin: 0 auto;
+}
 
 img {
     border: 1px solid #ddd;
