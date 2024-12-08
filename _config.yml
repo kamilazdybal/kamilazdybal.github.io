@@ -36,3 +36,13 @@ base-font-size:   10px
 sass:
   sass_dir: _sass
   style: compressed
+
+include:
+  - _sass
+  - _posts
+
+# Add the path to your custom stylesheet
+assets:
+  css:
+    - "assets/css/style.scss"  # This should be the theme's default stylesheet
+    - "main.scss"   # This should be your custom stylesheet (custom.scss)
