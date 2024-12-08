@@ -1,31 +1,21 @@
 ---
 ---
 
-body {
-    font-size: 10px !important;
-}
-
 .container {
   max-width: 2200px;
   margin: 0 auto;
 }
 
-@include large {
-  .container {
-    max-width: 2200px;
-  }
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
 }
 
-@include medium {
-  .container {
-    max-width: 1800px;
-  }
-}
-
-@include small {
-  .container {
-    max-width: 100%;
-  }
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
 }
 
 @import "custom";
