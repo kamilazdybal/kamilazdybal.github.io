@@ -1,26 +1,4 @@
 ---
 ---
+
 @import "custom";
-
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-}
-
-{
-    box-sizing: border-box;
-}
-
-.column {
-    float: left;
-    width: 20%;
-    padding: 0px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
