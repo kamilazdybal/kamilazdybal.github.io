@@ -11,10 +11,6 @@ layout: default
 </script>
 
 <style>
-body {
-    font-size: 6px;
-}
-
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
