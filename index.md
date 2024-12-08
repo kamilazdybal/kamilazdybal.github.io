@@ -1,5 +1,5 @@
 ---
-title: Kamila Zdybał
+title: Hi, I'm Kamila, welcome to my personal website!
 layout: default
 ---
 <head>
