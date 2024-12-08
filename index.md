@@ -33,15 +33,6 @@ img {
     clear: both;
     display: table;
 }
-
-body {
-    font-size: 10px !important;
-}
-
-.container {
-    width: 1500px;
-    margin: 0 auto;
-}
 </style>
 
 <div id="badges">
