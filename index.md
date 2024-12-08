@@ -11,9 +11,9 @@ layout: default
 </script>
 
 <style>
-body .page-content {
-    max-width: 2200px;
-    margin: 0 auto;
+body {
+    font-size: 10px;
+    line-height: 1;
 }
 
 img {
