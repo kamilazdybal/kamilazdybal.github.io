@@ -11,6 +11,10 @@ layout: default
 </script>
 
 <style>
+body {
+  color: #000000 !important;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
