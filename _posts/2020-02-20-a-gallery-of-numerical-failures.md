@@ -19,7 +19,7 @@ I believe that it can be useful to raise awareness of things that can go wrong u
 And fun to watch too! Hopefully, I'll find time to get around to doing it at some point :)
 
 For the moment, enjoy a possible way in which the Euler method can fail if you just happened to slide with your 
-<span class="math display">$$\delta x}$$</span> to another position with a zero derivative!
+<span class="math display">$$\delta x$$</span> to another position with a zero derivative!
 
 <sup>(Somehow, this plot always reminds me of the scene from the movie Toy Story 2 where the game version of Buzz Lightyear jumps over the circular platforms to the music of *Also sprach Zarathustra*.)</sup>
 
