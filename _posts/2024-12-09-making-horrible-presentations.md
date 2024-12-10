@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Making horrible presentations"
+title:  "Simple rules for making horrible slides"
 date:   2024-12-09 10:00:00 +0100
 categories: jekyll update
 ---
