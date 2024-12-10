@@ -1,5 +1,5 @@
 ---
-title: `print('Howdy, Universe!')`
+title: print('Howdy, Universe!')
 layout: default
 ---
 <head>
