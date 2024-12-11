@@ -63,7 +63,7 @@ img {
 
 <ul id="intro"></ul>
 
-I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www.empa.ch/web/s305/autonomous-optical-velocimetry-with-a-reinforcement-learning-agent) at Empa, a Swiss federal laboratory,
+Hi, I'm Kamila. I'm a postdoctoral researcher in the [Computational Engineering Lab](https://www.empa.ch/web/s305/autonomous-optical-velocimetry-with-a-reinforcement-learning-agent) at Empa, a Swiss federal laboratory,
 where I combine reinforcement learning and data-driven modeling with experimental fluid dynamics.
 Previously, I was a Ph.D. student at Université Libre de Bruxelles and The University of Utah, working with 
 Prof. [Alessandro Parente](https://brite-research.be/) and 
