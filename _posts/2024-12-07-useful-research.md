@@ -21,7 +21,7 @@ how long will I be staying, and what my research is going to be about.
 As the officer approved my entry to the U.S. with a big stamp and handed my passport back, 
 he said: “*I hope your research is useful to humanity.*”
 
-This sentence provoked some unexpected thoughts in my head: Here I was, merely at the start of my Ph.D., 
+This sentence provoked some unusual thoughts in my head. Here I was, merely at the start of my Ph.D., 
 a complete rookie in what it means to be an academic and to do research, and suddenly someone had hopes that 
 what I do is of help to the world. Do I really have it in me to make this happen? 
 In the midst of the next two months of hard work and the COVID-19 pandemic, 
