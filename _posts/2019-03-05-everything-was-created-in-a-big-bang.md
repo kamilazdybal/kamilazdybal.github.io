@@ -13,20 +13,31 @@ categories: jekyll update
 
 # Everything was created in a Big Bang
 
-Two-dimensional plane of immense density started to expand in an exponential rate. The Universe increased its volume, creating new space and maintaining a constant amount of matter inside. During the enormous inflation, the primordial plasma of tiny granular irregularities started to arrange itself into distinguishable collections of matter.
+A two-dimensional plane of immense density began to expand at an exponential rate.
+The Universe increased its volume, creating new space while maintaining a constant amount of matter within.
+During this enormous inflation, the primordial plasma of tiny granular irregularities started to arrange itself into distinguishable collections of matter.
 
 Smaller object were first created, which expanded, forming larger Galaxies.
 
-In one of the Galaxies, a form of life came to be. At first, it didn’t knew much about the surrounding Universe. But soon the observers discovered electricity and magnetism. They described the theory of gravitational interaction. They saw light as both particles and waves. They noticed protons and neutrinos. Microwave background radiation and redshift.
+In one of these Galaxies, a form of life came to be.
+At first, it didn’t know much about the surrounding Universe.
+But soon, the observers discovered electricity and magnetism.
+They described the theory of gravitational interaction.
+They saw light as both particles and waves.
+They identified protons and neutrinos, the microwave background radiation, and redshift.
 
-Inflation of the Universe was visibly slowing down. Galaxies moved away from each other much slower. The formed objects burned and cooled. The last elements exploded in clouds of dust and gas.
+The inflation of the Universe visibly slowed down.
+Galaxies moved away from each other much more slowly. 
+The formed objects burned and cooled.
+The last elements exploded into clouds of dust and gas.
 
-Astronomers would have known what it means but there were no more astronomers, observers, neither any form of life in the Universe.
+Astronomers would have understood what it meant, 
+but there were no more astronomers, observers, or any form of life left in the Universe.
 
 And then, the Universe stopped.
 
-Galaxies were standing still.
+Galaxies stood still.
 
--Biip-biip - said the microwave. Popcorn was ready.
+"*Biip-biip*", said the microwave. The popcorn was ready.
 
-*Dedicated to those who want to find out what this whole Universe is all about. Even if you're an inhabitant of a bag of corn.*
+*Dedicated to those who seek to understand what this whole Universe is all about—even if you’re just an inhabitant of a bag of corn.*
