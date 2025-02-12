@@ -65,5 +65,5 @@ But luckily you can save graphics with a transparent background and make them se
 
 And there you go, first slide is ready! Who said that preparing presentations has to be difficult?
 
-Oh wait, did you say [*great presentations*](https://kamilazdybal.github.io/jekyll/update/2022/08/07/making-effective-presentations.html)?
+Oh wait, did you say [*a great presentation*](https://kamilazdybal.github.io/jekyll/update/2022/08/07/making-effective-presentations.html)?
 
