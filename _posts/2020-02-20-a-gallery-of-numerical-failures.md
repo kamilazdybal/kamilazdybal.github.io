@@ -27,5 +27,5 @@ For the moment, enjoy a possible way in which the Euler method can fail if you j
 <sup>(Somehow, this plot always reminds me of the scene from the movie Toy Story 2 where the game version of Buzz Lightyear jumps over the circular platforms to the music of *Also sprach Zarathustra*.)</sup>
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/numerical-methods/raw/master/numerical-integration/euler-method-sin-unfortunate.png">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/euler-method.png" width="600">
 </p>
