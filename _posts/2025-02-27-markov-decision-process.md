@@ -31,9 +31,9 @@ go up, go down, go right, go left.
 ### Deterministic environments
 
 In a deterministic reinforcement learning environment, 
-executing an action <span class="math display">$$a \in \mathcal{A}$$</span>, results
+executing an action <span class="math display">$$a \in \mathcal{A}$$</span> results
 in state transition from <span class="math display">$$s \rightarrow s'$$</span> with certainty, 
-where <span class="math display">$$s \in \mathcal{S}$$</span>. That is, in our simple
+where <span class="math display">$$s, s' \in \mathcal{S}$$</span>. That is, in our simple
 2D grid world with four actions, executing the action "go up" is guaranteed
 to result in state transition to the state directly above the current state. 
 This is presented in the figure below:
@@ -57,8 +57,8 @@ the current state.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition.svg" width="500">
 </p>
 
-> Oh, stochastic state transitions, how you remind me of the teenage me. My parents could only predict 
-> with certain probability that I will behave the way they asked me to...
+> Oh, stochastic state transitions, how you remind me of the teenage me... My parents could only predict 
+> with certain probability that I will behave the way they asked me to.
 
 ### Environments with stochastic state transitions and stochastic rewards
 
