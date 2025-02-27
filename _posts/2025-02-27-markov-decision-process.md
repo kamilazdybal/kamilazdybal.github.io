@@ -57,7 +57,7 @@ the current state.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition.svg" width="500">
 </p>
 
-### Environments with stochastic state transitions and rewards
+### Environments with stochastic state transitions and stochastic rewards
 
 Even more so, reinforcement learning environments don't have to provide deterministic rewards, 
 <span class="math display">$$r \in \mathcal{R}$$</span>, for state transitions!
