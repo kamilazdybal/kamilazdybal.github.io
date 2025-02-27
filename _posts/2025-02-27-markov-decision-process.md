@@ -19,7 +19,8 @@ categories: jekyll update
 In this post, I provide illustrative explanation of the transition probabilities involved in executing sequences
 of state, action, reward tuples by a reinforcement learning agent.
 These probabilities define the dynamics of the Markov decision process (MDP) and may seem intimidating at first
-(they did to me!), but here I break them down and explain them visually!
+(they did to me!), but here I break them down and explain them visually! This note accompanies the first section
+in Chapter 3 of the textbook by Barto & Sutton.
 
 We consider a simple 2D grid world environment, where the agent can execute one of the four actions:
 go up, go down, go right, go left.
