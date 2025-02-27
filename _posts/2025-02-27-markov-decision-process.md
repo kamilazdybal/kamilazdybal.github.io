@@ -128,8 +128,8 @@ Of course, a further consequence is that
 $$</span>
 
 which simply pushes the earlier equation further by also summing over probabilities of all state transitions.
-Of course, probabilities for all state transitions from any current state have to sum up to one, which is the case
-in our simple grid world:
+Probabilities for all state transitions from any current state also have to sum up to one, which is the case
+in our simple grid world,
 
 <span class="math display">$$
 \sum_{s \in \mathcal{S}} p(s' | s, a) = 0.9 + 0.04 + 0.04 + 0.02 = 1 .
