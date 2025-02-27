@@ -57,6 +57,9 @@ the current state.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition.svg" width="500">
 </p>
 
+> Oh, stochastic state transitions, how you remind me of the teenage me. My parents could only predict 
+> with certain probability that I will behave the way they asked me to...
+
 ### Environments with stochastic state transitions and stochastic rewards
 
 Even more so, reinforcement learning environments don't have to provide deterministic rewards, 
@@ -71,6 +74,9 @@ we will receive the <span class="math display">$$r = 1$$</span> reward, but with
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition-and-reward.svg" width="500">
 </p>
+
+> ...but to be fair, my parents also didn't respond to my teenage behaviors the same way every time.
+> Which is why I occasionally dodged a scold.
 
 ## Understanding the probabilities involved
 
