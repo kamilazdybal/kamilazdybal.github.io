@@ -132,5 +132,5 @@ Of course, probabilities for all state transitions from any current state have t
 in our simple grid world:
 
 <span class="math display">$$
-\sum_{s \in \mathcal{S}} p(s' | s, a) = 0.9 + 0.04 + 0.04 + 0.02 .
+\sum_{s \in \mathcal{S}} p(s' | s, a) = 0.9 + 0.04 + 0.04 + 0.02 = 1 .
 $$</span>
