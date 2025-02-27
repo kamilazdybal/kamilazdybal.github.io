@@ -17,7 +17,7 @@ categories: jekyll update
 # Understanding the dynamics of the Markov decision process
 
 In this post, I provide illustrative explanation of the transition probabilities involved in executing sequences
-of state, action, reward tuples by a reinforcement learning agent.
+of (state, action, reward, next state) tuples by a reinforcement learning agent.
 These probabilities define the dynamics of the Markov decision process (MDP) and may seem intimidating at first
 (they did to me!), but here I break them down and explain them visually! This note accompanies the first section
 in Chapter 3 of the textbook by Barto & Sutton.
@@ -38,7 +38,7 @@ to result in state transition to the state directly above the current state.
 This is presented in the figure below:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-deterministic.svg" width="600">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-deterministic.svg" width="500">
 </p>
 
 ### Environments with stochastic state transitions
@@ -53,7 +53,7 @@ the one to the right or to the left of the current state. With 2% probability, t
 the current state.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition.svg" width="600">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition.svg" width="500">
 </p>
 
 ### Environments with stochastic state transitions and rewards
@@ -67,9 +67,54 @@ we will receive the <span class="math display">$$r = 1$$</span> reward, but with
 <span class="math display">$$r = -1$$</span>.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition-and-reward.svg" width="600">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/mdp-stochastic-transition-and-reward.svg" width="500">
 </p>
 
 ## Understanding the probabilities involved
 
+In a deterministic environment:
 
+<span class="math display">$$
+p(s' | s, a) = 1
+$$</span>
+
+You can read <span class="math display">$$p(s' | s, a)$$</span> as the conditional probability of reaching state 
+<span class="math display">$$s'$$</span>,
+given that the current state is <span class="math display">$$s$$</span> and the action selected is
+<span class="math display">$$a$$</span>.
+
+In an environment with stochastic transition probabilities but with deterministic rewards, we can write:
+
+<span class="math display">$$
+p(s' | s, a) \in [0,1]
+$$</span>
+
+And in the most general case, an environment with stochastic state transitions and stochastic rewards, we can write:
+
+<span class="math display">$$
+p(s', r | s, a) \in [0,1]
+$$</span>
+
+where you can read <span class="math display">$$p(s', r | s, a)$$</span> as the *joint* conditional probability
+of reaching state <span class="math display">$$s'$$</span> and receiving reward 
+<span class="math display">$$r$$</span>, 
+given that the current state is <span class="math display">$$s$$</span> and the action selected is
+<span class="math display">$$a$$</span>.
+
+### Some consequences
+
+In the most general case, an environment with stochastic state transitions and stochastic rewards, we have that
+
+<span class="math display">$$
+\sum_{r \in \mathcal{R}} p(s', r | s, a) = p(s' | s, a)
+$$</span>
+
+This is easy to show looking at the third figure, where for example, for the transition from the current state
+to the state directly above it, we have:
+
+<span class="math display">$$
+\sum_{r \in \mathcal{R}} p(s', r | s, a) = 0.8 \cdot 0.9 + 0.15 \cdot 0.9 + 0.05 \cdot 0.9 = 0.9 = p(s' | s, a)
+$$</span>
+
+because the sum of probabilities across all possible stochastic rewards associated
+with a particular state transition has to be equal to one.
