@@ -112,7 +112,7 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 We demonstrate a strategy to optimize parameterizations of combustion manifolds using an encoding–decoding artificial neural network architecture. Our focus in this work is on the combustion of ammonia (NH3) and hydrogen (H2) blends. The literature on NH3 combustion, to date, lacks an efficient definition of a reaction progress variable (PV) to parameterize the thermo-chemical state-space. A quality parameterization should be able to represent the thermo-chemical state variables accurately, as well as any functions of those, e.g., the source terms of the non-conserved PVs. Our approach incorporates information about the reaction source term of a PV and about important combustion products into the PV optimization. A gradient descent optimizer is informed by the reconstruction quality of those important quantities of interest (QoIs) that enter the optimization as decoder outputs. The approach can be thought of as an iterative back-and-forth between defining a parameterization (encoding) and reconstructing QoIs from it (decoding). It thus naturally promotes parameterizations where each QoI is uniquely and smoothly represented over the manifold. This work can help advance the adaptivity of combustion models. First, we show that with an adequate definition of a PV, we can steer the model’s accuracy towards improved representation of selected products and pollutants. Second, the definition of a PV automatically adapts to best complement the remaining physics-based parameters, such as the mixture fraction or the enthalpy defect. These two achievements combined were not possible with the existing PV optimization methods which only impose monotonicity and scalar gradient magnitude in defining a PV.
 
-<sup>K. Zdybał, J. C. Sutherland, A. Parente. *Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks*, Combustion and Flame 276 (2025)</sup>
+<sup>K. Zdybał, J. C. Sutherland, A. Parente. *Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks*, Combustion and Flame (2025)</sup>
 
 <div class="row">
   <div class="column">
@@ -258,7 +258,7 @@ Check out my invited lecture on machine learning and artificial neural networks 
 
 Large datasets are abundant in various scientific and engineering disciplines. Multiple physical variables are frequently gathered into one dataset, leading to high data dimensionality. Visualizing and modeling multivariate datasets can be achieved through dimensionality reduction. However, in many reduction techniques to date, there is no guarantee that the reduced data representation will possess certain desired topological qualities. We show that the quality of reduced data representations can be significantly improved by informing data projections by target quantities of interest (QoIs), some of which are functions of the projection itself. The target QoIs can include closure terms required in modeling, important physical variables, or class labels in the case of categorical data. This work can have particular relevance in data visualization and efficient modeling of dynamical systems with many degrees of freedom, as well as in fundamental research of representation learning.
 
-<sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, Patterns 4 (2023)</sup>
+<sup>K. Zdybał, A. Parente, J. C. Sutherland. *Improving reduced-order models through nonlinear decoding of projection-dependent outputs*, Patterns (2023)</sup>
 
 <div class="row">
   <div class="column">
@@ -344,7 +344,7 @@ My dissertation is freely available for download below:
 
 Data-driven modeling of complex dynamical systems is becoming increasingly popular across various domains of science and engineering. This is thanks to advances in numerical computing, which provides high fidelity data, and to algorithm development in data science and machine learning. Simulations of multicomponent reacting flows can particularly profit from data-based reduced-order modeling (ROM). The original system of coupled partial differential equations that describes a reacting flow is often large due to high number of chemical species involved. While the datasets from reacting flow simulation have high state-space dimensionality, they also exhibit attracting low-dimensional manifolds (LDMs). Data-driven approaches can be used to obtain and parameterize these LDMs. Evolving the reacting system using a smaller number of parameters can yield substantial model reduction and savings in computational cost. In this chapter, we review recent advances in ROM of turbulent reacting flows. We demonstrate the entire ROM workflow with a particular focus on obtaining the training datasets and data science and machine learning techniques such as dimensionality reduction and nonlinear regression. We present recent results from ROM-based simulations of experimentally measured Sandia flames D and F. We also delineate a few remaining challenges and possible future directions to address them. This chapter is accompanied by illustrative examples using the recently developed Python software, PCAfold. The software can be used to obtain, analyze and improve low-dimensional data representations. The examples provided herein can be helpful to students and researchers learning to apply dimensionality reduction, manifold approaches and nonlinear regression to their problems.
 
-<sup>K. Zdybał, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Reduced-order modeling of reacting flows using data-driven approaches*, In N. Swaminathan, A. Parente, editors, *Lecture notes in Energy:  Machine Learning and its Application to Reacting Flows*, Springer, 2023</sup>
+<sup>K. Zdybał, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Reduced-order modeling of reacting flows using data-driven approaches*, In N. Swaminathan, A. Parente, editors, *Lecture notes in Energy:  Machine Learning and its Application to Reacting Flows*, Springer (2023)</sup>
 
 <div class="row">
   <div class="column">
@@ -363,7 +363,7 @@ Data-driven modeling of complex dynamical systems is becoming increasingly popul
 
 The use of machine learning algorithms to predict behaviors of complex systems is booming. However, the key to an effective use of machine learning tools in multi-physics problems, including combustion, is to couple them to physical and computer models. The performance of these tools is enhanced if all the prior knowledge and the physical constraints are embodied. In other words, the scientific method must be adapted to bring machine learning into the picture, and make the best use of the massive amount of data we have produced, thanks to the advances in numerical computing. The present chapter reviews some of the open opportunities for the application of data-driven reduced-order modeling of combustion systems. We provide examples of feature extraction in turbulent combustion data, empirical low-dimensional manifold (ELDM) identification, classification, regression, and reduced-order modeling.
 
-<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press, 2023</sup>
+<sup>K. Zdybał, G. D'Alessio, G. Aversano, M. R. Malik, A. Coussement, J. C. Sutherland, A. Parente, *Advancing reacting flow simulations with data-driven models*, In M. A. Mendez, A. Ianiro, B. R. Noack,  S. L. Brunton, editors, *Data-Driven Fluid Dynamics: Combining First Principles and Machine Learning*, Cambridge University Press (2023)</sup>
 
 <div class="row">
   <div class="column">
@@ -382,7 +382,7 @@ The use of machine learning algorithms to predict behaviors of complex systems i
 
 In reduced-order modeling, complex systems that exhibit high state-space dimensionality are described and evolved using a small number of parameters. These parameters can be obtained in a data-driven way, where a high-dimensional dataset is projected onto a lower-dimensional basis. A complex system is then restricted to states on a low-dimensional manifold where it can be efficiently modeled. While this approach brings computational benefits, obtaining a good quality of the manifold topology becomes a crucial aspect when models, such as nonlinear regression, are built on top of the manifold. Here, we present a quantitative metric for characterizing manifold topologies. Our metric pays attention to non-uniqueness and spatial gradients in physical quantities of interest, and can be applied to manifolds of arbitrary dimensionality. Using the metric as a cost function in optimization algorithms, we show that optimized low-dimensional projections can be found. We delineate a few applications of the cost function to datasets representing argon plasma, reacting flows and atmospheric pollutant dispersion. We demonstrate how the cost function can assess various dimensionality reduction and manifold learning techniques as well as data preprocessing strategies in their capacity to yield quality low-dimensional projections. We show that improved manifold topologies can facilitate building nonlinear regression models.
 
-<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold topology assessment*, Scientific Reports 12 (2022) 14496 </sup>
+<sup>K. Zdybał, E. Armstrong, J. C. Sutherland, A. Parente, *Cost function for low-dimensional manifold topology assessment*, Scientific Reports (2022)</sup>
 
 <div class="row">
   <div class="column">
@@ -401,7 +401,7 @@ In reduced-order modeling, complex systems that exhibit high state-space dimensi
 
 Reduced-order models (ROMs) for turbulent combustion rely on identifying a small number of parameters that can effectively describe the complexity of reacting flows. With the advent of data-driven approaches, ROMs can be trained on datasets representing the thermo-chemical state-space in simple reacting systems. For low-Mach flows, the full state vector that serves as a training dataset is typically composed of temperature and chemical composition. The dataset is projected onto a lower-dimensional basis and the evolution of the complex system is tracked on a lower-dimensional manifold. This approach allows for substantial reduction of the number of transport equations to solve in combustion simulations, but the quality of the manifold topology is a decisive aspect in successful modeling. To mitigate manifold challenges, several authors advocate reducing the state vector to only a subset of major variables when training ROMs. However, this reduction is often done *ad hoc* and without giving detailed insights into the effect of removing certain variables on the resulting low-dimensional data projection. In this work, we present a quantitative manifold-informed method for selecting the subset of state variables that minimizes unwanted behaviors in manifold topologies. While many authors in the past have focused on selecting major species, we show that a mixture of major and minor species can be beneficial to improving the quality of low-dimensional data representations. The desired effects include reducing non-uniqueness and spatial gradients in the dependent variable space. Finally, we demonstrate improvements in regressibility of manifolds built from the optimal state vector subset as opposed to the full state vector.
 
-<sup>K. Zdybał, J. C. Sutherland, A. Parente, *Manifold-informed state vector subset for reduced-order modeling*, Proceedings of the Combustion Institute 39 (2022) 1-10</sup>
+<sup>K. Zdybał, J. C. Sutherland, A. Parente, *Manifold-informed state vector subset for reduced-order modeling*, Proceedings of the Combustion Institute (2022)</sup>
 
 <sup>**This publication has received the Distinguished Paper Award for Numerical Combustion from The Combustion Institute.**</sup>
 
@@ -422,7 +422,7 @@ Reduced-order models (ROMs) for turbulent combustion rely on identifying a small
 
 In many reacting flow systems, the thermo-chemical state-space is known or assumed to evolve close to a low-dimensional manifold (LDM). Various approaches are available to obtain those manifolds and subsequently express the original high-dimensional space with fewer parameterizing variables. Principal component analysis (PCA) is one of the dimensionality reduction methods that can be used to obtain LDMs. PCA does not make prior assumptions about the parameterizing variables and retrieves them empirically from the training data. In this paper, we show that PCA applied in local clusters of data (local PCA) is capable of detecting the intrinsic parameterization of the thermo-chemical state-space. We first demonstrate that utilizing three common combustion models of varying complexity: the Burke-Schumann model, the chemical equilibrium model and the homogeneous reactor. Parameterization of these models is known *a priori* which allows for benchmarking with the local PCA approach. We further extend the application of local PCA to a more challenging case of a turbulent non-premixed *n*-heptane/air jet flame for which the parameterization is no longer obvious. Our results suggest that meaningful parameterization can be obtained also for more complex datasets. We show that local PCA finds variables that can be linked to local stoichiometry, reaction progress and soot formation processes.
 
-<sup>K. Zdybał, G. D'Alessio, A. Attili, A. Coussement, J. C. Sutherland, A. Parente, *Local manifold learning and its link to domain-based physics knowledge*, Applications in Energy and Combustion Science, Special issue: Machine learning methods for reactive flows (2023) </sup>
+<sup>K. Zdybał, G. D'Alessio, A. Attili, A. Coussement, J. C. Sutherland, A. Parente, *Local manifold learning and its link to domain-based physics knowledge*, Applications in Energy and Combustion Science (2023)</sup>
 
 <div class="row">
   <div class="column">
@@ -461,7 +461,7 @@ Check out the beta version of our educational Python library intended to support
 Check out **PCAfold**, our Python software for generating, analyzing and improving low-dimensional manifolds.
 It can be used for data clustering and sampling, dimensionality reduction, nonlinear regression and assessing the quality of low-dimensional manifolds. **PCAfold** is published in the SoftwareX journal:
 
-<sup>K. Zdybał, E. Armstrong, A. Parente, J. C. Sutherland, *PCAfold: Python software to generate, analyze and improve PCA-derived low-dimensional manifolds*, SoftwareX 12, 2020, 100630</sup>
+<sup>K. Zdybał, E. Armstrong, A. Parente, J. C. Sutherland, *PCAfold: Python software to generate, analyze and improve PCA-derived low-dimensional manifolds*, SoftwareX (2020)</sup>
 
 Reach out to the documentation for many illustrative tutorials! You can also run the tutorials as interactive Jupyter notebooks by clicking below:
 
@@ -632,7 +632,7 @@ Following a great [lecture](https://www.youtube.com/watch?v=UpsV1y6wMQ8) by Prof
 How do different coffee containers compare in keeping your coffee warm?
 We perform experimental measurements using Arduino and fit the results with Newton's theoretical model for describing cooling. This article is published in **Neutrino**, a popular science magazine issued by the Physics department at the Jagiellonian University:
 
-<sup>K. Zdybał, *Badanie własności izolacyjnych termosów. Zastosowanie prawa stygnięcia Newtona*, Neutrino, 33 (2016) 13-18</sup>
+<sup>K. Zdybał, *Badanie własności izolacyjnych termosów. Zastosowanie prawa stygnięcia Newtona*, Neutrino (2016) 13-18</sup>
 
 <div class="row">
   <div class="column">
