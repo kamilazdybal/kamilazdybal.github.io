@@ -106,6 +106,25 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="pv-optimization"></ul>
+
+# Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks
+
+We demonstrate a strategy to optimize parameterizations of combustion manifolds using an encoding–decoding artificial neural network architecture. Our focus in this work is on the combustion of ammonia (NH3) and hydrogen (H2) blends. The literature on NH3 combustion, to date, lacks an efficient definition of a reaction progress variable (PV) to parameterize the thermo-chemical state-space. A quality parameterization should be able to represent the thermo-chemical state variables accurately, as well as any functions of those, e.g., the source terms of the non-conserved PVs. Our approach incorporates information about the reaction source term of a PV and about important combustion products into the PV optimization. A gradient descent optimizer is informed by the reconstruction quality of those important quantities of interest (QoIs) that enter the optimization as decoder outputs. The approach can be thought of as an iterative back-and-forth between defining a parameterization (encoding) and reconstructing QoIs from it (decoding). It thus naturally promotes parameterizations where each QoI is uniquely and smoothly represented over the manifold. This work can help advance the adaptivity of combustion models. First, we show that with an adequate definition of a PV, we can steer the model’s accuracy towards improved representation of selected products and pollutants. Second, the definition of a PV automatically adapts to best complement the remaining physics-based parameters, such as the mixture fraction or the enthalpy defect. These two achievements combined were not possible with the existing PV optimization methods which only impose monotonicity and scalar gradient magnitude in defining a PV.
+
+<sup>K. Zdybał, J. C. Sutherland, A. Parente. **, Combustion and Flame 276 (2025)</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pv-optimization.png" alt="nonlinear-decoding" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.combustflame.2025.114152" target="_blank"> Article</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/pv-optimization" target="_blank"> Code</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
+  </div>
+</div>
+
 <ul id="fluidtoolbox"></ul>
 
 # Fluid Toolbox
