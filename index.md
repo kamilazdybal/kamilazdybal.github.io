@@ -499,7 +499,7 @@ At first encounter, tensors can seem like strange mathematical objects. It can b
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/main/tensor-necessity/plots/thumbnail.png" alt="Tensor-necessity" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/tensor-necessity/plots/thumbnail.png" alt="Tensor-necessity" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/tensor-necessity/tensor-necessity.pdf" target="_blank"> Article</a></h4>
