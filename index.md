@@ -77,7 +77,7 @@ creating open-source educational content, and developing open-source scientific 
 
 You can contact me at: **`kamilazdybal at gmail dot com`**
 
-<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg?raw=true" alt="about-me" style="width:300px">
+<img src="https://github.com/kamilazdybal/kamilazdybal.github.io/blob/main/_posts/foret-de-soignes.jpg" alt="about-me" style="width:300px">
 
 -----------------------
 
