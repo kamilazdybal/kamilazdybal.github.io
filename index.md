@@ -484,7 +484,7 @@ Reach out to the documentation for many illustrative tutorials! You can also run
 
 <div class="row">
   <div class="column">
-    <a><img src="https://gitlab.multiscale.utah.edu/common/PCAfold/raw/main/docs/outreach/PCAfold-poster.png" alt="PCAfold" style="width:150px"></a>
+    <a><img src="https://gitlab.multiscale.utah.edu/common/PCAfold/raw/master/docs/outreach/PCAfold-poster.png" alt="PCAfold" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://gitlab.multiscale.utah.edu/common/PCAfold/-/raw/master/docs/outreach/PCAfold-poster.pdf" target="_blank"> Poster</a></h4>
@@ -514,7 +514,7 @@ A computational example of steady-state heat conduction in a lengthwise-insulate
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/main/transport-phenomena-with-Python/figures/steady-state-heat-conduction.png" alt="Heat-transfer" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/transport-phenomena-with-Python/figures/steady-state-heat-conduction.png" alt="Heat-transfer" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/transport-phenomena-with-Python/example-heat-transfer-in-a-rod.pdf" target="_blank"> Tutorial</a></h4>
@@ -530,7 +530,7 @@ These are notes on the linear algebra aspects of Principal Component Analysis (P
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/main/PCA/plots/thumbnail.png" alt="PCA sample" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/PCA/plots/thumbnail.png" alt="PCA sample" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/PCA/PCA.pdf" target="_blank"> Tutorial</a></h4>
@@ -548,7 +548,7 @@ These are notes on Dynamic Mode Decomposition (DMD), a data-driven method for fi
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/main/DMD/DWGs/DMD-science-docs.png" alt="DMD" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/DMD/DWGs/DMD-science-docs.png" alt="DMD" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/DMD/DMD-theory.pdf" target="_blank"> Tutorial</a></h4>
@@ -567,7 +567,7 @@ Well, here it is! In the Objectif Morse project you will make an interesting use
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/objectif-morse/raw/main/Documentation/cover_obj_morse.jpg" alt="objectif_morse" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/objectif-morse/raw/master/Documentation/cover_obj_morse.jpg" alt="objectif_morse" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/objectif-morse/raw/master/Documentation/Objectif_Morse.pdf" target="_blank"> Tutorial</a></h4>
@@ -585,7 +585,7 @@ Using two data decomposition methods: Proper Orthogonal Decomposition (POD) and 
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/POD-DMD-decompositions/raw/main/DWGs/GIF_2D_POD_r3.gif" alt="POD_DMD" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/POD-DMD-decompositions/raw/master/DWGs/GIF_2D_POD_r3.gif" alt="POD_DMD" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/POD-DMD-decompositions/raw/master/final-report/stagiaire_report_kzdybal.pdf" target="_blank"> Report</a></h4>
@@ -603,7 +603,7 @@ So I said: *let’s do it!*
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/linear-algebra/raw/main/proof-of-associative-law/proof-of-associative-law-thumbnail.png" alt="MIT-G-Strang" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/linear-algebra/raw/master/proof-of-associative-law/proof-of-associative-law-thumbnail.png" alt="MIT-G-Strang" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/linear-algebra/raw/master/proof-of-associative-law/proof-of-associative-law.pdf" target="_blank"> Note</a></h4>
@@ -618,7 +618,7 @@ Following a great [lecture](https://www.youtube.com/watch?v=UpsV1y6wMQ8) by Prof
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/main/GPR/DWGs/thumbnail.png" alt="transport_phenomena" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/GPR/DWGs/thumbnail.png" alt="transport_phenomena" style="width:150px"></a>
   </div>
   <div class="column">
   <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/ulb-atm-phd/raw/master/GPR/GPR.pdf" target="_blank"> Note</a></h4>
@@ -659,7 +659,7 @@ I collected a few interesting computational examples in transport phenomena in a
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/main/transport-phenomena-with-Python/figures/cover-trans-phen.jpg" alt="transport_phenomena" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/fluid-dynamics-and-transport-phenomena/raw/master/transport-phenomena-with-Python/figures/cover-trans-phen.jpg" alt="transport_phenomena" style="width:150px"></a>
   </div>
 </div>
 
