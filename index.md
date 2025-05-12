@@ -121,7 +121,7 @@ We demonstrate a strategy to optimize parameterizations of combustion manifolds 
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.combustflame.2025.114152" target="_blank"> Article</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/pv-optimization" target="_blank"> Code</a></h4>
-    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://www.youtube.com/watch?v=Ux70wlXQ4_M" target="_blank"> Video</a></h4>
   </div>
 </div>
 
