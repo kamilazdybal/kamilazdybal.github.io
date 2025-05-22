@@ -106,6 +106,25 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="pykitPIV"></ul>
+
+# Introducing **pykitPIV**: Python kinematic training for particle image velocimetry!
+
+**pykitPIV** is a Python package that provides rich and reproducible virtual environments for training machine learning (ML) algorithms in velocimetry.
+
+<sup>K. Zdybał, C. Mucignat, S. Kunz, I. Lunati. *pykitPIV: Rich and reproducible virtual training of machine learning algorithms in velocimetry*, (2025)</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pykitPIV.png" alt="pykitPIV" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/pykitPIV" target="_blank"> Code</a></h4>
+    <h4><span class="fa fa-book"></span><a href="https://pykitpiv.readthedocs.io/" target="_blank"> Documentation</a></h4>
+  </div>
+</div>
+
 <ul id="pv-optimization"></ul>
 
 # Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks
@@ -116,7 +135,7 @@ We demonstrate a strategy to optimize parameterizations of combustion manifolds 
 
 <div class="row">
   <div class="column">
-    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pv-optimization.png" alt="nonlinear-decoding" style="width:150px"></a>
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pv-optimization.png" alt="pv-optimization" style="width:150px"></a>
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.combustflame.2025.114152" target="_blank"> Article</a></h4>
