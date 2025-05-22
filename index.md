@@ -110,7 +110,6 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Introducing **pykitPIV**: Python kinematic training for particle image velocimetry!
 
-
 **pykitPIV** is a Python package that provides rich and reproducible virtual environments for training machine learning (ML) algorithms in velocimetry.
 The generated synthetic datasets and environments mimic those coming from particle image velocimetry (PIV) and background-oriented Schlieren (BOS) experimental techniques. 
 The library integrates with various ML algorithms, such as convolutional neural networks, variational approaches, active learning, and reinforcement learning. 
