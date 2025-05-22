@@ -110,7 +110,16 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Introducing **pykitPIV**: Python kinematic training for particle image velocimetry!
 
+
 **pykitPIV** is a Python package that provides rich and reproducible virtual environments for training machine learning (ML) algorithms in velocimetry.
+The generated synthetic datasets and environments mimic those coming from particle image velocimetry (PIV) and background-oriented Schlieren (BOS) experimental techniques. 
+The library integrates with various ML algorithms, such as convolutional neural networks, variational approaches, active learning, and reinforcement learning. 
+It gives the user, or the ML agent, flexibility in selecting various parameters that would normally be available in an experimental setting, such as seeding density, 
+properties of the laser plane, camera exposure, particle loss, or experimental noise. 
+We also provide an atlas of challenging synthetic velocity fields from analytic formulations (both compressible and incompressible) 
+where the effects of particle drift and diffusion in stationary isotropic turbulence can also be added using the simplified Langevin model.
+With **pykitPIV**, ML agents have the freedom to interact with the virtual experiment,
+can assimilate data from real experiment, and can be trained to perform a variety of tasks using diverse sensory cues and rewards.
 
 <sup>K. Zdybał, C. Mucignat, S. Kunz, I. Lunati. *pykitPIV: Rich and reproducible virtual training of machine learning algorithms in velocimetry*, (2025)</sup>
 
@@ -129,7 +138,21 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks
 
-We demonstrate a strategy to optimize parameterizations of combustion manifolds using an encoding–decoding artificial neural network architecture. Our focus in this work is on the combustion of ammonia (NH3) and hydrogen (H2) blends. The literature on NH3 combustion, to date, lacks an efficient definition of a reaction progress variable (PV) to parameterize the thermo-chemical state-space. A quality parameterization should be able to represent the thermo-chemical state variables accurately, as well as any functions of those, e.g., the source terms of the non-conserved PVs. Our approach incorporates information about the reaction source term of a PV and about important combustion products into the PV optimization. A gradient descent optimizer is informed by the reconstruction quality of those important quantities of interest (QoIs) that enter the optimization as decoder outputs. The approach can be thought of as an iterative back-and-forth between defining a parameterization (encoding) and reconstructing QoIs from it (decoding). It thus naturally promotes parameterizations where each QoI is uniquely and smoothly represented over the manifold. This work can help advance the adaptivity of combustion models. First, we show that with an adequate definition of a PV, we can steer the model’s accuracy towards improved representation of selected products and pollutants. Second, the definition of a PV automatically adapts to best complement the remaining physics-based parameters, such as the mixture fraction or the enthalpy defect. These two achievements combined were not possible with the existing PV optimization methods which only impose monotonicity and scalar gradient magnitude in defining a PV.
+We demonstrate a strategy to optimize parameterizations of combustion manifolds using an encoding–decoding artificial 
+neural network architecture. Our focus in this work is on the combustion of ammonia (NH3) and hydrogen (H2) blends. 
+The literature on NH3 combustion, to date, lacks an efficient definition of a reaction progress variable (PV) to 
+parameterize the thermo-chemical state-space. A quality parameterization should be able to represent the thermo-chemical 
+state variables accurately, as well as any functions of those, e.g., the source terms of the non-conserved PVs. 
+Our approach incorporates information about the reaction source term of a PV and about important combustion products 
+into the PV optimization. A gradient descent optimizer is informed by the reconstruction quality of those important 
+quantities of interest (QoIs) that enter the optimization as decoder outputs. The approach can be thought of as an 
+iterative back-and-forth between defining a parameterization (encoding) and reconstructing QoIs from it (decoding). 
+It thus naturally promotes parameterizations where each QoI is uniquely and smoothly represented over the manifold. 
+This work can help advance the adaptivity of combustion models. First, we show that with an adequate definition of a PV, 
+we can steer the model’s accuracy towards improved representation of selected products and pollutants. 
+Second, the definition of a PV automatically adapts to best complement the remaining physics-based parameters, 
+such as the mixture fraction or the enthalpy defect. These two achievements combined were not possible with the 
+existing PV optimization methods which only impose monotonicity and scalar gradient magnitude in defining a PV.
 
 <sup>K. Zdybał, J. C. Sutherland, A. Parente. *Optimizing progress variables for ammonia/hydrogen combustion using encoding–decoding networks*, Combustion and Flame (2025)</sup>
 
