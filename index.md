@@ -120,7 +120,7 @@ where the effects of particle drift and diffusion in stationary isotropic turbul
 With **pykitPIV**, ML agents have the freedom to interact with the virtual experiment,
 can assimilate data from real experiment, and can be trained to perform a variety of tasks using diverse sensory cues and rewards.
 
-<sup>K. Zdybał, C. Mucignat, S. Kunz, I. Lunati. *pykitPIV: Rich and reproducible virtual training of machine learning algorithms in velocimetry*, (2025)</sup>
+<sup>K. Zdybał, C. Mucignat, S. Kunz, I. Lunati. *pykitPIV: A framework for flexible and reproducible virtual training of machine learning models in optical velocimetry*, (2025)</sup>
 
 <div class="row">
   <div class="column">
