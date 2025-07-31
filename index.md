@@ -308,7 +308,7 @@ Large datasets are abundant in various scientific and engineering disciplines. M
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.patter.2023.100859" target="_blank"> Article</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/nonlinear-decoding" target="_blank"> Code</a></h4>
-    <h4><span class="fa fa-video-camera"></span><a href="" target="_blank"> Video</a></h4>
+    <h4><span class="fa fa-video-camera"></span><a href="https://youtu.be/ZEB46rEknvU" target="_blank"> Video</a></h4>
   </div>
 </div>
 
