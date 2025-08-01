@@ -17,11 +17,40 @@ categories: jekyll update
 # The ideal pendulum
 
 Numerical solutions to motion of an ideal pendulum can generate useful dynamical system datasets for testing 
-a bunch of proof-of-concept research ideas. Below, I show solutions to an **undamped** and **damped** ideal pendulum.
+a bunch of proof-of-concept research ideas. Below, I show solutions to an **undamped** and **damped** ideal pendulum
+coded in Python. 
 
- ## Undamped pendulum
+```python
+import numpy as np
+from scipy.integrate import solve_ivp
+import matplotlib.pyplot as plt
+```
 
-Let's start with coding the undamped ideal pendulum in Python.
+The state vector for the ideal pendulum is composed of the angle <span class="math display">$$ \theta $$</span> that the pendulum makes
+with the vertical direction, and the angular velocity <span class="math display">$$ \omega $$</span>.
+
+## Undamped pendulum
+
+The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
+
+<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta}{dt} = \omega \\ \frac{d \omega}{dt} = - \frac{g}{L} \sin(\theta) \end{cases}\end{equation}$$</span>
+
+where <span class="math display">$$ g $$</span> is the gravitational acceleration and <span class="math display">$$ L $$</span>
+is the length of the pendulum.
+
+We first define a function that generates the right-hand-side (RHS) vector for this system of ODEs:
+
+```python
+def damped_pendulum(t, 
+                    state_vector, 
+                    b=0.1, 
+                    g=9.8, 
+                    L=1.0):
+
+    θ, ω = state_vector
+    
+    return [ω, - b * ω - g/L * np.sin(θ)]
+```
 
 
 
@@ -29,19 +58,19 @@ The figures below are my reproductions of figures shown in section 1.2.3 in Prof
 [https://github.com/scheinerman/InvitationToDynamicalSystems](*Invitation to Dynamical Systems*).
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-01.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-01.png" width="800">
 </p>
 
 > The motion of a pendulum with <span class="math display">$$ \theta_0 = 0.1 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-02.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-02.png" width="800">
 </p>
 
 > The motion of a pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-03.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-03.png" width="800">
 </p>
 
 > The motion of a pendulum with <span class="math display">$$ \theta_0 = 0.0 $$</span> and <span class="math display">$$ \omega_0 = 2.0 $$</span>. 
