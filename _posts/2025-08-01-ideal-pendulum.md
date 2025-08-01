@@ -33,7 +33,7 @@ with the vertical direction, and the angular velocity <span class="math display"
 
 The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
 
-<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta}{dt} = \omega \\ \frac{d \omega}{dt} = - \frac{g}{L} \sin(\theta) \end{cases}\end{equation}$$</span>
+<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta) \end{cases}\end{equation}$$</span>
 
 where <span class="math display">$$ g $$</span> is the gravitational acceleration and <span class="math display">$$ L $$</span>
 is the length of the pendulum.
@@ -41,21 +41,62 @@ is the length of the pendulum.
 We first define a function that generates the right-hand-side (RHS) vector for this system of ODEs:
 
 ```python
-def damped_pendulum(t, 
-                    state_vector, 
-                    b=0.1, 
-                    g=9.8, 
-                    L=1.0):
+def undamped_pendulum(t, 
+                      state_vector, 
+                      g=9.8, 
+                      L=1.0):
 
     θ, ω = state_vector
     
-    return [ω, - b * ω - g/L * np.sin(θ)]
+    return [ω, - g/L * np.sin(θ)]
 ```
 
+Next, we create a generic function that will solve an initial value problem (IVP) given the time vector, the RHS vector,
+and any other optional parameters:
 
+```python
+def generate_pendulum_trajectory(θ_0, 
+                                 ω_0, 
+                                 T=10.0, 
+                                 n_points=200, 
+                                 b=0.1, 
+                                 g=9.8, 
+                                 L=1.0, 
+                                 damped=False,
+                                 method='BDF'):
 
-The figures below are my reproductions of figures shown in section 1.2.3 in Prof. Scheinerman's textbook 
-[https://github.com/scheinerman/InvitationToDynamicalSystems](*Invitation to Dynamical Systems*).
+    time_vector = np.linspace(0, T, n_points)
+
+    if damped:
+        
+        sol = solve_ivp(damped_pendulum,
+                        [0, T],
+                        [θ_0, ω_0],
+                        method=method,
+                        t_eval=time_vector,
+                        args=(b,),
+                        rtol=1e-9,
+                        atol=1e-9)
+
+    else:
+        
+        sol = solve_ivp(undamped_pendulum,
+                        [0, T],
+                        [θ_0, ω_0],
+                        method=method,
+                        t_eval=time_vector,
+                        args=(g,L,),
+                        rtol=1e-9,
+                        atol=1e-9)
+    
+    return sol.t, sol.y.T
+```
+
+Now you can simply solve the undamped pendulum for a specific choice of parameters.
+To test my code, I create the figures below which are my reproductions of figures shown in section 1.2.3 in Prof. Scheinerman's textbook 
+[*Invitation to Dynamical Systems*](https://github.com/scheinerman/InvitationToDynamicalSystems).
+The parameters' values used in the textbook are <span class="math display">$$ g = 9.8 \frac{m}{s^2} $$</span> and 
+<span class="math display">$$ L = 9.8 m $$</span> for simplicity.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-01.png" width="800">
@@ -80,3 +121,14 @@ The figures below are my reproductions of figures shown in section 1.2.3 in Prof
 
 
 
+```python
+def damped_pendulum(t, 
+                    state_vector, 
+                    b=0.1, 
+                    g=9.8, 
+                    L=1.0):
+
+    θ, ω = state_vector
+    
+    return [ω, - b * ω - g/L * np.sin(θ)]
+```
