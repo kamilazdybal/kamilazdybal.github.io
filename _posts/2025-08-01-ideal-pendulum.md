@@ -154,4 +154,24 @@ def damped_pendulum(t,
     return [ω, - g/L * np.sin(θ) - b * ω]
 ```
 
-And we solve it with the same function `generate_pendulum_trajectory()` as before.
+And we solve it with the same function `generate_pendulum_trajectory()` as before:
+
+```python
+time, trajectory = generate_pendulum_trajectory(θ_0=3.0, 
+                                                ω_0=0.0, 
+                                                T=30.0, 
+                                                n_points=500, 
+                                                b=0.1, 
+                                                g=9.8, 
+                                                L=9.8, 
+                                                damped=True, 
+                                                method='BDF')
+```
+
+Here's one example of the trajectory of the damped pendulum, where you can observe the angle of the pendulum decaying with time:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-damped-01.png" width="800">
+</p>
+
+> The motion of a damped pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
