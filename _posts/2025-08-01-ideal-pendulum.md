@@ -26,14 +26,15 @@ from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 ```
 
-The state vector for the ideal pendulum is composed of the angle <span class="math display">$$ \theta $$</span> that the pendulum makes
-with the vertical direction, and the angular velocity <span class="math display">$$ \omega $$</span>.
+The state vector for the ideal pendulum is composed of the angle, <span class="math display">$$ \theta(t) $$</span>, that the pendulum makes
+with the vertical direction, and the angular velocity, <span class="math display">$$ \omega(t) $$</span>, 
+both being functions of time, <span class="math display">$$ t $$</span>.
 
 ## Undamped pendulum
 
 The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
 
-<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta) \end{cases}\end{equation}$$</span>
+<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega(t) \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta(t)) \end{cases}\end{equation}$$</span>
 
 where <span class="math display">$$ g $$</span> is the gravitational acceleration and <span class="math display">$$ L $$</span>
 is the length of the pendulum.
@@ -52,7 +53,8 @@ def undamped_pendulum(t,
 ```
 
 Next, we create a generic function that will solve an initial value problem (IVP) given the time vector, the RHS vector,
-and any other optional parameters:
+the initial condition, <span class="math display">$$ \theta(t=0) = \theta_0 $$</span> and 
+<span class="math display">$$ \omega(t=0) = \omega_0 $$</span>, and any other parameters:
 
 ```python
 def generate_pendulum_trajectory(θ_0, 
@@ -134,7 +136,7 @@ The parameters' values used in the textbook are <span class="math display">$$ g 
 
 The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
 
-<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta) - b \cdot \omega \end{cases}\end{equation}$$</span>
+<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega(t) \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta(t)) - b \cdot \omega(t) \end{cases}\end{equation}$$</span>
 
 where <span class="math display">$$ b $$</span> is the damping parameter.
 
