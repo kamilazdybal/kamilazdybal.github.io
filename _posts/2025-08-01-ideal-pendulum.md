@@ -92,7 +92,20 @@ def generate_pendulum_trajectory(θ_0,
     return sol.t, sol.y.T
 ```
 
-Now you can simply solve the undamped pendulum for a specific choice of parameters.
+Now you can simply solve the undamped pendulum for a specific choice of parameters:
+
+```python
+time, trajectory = generate_pendulum_trajectory(θ_0=0.1, 
+                                                ω_0=0.0, 
+                                                T=20.0, 
+                                                n_points=500, 
+                                                b=0.1, 
+                                                g=9.8, 
+                                                L=9.8, 
+                                                damped=False, 
+                                                method='BDF')
+```
+
 To test my code, I create the figures below which are my reproductions of figures shown in section 1.2.3 in Prof. Scheinerman's textbook 
 [*Invitation to Dynamical Systems*](https://github.com/scheinerman/InvitationToDynamicalSystems).
 The parameters' values used in the textbook are <span class="math display">$$ g = 9.8 \frac{m}{s^2} $$</span> and 
@@ -119,7 +132,13 @@ The parameters' values used in the textbook are <span class="math display">$$ g 
 
 ## Damped pendulum
 
+The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
 
+<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta) - b \cdot \omega \end{cases}\end{equation}$$</span>
+
+where <span class="math display">$$ b $$</span> is the damping parameter.
+
+We define a function that generates the RHS vector for this system of ODEs:
 
 ```python
 def damped_pendulum(t, 
@@ -130,5 +149,7 @@ def damped_pendulum(t,
 
     θ, ω = state_vector
     
-    return [ω, - b * ω - g/L * np.sin(θ)]
+    return [ω, - g/L * np.sin(θ) - b * ω]
 ```
+
+And we solve it with the same function `generate_pendulum_trajectory()` as before.
