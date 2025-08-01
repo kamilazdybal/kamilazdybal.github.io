@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Coding the policy gradient method in PyTorch"
-date:   2025-03-30 10:00:00 +0100
+date:   2025-07-30 10:00:00 +0100
 categories: jekyll update
 ---
 
