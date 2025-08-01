@@ -117,24 +117,24 @@ The parameters' values used in the textbook are <span class="math display">$$ g 
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-01.png" width="800">
 </p>
 
-> The motion of a pendulum with <span class="math display">$$ \theta_0 = 0.1 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
+> The motion of an **undamped** pendulum with <span class="math display">$$ \theta_0 = 0.1 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-02.png" width="800">
 </p>
 
-> The motion of a pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
+> The motion of an **undamped** pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-03.png" width="800">
 </p>
 
-> The motion of a pendulum with <span class="math display">$$ \theta_0 = 0.0 $$</span> and <span class="math display">$$ \omega_0 = 2.0 $$</span>. 
+> The motion of an **undamped** pendulum with <span class="math display">$$ \theta_0 = 0.0 $$</span> and <span class="math display">$$ \omega_0 = 2.0 $$</span>. 
 > Interestingly, here I wasn't quite able to get Prof. Scheinerman's figure and the solution strongly depends on the type of solver used (I've used BDF).
 
 ## Damped pendulum
 
-The system of ordinary differential equations (ODEs) that describes motion of an undamped ideal pendulum is as following:
+The system of ODEs that describes motion of an damped ideal pendulum is as following:
 
 <span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega(t) \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta(t)) - b \cdot \omega(t) \end{cases}\end{equation}$$</span>
 
@@ -174,4 +174,4 @@ Here's one example of the trajectory of the damped pendulum, where you can obser
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-damped-01.png" width="800">
 </p>
 
-> The motion of a damped pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
+> The motion of a **damped** pendulum with <span class="math display">$$ \theta_0 = 3.0 $$</span> and <span class="math display">$$ \omega_0 = 0.0 $$</span>.
