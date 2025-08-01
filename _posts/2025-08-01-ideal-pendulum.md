@@ -28,7 +28,11 @@ import matplotlib.pyplot as plt
 
 The state vector for the ideal pendulum is composed of the angle, <span class="math display">$$ \theta(t) $$</span>, that the pendulum makes
 with the vertical direction, and the angular velocity, <span class="math display">$$ \omega(t) $$</span>, 
-both being functions of time, <span class="math display">$$ t $$</span>.
+both being functions of time, <span class="math display">$$ t $$</span>. Hence, in the code you will see:
+
+```python
+θ, ω = state_vector
+```
 
 ## Undamped pendulum
 
