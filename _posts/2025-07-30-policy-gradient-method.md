@@ -38,7 +38,7 @@ Often to navigate real-world systems we would like to be able to take continuous
 The latter is a much more powerful approach for practical engineering applications because control variables 
 of real-world systems are often continuous—think of velocity, acceleration, torque, direction, temperature, etc.
 A single action can then immediately scale to the necessary magnitude, 
-instead requiring several incremental actions to reach the same magnitude.
+instead of requiring several incremental actions to reach the same magnitude.
 
 This concept is visualized in the figure below on the example of spatial navigation 
 toward a target—many less steps are required to reach the target if the agent is allowed 
@@ -58,15 +58,3 @@ We'll start by understanding the **softmax function**.
 
 
 
-
-
-
-
-
-<span class="math display">$$
-p(s', r | s, a) \in [0,1] ,
-$$</span>
-
-<span class="math display">$$
-\sum_{s \in \mathcal{S}} p(s' | s, a) = 0.9 + 0.04 + 0.04 + 0.02 = 1 .
-$$</span>
