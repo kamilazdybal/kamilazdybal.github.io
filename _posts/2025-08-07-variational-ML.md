@@ -27,13 +27,13 @@ talk about one of the simplest ones...
 
 The *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
 for a random variable <span class="math display">$$z$$</span> 
-is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2)$$</span>, 
+is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma)$$</span>, 
 where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
 is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span> is a quantity
-known as the variance of the distribution). The symbol "<span class="math display">$$\mid)$$</span>" denotes a conditional
+known as the variance of the distribution). The symbol "<span class="math display">$$\mid$$</span>" denotes a conditional
 probability. The Gaussian PDF can be conveniently expressed in analytic form as:
 
-<span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} \right)$$</span>
+<span class="math display">$$\mathcal{N}(z \mid \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} \right)$$</span>
 
 since such a function always has the total area under the curve equal to unity.
 
