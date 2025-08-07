@@ -17,8 +17,8 @@ categories: jekyll update
 # Variational approaches in machine learning
 
 Variational approaches in machine learning (ML) shift the perspective away from dealing with data samples explicitly
-into dealing with probability distributions that describe those data samples. This can be a powerful modeling
-approach, recently standing behind the very many successes of generative models. 
+into dealing with probability distributions that describe those data samples. This can provide a powerful data modeling
+approach, recently standing behind the many successes of generative models.
 
 ## Gaussian probability density function
 
@@ -35,6 +35,18 @@ The Gaussian PDF can be conveniently expressed in analytic form as:
 <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} \right)$$</span>
 
 since such form has a total area under the curve equal to unity.
+
+A Python implementation of the above equation is quite straightforward:
+
+```python
+import numpy as np
+
+def gaussian_PDF(x, 
+                 mu=0.0, 
+                 sigma=1.0):
+
+    return 1.0 / (sigma * 2.0 * np.pi) * np.exp(- 1.0 / 2.0 * (x - mu)**2 / (sigma**2))
+```
 
 The figure below visualizes a few Gaussian PDFs for a couple of choices for 
 <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>.
