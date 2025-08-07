@@ -66,6 +66,13 @@ and re-scale that sample to the desired <span class="math display">$$\mu$$</span
 
 <span class="math display">$$z = \varepsilon \cdot \sigma + \mu$$</span>
 
+Take a look how I have now drawn 1000 samples from each distribution and plotted histograms for those samples.
+They indeed fit the given PDF!
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
+</p>
+
 ## Working with log-distributions
 
 Working with probabilities or PDFs can be tricky to ML algorithms, because those can get
