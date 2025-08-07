@@ -66,5 +66,20 @@ and re-scale that sample to the desired <span class="math display">$$\mu$$</span
 
 <span class="math display">$$z = \varepsilon \cdot \sigma + \mu$$</span>
 
+## Working with log-distributions
 
+Working with probabilities or PDFs can be tricky to ML algorithms, because those can get
+arbitrarily close to zero. Take a look at the Gaussian PDFs from the figure before, for the most part
+(stretching to plus/minus infinity) the Gaussian PDF is very near zero. ML approaches may not work't that well
+when they have to discern between 
+<span class="math display">$$10^{-6}$$</span> and <span class="math display">$$10^{-7}$$</span>
+and, at the same time, also work well in the regime between
+<span class="math display">$$10^{0}$$</span> and <span class="math display">$$10^{-1}$$</span>...
+This is why you will often encounter log-transformations of probabilities, or PDFs in ML.
+Take a look at the figure below, where I've transformed the earlier Gaussian PDFs with a natural logarithm.
+
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
+</p>
 
