@@ -20,7 +20,10 @@ Variational approaches in machine learning (ML) shift the perspective away from 
 into dealing with probability distributions that describe those data samples. This can provide a powerful data modeling
 approach, recently standing behind the many successes of generative models.
 
-## Gaussian probability density function
+Since the core concepts of variational approaches are rooted in probability distributions, we need to first
+talk about one of the simplest ones...
+
+## Gaussian normal distribution
 
 The *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
 for a random variable <span class="math display">$$z$$</span> 
@@ -28,24 +31,22 @@ is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2)$$</spa
 where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
 is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span> is a quantity
 known as the variance of the distribution). The symbol "<span class="math display">$$\mid)$$</span>" denotes a conditional
-probability.
-
-The Gaussian PDF can be conveniently expressed in analytic form as:
+probability. The Gaussian PDF can be conveniently expressed in analytic form as:
 
 <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} \right)$$</span>
 
-since such form has a total area under the curve equal to unity.
+since such a function always has the total area under the curve equal to unity.
 
-A Python implementation of the above equation is quite straightforward:
+Python implementation of the above equation is quite straightforward:
 
 ```python
 import numpy as np
 
-def gaussian_PDF(x, 
-                 mu=0.0, 
-                 sigma=1.0):
+def gaussian_PDF(x,
+                 μ=0.0,
+                 σ=1.0):
 
-    return 1.0 / (sigma * 2.0 * np.pi) * np.exp(- 1.0 / 2.0 * (x - mu)**2 / (sigma**2))
+    return 1.0 / (σ * 2.0 * np.pi) * np.exp(- 1.0 / 2.0 * (x - μ)**2 / (σ**2))
 ```
 
 The figure below visualizes a few Gaussian PDFs for a couple of choices for 
@@ -58,7 +59,19 @@ The figure below visualizes a few Gaussian PDFs for a couple of choices for
 The cool part about this distribution is that knowing the values of 
 <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span> you know everything about it.
 What's even cooler, you can now sample a value of the random variable <span class="math display">$$z$$</span> 
-from a distribution with a specific values for <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>!
+from a distribution given a specific value for <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>!
+The way to do that is to first draw a sample, <span class="math display">$$\varepsilon$$</span>, 
+from <span class="math display">$$\mathcal{N}(z \mid \mu = 0.0, \sigma = 1.0)$$</span>
+and re-scale that sample to the desired <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>, like so:
+
+<span class="math display">$$z = \varepsilon \cdot \sigma + \mu$$</span>
+
+
+
+
+
+
+
 
 
 
