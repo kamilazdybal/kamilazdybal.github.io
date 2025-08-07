@@ -17,8 +17,28 @@ categories: jekyll update
 # Variational approaches in machine learning
 
 
-<p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/ideal-pendulum-03.png" width="800">
-</p>
 
-<span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega(t) \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta(t)) - b \cdot \omega(t) \end{cases}\end{equation}$$</span>
+## Gaussian probability density function
+
+The *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
+for a random variable <span class="math display">$$z$$</span> 
+is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2)$$</span>, 
+where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
+is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span>) is a quantity
+known as the variance of the distribution). The Gaussian PDF can be conveniently expressed in analytic form as:
+
+<span class="math display">$$\mathcal{N}(z \mid \mu, \sigma^2) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} \right)$$</span>
+
+since such form has a total area under the curve equal to unity.
+
+The figure below visualizes a few Gaussian 
+
+The cool part about this distribution is that knowing the values of 
+<span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span> you know everything about it.
+What's even cooler, you can now sample a value of the random variable <span class="math display">$$z$$</span> 
+from a distribution with a specific values for <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>!
+
+
+
+
+
