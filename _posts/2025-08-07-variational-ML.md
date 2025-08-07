@@ -77,7 +77,7 @@ and, at the same time, also work well in the regime between
 <span class="math display">$$10^{0}$$</span> and <span class="math display">$$10^{-1}$$</span>...
 This is why you will often encounter log-transformations of probabilities, or PDFs in ML.
 Take a look at the figure below, where I've transformed the earlier Gaussian PDFs with a natural logarithm.
-
+There is now much more variability in values that we would have previously deemed as essentially zero.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
