@@ -42,11 +42,11 @@ Python implementation of the above equation is quite straightforward:
 ```python
 import numpy as np
 
-def gaussian_PDF(x,
-                 μ=0.0,
+def gaussian_PDF(x, 
+                 μ=0.0, 
                  σ=1.0):
 
-    return 1.0 / (σ * 2.0 * np.pi) * np.exp(- 1.0 / 2.0 * (x - μ)**2 / (σ**2))
+    return 1.0 / (σ * np.sqrt(2.0 * np.pi)) * np.exp(- 1.0 / 2.0 * (x - μ)**2 / (σ**2))
 ```
 
 The figure below visualizes a few Gaussian PDFs for a couple of choices for 
