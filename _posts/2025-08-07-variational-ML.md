@@ -62,18 +62,9 @@ What's even cooler, you can now sample a value of the random variable <span clas
 from a distribution given a specific value for <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>!
 The way to do that is to first draw a sample, <span class="math display">$$\varepsilon$$</span>, 
 from <span class="math display">$$\mathcal{N}(z \mid \mu = 0.0, \sigma = 1.0)$$</span>
-and re-scale that sample to the desired <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span>, like so:
+and re-scale that sample to the desired <span class="math display">$$\mu$$</span> and <span class="math display">$$\sigma$$</span> values, like so:
 
 <span class="math display">$$z = \varepsilon \cdot \sigma + \mu$$</span>
-
-
-
-
-
-
-
-
-
 
 
 
