@@ -99,3 +99,22 @@ Let's compute the natural logarithm of the Gaussian normal distribution—this w
 <span class="math display">
 $$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = \ln \left( \frac{1}{\sigma} \right) + \ln \left( \frac{1}{\sqrt{2\pi}} \right) + -\frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2} \right)$$
 </span>
+
+Here's the Python implementation of the above equation:
+
+```python
+def ln_gaussian_PDF(x, 
+                    μ=0.0, 
+                    σ=1.0):
+
+    return -0.5 * (np.log(σ**2) + np.log(2 * np.pi) + (x - μ)**2 / (σ**2))
+```
+
+## The concept of maximizing log-likelihoods
+
+
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-maximizing-likelihood.png" width="800">
+</p>
+
