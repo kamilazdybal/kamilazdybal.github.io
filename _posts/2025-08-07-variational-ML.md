@@ -77,14 +77,18 @@ They indeed fit the given PDF!
 
 Working with probabilities or PDFs can be tricky to ML algorithms, because those can get
 arbitrarily close to zero. Take a look at the Gaussian PDFs from the figure before, for the most part
-(stretching to plus/minus infinity) the Gaussian PDF is very near zero. ML approaches may not work that well
+(stretching to plus/minus infinity) the Gaussian PDF is very near zero. How near? Well, the endpoints of the red curve
+correspond to the density being <span class="math display">$$\mathcal{O}(10^{-23}) $$</span>.
+We may easily break numerical stability of a computational algorithm 
+if we have to run operations (such as addition or subtraction) on such small numbers.
+In addition, predictive ML approaches may not work that well
 when they have to discern between 
 <span class="math display">$$10^{-6}$$</span> and <span class="math display">$$10^{-7}$$</span>
 and, at the same time, also work well in the regime between
 <span class="math display">$$10^{0}$$</span> and <span class="math display">$$10^{-1}$$</span>.
-This is why you will often encounter log-transformations of probabilities, or of PDFs, in ML.
+This is why you will often encounter logarithmic transformations of probabilities, or of PDFs, in ML.
 In the figure below, I've transformed the earlier Gaussian PDFs with a natural logarithm.
-There is now much more variability in values that we would have previously deemed as essentially zero.
+There is now much more variability in values that we would have previously considered as essentially zero.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
