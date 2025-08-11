@@ -26,7 +26,7 @@ talk about one of the simplest ones...
 ## The Gaussian normal distribution
 
 The *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
-for a random variable <span class="math display">$$z$$</span> 
+for a random variable <span class="math display">$$z$$</span> (for example, star dates from *Star Trek Original Series*)
 is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma)$$</span>, 
 where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
 is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span> is a quantity
@@ -89,4 +89,12 @@ There is now much more variability in values that we would have previously deeme
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
 </p>
+
+Let's compute the natural logarithm of the Gaussian normal distribution this will come in handy later.
+
+<span class="math display">
+$$\ln \big( \mathcal{N}(z \mid \mu, \sigma^2) \big) = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
+</span>
+
+
 
