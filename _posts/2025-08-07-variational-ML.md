@@ -83,17 +83,17 @@ when they have to discern between
 and, at the same time, also work well in the regime between
 <span class="math display">$$10^{0}$$</span> and <span class="math display">$$10^{-1}$$</span>.
 This is why you will often encounter log-transformations of probabilities, or of PDFs, in ML.
-Take a look at the figure below, where I've transformed the earlier Gaussian PDFs with a natural logarithm.
+In the figure below, I've transformed the earlier Gaussian PDFs with a natural logarithm.
 There is now much more variability in values that we would have previously deemed as essentially zero.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/variational-log-gaussian-PDFs.png" width="800">
 </p>
 
-Let's compute the natural logarithm of the Gaussian normal distribution this will come in handy later.
+Let's compute the natural logarithm of the Gaussian normal distribution—this will come in handy later:
 
 <span class="math display">
-$$\ln \big( \mathcal{N}(z \mid \mu, \sigma^2) \big) = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
+$$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
 </span>
 
 
