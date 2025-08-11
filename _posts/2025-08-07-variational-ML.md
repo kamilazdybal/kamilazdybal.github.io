@@ -16,8 +16,8 @@ categories: jekyll update
 
 # Variational approaches in machine learning
 
-Variational approaches in machine learning (ML) shift the perspective away from dealing with data samples explicitly
-into dealing with probability distributions that describe those data samples. This can provide a powerful data modeling
+Variational approaches in machine learning (ML) shift the perspective away from explicitly dealing with data samples 
+to dealing with probability distributions that describe those data samples. This can provide a powerful data modeling
 approach, recently standing behind the many successes of generative models.
 
 Since the core concepts of variational approaches are rooted in probability distributions, we need to first
@@ -93,5 +93,5 @@ There is now much more variability in values that we would have previously deeme
 Let's compute the natural logarithm of the Gaussian normal distribution—this will come in handy later:
 
 <span class="math display">
-$$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = \ln(\frac{1}{\sigma}) + \ln(\frac{1}{\sqrt{2\pi}}) + -\frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
+$$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = \ln \left( \frac{1}{\sigma} \right) + \ln \left( \frac{1}{\sqrt{2\pi}} \right) + -\frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2} \right)$$
 </span>
