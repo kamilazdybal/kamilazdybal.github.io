@@ -25,8 +25,8 @@ talk about one of the simplest ones...
 
 ## The Gaussian normal distribution
 
-For a random variable <span class="math display">$$z$$</span>—for example, star dates from *Star Trek Original Series*—
-the *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
+For a random variable <span class="math display">$$z$$</span>—for example, star dates from *Star Trek Original Series*—the 
+*Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
 is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma)$$</span>, 
 where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
 is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span> is a quantity
