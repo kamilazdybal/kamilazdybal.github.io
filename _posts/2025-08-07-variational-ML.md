@@ -25,8 +25,8 @@ talk about one of the simplest ones...
 
 ## The Gaussian normal distribution
 
-The *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
-for a random variable <span class="math display">$$z$$</span> (for example, star dates from *Star Trek Original Series*)
+For a random variable <span class="math display">$$z$$</span>—for example, star dates from *Star Trek Original Series*—
+the *Gaussian probability density function* (PDF), also known as the *Gaussian normal distribution*,
 is denoted <span class="math display">$$\mathcal{N}(z \mid \mu, \sigma)$$</span>, 
 where <span class="math display">$$\mu$$</span> is the mean and <span class="math display">$$\sigma$$</span>
 is the standard deviation of the distribution (note that <span class="math display">$$\sigma^2$$</span> is a quantity
@@ -66,7 +66,7 @@ and re-scale that sample to the desired <span class="math display">$$\mu$$</span
 
 <span class="math display">$$z = \varepsilon \cdot \sigma + \mu$$</span>
 
-Take a look how I have now drawn 1000 samples from each distribution and plotted histograms for those samples.
+Take a look at how I have now drawn 1000 samples from each distribution and plotted histograms for those samples.
 They indeed fit the given PDF!
 
 <p align="center">
@@ -93,8 +93,5 @@ There is now much more variability in values that we would have previously deeme
 Let's compute the natural logarithm of the Gaussian normal distribution—this will come in handy later:
 
 <span class="math display">
-$$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
+$$\ln \left( \mathcal{N}(z \mid \mu, \sigma) \right) = \ln(\frac{1}{\sigma}) + \ln(\frac{1}{\sqrt{2\pi}}) + -\frac{1}{2} \frac{(z - \mu)^2}{\sigma^2} = -\frac{1}{2} \left( \ln \sigma^2 + \ln(2\pi) + \frac{(z - \mu)^2}{\sigma^2}\right)$$
 </span>
-
-
-
