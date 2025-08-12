@@ -138,7 +138,7 @@ The parameters' values used in the textbook are <span class="math display">$$ g 
 
 ## Damped pendulum
 
-The system of ODEs that describes motion of an damped ideal pendulum is as following:
+The system of ODEs that describes motion of a damped ideal pendulum is as following:
 
 <span class="math display">$$ \begin{equation}\begin{cases} \frac{d \theta(t)}{dt} = \omega(t) \\ \frac{d \omega(t)}{dt} = - \frac{g}{L} \sin(\theta(t)) - b \cdot \omega(t) \end{cases}\end{equation}$$</span>
 
