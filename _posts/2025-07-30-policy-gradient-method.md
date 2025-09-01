@@ -29,17 +29,15 @@ to determine the next action is commonly used for discrete action spaces.
 This approach to RL first determines the value of being in each state of the environment and executing 
 a specific action when in that state. Then, the policy becomes a function that always selects the action 
 that maximizes this value function, <span class="math display">$$ \pi: a = \text{argmax}(q^*(a, s)) $$</span>.
-
 But we can also skip the step of getting to know value functions. We can directly learn the parameters, 
 <span class="math display">$$ \pmb{\theta} $$</span>, 
 of the policy <span class="math display">$$ \pi(a | s, \pmb{\theta}) $$</span>.
 
-Often to navigate real-world systems we would like to be able to take continuous actions.
-The latter is a much more powerful approach for practical engineering applications because control variables 
+Often, to navigate real-world systems we would like to be able to take continuous actions as opposed to discrete actions.
+The former is a much more powerful approach for practical engineering applications because control variables 
 of real-world systems are often continuous—think of velocity, acceleration, torque, direction, temperature, etc.
 A single action can then immediately scale to the necessary magnitude, 
-instead of requiring several incremental actions to reach the same magnitude.
-
+instead of requiring several incremental actions to reach the same magnitude. 
 This concept is visualized in the figure below on the example of spatial navigation 
 toward a target—many less steps are required to reach the target if the agent is allowed 
 to move in the continuous space of (angle, direction) rather than a discrete space of (up, down, right, left).
