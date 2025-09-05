@@ -110,17 +110,23 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 # Introducing **pykitPIV**: Python kinematic training for particle image velocimetry!
 
-**pykitPIV** is a Python package that provides rich and reproducible virtual environments for training machine learning (ML) algorithms in velocimetry.
-The generated synthetic datasets and environments mimic those coming from particle image velocimetry (PIV) and background-oriented Schlieren (BOS) experimental techniques. 
-The library integrates with various ML algorithms, such as convolutional neural networks, variational approaches, active learning, and reinforcement learning. 
-It gives the user, or the ML agent, flexibility in selecting various parameters that would normally be available in an experimental setting, such as seeding density, 
-properties of the laser plane, camera exposure, particle loss, or experimental noise. 
-We also provide an atlas of challenging synthetic velocity fields from analytic formulations (both compressible and incompressible) 
-where the effects of particle drift and diffusion in stationary isotropic turbulence can also be added using the simplified Langevin model.
-With **pykitPIV**, ML agents have the freedom to interact with the virtual experiment,
-can assimilate data from real experiment, and can be trained to perform a variety of tasks using diverse sensory cues and rewards.
+**pykitPIV** is a Python library that provides flexible and reproducible virtual environments 
+for training ML algorithms in optical velocimetry. The synthetic datasets and environments generated 
+by **pykitPIV** mimic those obtained from particle image velocimetry (PIV) or background-oriented Schlieren (BOS) 
+experimental techniques. The library seamlessly integrates with various ML models, such as convolutional neural networks, 
+variational methods, active learning, and reinforcement learning. 
+It allows human users or the ML agents to flexibly configure parameters that typically emerge in experimental settings, 
+such as seeding density, laser-sheet characteristics, camera exposure, particle loss, and experimental noise. 
+In addition, **pykitPIV** enables an atlas of challenging synthetic velocity fields derived from analytic 
+formulations (both compressible and incompressible), where particle drift and diffusion effects in 
+stationary isotropic turbulence can be incorporated through a simplified Langevin model. 
+Furthermore, **pykitPIV** enables ML agents to interact with virtual experiments, 
+assimilate real experimental data, and train on a variety of tasks using diverse sensory cues and rewards. 
+Ultimately, our library aims to accelerate real-time experimental inference, 
+facilitate autonomous experimentation, and enable building robust models from experimental data, 
+thereby supporting current trends in velocimetry.
 
-<sup>K. Zdybał, C. Mucignat, I. Lunati. *pykitPIV: A framework for flexible and reproducible virtual training of machine learning models in optical velocimetry*, (2025)</sup>
+<sup>K. Zdybał, C. Mucignat, I. Lunati. *pykitPIV: A framework for flexible and reproducible virtual training of machine learning models in optical velocimetry*, SoftwareX (2025)</sup>
 
 <div class="row">
   <div class="column">
