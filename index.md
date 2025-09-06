@@ -112,19 +112,19 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 **pykitPIV** is a Python library that provides flexible and reproducible virtual environments 
 for training ML algorithms in optical velocimetry. The synthetic datasets and environments generated 
-by **pykitPIV** mimic those obtained from particle image velocimetry (PIV) or background-oriented Schlieren (BOS) 
-experimental techniques. The library seamlessly integrates with various ML models, such as convolutional neural networks, 
-variational methods, active learning, and reinforcement learning. 
-It allows human users or the ML agents to flexibly configure parameters that typically emerge in experimental settings, 
-such as seeding density, laser-sheet characteristics, camera exposure, particle loss, and experimental noise. 
-In addition, **pykitPIV** enables an atlas of challenging synthetic velocity fields derived from analytic 
+by pykitPIV mimic those obtained from particle image velocimetry (PIV) or background-oriented Schlieren (BOS) 
+experimental techniques. We enable an atlas of challenging synthetic velocity fields derived from analytic 
 formulations (both compressible and incompressible), where particle drift and diffusion effects in 
-stationary isotropic turbulence can be incorporated through a simplified Langevin model. 
-Furthermore, **pykitPIV** enables ML agents to interact with virtual experiments, 
+stationary isotropic turbulence can be incorporated through **a simplified Langevin model**.
+The library integrates with various machine learning (ML) models, specifically **convolutional neural networks**
+and **reinforcement learning**. It allows human users or the ML agents to configure parameters 
+that typically emerge in experimental settings, such as seeding density, laser-sheet characteristics, 
+camera exposure, particle loss, and experimental noise.
+pykitPIV enables ML agents to interact with virtual experiments, 
 assimilate real experimental data, and train on a variety of tasks using diverse sensory cues and rewards. 
-Ultimately, our library aims to accelerate real-time experimental inference, 
+Our library aims to accelerate real-time experimental inference, 
 facilitate autonomous experimentation, and enable building robust models from experimental data, 
-thereby supporting current trends in velocimetry.
+thereby supporting current trends in optical velocimetry.
 
 <sup>K. Zdybał, C. Mucignat, I. Lunati. *pykitPIV: A framework for flexible and reproducible virtual training of machine learning models in optical velocimetry*, SoftwareX (2025)</sup>
 
