@@ -43,16 +43,26 @@ toward a target—many less steps are required to reach the target if the agent 
 to move in the continuous space of (angle, direction) rather than a discrete space of (up, down, right, left).
 
 <p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/discrete-action-space.png" width="500">
+</p>
+
+> Discrete action space
+
+<p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/continuous-action-space.png" width="500">
 </p>
+
+> Continuous action space
 
 In this post, I show you how to code **the policy gradient method** which allows an RL agent to navigate
 continuous action spaces by sampling them from learned probability distributions!
 
-## Let's talk about softmax...
+## Let's talk about sigmoid...
+
+
+
+
+## ...because what I really want to talk about is softmax.
 
 We'll start by understanding the **softmax function**.
-
-
-
 
