@@ -38,21 +38,26 @@ The former is a much more powerful approach for practical engineering applicatio
 of real-world systems are often continuous—think of velocity, acceleration, torque, direction, temperature, etc.
 A single action can then immediately scale to the necessary magnitude, 
 instead of requiring several incremental actions to reach the same magnitude. 
-This concept is visualized in the figure below on the example of spatial navigation 
-toward a target—many less steps are required to reach the target if the agent is allowed 
-to move in the continuous space of (angle, direction) rather than a discrete space of (up, down, right, left).
+This concept is visualized in the two figures below on the example of spatial navigation 
+toward a target being the maximum in a scalar function. 
+Many less actions are required to reach the target if the agent is allowed 
+to move in the continuous space of (angle, direction) rather than a discrete space of (up, down, right, left, stay).
+Notice that the RL agent trained in the continuous action space first traverses the low scalar value region
+with larger step sizes, until it approaches the local maximum, where it starts to take finer steps.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/discrete-action-space.png" width="500">
 </p>
 
-> Discrete action space
+> Discrete action space: Action is one of up, down, right, left, or stay. About 200 actions were needed to reach the
+> local maximum in the scalar value.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/continuous-action-space.png" width="500">
 </p>
 
-> Continuous action space
+> Continuous action space: Action is a tuple composed of angle and step size. About 15 actions were needed to reach the
+> local maximum in the scalar value.
 
 In this post, I show you how to code **the policy gradient method** which allows an RL agent to navigate
 continuous action spaces by sampling them from learned probability distributions!
