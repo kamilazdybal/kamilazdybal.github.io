@@ -133,7 +133,7 @@ thereby supporting current trends in optical velocimetry.
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pykitPIV.png" alt="pykitPIV" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="" target="_blank"> Article</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://authors.elsevier.com/sd/article/S2352-7110(25)00322-X" target="_blank"> Article</a></h4>
     <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/pykitPIV" target="_blank"> Code</a></h4>
     <h4><span class="fa fa-book"></span><a href="https://pykitpiv.readthedocs.io/" target="_blank"> Documentation</a></h4>
   </div>
