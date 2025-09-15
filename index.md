@@ -108,7 +108,7 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 <ul id="pykitPIV"></ul>
 
-# Introducing **pykitPIV**: Python kinematic training for particle image velocimetry!
+# **pykitPIV** - Python kinematic training for particle image velocimetry!
 
 **pykitPIV** is a Python library that provides flexible and reproducible virtual environments 
 for training ML algorithms in optical velocimetry. The synthetic datasets and environments generated 
@@ -335,7 +335,7 @@ Doing a Ph.D. has been an immensely rewarding journey for me. It has been really
 
 <ul id="PCAfold-2.0"></ul>
 
-# Introducing **PCAfold 2.0**! Novel tools and algorithms for low-dimensional manifold assessment and optimization
+# **PCAfold 2.0** - Novel tools and algorithms for low-dimensional manifold assessment and optimization
 
 We describe an update to our open-source Python package, **PCAfold**, designed to help researchers generate, analyze and improve low-dimensional data manifolds. In the current version, **PCAfold 2.0**, we introduce novel tools and algorithms for assessing and optimizing low-dimensional manifolds. This includes a method that generates a “map” of local feature sizes that can help pinpoint researchers to problematic regions on a manifold. We introduce a novel cost function that characterizes the quality of a manifold topology with a single number. We develop two algorithms for feature selection based on principal component analysis (PCA) that use the cost function as an objective function to minimize. We introduce a quantity of interest (QoI)-aware dimensionality reduction strategy where data projections are computed using an artificial neural network and are directly optimized towards representing various projection-independent and projection-dependent QoIs. We also introduce an implementation of partition of unity networks (POUnets) for efficient reconstruction of QoIs from low-dimensional manifolds based on combining neural network classification with localized polynomial regression. Our software can be broadly applicable in all domains of science and engineering that aim to reduce data dimensionality, as well as in the fundamental research on representation learning.
 
@@ -352,7 +352,7 @@ We describe an update to our open-source Python package, **PCAfold**, designed t
 
 <ul id="PCAfold-tutorials"></ul>
 
-## Check out **PCAfold** video tutorials!
+### Check out the **PCAfold** video tutorials!
 
 PCAfold is our open-source Python library for handling high-dimensional datasets and modeling high-dimensional systems with computational efficiency. In this new series of videos, I provide an overview of possible functionalities in generating, analyzing, and improving low-dimensional data projections, as well as building efficient regression models based on those projections. Stay tuned for more!
 
