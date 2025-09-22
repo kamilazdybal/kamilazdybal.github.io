@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Solving your undergraduate homework with PINNs"
-date:   2025-09-22 10:00:00 +0100
+date:   2025-09-21 10:00:00 +0100
 categories: jekyll update
 ---
 
