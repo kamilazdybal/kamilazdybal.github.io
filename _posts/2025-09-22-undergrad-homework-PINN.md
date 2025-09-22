@@ -96,7 +96,7 @@ x_grid_torch = torch.linspace(0.0, L, n_points, dtype=dtype, device=device).resh
 
 (We use PyTorch's linspace instead of Numpy's linspace, because later we'll be querying the PINN model using this grid.)
 
-## The baseline solution
+## The baseline solution, <span class="math display">$$ T_b(x) $$</span>
 
 PINNs often use a neat trick to make the solution obey boundary conditions *exactly*. 
 
@@ -118,9 +118,9 @@ This is our baseline:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="800">
 </p>
 
-As you can see, just a linear function but one that obeys our boundary conditions!
+As you can see, it's just a linear function but one that obeys our boundary conditions!
 
-Next, the trained ANN will only approximate **a correction** to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
+Next, the trained ANN will only approximate **a correction** to this baseline linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
 and we will "spread" this correction over the domain using a multiplier <span class="math display">$$ x (L - x) $$</span>, so that 
 at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
 (we want to preserve the boundary conditions there exactly).
@@ -133,8 +133,7 @@ and the output of the ANN (with the multiplier which also preserves boundary con
 \tilde{T}(x) = T_b(x) + x \cdot (L - x) \cdot \mathcal{N}(x)
 $$</span>
 
-
-## The ANN correction
+## The ANN correction, <span class="math display">$$ \mathcal{N}(x) $$</span>
 
 Now you're free to define whatever fancy ANN you'd like to serve as <span class="math display">$$ \mathcal{N}(x) $$</span>!
 
