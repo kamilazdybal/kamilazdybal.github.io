@@ -212,7 +212,24 @@ the mean-squared-error (MSE) over some mini-batch
 \mathcal{L} = \text{MSE} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
 \end{equation}$$</span>
 
+But, as you may rightly wonder, this loss contains a second derivative of <span class="math display">$$ \tilde{T}(x) $$</span>.
+How are we going to get that??? Thankfully, PyTorch's automatic differentiation module will help us there!
 
+We can define a function that computes the first derivative, like so:
+
+```python
+def dTdx(T, x):
+    
+    return torch.autograd.grad(T, x, torch.ones_like(T), create_graph=True)[0]
+```
+
+and now define a function that computes the second derivative by running the first derivative operation twice internally:
+
+```python
+def d2Tdx2(T, x):
+
+    return dTdx(dTdx(T, x), x)
+```
 
 
 
