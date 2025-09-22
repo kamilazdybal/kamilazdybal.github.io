@@ -190,6 +190,12 @@ solution_network = SolutionNetwork(input_dimension=1,
                                    network_depth=8).to(device).to(dtype)
 ```
 
+The PINN solution is a superposition of these two:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-superposition.png" width="800">
+</p>
+
 ## The complete PINN module
 
 Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork` and will
@@ -386,7 +392,7 @@ for i in range(1, epochs + 1):
 ## How did the PINN do compared to an analytic solution or a finite-difference method?
 
 I computed an analytic solution to this ODE using Sympy 
-and a finite-difference solution using a second-order-accurate numerical stencil.
+and a finite-difference numerical solution using a second-order-accurate stencil.
 Here's how the PINN approximation compares with those two:
 
 <p align="center">
@@ -396,9 +402,3 @@ Here's how the PINN approximation compares with those two:
 It catches the trend but actually still leaves a lot to be improved! 🙂
 Certainly a second-order-accurate finite difference stencil does much better than this!
 But training parameters can still be tweaked. Feel free to play with the training parameters to see if you can do better than me!
-
-Note that the PINN solution is a superposition of these two:
-
-<p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-superposition.png" width="800">
-</p>
