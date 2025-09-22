@@ -192,7 +192,7 @@ solution_network = SolutionNetwork(input_dimension=1,
 
 ## The complete PINN module
 
-Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork`, and will
+Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork` and will
 add it to the baseline function, as we've seen earlier:
 
 <span class="math display">$$
@@ -261,7 +261,7 @@ def d2Tdx2(T, x):
 ```
 
 Now the training plan is the following. We'll sample <span class="math display">$$ n $$</span> random locations 
-from our domain, let's call them `x_grid_random`. This will be our mini-batch of points at each epoch.
+from our domain, let's store them in a vector called `x_grid_random`. This will be our mini-batch of points at each epoch.
 
 We'll evaluate the current PINN prediction on those points:
 
@@ -395,7 +395,7 @@ Here's how the PINN approximation compares with those two:
 
 It catches the trend but actually still leaves a lot to be improved! 🙂
 Certainly a second-order-accurate finite difference stencil does much better than this!
-But training parameters can still be tweaked. Feel free to play with training parameters to see if you can do better than me!
+But training parameters can still be tweaked. Feel free to play with the training parameters to see if you can do better than me!
 
 Note that the PINN solution is a superposition of these two:
 
