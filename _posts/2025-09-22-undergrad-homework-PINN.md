@@ -14,7 +14,7 @@ categories: jekyll update
   </a>
 </p>
 
-# Solving your undergraduate homework with a physics-informed neural network (PINN)!
+# Solving your undergraduate homework with a physics-informed neural network (PINN)
 
 Here, I will show you how to approximate a solution to a second-order ODE with physics-informed neural networks (PINNs)!
 
@@ -35,9 +35,11 @@ Here, we will take a simple ODE that you often encounter in your undergrad, whic
 where 
 <span class="math display">$$ h $$</span> is the thermal diffusivity, 
 <span class="math display">$$ \lambda $$</span> is the thermal conductivity,
+<span class="math display">$$ r $$</span> is the radius of the rod, and
+<span class="math display">$$ T_{\infty} $$</span> is the surrounding temperature.
 
-This is a boundary-value problem, where we impose the boundary conditions as
-<span class="math display">$$ T(x=0) = T_L $$</span>
+This is a boundary-value problem, where we also impose the Dirichlet boundary conditions as
+<span class="math display">$$ T(x=0) = T_L $$</span> and
 <span class="math display">$$ T(x=L) = T_R $$</span>.
 
 ```python
@@ -45,6 +47,43 @@ import numpy as np
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
+
+dtype  = torch.float64
+device = 'cpu'
+torch.set_default_dtype(dtype)
+```
+
+## Initialization of parameters
+
+The following are the boundary conditions, <span class="math display">$$ T(x=0) = T_L $$</span>
+and <span class="math display">$$ T(x=L)=T_R  $$</span>:
+
+```python
+T_L = 900     # K
+T_R = 300     # K
+```
+
+and the other numeric parameters for this problem:
+
+```python
+h = 300       # W/(m^2K)
+λ = 237       # W/(mK)
+r = 0.01      # m
+L = 0.5       # m
+T_infty = 700 # K
+```
+
+As a shorthand, we'll also already evaluate the constant coefficient from the right-hand-side of this ODE:
+
+```python
+k = (2.0 * h) / (λ * r)
+```
+
+We also create a grid in the <span class="math display">$$ x $$</span> direction for plotting the final solution:
+
+```python
+n_points = 1000
+x_grid = np.linspace(0.0, L, n_points)
 ```
 
 ## The baseline solution
@@ -54,6 +93,12 @@ import matplotlib.pyplot as plt
 
 
 
+
+## The residual loss
+
+<span class="math display">$$ \begin{equation}
+\mathcal{L} = \frac{d^2 \tilde{T}}{d x^2} - \frac{2h}{\lambda r}(\tilde{T} - T_{\infty})
+\end{equation}$$</span>
 
 
 
