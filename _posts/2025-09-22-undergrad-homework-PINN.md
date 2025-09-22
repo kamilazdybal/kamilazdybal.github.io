@@ -238,7 +238,7 @@ We will train the ANN such that this equation gives *almost* zero. Our loss func
 the mean-squared-error (MSE) over some mini-batch of <span class="math display">$$ n $$</span> points:
 
 <span class="math display">$$ \begin{equation}
-\mathcal{L} = \text{MSE}_{i=0}^{i=n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
+\mathcal{L} = \text{MSE}_{i=0}^{n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
 \end{equation}$$</span>
 
 But, as you may rightly wonder, this loss contains a second derivative of <span class="math display">$$ \tilde{T}(x) $$</span>.
@@ -275,13 +275,13 @@ We'll compute the second derivative of the current prediction at those grid poin
 T_xx = d2Tdx2(T_pred, x_grid_random)
 ```
 
-We'll assemble the residual (second derivative minus all that linear term):
+We'll assemble the residual (second derivative minus that whole linear term):
 
 ```python
 residual = T_xx - k * (T_pred - T_infty)
 ```
 
-And the loss will be the MSE error between that residual and a vector of zeros (because we know it should be exactly zero):
+And the loss will be the MSE between that residual and a vector of zeros (because we know it should be exactly zero):
 
 ```python
 loss = mse(residual, torch.zeros_like(residual))
@@ -294,9 +294,7 @@ So let's follow this procedure and train our PINN model!
 We define a function that, at each epoch, will sample <span class="math display">$$ n $$</span> locations on our rod where we will evaluate 
 how good the current approximation to the ODE solution is. This essentially defines a randomized grid in <span class="math display">$$ x $$</span>. 
 Notice that we use samples from a random uniform distribution (each location in <span class="math display">$$ x $$</span> is equally likely), 
-between <span class="math display">$$ x=0 $$</span> and <span class="math display">$$ x=L $$</span>. 
-But since this is a random sample, getting <span class="math display">$$ x = 0 $$</span> precisely is nearly impossible, 
-so we are sure that we will not modify the boundary values by our addition <span class="math display">$$ \mathcal{N}(x) $$</span>!
+between <span class="math display">$$ x=0 $$</span> and <span class="math display">$$ x=L $$</span>.
 
 ```python
 def sample_x_grid(n_points):
@@ -337,7 +335,9 @@ optimizer = torch.optim.RMSprop(PINN_model.parameters(), lr=initial_learning_rat
 Usually it's a good idea to decay the learning rate with training, so we define a learning rate decay scheduler:
 
 ```python
-scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=final_learning_rate)
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, 
+                                                       T_max=epochs, 
+                                                       eta_min=final_learning_rate)
 ```
 
 And here's our training loop that follows the procedure I mentioned earlier!
@@ -383,7 +383,7 @@ for i in range(1, epochs + 1):
         print(f"iter {i:5d} | per-sample residual loss {loss.item()/n_points_for_random_sample:.3e} | T(0)~{TL_hat:.3f} K, T(L)~{TR_hat:.3f} K")
 ```
 
-## How did PINN do compared to an analytic solution or a finite-difference method?
+## How did the PINN do compared to an analytic solution or a finite-difference method?
 
 I computed an analytic solution to this ODE using Sympy 
 and a finite-difference solution using a second-order-accurate numerical stencil.
@@ -393,12 +393,12 @@ Here's how the PINN approximation compares with those two:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-approximation.png" width="800">
 </p>
 
+It catches the trend but actually still leaves a lot to be improved! 🙂
+Certainly a second-order-accurate finite difference stencil does much better than this!
+But training parameters can still be tweaked. Feel free to play with training parameters to see if you can do better than me!
+
 Note that the PINN solution is a superposition of these two:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-superposition.png" width="800">
 </p>
-
-It catches the trend but actually still leaves a lot to be improved! 🙂 
-Certainly a second-order-accurate finite difference stencil does much better than this!
-But training parameters can still be tweaked. Feel free to play with training parameters to see if you can do better than me!
