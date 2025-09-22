@@ -17,19 +17,11 @@ categories: jekyll update
 # Solving your undergraduate homework with a physics-informed neural network (PINN)
 
 Here, I will show you how to approximate a solution to a second-order ODE with physics-informed neural networks (PINNs)!
-
-In PINNs, you train an artificial neural network (ANN) to approximate this solution but such that it obeys the underlying ODE. 
-The core concept behind a PINN is quite simple: You write your ODE (or PDE) in a residual form and construct a loss
-function which is an error measure of that residual. This residual will be different from zero as long as your solution is not exact. 
-The loss essentially contains a contribution from differentiating your current approximation, according to
-how that ODE (or PDE) looks like, and satisfying any boundary conditions.
-You then backpropagate this error to train the parameters of the ANN.
-
-Here, we will take a simple ODE that you often encounter in your undergrad, which is the steady-state diffusion 
+We will take a simple ODE that you often encounter in your undergrad numerical methods class—the steady-state diffusion 
 (in this case, of heat). This particular ODE represents a heating/cooling of a 1D rod:
 
 <span class="math display">$$ \begin{equation}
-\frac{d^2 T}{d x^2} = \frac{2h}{\lambda r}(T - T_{\infty})
+\frac{d^2 T(x)}{d x^2} = \frac{2h}{\lambda r}(T(x) - T_{\infty})
 \end{equation}$$</span>
 
 where 
@@ -41,6 +33,18 @@ where
 This is a boundary-value problem, where we also impose the Dirichlet boundary conditions as
 <span class="math display">$$ T(x=0) = T_L $$</span> and
 <span class="math display">$$ T(x=L) = T_R $$</span>.
+
+In PINNs, you train an artificial neural network (ANN) to approximate this solution but such that it obeys the underlying ODE. 
+The core concept behind a PINN is quite simple: You write your ODE in a residual form and construct a loss
+function which is an error measure of that residual. This residual will be different from zero as long as your solution is not exact. 
+The loss essentially contains a contribution from differentiating your current approximation, 
+<span class="math display">$$ \tilde{T}(x) $$</span>, according to
+how that ODE looks like, and satisfying any boundary conditions.
+You then backpropagate this error to train the parameters of the ANN.
+
+Note that, beyond this example, PINNs also work for PDEs!
+
+We'll code everything in PyTorch:
 
 ```python
 import numpy as np
@@ -92,8 +96,9 @@ PINNs often use a neat trick to make the solution obey boundary conditions *exac
 
 We can do this by first creating a baseline linear function that simply passes through the two boundary conditions. 
 We'll call this baseline function <span class="math display">$$ T_b(x) $$</span>.
-Next, the trained ANN only approximates a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>.
-The final solution is a superposition of the two, the baseline linear function (which obeys the boundary conditions at the end points of our domain)
+
+Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>.
+The final approximated solution is a superposition of the two, the baseline linear function (which obeys the boundary conditions at the end points of our domain)
 and the output of the ANN:
 
 <span class="math display">$$
@@ -109,6 +114,12 @@ def baseline_solution(x):
     
     return T_L * (1.0 - x / L) + T_R * (x / L)
 ```
+
+Let's visualize this baseline:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="600">
+</p>
 
 
 
