@@ -32,7 +32,9 @@ where
 
 This is a boundary-value problem, where we also impose the Dirichlet boundary conditions as
 <span class="math display">$$ T(x=0) = T_L $$</span> and
-<span class="math display">$$ T(x=L) = T_R $$</span>.
+<span class="math display">$$ T(x=L) = T_R $$</span>, where <span class="math display">$$ L $$</span> is the rod's length.
+
+## The core idea behind PINNs
 
 In PINNs, you train an artificial neural network (ANN) to approximate this solution but such that it obeys the underlying ODE. 
 The core concept behind a PINN is quite simple: You write your ODE in a residual form and construct a loss
@@ -96,19 +98,6 @@ PINNs often use a neat trick to make the solution obey boundary conditions *exac
 
 We can do this by first creating a baseline linear function that simply passes through the two boundary conditions. 
 We'll call this baseline function <span class="math display">$$ T_b(x) $$</span>.
-
-Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>
-and we will "spread" this solution over the domain using a vanishing factor <span class="math display">$$ x (L - x) $$</span>, so that 
-at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
-(we want to preserve the boundary conditions there exactly).
-
-The final approximated solution is a superposition of the two, the baseline linear function (which obeys the boundary conditions at the end points of our domain)
-and the output of the ANN:
-
-<span class="math display">$$
-\tilde{T}(x) = T_b(x) + x \cdot (L - x) \cdot \mathcal{N}(x)
-$$</span>
-
 Let's code the baseline function that passes through 
 <span class="math display">$$ T_L $$</span> and <span class="math display">$$ T_R $$</span>
 at the end points of our domain:
@@ -119,11 +108,25 @@ def baseline_solution(x):
     return T_L * (1.0 - x / L) + T_R * (x / L)
 ```
 
-Let's visualize this baseline:
+This is our baseline:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="800">
 </p>
+
+Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
+and we will "spread" this correction over the domain using a multiplier <span class="math display">$$ x (L - x) $$</span>, so that 
+at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
+(we want to preserve the boundary conditions there exactly).
+
+The final approximated solution that a PINN computes is a superposition of the two:
+the baseline linear function (which obeys boundary conditions at the end points of our domain)
+and the output of the ANN (with the multiplier which also preserves boundary conditions):
+
+<span class="math display">$$
+\tilde{T}(x) = T_b(x) + x \cdot (L - x) \cdot \mathcal{N}(x)
+$$</span>
+
 
 ## The ANN correction
 
@@ -173,6 +176,15 @@ class SolutionNetwork(nn.Module):
         return self.PDE_solution_net(x)
 ```
 
+We can already initialize this ANN that serves as <span class="math display">$$ \mathcal{N}(x) $$</span>:
+
+```python
+solution_network = SolutionNetwork(input_dimension=1, 
+                                   hidden_dimension=16, 
+                                   output_dimension=1, 
+                                   network_depth=8).to(device).to(dtype)
+```
+
 ## The complete PINN module
 
 Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork`, and will
@@ -195,6 +207,12 @@ class PINN(nn.Module):
         output = baseline_solution(x) + x * (L - x) * PINN_correction
         
         return output
+```
+
+We initialize the complete PINN module which uses the ANN that we just initialized:
+
+```python
+PINN_model = PINN(solution_network).to(device).to(dtype)
 ```
 
 ## The residual loss
@@ -278,20 +296,7 @@ def sample_x_grid(n_points):
     return x
 ```
 
-We initialize the ANN that serves as <span class="math display">$$ \mathcal{N}(x) $$</span>:
 
-```python
-solution_network = SolutionNetwork(input_dimension=1, 
-                                   hidden_dimension=16, 
-                                   output_dimension=1, 
-                                   network_depth=8).to(device).to(dtype)
-```
-
-And we initialize the complete PINN module which takes uses that ANN:
-
-```python
-PINN_model = PINN(solution_network).to(device).to(dtype)
-```
 
 We can specify how many random points from <span class="math display">$$ x $$</span> we will sample at each epoch:
 
