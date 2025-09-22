@@ -97,7 +97,11 @@ PINNs often use a neat trick to make the solution obey boundary conditions *exac
 We can do this by first creating a baseline linear function that simply passes through the two boundary conditions. 
 We'll call this baseline function <span class="math display">$$ T_b(x) $$</span>.
 
-Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>.
+Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>
+and we will "spread" this solution over the domain using a vanishing factor <span class="math display">$$ x (L - x) $$</span>, so that 
+at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
+(we want to preserve the boundary conditions there exactly).
+
 The final approximated solution is a superposition of the two, the baseline linear function (which obeys the boundary conditions at the end points of our domain)
 and the output of the ANN:
 
@@ -121,12 +125,91 @@ Let's visualize this baseline:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="600">
 </p>
 
+## The ANN correction
 
+Now you're free to define whatever fancy ANN you'd like to serve as <span class="math display">$$ \mathcal{N}(x) $$</span>!
+
+I made a network where the user can steer its depth and size of the hidden units. I use ReLU activations, which 
+worked better for me in this example than hyperbolic tangents. Note that to define this ANN you use a standard
+way of sublcassing ``nn.Module`` from PyTorch (your new class has to have its ``forward()`` function and all...).
+
+```python
+class SolutionNetwork(nn.Module):
+    
+    def __init__(self, 
+                 input_dimension=1, 
+                 hidden_dimension=8, 
+                 output_dimension=1, 
+                 network_depth=4):
+        
+        super().__init__()
+        
+        layers = []
+
+        # The first (input) layer:
+        layers.append(nn.Linear(input_dimension, hidden_dimension))
+
+        # Hidden layers:
+        for _ in range(network_depth - 1):
+            layers.append(nn.ReLU())
+            layers.append(nn.Linear(hidden_dimension, hidden_dimension))
+
+        # The final (output) layer:
+        layers.append(nn.ReLU())
+        layers.append(nn.Linear(hidden_dimension, output_dimension))
+
+        # Define a sequential model:
+        self.PDE_solution_net = nn.Sequential(*layers)
+
+        # Initialize all trainable parameters with the Xavier initialization:
+        for module in self.PDE_solution_net:
+            
+            if isinstance(module, nn.Linear):
+                nn.init.xavier_normal_(module.weight)
+                nn.init.zeros_(module.bias)
+
+    def forward(self, x):
+        
+        return self.PDE_solution_net(x)
+```
+
+## The complete PINN module
+
+Now we just complete the picture by defining this PINN module which will take an instance of ``SolutionNetwork``, and will
+add it to the baseline function, as we've seen earlier:
+
+```python
+class PINN(nn.Module):
+
+    def __init__(self, 
+                 solution_network):
+        
+        super().__init__()
+        
+        self.solution_network = solution_network
+
+    def forward(self, x):
+        
+        PINN_correction = self.solution_network(x)
+
+        output = baseline_solution(x) + x * (L - x) * PINN_correction
+        
+        return output
+```
 
 ## The residual loss
 
+Now we need to construct the residual loss! When we write our ODE in a residual form, we get:
+
 <span class="math display">$$ \begin{equation}
-\mathcal{L} = \frac{d^2 \tilde{T}}{d x^2} - \frac{2h}{\lambda r}(\tilde{T} - T_{\infty})
+\frac{d^2 T(x)}{d x^2} - \frac{2h}{\lambda r}(T(x) - T_{\infty}) = 0
+\end{equation}$$</span>
+
+We will train the ANN such that this equation gives *almost* zero. Our loss function will simply be 
+the mean-squared-error (MSE) over some mini-batch
+
+<span class="math display">$$ \begin{equation}
+\mathcal{L} = \text{MSE} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
 \end{equation}$$</span>
 
 
