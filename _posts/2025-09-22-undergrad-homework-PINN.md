@@ -115,7 +115,9 @@ This is our baseline:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="800">
 </p>
 
-Next, the trained ANN will only approximate a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
+As you can see, just a linear function but one that obeys our boundary conditions!
+
+Next, the trained ANN will only approximate **a correction** to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
 and we will "spread" this correction over the domain using a multiplier <span class="math display">$$ x (L - x) $$</span>, so that 
 at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
 (we want to preserve the boundary conditions there exactly).
@@ -225,10 +227,10 @@ Now we need to construct the residual loss! When we write our ODE in a residual 
 \end{equation}$$</span>
 
 We will train the ANN such that this equation gives *almost* zero. Our loss function will simply be 
-the mean-squared-error (MSE) over some mini-batch
+the mean-squared-error (MSE) over some mini-batch of <span class="math display">$$ n $$</span> points:
 
 <span class="math display">$$ \begin{equation}
-\mathcal{L} = \text{MSE} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
+\mathcal{L} = \text{MSE}_{i=0}^{i=n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
 \end{equation}$$</span>
 
 But, as you may rightly wonder, this loss contains a second derivative of <span class="math display">$$ \tilde{T}(x) $$</span>.
@@ -250,8 +252,8 @@ def d2Tdx2(T, x):
     return dTdx(dTdx(T, x), x)
 ```
 
-Now the training plan is the following. We'll sample some random locations from our domain, let's call them `x_grid_random`.
-This will be our mini-batch of points at each epoch.
+Now the training plan is the following. We'll sample <span class="math display">$$ n $$</span> random locations 
+from our domain, let's call them `x_grid_random`. This will be our mini-batch of points at each epoch.
 
 We'll evaluate the current PINN prediction on those points:
 
@@ -277,11 +279,11 @@ And the loss will be the MSE error between that residual and a vector of zeros (
 loss = mse(residual, torch.zeros_like(residual))
 ```
 
-So let's follow this idea and train our PINN model!
+So let's follow this procedure and train our PINN model!
 
 ## Training
 
-We define a function that, at each epoch, will sample a few locations on our rod where we will evaluate 
+We define a function that, at each epoch, will sample <span class="math display">$$ n $$</span> locations on our rod where we will evaluate 
 how good the current approximation to the ODE solution is. This essentially defines a randomized grid in <span class="math display">$$ x $$</span>. 
 Notice that we use samples from a random uniform distribution (each location in <span class="math display">$$ x $$</span> is equally likely), 
 between <span class="math display">$$ x=0 $$</span> and <span class="math display">$$ x=L $$</span>. 
@@ -297,15 +299,83 @@ def sample_x_grid(n_points):
     return x
 ```
 
-
-
 We can specify how many random points from <span class="math display">$$ x $$</span> we will sample at each epoch:
 
 ```python
 n_points_for_random_sample = 256
 ```
 
+We specify a bunch of training parameters:
 
+```python
+epochs = 2000
+print_every = 100
+initial_learning_rate = 0.01
+final_learning_rate = 0.001
+```
+
+We specify the MSE loss function that will compare how far off we are from the zero residual:
+
+```python
+mse = nn.MSELoss()
+```
+
+We use the RMSprop optimizer:
+
+```python
+optimizer = torch.optim.RMSprop(PINN_model.parameters(), lr=initial_learning_rate)
+```
+
+Usually it's a good idea to decay the learning rate with training, so we define a learning rate decay scheduler:
+
+```python
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=final_learning_rate)
+```
+
+And here's our training loop that follows the procedure I mentioned earlier!
+
+
+
+```python
+loss_across_epochs = []
+
+for i in range(1, epochs + 1):
+
+    optimizer.zero_grad()
+    
+    # We sample some points on the x-grid:
+    x_grid_random = sample_x_grid(n_points_for_random_sample)
+    
+    # Current approximation to T(x):
+    T_pred = PINN_model(x_grid_random)
+
+    # Second derivative of T(x):
+    T_xx = d2Tdx2(T_pred, x_grid_random)
+
+    # Now we compute the residual form of the ODE, in an ideal case this should be exactly zero:
+    residual = T_xx - k * (T_pred - T_infty)
+
+    # We compare this residual with a tensor of zeros:
+    loss = mse(residual, torch.zeros_like(residual))
+    loss.backward()
+    optimizer.step()
+    scheduler.step()
+
+    loss_across_epochs.append(loss.item())
+
+    # Here, we check how well we're doing on all the constraints:
+    if i % print_every == 0:
+        
+        with torch.no_grad():
+
+            # Check the boundary values:
+            x0 = torch.zeros(1, 1, dtype=dtype, device=device)
+            xL = torch.full((1, 1), L, dtype=dtype, device=device)
+            TL_hat = PINN_model(x0).item()
+            TR_hat = PINN_model(xL).item()
+            
+        print(f"iter {i:5d} | per-sample residual loss {loss.item()/n_points_for_random_sample:.3e} | T(0)~{TL_hat:.3f} K, T(L)~{TR_hat:.3f} K")
+```
 
 ## How did PINN do compared to an analytic solution or a finite-difference method?
 
@@ -324,6 +394,5 @@ Note that the PINN solution is a superposition of these two:
 </p>
 
 It catches the trend but actually still leaves a lot to be improved! 🙂 
-Certainly a second-order-accurate finite difference stencil will do much better than this!
-But a whole lot of training parameters can still be tweaked. 
-Feel free to play with training parameters to see if you can do better than me!
+Certainly a second-order-accurate finite difference stencil does much better than this!
+But training parameters can still be tweaked. Feel free to play with training parameters to see if you can do better than me!
