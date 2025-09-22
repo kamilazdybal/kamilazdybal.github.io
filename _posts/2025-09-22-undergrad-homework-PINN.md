@@ -195,6 +195,12 @@ solution_network = SolutionNetwork(input_dimension=1,
 Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork`, and will
 add it to the baseline function, as we've seen earlier:
 
+<span class="math display">$$
+\tilde{T}(x) = T_b(x) + x \cdot (L - x) \cdot \mathcal{N}(x)
+$$</span>
+
+This class's `forward()` does this superposition:
+
 ```python
 class PINN(nn.Module):
 
