@@ -139,7 +139,7 @@ Now you're free to define whatever fancy ANN you'd like to serve as <span class=
 
 I made a network where the user can steer its depth and size of the hidden units. I use ReLU activations, which 
 worked better for me in this example than hyperbolic tangents. Note that to define this ANN you use a standard
-way of sublcassing ``nn.Module`` from PyTorch (your new class has to have its ``forward()`` function and all...).
+way of subclassing ``nn.Module`` from PyTorch (your new class has to have its ``forward()`` function and all...).
 
 ```python
 class SolutionNetwork(nn.Module):
