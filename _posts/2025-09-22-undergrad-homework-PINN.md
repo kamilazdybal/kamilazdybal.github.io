@@ -122,7 +122,7 @@ def baseline_solution(x):
 Let's visualize this baseline:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="600">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-baseline-solution.png" width="800">
 </p>
 
 ## The ANN correction
@@ -175,7 +175,7 @@ class SolutionNetwork(nn.Module):
 
 ## The complete PINN module
 
-Now we just complete the picture by defining this PINN module which will take an instance of ``SolutionNetwork``, and will
+Now we just complete the picture by defining this PINN module which will take an instance of `SolutionNetwork`, and will
 add it to the baseline function, as we've seen earlier:
 
 ```python
@@ -231,12 +231,93 @@ def d2Tdx2(T, x):
     return dTdx(dTdx(T, x), x)
 ```
 
+Now the training plan is the following. We'll sample some random locations from our domain, let's call them `x_grid_random`.
+This will be our mini-batch of points at each epoch.
+
+We'll evaluate the current PINN prediction on those points:
+
+```python
+T_pred = PINN_model(x_grid_random)
+```
+
+We'll compute the second derivative of the current prediction at those grid points:
+
+```python
+T_xx = d2Tdx2(T_pred, x_grid_random)
+```
+
+We'll assemble the residual (second derivative minus all that linear term):
+
+```python
+residual = T_xx - k * (T_pred - T_infty)
+```
+
+And the loss will be the MSE error between that residual and a vector of zeros (because we know it should be exactly zero):
+
+```python
+loss = mse(residual, torch.zeros_like(residual))
+```
+
+So let's follow this idea and train our PINN model!
+
+## Training
+
+We define a function that, at each epoch, will sample a few locations on our rod where we will evaluate 
+how good the current approximation to the ODE solution is. This essentially defines a randomized grid in <span class="math display">$$ x $$</span>. 
+Notice that we use samples from a random uniform distribution (each location in <span class="math display">$$ x $$</span> is equally likely), 
+between <span class="math display">$$ x=0 $$</span> and <span class="math display">$$ x=L $$</span>. 
+But since this is a random sample, getting <span class="math display">$$ x = 0 $$</span> precisely is nearly impossible, 
+so we are sure that we will not modify the boundary values by our addition <span class="math display">$$ \mathcal{N}(x) $$</span>!
+
+```python
+def sample_x_grid(n_points):
+    
+    x = torch.rand(n_points, 1, dtype=dtype, device=device) * L
+    x.requires_grad_(True)
+    
+    return x
+```
+
+We initialize the ANN that serves as <span class="math display">$$ \mathcal{N}(x) $$</span>:
+
+```python
+solution_network = SolutionNetwork(input_dimension=1, 
+                                   hidden_dimension=16, 
+                                   output_dimension=1, 
+                                   network_depth=8).to(device).to(dtype)
+```
+
+And we initialize the complete PINN module which takes uses that ANN:
+
+```python
+PINN_model = PINN(solution_network).to(device).to(dtype)
+```
+
+We can specify how many random points from <span class="math display">$$ x $$</span> we will sample at each epoch:
+
+```python
+n_points_for_random_sample = 256
+```
 
 
-## How does a PINN compare to a finite difference method?
 
-Here we check how does the PINN solution compare to a numerical approximation 
-using a second-order accurate finite difference stencil.
+## How did PINN do compared to an analytic solution or a finite-difference method?
 
+I computed an analytic solution to this ODE using Sympy 
+and a finite-difference solution using a second-order-accurate numerical stencil.
+Here's how the PINN approximation compares with those two:
 
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-approximation.png" width="800">
+</p>
 
+Note that the PINN solution is a superposition of these two:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-superposition.png" width="800">
+</p>
+
+It catches the trend but actually still leaves a lot to be improved! 🙂 
+Certainly a second-order-accurate finite difference stencil will do much better than this!
+But a whole lot of training parameters can still be tweaked. 
+Feel free to play with training parameters to see if you can do better than me!
