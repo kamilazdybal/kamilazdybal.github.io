@@ -37,13 +37,14 @@ This is a boundary-value problem, where we also impose the Dirichlet boundary co
 
 ## The core idea behind PINNs
 
-In PINNs, you train an artificial neural network (ANN) to approximate this solution but such that it obeys the underlying ODE. 
+In PINNs, you train an artificial neural network (ANN) to approximate the solution, 
+<span class="math display">$$ T(x) $$</span>, but such that it obeys the underlying ODE. 
 The core concept behind a PINN is quite simple: You write your ODE in a residual form and construct a loss
 function which is an error measure of that residual. This residual will be different from zero as long as your solution is not exact. 
 The loss essentially contains a contribution from differentiating your current approximation, 
 <span class="math display">$$ \tilde{T}(x) $$</span>, according to
-how that ODE looks like, and satisfying any boundary conditions.
-You then backpropagate this error to train the parameters of the ANN.
+how the underlying ODE looks like, and satisfying any boundary conditions.
+You then backpropagate this error to train the parameters of the ANN. 
 
 Note that, beyond this example, PINNs also work for PDEs!
 
@@ -90,8 +91,10 @@ We also create a grid in the <span class="math display">$$ x $$</span> direction
 
 ```python
 n_points = 1000
-x_grid = np.linspace(0.0, L, n_points)
+x_grid_torch = torch.linspace(0.0, L, n_points, dtype=dtype, device=device).reshape(-1, 1)
 ```
+
+(We use PyTorch's linspace instead of Numpy's linspace, because later we'll be querying the PINN model using this grid.)
 
 ## The baseline solution
 
@@ -308,10 +311,10 @@ n_points_for_random_sample = 256
 We specify a bunch of training parameters:
 
 ```python
-epochs = 2000
+epochs = 5000
 print_every = 100
-initial_learning_rate = 0.01
-final_learning_rate = 0.001
+initial_learning_rate = 0.001
+final_learning_rate = 0.0001
 ```
 
 We specify the MSE loss function that will compare how far off we are from the zero residual:
@@ -333,8 +336,6 @@ scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, 
 ```
 
 And here's our training loop that follows the procedure I mentioned earlier!
-
-
 
 ```python
 loss_across_epochs = []
