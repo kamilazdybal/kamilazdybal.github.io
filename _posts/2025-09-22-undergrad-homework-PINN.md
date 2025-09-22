@@ -18,11 +18,11 @@ categories: jekyll update
 
 Here, I will show you how to approximate a solution to a second-order ODE with physics-informed neural networks (PINNs)!
 
-In PINNs, you train an artificial neural network (ANN) to approximate this solution. 
+In PINNs, you train an artificial neural network (ANN) to approximate this solution but such that it obeys the underlying ODE. 
 The core concept behind a PINN is quite simple: You write your ODE (or PDE) in a residual form and construct a loss
-function as that residual, which will be different from zero as long as your solution is not exact. 
-This loss will essentially contain a contribution from differentiating your current approximation, according to
-how that ODE (or PDE) looks like, and a contribution from satisfying boundary conditions.
+function which is an error measure of that residual. This residual will be different from zero as long as your solution is not exact. 
+The loss essentially contains a contribution from differentiating your current approximation, according to
+how that ODE (or PDE) looks like, and satisfying any boundary conditions.
 You then backpropagate this error to train the parameters of the ANN.
 
 Here, we will take a simple ODE that you often encounter in your undergrad, which is the steady-state diffusion 
@@ -88,9 +88,27 @@ x_grid = np.linspace(0.0, L, n_points)
 
 ## The baseline solution
 
+PINNs often use a neat trick to make the solution obey boundary conditions *exactly*. 
 
+We can do this by first creating a baseline linear function that simply passes through the two boundary conditions. 
+We'll call this baseline function <span class="math display">$$ T_b(x) $$</span>.
+Next, the trained ANN only approximates a correction to this linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>.
+The final solution is a superposition of the two, the baseline linear function (which obeys the boundary conditions at the end points of our domain)
+and the output of the ANN:
 
+<span class="math display">$$
+\tilde{T}(x) = T_b(x) + x \cdot (L - x) \cdot \mathcal{N}(x)
+$$</span>
 
+Let's code the baseline function that passes through 
+<span class="math display">$$ T_L $$</span> and <span class="math display">$$ T_R $$</span>
+at the end points of our domain:
+
+```python
+def baseline_solution(x):
+    
+    return T_L * (1.0 - x / L) + T_R * (x / L)
+```
 
 
 
