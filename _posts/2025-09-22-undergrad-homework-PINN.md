@@ -17,6 +17,7 @@ categories: jekyll update
 # Solving your undergraduate homework with a physics-informed neural network (PINN)
 
 Here, I will show you how to approximate a solution to a second-order ODE with physics-informed neural networks (PINNs)!
+
 We will take a simple ODE that you often encounter in your undergrad numerical methods class—the steady-state diffusion 
 (in this case, of heat). This particular ODE represents a heating/cooling of a 1D rod:
 
