@@ -120,8 +120,9 @@ This is our baseline:
 
 As you can see, it's just a linear function but one that obeys our boundary conditions!
 
-Next, the trained ANN will only approximate **a correction** to this baseline linear function, <span class="math display">$$ \mathcal{N}(x) $$</span>,
-and we will "spread" this correction over the domain using a multiplier <span class="math display">$$ x (L - x) $$</span>, so that 
+Next, the trained ANN will only approximate **a correction**, <span class="math display">$$ \mathcal{N}(x) $$</span>, 
+to this baseline linear function
+and we will weight this correction with a multiplier <span class="math display">$$ x (L - x) $$</span>, so that 
 at <span class="math display">$$ x = 0 $$</span> and <span class="math display">$$ x = L $$</span> we enforce no correction added
 (we want to preserve the boundary conditions there exactly).
 
