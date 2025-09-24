@@ -16,7 +16,8 @@ categories: jekyll update
 
 # Solving your undergraduate homework with a physics-informed neural network (PINN)
 
-Here, I will show you how to approximate a solution to a second-order ODE with physics-informed neural networks (PINNs)!
+Here, I will show you how to approximate a solution to a second-order ordinary differential equation (ODE) 
+with physics-informed neural networks (PINNs)!
 
 We will take a simple ODE that you often encounter in your undergrad numerical methods class—the steady-state diffusion 
 (in this case, of heat). This particular ODE represents a heating/cooling of a 1D rod:
@@ -26,7 +27,7 @@ We will take a simple ODE that you often encounter in your undergrad numerical m
 \end{equation}$$</span>
 
 where 
-<span class="math display">$$ h $$</span> is the thermal diffusivity, 
+<span class="math display">$$ h $$</span> is the heat transfer coefficient, 
 <span class="math display">$$ \lambda $$</span> is the thermal conductivity,
 <span class="math display">$$ r $$</span> is the radius of the rod, and
 <span class="math display">$$ T_{\infty} $$</span> is the surrounding temperature.
@@ -46,7 +47,7 @@ The loss essentially contains a contribution from differentiating your current a
 how the underlying ODE looks like, and satisfying any boundary conditions.
 You then backpropagate this error to train the parameters of the ANN. 
 
-Note that, beyond this example, PINNs also work for PDEs!
+Note that, beyond this example, PINNs also work for partial differential equations (PDEs)!
 
 We'll code everything in PyTorch:
 
