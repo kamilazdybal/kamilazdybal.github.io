@@ -374,6 +374,8 @@ for i in range(1, epochs + 1):
 
     # We compare this residual with a tensor of zeros:
     loss = mse(residual, torch.zeros_like(residual))
+    
+    # Backpropagate errors:
     loss.backward()
     optimizer.step()
     scheduler.step()
