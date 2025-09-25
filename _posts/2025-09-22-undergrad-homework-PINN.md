@@ -249,8 +249,9 @@ the mean-squared-error (MSE) over some mini-batch of <span class="math display">
 \mathcal{L} = \text{MSE}_{i=0}^{n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} - \frac{2h}{\lambda r}(\tilde{T}(x) - T_{\infty}) \right)
 \end{equation}$$</span>
 
-But, as you may rightly wonder, this loss contains a second derivative of <span class="math display">$$ \tilde{T}(x) $$</span>.
-How are we going to get that??? Thankfully, PyTorch's automatic differentiation module will help us there!
+But, as you may rightly wonder, this loss contains a second derivative of 
+<span class="math display">$$ \tilde{T}(x) $$</span>, so how are we going to get that??? 
+Thankfully, PyTorch's automatic differentiation module will help us there!
 
 We can define a function that computes the first derivative, like so:
 
@@ -268,16 +269,18 @@ def d2Tdx2(T, x):
     return dTdx(dTdx(T, x), x)
 ```
 
-Now the training plan is the following. We'll sample <span class="math display">$$ n $$</span> random locations 
+## The PINN training procedure
+
+Now the training procedure is the following. We'll sample <span class="math display">$$ n $$</span> random locations 
 from our domain, let's store them in a vector called `x_grid_random`. This will be our mini-batch of points at each epoch.
 
-We'll evaluate the current PINN prediction on those points:
+We'll evaluate the current PINN prediction at those points:
 
 ```python
 T_pred = PINN_model(x_grid_random)
 ```
 
-We'll compute the second derivative of the current prediction at those grid points:
+We'll compute the second derivative of the current prediction at those points:
 
 ```python
 T_xx = d2Tdx2(T_pred, x_grid_random)
