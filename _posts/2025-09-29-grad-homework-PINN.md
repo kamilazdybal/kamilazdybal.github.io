@@ -22,7 +22,7 @@ and solve a *nonlinear* ordinary differential equation (ODE) with physics-inform
 We'll take the second-order ODE describing the steady-state diffusion of heat due to radiation in a 1D rod:
 
 <span class="math display">$$ \begin{equation}
-\frac{d^2 T(x)}{d x^2} = \alpha(T(x)^4 - T_{\infty}^4)
+\frac{d^2 T(x)}{d x^2} = \alpha(T^4(x) - T_{\infty}^4)
 \end{equation}$$</span>
 
 where
@@ -70,7 +70,7 @@ residual = T_xx - α * (T_pred**4 - T_infty**4)
 
 and we're ready to train the new PINN model!
 
-Here's the PINN approximation along with a finite-difference numerical solution using a second-order-accurate stencil:
+Here's the PINN approximation along with a finite-difference numerical approximation using a second-order-accurate stencil:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-nonlinear-approximation.png" width="800">
@@ -81,17 +81,19 @@ Which begs the question what could PINN be actually useful for... 🤔
 
 ## Warm-starting finite difference methods
 
-Let's try to use this pre-computed PINN solution as an initial guess when we solve this ODE numerically!
+Let's try to use this pre-computed PINN solution as an initial guess when we solve this ODE numerically and see if
+it can be helpful!
+
 I linearized this ODE to get a set of linear equations of the form:
 
 <span class="math display">$$ \begin{equation}
 \frac{T_{i-1} - 2T_i + T_{i - 1}}{\Delta x^2} = \alpha (- 3{T}_{\text{guess}, i}^4 + 4 {T}_{\text{guess}, i}^3 T_i - T_{\infty}^4)
 \end{equation}$$</span>
 
-where in general, <span class="math display">$$ {T}_{\text{guess}}(x)$$</span> is our initial guess for the temperature
+where, in general, <span class="math display">$$ {T}_{\text{guess}}(x)$$</span> is our initial guess for the temperature
 distribution in the entire domain.
 
-I solve these with in iterative process of updating the guess with the current numeric solution. 
+I solve these in an iterative process of updating the guess with the current numeric solution. 
 My own initial guess would be to set 
 <span class="math display">$$ T(x) = \frac{T_{\infty}}{2}$$</span>. In this case, my solver gets to the 
 <span class="math display">$$ L_2 $$</span> norm between the previous and current guess lower than 
