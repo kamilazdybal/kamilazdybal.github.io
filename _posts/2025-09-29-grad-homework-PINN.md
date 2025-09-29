@@ -123,10 +123,10 @@ Converged in 4 iterations.
 
 Maybe PINNs are useful for something after all! 😉
 
-Note that for this warm-starting application, 
-you might not even need to fully converge on the loss when training a PINN model. A reasonably good approximation
-that captures the general trend well can be in some cases still way more accurate than your own educated guess.
-In fact, I tried training for just 300 epochs instead of 5000, where the residual loss is still pretty high
+Note that for this warm-starting application, you might not even need to fully converge 
+on the residual loss when training a PINN model. A reasonably good approximation
+that captures the general trend well can be still way more accurate than your own best guess.
+In fact, I tried training for just 300 epochs instead of 5000, where the residual loss is still pretty high,
 and we get just the same saving of two iterations. In this case, the PINN approximation is worse:
 
 <p align="center">
