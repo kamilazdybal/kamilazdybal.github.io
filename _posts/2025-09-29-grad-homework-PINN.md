@@ -40,7 +40,7 @@ warm-start finite difference methods.
 The great part of using PINNs to solve ODEs is that not a whole lot needs to change in our previous code to
 accommodate a different right-hand-side. 
 
-Except for specifying new numeric parameters of this problem:
+Except for specifying the new numeric parameters of this problem:
 
 ```python
 T_L = 300     # K
@@ -77,7 +77,7 @@ Here's the PINN approximation along with a finite-difference numerical approxima
 </p>
 
 As before, the PINN approximation is quite significantly different from the finite-difference approximation.
-Which begs the question what could PINN be actually useful for... 🤔
+Which begs the question what could PINNs be actually useful for... 🤔
 
 ## Warm-starting finite difference methods
 
