@@ -122,3 +122,24 @@ Converged in 4 iterations.
 ```
 
 Maybe PINNs are useful for something after all! 😉
+
+Note that for this warm-starting application, 
+you might not even need to fully converge on the loss when training a PINN model. A reasonably good approximation
+that captures the general trend well can be in some cases still way more accurate than your own educated guess.
+In fact, I tried training for just 300 epochs instead of 5000, where the residual loss is still pretty high
+and we get just the same saving of two iterations. In this case, the PINN approximation is worse:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PINNs-nonlinear-approximation-worse.png" width="800">
+</p>
+
+but works just as well as an initial guess!
+
+```
+1137.3367124605265
+39.527513439514806
+0.06727458340750923
+1.8620638206290557e-07
+
+Converged in 4 iterations.
+```
