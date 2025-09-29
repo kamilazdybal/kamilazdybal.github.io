@@ -409,3 +409,7 @@ Here's how the PINN approximation compares with those two:
 It catches the trend but actually still leaves a lot to be improved! 🙂
 Certainly a second-order-accurate finite difference stencil does much better than this!
 But training parameters can still be tweaked. Feel free to play with the training parameters to see if you can do better than me!
+
+## Going to grad school...
+
+If you're interested in a continuation of this example, check out [the next post](https://kamilazdybal.github.io/jekyll/update/2025/09/29/grad-homework-PINN.html)!
