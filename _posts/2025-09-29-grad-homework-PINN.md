@@ -53,7 +53,7 @@ T_infty = 900 # K
 everything else that needs to change is how we compute the new residual! This ODE in a residual form looks like this:
 
 <span class="math display">$$ \begin{equation}
-\frac{d^2 T(x)}{d x^2} - \alpha(T(x)^4 - T_{\infty}^4) = 0
+\frac{d^2 T(x)}{d x^2} - \alpha(T^4(x) - T_{\infty}^4) = 0
 \end{equation}$$</span>
 
 Hence, we need to replace this part in our training loop:
@@ -87,7 +87,7 @@ it can be helpful!
 I linearized this ODE to get a set of linear equations of the form:
 
 <span class="math display">$$ \begin{equation}
-\frac{T_{i-1} - 2T_i + T_{i - 1}}{\Delta x^2} = \alpha (- 3{T}_{\text{guess}, i}^4 + 4 {T}_{\text{guess}, i}^3 T_i - T_{\infty}^4)
+\frac{T_{i-1} - 2T_i + T_{i + 1}}{\Delta x^2} = \alpha (- 3{T}_{\text{guess}, i}^4 + 4 {T}_{\text{guess}, i}^3 T_i - T_{\infty}^4)
 \end{equation}$$</span>
 
 where, in general, <span class="math display">$$ {T}_{\text{guess}}(x)$$</span> is our initial guess for the temperature
