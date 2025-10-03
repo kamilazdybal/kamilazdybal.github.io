@@ -106,6 +106,34 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="LIMA-padding"></ul>
+
+# Improving the performance of a lightweight convolutional neural network for particle image velocimetry
+
+Over the last decade, convolutional neural networks (CNNs) have gained popularity for 
+applications to particle image velocimetry (PIV).
+However, further improvements are required to handle increasingly challenging PIV conditions, 
+such as higher noise levels, complex flow geometries, and small vortex structures, 
+which are critical aspects in most PIV experiments relevant in science and engineering. 
+We examine the network's hyperparameters unique to PIV applications. 
+We identify appropriate image padding that suppresses spurious artifacts propagating 
+from image boundaries into the reconstructed displacement field during image convolution. 
+We also discuss the correlation search range and show that it can be decreased 
+to reduce the computational burden of LIMA without degrading inference accuracy. 
+These findings support the use of CNNs in advanced engineering applications, 
+particularly ones that require both computational efficiency and high spatial resolution.
+
+<sup>C. Mucignat, K. Zdybał, I. Lunati. *Improving the performance of a lightweight convolutional neural network for particle image velocimetry through hyper-parameter and padding optimization*, Physics of Fluids (2025)</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/LIMA-padding.png" alt="pykitPIV" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://pubs.aip.org/aip/pof/article/37/10/105112/3366168/Improving-the-performance-of-a-lightweight" target="_blank"> Article</a></h4>
+  </div>
+</div>
+
 <ul id="pykitPIV"></ul>
 
 # **pykitPIV** - Python kinematic training for particle image velocimetry!
