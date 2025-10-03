@@ -119,7 +119,7 @@ We examine the network's hyperparameters unique to PIV applications.
 We identify appropriate image padding that suppresses spurious artifacts propagating 
 from image boundaries into the reconstructed displacement field during image convolution. 
 We also discuss the correlation search range and show that it can be decreased 
-to reduce the computational burden of LIMA without degrading inference accuracy. 
+to reduce the computational burden without degrading inference accuracy. 
 These findings support the use of CNNs in advanced engineering applications, 
 particularly ones that require both computational efficiency and high spatial resolution.
 
