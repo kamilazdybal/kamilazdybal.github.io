@@ -102,3 +102,14 @@ in various states.
 
 ## Looking at training loss
 
+
+
+### Why is the loss so noisy?
+
+If you're used to training deep neural networks for simple regression tasks, you may be used to loss functions
+(e.g., mean-squared-error losses) to be nicely converging and becoming almost flat at the end of training
+when using learning rate decay to an appropriately small learning rate value.
+
+If you're now starting to learn reinforcement learning, you will likely be terrified at the observation that the
+mean-squared-error loss for the Q-values is really noisy 
+even if the RL training seems to be performing quite well policy-wise! Well, let's discuss the reasons for this!
