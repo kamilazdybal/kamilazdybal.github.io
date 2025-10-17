@@ -16,7 +16,7 @@ categories: jekyll update
 
 # How to inspect your deep Q-learning?
 
-In this post, we'll code a simple instance of training a deep Q-learning reinforcement learning (RL) agent using 
+In this post, I'm using a simple instance of training a deep Q-learning reinforcement learning (RL) agent using 
 [TF-Agents](https://www.tensorflow.org/agents)
 in order to discuss several key characteristics of good-quality training outcome that can help you adjust your RL.
 
@@ -35,7 +35,7 @@ it receives a +1 reward. Any other transition results in a 0 reward.
 
 ### Training reinforcement learning can be difficult
 
-Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can be a lot of work.
+Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can take someg work.
 This mostly stems from a large number of hyper-parameters that we can tweak which can alter 
 (1) the dynamics of the task being solved in this environment (2) the dynamics of the gradient descent.
 Hence, it's useful to understand a couple key indicators that we can look at during training 
