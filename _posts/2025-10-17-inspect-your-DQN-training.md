@@ -19,11 +19,12 @@ categories: jekyll update
 Training reinforcement learning (RL) can be difficult. 
 Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can take some work.
 This mostly stems from a large number of hyper-parameters that we can tweak, which can alter 
-(1) the dynamics of the agent navigating this environment (2) the dynamics of gradient descent.
+(1) the dynamics of the agent navigating this environment and (2) the dynamics of gradient descent.
 Hence, it's useful to understand a couple of key indicators that you can look at during training, 
-which can guide you hyper-parameter choice.
+which can guide your hyper-parameter choice.
 
-In this post, we'll use a simple instance of training a deep Q-learning RL agent using 
+In this post, we'll use a simple instance of training a deep Q-learning RL agent 
+([`DqnAgent`](https://www.tensorflow.org/agents/api_docs/python/tf_agents/agents/DqnAgent)) using 
 [TF-Agents](https://www.tensorflow.org/agents). 
 We'll use a simple 6-by-4 grid world environment where the agent moves towards the target tile, and once it does,
 it receives a +1 reward. Any other transition results in a 0 reward.
