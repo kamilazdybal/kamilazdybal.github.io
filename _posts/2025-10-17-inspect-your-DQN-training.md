@@ -16,11 +16,16 @@ categories: jekyll update
 
 # How to inspect your deep Q-learning?
 
-In this post, I'm using a simple instance of training a deep Q-learning reinforcement learning (RL) agent using 
-[TF-Agents](https://www.tensorflow.org/agents)
-in order to discuss several key characteristics of good-quality training outcome that can help you adjust your RL.
+Training reinforcement learning (RL) can be difficult. 
+Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can take some work.
+This mostly stems from a large number of hyper-parameters that we can tweak, which can alter 
+(1) the dynamics of the agent navigating this environment (2) the dynamics of gradient descent.
+Hence, it's useful to understand a couple of key indicators that you can look at during training, 
+which can guide you hyper-parameter choice.
 
-We use a simple 6-by-4 grid world environment where the agent should move towards the target tile, and once it does,
+In this post, we'll use a simple instance of training a deep Q-learning RL agent using 
+[TF-Agents](https://www.tensorflow.org/agents). 
+We'll use a simple 6-by-4 grid world environment where the agent moves towards the target tile, and once it does,
 it receives a +1 reward. Any other transition results in a 0 reward.
 
 ```
@@ -32,14 +37,6 @@ it receives a +1 reward. Any other transition results in a 0 reward.
 |   🤖  |       |       |
 |_______|_______|_______|
 ```
-
-### Training reinforcement learning can be difficult
-
-Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can take some work.
-This mostly stems from a large number of hyper-parameters that we can tweak which can alter 
-(1) the dynamics of the agent navigating this environment (2) the dynamics of the gradient descent.
-Hence, it's useful to understand a couple key indicators that we can look at during training 
-which can guide our hyper-parameter choice.
 
 ## Rewards should be higher with a better policy
 
