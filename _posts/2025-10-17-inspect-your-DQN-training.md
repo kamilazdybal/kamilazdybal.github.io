@@ -24,15 +24,15 @@ Hence, it's useful to understand a couple of key indicators that you can look at
 which can guide your hyper-parameter choice.
 
 In this post, we'll use a simple instance of training a deep Q-learning RL agent 
-([`DqnAgent`](https://www.tensorflow.org/agents/api_docs/python/tf_agents/agents/DqnAgent)) using 
-[TF-Agents](https://www.tensorflow.org/agents). 
+([`DqnAgent`](https://www.tensorflow.org/agents/api_docs/python/tf_agents/agents/DqnAgent) from 
+[TF-Agents](https://www.tensorflow.org/agents)). 
 We'll use a simple 6-by-4 grid world environment where the agent moves towards the target tile, and once it does,
 it receives a +1 reward. Any other transition results in a 0 reward.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.ggif" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.gif" width="400">
 </p>
-
+g
 ## Rewards should be higher with a better policy
 
 The first indication that your policy is improving with training time is that as it's queried later in the training, 
