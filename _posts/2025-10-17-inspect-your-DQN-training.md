@@ -30,7 +30,7 @@ We'll use a simple 6-by-4 grid world environment where the agent moves towards t
 it receives a +1 reward. Any other transition results in a 0 reward.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.ggif" width="400">
 </p>
 
 ## Rewards should be higher with a better policy
