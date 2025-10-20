@@ -124,14 +124,15 @@ They plateau at the end of training and become much less noisy than at the begin
 Observe, that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
 generally expect in deep Q-learning, even though we may not always know _a priori_ what that maximum possible reward 
-(the expected reward) is.
+(the expected reward) is, especially in stochastic environments.
 
 This is the direct aftermath of how the Q-values are updated at each training step 
 (see [the Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html)):
 
-<span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} P(s, a, s') \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
+<span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
 
-In the equation above, you can see that the Q-values are constructed from the instantaneous reward plus the sum of discounted future rewards.
+In the equation above, you can see that the Q-values are constructed from the instantaneous reward 
+plus the sum of discounted future rewards (assuming a deterministic environment).
 Generally, you can expect that the Q-values will converge to within some ballpark from the 
 maximum possible expected reward which also depends on the discount factor, <span class="math display">$$ \gamma $$</span>.
 
