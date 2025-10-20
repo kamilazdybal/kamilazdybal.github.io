@@ -78,7 +78,7 @@ if the Q-values behave the way they should.
 Let's monitor the Q-values for the following arrangement of the agent (blue) and target (red):
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-fixed-transition.png" width="800">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-fixed-transition.png" width="400">
 </p>
 
 We know that for such arrangement the best action to take is "go right". Here are the Q-values for that state once the
