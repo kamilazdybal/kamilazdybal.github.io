@@ -104,21 +104,22 @@ even if the RL training seems to be performing quite well policy-wise! Well, let
 
 ## The orchestration of hyper-parameters 
 
-Here's the quirky bit of RL: The same exploration probability decay and learning rate decay spread over 
+Here's the quirky bit of RL: The same exploration probability (<span class="math display">$$ \varepsilon $$</span>) decay 
+and learning rate (<span class="math display">$$ \alpha $$</span>) decay spread over 
 various durations of training can lead to different training outcomes! In other words, there seems to be the right
 orchestration between how we position the decay of <span class="math display">$$ \varepsilon $$</span> and 
-<span class="math display">$$ \alpha \rightarrow 0 $$</span> over the duration of training, all other hyper-parameters
-being equal.
+<span class="math display">$$ \alpha $$</span> over the duration of training, all other hyper-parameters
+being equal. Below is a small schematic where I locate the same decays either over 500 or 1000 episodes.
+The exploration probability decays from 0.1 at the first episode to 0.0 at the last episode 
+(being either 500 or 1000). In the same way, the cosine learning rate decay is spread over the episodes 
+from <span class="math display">$$ 10^{-2} $$</span> at the first episode 
+to <span class="math display">$$ 10^{-5} $$</span> at the last episode.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-decay-over-episodes.png" width="800">
 </p>
 
-Take a look at these two training outcomes where all I've changed is the number of episodes. 
-The exploration probability decays from 0.1 at the first episode to 0.0 at the last episode 
-(being either 500 or 1000 in the figures below). 
-In the same way, the cosine learning rate decay is spread over the episodes 
-from 0.01 at the first episode to 0.00001 at the last episode.
+Take a look at the outcomes of these two trainings: 
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-short.png" width="800">
@@ -130,8 +131,8 @@ from 0.01 at the first episode to 0.00001 at the last episode.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-long.png" width="800">
 </p>
 
-> But if all we've ever tried was 1000 episodes, we would have also learned the policy perfectly,
-> but we would not have known that a much shorter training would have already accomplished the task! 
+> But if all we had ever tried was 1000 episodes, we would have also learned the policy perfectly,
+> but we would not have known that a much shorter training period could have already accomplished the task!
 > Notice that here, at episode 500, we're still not solving the task correctly even half the time even though
 > <span class="math display">$$ \varepsilon = 0.05 $$</span> (a reasonably small number) at episode 500.
 
