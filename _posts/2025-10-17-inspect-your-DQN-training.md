@@ -179,23 +179,27 @@ But there's a caveat...
 
 If you're used to training deep neural networks for simple supervised learning tasks (such as regression), 
 you may be used to loss functions
-(e.g., mean-squared-error losses) to be nicely converging and becoming almost flat at the end of training
-when using learning rate decay to an appropriately small learning rate value.
+(_e.g._, mean-squared-error losses) to be nicely converging and becoming almost flat at the end of training,
+especially when using learning rate decay to an appropriately small learning rate value.
 
 If you're now starting to learn RL, you will likely be terrified at the observation that the
 mean-squared-error loss for the Q-values is really noisy 
 even if the RL training seems to be performing quite well policy-wise! Well, let's discuss the reasons for this!
 
 Remember what I mentioned about the Q-values needing to race each other? Well, training deep Q-learning is less "stable"
-than training a supervised deep learning with known ground truth, because we do not really provide ground truth for the Q-values!
-Imagine we have the optimal policy but now add constant value to all Q-values at any time that we query the policy.
-Would that change the verdict of the argmax? No. So Q-values can change up to a constant value and still.
-This can really confuse the error-based loss functions, since they may be bouncing from one set of Q-values to another,
+than training a supervised deep learning with known ground truth, because we do not really provide the ground truth for the Q-values!
+The ground truth gets updated with more and more experience in interacting with the environment.
+Imagine that we have the optimal policy but now add a constant value to all Q-values every time we query the policy.
+Would that change the verdict of the argmax? No. So Q-values can change up to a constant value and still result 
+in correct behavior of the policy.
+But this can really confuse error-based loss functions, since they may be bouncing from one set of Q-values to another,
 yet the policy still executes the task in the environment perfectly. In theory, the Q-values are guaranteed to converge
-as long as <span class="math display">$$ 0.0 < \gamma < 1.0 $$</span> (see [Chapter 2 of Barto & Sutton](http://incompleteideas.net/book/the-book-2nd.html).
-In practice, gradient descent can handle that well in some cases and make the Q-values converge to the true values, 
-but it may not in some other cases. If between episodes the Q-values change by a constant factor, 
-this can locally increase gthe error-based loss.
+as long as <span class="math display">$$ 0.0 < \gamma < 1.0 $$</span> 
+(see [Chapter 2 of Barto & Sutton](http://incompleteideas.net/book/the-book-2nd.html)).
+In practice, gradient descent can handle that well in some cases and make the Q-values converge to their true values, 
+but it may not in some other cases. If between episodes the Q-values change by a constant factor (even slightly), 
+this can instantaneously increase the error-based loss, which is why you may see more noise than what you're used to
+seeing in supervised learning.
 
 ## The orchestration of hyper-parameters 
 
