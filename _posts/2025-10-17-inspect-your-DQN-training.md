@@ -90,16 +90,33 @@ policy has been trained:
 
 There's a couple of items that I wanted to point out in the figure above. 
 
-First, indeed once we take argmax over the Q-values (_i.e._, we execute the policy in that state), the action selected 
-is indeed to go right because the maximum Q-value at the end of training (for that state) is the fourth Q-value, 
+First, once we take argmax over the Q-values (_i.e._, we execute the policy in that state) 
+at the end of training (episode 500), the action selected 
+is indeed to go right because the maximum Q-value for that state is the fourth Q-value, 
 <span class="math display">$$ Q_4 $$</span>.
 
-Second, notice that it wasn't necessarily so at the beginning of training. If I zoom in at the Q-values at the early episodes,
+Second, notice that it wasn't necessarily so at the beginning of training. If we zoom in at the Q-values at the early episodes,
 the action "go up" wouldn't always be the winning one:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="500">
 </p>
+
+Third, notice that the Q-values converge–they plateau at the end of training and become much less noisy than at the beginning of training:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="500">
+</p>
+
+Fourth, notice that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
+not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
+generally expect in deep Q-learning, even though we may not always know a priori what that maximum possible reward (the expected reward) is.
+This is the direct aftermath of how the Q-values are updated at each training step 
+(see [Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html):
+
+<span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} P(s, a, s') \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
+
+In the equation above, you can see that the Q-values are constructed from the instantaneous reward plus the sum of discounted future rewards.
 
 ### Q-values should converge
 
@@ -123,7 +140,7 @@ in various states.
 
 ## Looking at training loss
 
-
+As the Q-values converge to fixed values, the loss should converge too.
 
 ### Why is the loss so noisy?
 
