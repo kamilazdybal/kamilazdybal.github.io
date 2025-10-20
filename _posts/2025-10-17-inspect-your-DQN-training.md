@@ -115,7 +115,7 @@ They plateau at the end of training and become much less noisy than at the begin
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="450">
 </p>
 
-### 3. Q-values for all actions should stick together
+### 3. Q-values for all actions should approach the expected reward value
 
 Observe, that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
@@ -131,7 +131,7 @@ In the equation above, you can see that the Q-values are constructed from the in
 Generally, you can expect that the Q-values will converge to within some ballpark from the 
 maximum possible expected reward which also depends on the discount factor, <span class="math display">$$ \gamma $$</span>.
 
-### 4. Q-values should race each other
+### 4. Q-values should stick together and race each other
 
 The deep Q-learning algorithm relies on taking argmax over all Q-values to determine the right action 
 at each state of the environment.
