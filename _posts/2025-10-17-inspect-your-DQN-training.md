@@ -70,7 +70,36 @@ Of course, you also don't want the rewards to increase and then come back down a
 
 The outputs of the deep Q-network are the Q-values. 
 They are estimates of the value of taking a given action when in a particular state.
-The action selected by the trained policy is the argmax over all Q-values.
+The action selected by the trained policy is the argmax over all Q-values. In this environment, I allow four actions:
+go up, do down, go left, go right. Hence, I have four Q-values.
+
+During training, we can inspect a selection of Q-values for fixed state transitions in the environment in order to see
+if the Q-values behave the way they should. 
+Let's monitor the Q-values for the following arrangement of the agent (blue) and target (red):
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-fixed-transition.png" width="800">
+</p>
+
+We know that for such arrangement the best action to take is "go right". Here are the Q-values for that state once the
+policy has been trained:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition.png" width="800">
+</p>
+
+There's a couple of items that I wanted to point out in the figure above. 
+
+First, indeed once we take argmax over the Q-values (_i.e._, we execute the policy in that state), the action selected 
+is indeed to go right because the maximum Q-value at the end of training (for that state) is the fourth Q-value, 
+<span class="math display">$$ Q_4 $$</span>.
+
+Second, notice that it wasn't necessarily so at the beginning of training. If I zoom in at the Q-values at the early episodes,
+the action "go up" wouldn't always be the winning one:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="400">
+</p>
 
 ### Q-values should converge
 
@@ -130,7 +159,7 @@ Take a look at the outcomes of these two trainings, the first ran for 500 episod
 </p>
 
 > This first figure shows us that learning the policy perfectly in this environment is possible with just 500 episodes.
-g
+
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-long.png" width="800">
 </p>
