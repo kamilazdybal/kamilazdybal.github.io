@@ -130,7 +130,7 @@ Take a look at the outcomes of these two trainings, the first ran for 500 episod
 </p>
 
 > This first figure shows us that learning the policy perfectly in this environment is possible with just 500 episodes.
-
+g
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-long.png" width="800">
 </p>
@@ -139,8 +139,8 @@ Take a look at the outcomes of these two trainings, the first ran for 500 episod
 > but we would not have known that a much shorter training period could have already accomplished the task!
 > Notice that here, at episode 500, we're still not solving the task correctly even half the time even though
 > <span class="math display">$$ \varepsilon = 0.05 $$</span> at episode 500
-> (i.e., random actions are taken only 5% of the time–a reasonably small number 
-> that a well-trained policy should be able to correct for by taking on-policy actions the remaining 95% of the timeg).
+> (*i.e.*, random actions are taken only 5% of the time–a reasonably small number 
+> that a well-trained policy should be able to correct for by taking on-policy actions the remaining 95% of the time).
 
 So there's always the two questions: How much training is too much training? 
 Or, with how little training can we get away with?
