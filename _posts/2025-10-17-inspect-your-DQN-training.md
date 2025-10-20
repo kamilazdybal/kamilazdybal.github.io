@@ -29,21 +29,16 @@ In this post, we'll use a simple instance of training a deep Q-learning RL agent
 We'll use a simple 6-by-4 grid world environment where the agent moves towards the target tile, and once it does,
 it receives a +1 reward. Any other transition results in a 0 reward.
 
-```
- _______ _______ _______
-|       |       |       |
-|    ___|_______|___✨  |
-|___|___|_______|_______|
-|   |   |       |       |
-|   🤖  |       |       |
-|_______|_______|_______|
-```
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.png" width="400">
+</p>
 
 ## Rewards should be higher with a better policy
 
 The first indication that your policy is improving with training time is that as it's queried later in the training, 
 it yields high rewards. To check this, you can implement an exploration probability decay with training time.
-For example, you may decay the exploration probability, <span class="math display">$$ \varepsilon $$</span>, from, say, 0.5 to 0.0 with training time, 
+For example, you may decay the exploration probability, <span class="math display">$$ \varepsilon $$</span>, from, 
+say, 0.5 at the beginning of training to 0.0 at the end of training, 
 and even let it stay zero for a couple final episodes.
 As <span class="math display">$$ \varepsilon $$</span> decreases with training time, 
 your learned policy is queried more and more frequently, and random actions are taken less and less frequently. 
