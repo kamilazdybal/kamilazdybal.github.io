@@ -32,21 +32,21 @@ it receives a +1 reward. Any other transition results in a 0 reward.
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.gif" width="400">
 </p>
-g
+
 ## Rewards should be higher with a better policy
 
-The first indication that your policy is improving with training time is that as it's queried later in the training, 
-it yields high rewards. To check this, you can implement an exploration probability decay with training time.
+The first indication that your policy is improving with training is that as it's queried later in the training 
+it yields high rewards. To check this, you can implement the exploration probability decay with training time.
 For example, you may decay the exploration probability, <span class="math display">$$ \varepsilon $$</span>, from, 
 say, 0.5 at the beginning of training to 0.0 at the end of training, 
-and even let it stay zero for a couple final episodes.
+and even let it stay zero for a couple of final episodes.
 As <span class="math display">$$ \varepsilon $$</span> decreases with training time, 
-your learned policy is queried more and more frequently, and random actions are taken less and less frequently. 
+your learned policy is queried more and more frequently and random actions are taken less and less frequently. 
 As a result, at the end of training, you should see high (or highest possible) rewards being achieved in the environment.
 
 Below is the result that you'd like to see 
-as <span class="math display">$$ \varepsilon \rightarrow 0 $$</span> with training time. With training time, the learned
-policy starts to successfully move the agent towards the target every time, resulting in +1 reward.
+as <span class="math display">$$ \varepsilon \rightarrow 0 $$</span> with training time. With more training, 
+the learned policy starts to successfully move the agent towards the target every time, resulting in +1 reward.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good.png" width="800">
@@ -54,18 +54,13 @@ policy starts to successfully move the agent towards the target every time, resu
 
 If, on the other hand, average rewards stagnate at a low value even as your policy is queried more and more frequently,
 it is an indication that something isn't setup right in your RL. 
-My first go-to hyper-parameter to tweak would be the learning rate.
+My first go-to hyper-parameter to tweak then would be the learning rate.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-poor.png" width="800">
 </p>
 
 Of course, you also don't want the rewards to increase and then come back down again.
-
-There's also the question: How much training is too much training? 
-This is where training RL becomes a bit of an art! This small 6-by-4 grid world is a very simple task and I was expecting
-the RL agent not needing too many trials to learn. 500 episodes with 20 steps in the environment per episode was
-more than enough to learn the perfect policy. A more complicated task would require more training time.
 
 ## Q-values should be converging and racing each other
 
@@ -106,3 +101,10 @@ when using learning rate decay to an appropriately small learning rate value.
 If you're now starting to learn reinforcement learning, you will likely be terrified at the observation that the
 mean-squared-error loss for the Q-values is really noisy 
 even if the RL training seems to be performing quite well policy-wise! Well, let's discuss the reasons for this!
+
+## The orchestration of hyper-parameters 
+
+There's also the question: How much training is too much training? 
+This is where training RL becomes a bit of an art! This small 6-by-4 grid world is a very simple task and I was expecting
+the RL agent not needing too many trials to learn. 500 episodes with 20 steps in the environment per episode was
+more than enough to learn the perfect policy. A more complicated task would require more training time.
