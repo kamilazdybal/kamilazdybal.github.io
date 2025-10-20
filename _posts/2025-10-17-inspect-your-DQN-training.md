@@ -189,7 +189,8 @@ even if the RL training seems to be performing quite well policy-wise! Well, let
 Remember what I mentioned about the Q-values needing to race each other? Well, training deep Q-learning is less "stable"
 than training a supervised deep learning with known ground truth, because we do not really provide the ground truth for the Q-values!
 The ground truth gets updated with more and more experience in interacting with the environment.
-Imagine that we have the optimal policy but now add a constant value to all Q-values every time we query the policy.
+So one may expect a lot of noise, especially at the beginning of training, due to the ground truth still establishing itself.
+Moreover, imagine that we have the optimal policy but now add a constant value to all Q-values every time we query the policy.
 Would that change the verdict of the argmax? No. So Q-values can change up to a constant value and still result 
 in correct behavior of the policy.
 But this can really confuse error-based loss functions, since they may be bouncing from one set of Q-values to another,
@@ -198,7 +199,7 @@ as long as <span class="math display">$$ 0.0 < \gamma < 1.0 $$</span>
 (see [Chapter 2 of Barto & Sutton](http://incompleteideas.net/book/the-book-2nd.html)).
 In practice, gradient descent can handle that well in some cases and make the Q-values converge to their true values, 
 but it may not in some other cases. If between episodes the Q-values change by a constant factor (even slightly), 
-this can instantaneously increase the error-based loss, which is why you may see more noise than what you're used to
+this can also instantaneously increase the error-based loss, which is why you may see more noise than what you're used to
 seeing in supervised learning.
 
 ## The orchestration of hyper-parameters 
