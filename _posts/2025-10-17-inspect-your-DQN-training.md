@@ -90,6 +90,8 @@ policy has been trained:
 
 There's a couple of items that I wanted to point out in the figure above. 
 
+### The best action should always result in the maximum Q-value
+
 First, once we take argmax over the Q-values (_i.e._, we execute the policy in that state) 
 at the end of training (episode 500), the action selected 
 is indeed to go right because the maximum Q-value for that state is the fourth Q-value, 
@@ -102,29 +104,40 @@ the action "go up" wouldn't always be the winning one:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="450">
 </p>
 
-Third, notice that the Q-values converge–they plateau at the end of training and become much less noisy than at the beginning of training:
+### Q-values should converge
+
+Third, notice that the Q-values converge. 
+They plateau at the end of training and become much less noisy than at the beginning of training:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="450">
 </p>
 
+### Q-values for all actions should stick together
+
 Fourth, notice that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
-generally expect in deep Q-learning, even though we may not always know a priori what that maximum possible reward (the expected reward) is.
+generally expect in deep Q-learning, even though we may not always know a priori what that maximum possible reward 
+(the expected reward) is.
 This is the direct aftermath of how the Q-values are updated at each training step 
-(see [Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html)):
+(see [the Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html)):
 
 <span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} P(s, a, s') \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
 
 In the equation above, you can see that the Q-values are constructed from the instantaneous reward plus the sum of discounted future rewards.
 
-### Q-values should converge
+Generally, you can expect that the Q-values will converge to within some ballpark from the 
+maximum possible expected reward which also depends on the discount factor, <span class="math display">$$ \gamma $$</span>.
+Above, I've used <span class="math display">$$ \gamma = 0.95 $$</span>, but take a look at how the magnitudes of the converged Q-values drop
+once I select <span class="math display">$$ \gamma = 0.5 $$</span>:
 
-Generally, you can expect that the Q-values will converge to within some ballpark from the maximum possible expected reward.
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-low-discount-factor.png" width="800">
+</p>
 
+Of course, we 
 
-
-### Q-values for all actions should stick together
+### Q-values should race each other
 
 The deep Q-learning algorithm relies on taking argmax over all Q-values to determine the right action 
 at each state of the environment.
@@ -136,7 +149,11 @@ For a well-trained policy, the numeric values of Q-values should change *slightl
 for the appropriate action being selected in each state. In other words, Q-values should always be racing each other
 in various states.
 
+This is an indication of something not going well during training:
 
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-drift.png" width="800">
+</p>
 
 ## Looking at training loss
 
