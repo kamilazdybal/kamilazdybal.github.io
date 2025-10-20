@@ -105,8 +105,14 @@ even if the RL training seems to be performing quite well policy-wise! Well, let
 ## The orchestration of hyper-parameters 
 
 Here's the quirky bit of RL: The same exploration probability decay and learning rate decay spread over 
-various durations of training can lead to different training outcomes. In other words, there seems to be the right
-orchestration between 
+various durations of training can lead to different training outcomes! In other words, there seems to be the right
+orchestration between how we position the decay of <span class="math display">$$ \varepsilon $$</span> and 
+<span class="math display">$$ \alpha \rightarrow 0 $$</span> over the duration of training, all other hyper-parameters
+being equal.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-decay-over-episodes.png" width="800">
+</p>
 
 Take a look at these two training outcomes where all I've changed is the number of episodes. 
 The exploration probability decays from 0.1 at the first episode to 0.0 at the last episode 
@@ -118,14 +124,16 @@ from 0.01 at the first episode to 0.00001 at the last episode.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-short.png" width="800">
 </p>
 
-> This first figure shows us that learning the policy perfectly is possible with just 500 episodes.
+> This first figure shows us that learning the policy perfectly in this environment is possible with just 500 episodes.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-long.png" width="800">
 </p>
 
 > But if all we've ever tried was 1000 episodes, we would have also learned the policy perfectly,
-> but we would not have known that a much shorter training would have already accomplished the task!
+> but we would not have known that a much shorter training would have already accomplished the task! 
+> Notice that here, at episode 500, we're still not solving the task correctly even half the time even though
+> <span class="math display">$$ \varepsilon = 0.05 $$</span> (a reasonably small number) at episode 500.
 
 There's also the question: How much training is too much training? 
 This is where training RL becomes a bit of an art! This small 6-by-4 grid world is a very simple task and I was expecting
