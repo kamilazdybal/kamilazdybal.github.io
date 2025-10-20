@@ -140,14 +140,17 @@ we can expect that there shouldn't be too huge numeric differences in the Q-valu
 in its numeric value then either it will never be taken (it's the smallest Q-value) or it is the winning action in each state
 (it's the largest Q-value). If that's the case, then we're not really learning a complex policy, which should allow switching between actions.
 For a well-trained policy, the magnitudes of Q-values should change *slightly* from state to state to allow 
-for the appropriate action being selected in each state. In other words, Q-values should always be racing each other
-in various states.
-
-This, on the other hand, is an indication of something not going well during training:
+for the appropriate action being selected in each state. 
+In other words, Q-values should stick together and always be racing each other in various states.
+This, on the other hand, is an indication that something did not go well during training:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-drift.png" width="800">
 </p>
+
+> While the argmax over these Q-values will still return the action "go right", and while all Q-values seem to converge
+> at the end of training, the general trends for those Q-values are different.
+> Q-values for actions up, down, and left drifted from the Q-value for the action go right.
 
 The reason why you do not want large differences between Q-values is that in the relatively nearby states 
 the best action selected should still have the option to change rapidly. 
