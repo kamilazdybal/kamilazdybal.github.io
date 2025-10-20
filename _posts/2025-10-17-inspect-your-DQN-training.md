@@ -24,6 +24,10 @@ This mostly stems from a large number of hyper-parameters that we can tweak, whi
 
 **(2)** the dynamics of gradient descent.
 
+The two are at constant interplay. The way the agent explores the environment during training affects what the 
+agent learns from that experience. And the way that learning progresses affects the way in which agent navigates
+the environment in the future.
+
 Hence, it's useful to understand a couple of key indicators that you can look at during training, 
 which can guide your hyper-parameter choice.
 
