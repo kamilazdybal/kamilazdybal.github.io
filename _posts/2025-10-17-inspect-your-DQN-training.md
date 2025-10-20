@@ -125,17 +125,8 @@ This is the direct aftermath of how the Q-values are updated at each training st
 <span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} P(s, a, s') \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
 
 In the equation above, you can see that the Q-values are constructed from the instantaneous reward plus the sum of discounted future rewards.
-
 Generally, you can expect that the Q-values will converge to within some ballpark from the 
 maximum possible expected reward which also depends on the discount factor, <span class="math display">$$ \gamma $$</span>.
-Above, I've used <span class="math display">$$ \gamma = 0.95 $$</span>, but take a look at how the magnitudes of the converged Q-values drop
-once I select <span class="math display">$$ \gamma = 0.5 $$</span>:
-
-<p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-low-discount-factor.png" width="800">
-</p>
-
-Of course, we 
 
 ### Q-values should race each other
 
@@ -155,9 +146,23 @@ This is an indication of something not going well during training:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-drift.png" width="800">
 </p>
 
+The reason why you do not want large differences between Q-values is that in the relatively nearby states 
+the best action selected should still have the option to change rapidly. 
+For example, if the agent is in any of the four tiles directly around the target, 
+the best action would change from "go up", to "go down", to "go left", to "go right", but the state value 
+(which is the input to the deep Q-network) does not change that much. 
+The best course of action is for the network to learn to make tiny adjustment in the Q-values that allow for action switching. 
+Otherwise, if there are huge differences in Q-values in one state, 
+the network outputs might have a hard time switching back to a different action in a similar state.
+In other words, you do not want the deep Q-network become too stiff.
+
 ## Looking at training loss
 
-As the Q-values converge to fixed values, the loss should converge too.
+As the Q-values converge to fixed values, the loss should converge too:
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-MSE.png" width="800">
+</p>
 
 ### Why is the loss so noisy?
 
@@ -165,7 +170,7 @@ If you're used to training deep neural networks for simple regression tasks, you
 (e.g., mean-squared-error losses) to be nicely converging and becoming almost flat at the end of training
 when using learning rate decay to an appropriately small learning rate value.
 
-If you're now starting to learn reinforcement learning, you will likely be terrified at the observation that the
+If you're now starting to learn RL, you will likely be terrified at the observation that the
 mean-squared-error loss for the Q-values is really noisy 
 even if the RL training seems to be performing quite well policy-wise! Well, let's discuss the reasons for this!
 
