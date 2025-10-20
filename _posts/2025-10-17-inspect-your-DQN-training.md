@@ -18,7 +18,7 @@ categories: jekyll update
 
 Training reinforcement learning (RL) can be difficult. 
 Even if you coded the RL algorithm correctly, getting it to train well on a specific environment can take some work.
-This mostly stems from a large number of hyper-parameters that we can tweak, which can alter 
+This mostly stems from a large number of hyper-parameters that we can tweak, which can alter:
 
 **(1)** the dynamics of the agent navigating this environment,
 
@@ -114,7 +114,7 @@ various durations of training can lead to different training outcomes! In other 
 orchestration between how we position the decay of <span class="math display">$$ \varepsilon $$</span> and 
 <span class="math display">$$ \alpha $$</span> over the duration of training, all other hyper-parameters
 being equal. Below is a small schematic where I locate the same decays either over 500 or 1000 episodes.
-The exploration probability decays from 0.1 at the first episode to 0.0 at the last episode 
+The exploration probability decays linearly from 0.1 at the first episode to 0.0 at the last episode 
 (being either 500 or 1000). In the same way, the cosine learning rate decay is spread over the episodes 
 from <span class="math display">$$ 10^{-2} $$</span> at the first episode 
 to <span class="math display">$$ 10^{-5} $$</span> at the last episode.
@@ -123,7 +123,7 @@ to <span class="math display">$$ 10^{-5} $$</span> at the last episode.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-decay-over-episodes.png" width="800">
 </p>
 
-Take a look at the outcomes of these two trainings: 
+Take a look at the outcomes of these two trainings, the first ran for 500 episodes, the second for 1000 episodes: 
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good-short.png" width="800">
@@ -138,9 +138,14 @@ Take a look at the outcomes of these two trainings:
 > But if all we had ever tried was 1000 episodes, we would have also learned the policy perfectly,
 > but we would not have known that a much shorter training period could have already accomplished the task!
 > Notice that here, at episode 500, we're still not solving the task correctly even half the time even though
-> <span class="math display">$$ \varepsilon = 0.05 $$</span> (a reasonably small number) at episode 500.
+> <span class="math display">$$ \varepsilon = 0.05 $$</span> at episode 500
+> (i.e., random actions are taken only 5% of the time–a reasonably small number 
+> that a well-trained policy should be able to correct for by taking on-policy actions the remaining 95% of the timeg).
 
-There's also the question: How much training is too much training? 
+So there's always the two questions: How much training is too much training? 
+Or, with how little training can we get away with?
 This is where training RL becomes a bit of an art! This small 6-by-4 grid world is a very simple task and I was expecting
 the RL agent not needing too many trials to learn. 500 episodes with 20 steps in the environment per episode was
 more than enough to learn the perfect policy. A more complicated task would require more training time.
+With more experience of training across environments with varying complexity 
+you will start to be able to take good guesses for the training time.
