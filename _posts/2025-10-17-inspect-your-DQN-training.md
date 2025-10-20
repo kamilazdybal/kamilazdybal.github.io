@@ -135,10 +135,12 @@ maximum possible expected reward which also depends on the discount factor, <spa
 
 The deep Q-learning algorithm relies on taking argmax over all Q-values to determine the right action 
 at each state of the environment.
-Assuming that all actions are necessary and taken from time to time in the environment, 
+Assuming that all actions are necessary and taken frequently in the environment, 
 we can expect that there shouldn't be too huge numeric differences in the Q-values. If one Q-value persistently drifts
 in its numeric value then either it will never be taken (it's the smallest Q-value) or it is the winning action in each state
 (it's the largest Q-value). If that's the case, then we're not really learning a complex policy, which should allow switching between actions.
+(The exception being environments which have a clear preference for a subset of actions and other actions should 
+rarely be taken.)
 For a well-trained policy, the magnitudes of Q-values should change *slightly* from state to state to allow 
 for the appropriate action being selected in each state. 
 In other words, Q-values should stick together and always be racing each other in various states.
