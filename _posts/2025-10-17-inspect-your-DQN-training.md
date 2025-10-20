@@ -30,8 +30,9 @@ which can guide your hyper-parameter choice.
 In this post, we'll use a simple instance of training a deep Q-learning RL agent 
 ([`DqnAgent`](https://www.tensorflow.org/agents/api_docs/python/tf_agents/agents/DqnAgent) from 
 [TF-Agents](https://www.tensorflow.org/agents)). 
-We'll use a simple 6-by-4 grid world environment where the agent moves towards the target tile, and once it does,
-it receives a +1 reward. Any other transition results in a 0 reward.
+We'll use a simple 6-by-4 grid world environment where the agent (blue) moves towards the target (red) tile, and once it does,
+it receives a +1 reward. Any other transition results in a 0 reward. 
+The state is described by the tuple (agent's position, target's position).
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-env.gif" width="400">
@@ -50,7 +51,7 @@ As a result, at the end of training, you should see high (or highest possible) r
 
 Below is the result that you'd like to see 
 as <span class="math display">$$ \varepsilon \rightarrow 0 $$</span> with training time. With more training, 
-the learned policy starts to successfully move the agent towards the target every time, resulting in +1 reward.
+the learned policy starts to successfully move the agent towards the target every time, resulting in a +1 reward.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good.png" width="800">
@@ -81,8 +82,9 @@ Let's monitor the Q-values for the following arrangement of the agent (blue) and
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-fixed-transition.png" width="400">
 </p>
 
-We know that for such arrangement the best action to take is "go right". Here are the Q-values for that state once the
-policy has been trained:
+We know that for such arrangement, the best action to take is to "go right". 
+Here's how the Q-values for that state evolve with training time, 
+and where the policy solves the task perfectly at the end of training:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition.png" width="800">
@@ -90,35 +92,36 @@ policy has been trained:
 
 There's a couple of items that I wanted to point out in the figure above. 
 
-### The best action should always result in the maximum Q-value
+### 1. The best action should always result in the maximum Q-value
 
-First, once we take argmax over the Q-values (_i.e._, we execute the policy in that state) 
+Once we take argmax over the Q-values (_i.e._, we execute the policy in that state) 
 at the end of training (episode 500), the action selected 
 is indeed to go right because the maximum Q-value for that state is the fourth Q-value, 
 <span class="math display">$$ Q_4 $$</span>.
-
-Second, notice that it wasn't necessarily so at the beginning of training. If we zoom in at the Q-values at the early episodes,
+Notice that it wasn't necessarily the case at the beginning of training. 
+If we zoom in at the Q-values at the early episodes,
 the action "go up" wouldn't always be the winning one:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="450">
 </p>
 
-### Q-values should converge
+### 2. Q-values should converge
 
-Third, notice that the Q-values converge. 
+Notice that the Q-values converge. 
 They plateau at the end of training and become much less noisy than at the beginning of training:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="450">
 </p>
 
-### Q-values for all actions should stick together
+### 3. Q-values for all actions should stick together
 
-Fourth, notice that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
+Observe, that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
-generally expect in deep Q-learning, even though we may not always know a priori what that maximum possible reward 
+generally expect in deep Q-learning, even though we may not always know _a priori_ what that maximum possible reward 
 (the expected reward) is.
+
 This is the direct aftermath of how the Q-values are updated at each training step 
 (see [the Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html)):
 
@@ -128,19 +131,19 @@ In the equation above, you can see that the Q-values are constructed from the in
 Generally, you can expect that the Q-values will converge to within some ballpark from the 
 maximum possible expected reward which also depends on the discount factor, <span class="math display">$$ \gamma $$</span>.
 
-### Q-values should race each other
+### 4. Q-values should race each other
 
 The deep Q-learning algorithm relies on taking argmax over all Q-values to determine the right action 
 at each state of the environment.
 Assuming that all actions are necessary and taken from time to time in the environment, 
 we can expect that there shouldn't be too huge numeric differences in the Q-values. If one Q-value persistently drifts
 in its numeric value then either it will never be taken (it's the smallest Q-value) or it is the winning action in each state
-(it's the largest Q-value). 
-For a well-trained policy, the numeric values of Q-values should change *slightly* from state to state to allow 
+(it's the largest Q-value). If that's the case, then we're not really learning a complex policy, which should allow switching between actions.
+For a well-trained policy, the magnitudes of Q-values should change *slightly* from state to state to allow 
 for the appropriate action being selected in each state. In other words, Q-values should always be racing each other
 in various states.
 
-This is an indication of something not going well during training:
+This, on the other hand, is an indication of something not going well during training:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-drift.png" width="800">
@@ -151,9 +154,10 @@ the best action selected should still have the option to change rapidly.
 For example, if the agent is in any of the four tiles directly around the target, 
 the best action would change from "go up", to "go down", to "go left", to "go right", but the state value 
 (which is the input to the deep Q-network) does not change that much. 
-The best course of action is for the network to learn to make tiny adjustment in the Q-values that allow for action switching. 
+The best course of action is for the network to learn to make tiny adjustment in the Q-values that allow for action switching
+per tiny difference in state value. 
 Otherwise, if there are huge differences in Q-values in one state, 
-the network outputs might have a hard time switching back to a different action in a similar state.
+the network outputs might have a hard time switching back to a different action in a similar state, and the policy may fail.
 In other words, you do not want the deep Q-network become too stiff.
 
 ## Looking at training loss
@@ -164,15 +168,29 @@ As the Q-values converge to fixed values, the loss should converge too:
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-MSE.png" width="800">
 </p>
 
+But there's a caveat...
+
 ### Why is the loss so noisy?
 
-If you're used to training deep neural networks for simple regression tasks, you may be used to loss functions
+If you're used to training deep neural networks for simple supervised learning tasks (such as regression), 
+you may be used to loss functions
 (e.g., mean-squared-error losses) to be nicely converging and becoming almost flat at the end of training
 when using learning rate decay to an appropriately small learning rate value.
 
 If you're now starting to learn RL, you will likely be terrified at the observation that the
 mean-squared-error loss for the Q-values is really noisy 
 even if the RL training seems to be performing quite well policy-wise! Well, let's discuss the reasons for this!
+
+Remember what I mentioned about the Q-values needing to race each other? Well, training deep Q-learning is less "stable"
+than training a supervised deep learning with known ground truth, because we do not really provide ground truth for the Q-values!
+Imagine we have the optimal policy but now add constant value to all Q-values at any time that we query the policy.
+Would that change the verdict of the argmax? No. So Q-values can change up to a constant value and still.
+This can really confuse the error-based loss functions, since they may be bouncing from one set of Q-values to another,
+yet the policy still executes the task in the environment perfectly. In theory, the Q-values are guaranteed to converge
+as long as <span class="math display">$$ 0.0 < \gamma < 1.0 $$</span> (see [Chapter 2 of Barto & Sutton](http://incompleteideas.net/book/the-book-2nd.html).
+In practice, gradient descent can handle that well in some cases and make the Q-values converge to the true values, 
+but it may not in some other cases. If between episodes the Q-values change by a constant factor, 
+this can locally increase gthe error-based loss.
 
 ## The orchestration of hyper-parameters 
 
@@ -181,7 +199,7 @@ and learning rate (<span class="math display">$$ \alpha $$</span>) decay spread 
 various durations of training can lead to different training outcomes! In other words, there seems to be the right
 orchestration between how we position the decay of <span class="math display">$$ \varepsilon $$</span> and 
 <span class="math display">$$ \alpha $$</span> over the duration of training, all other hyper-parameters
-being equal. Below is a small schematic where I locate the same decays either over 500 or 1000 episodes.
+being equal. Below is a small schematic where I locate the same decay schemes either over 500 or 1000 episodes.
 The exploration probability decays linearly from 0.1 at the first episode to 0.0 at the last episode 
 (being either 500 or 1000). In the same way, the cosine learning rate decay is spread over the episodes 
 from <span class="math display">$$ 10^{-2} $$</span> at the first episode 
