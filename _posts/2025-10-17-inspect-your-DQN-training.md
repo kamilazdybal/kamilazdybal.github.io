@@ -99,20 +99,20 @@ Second, notice that it wasn't necessarily so at the beginning of training. If we
 the action "go up" wouldn't always be the winning one:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="450">
 </p>
 
 Third, notice that the Q-values converge–they plateau at the end of training and become much less noisy than at the beginning of training:
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="500">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="450">
 </p>
 
 Fourth, notice that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
 generally expect in deep Q-learning, even though we may not always know a priori what that maximum possible reward (the expected reward) is.
 This is the direct aftermath of how the Q-values are updated at each training step 
-(see [Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html):
+(see [Bellman equation](https://kamilazdybal.github.io/jekyll/update/2024/06/02/bellman-equation.html)):
 
 <span class="math display">$$ Q_{\pi}(s, a) = R(s, a) + \gamma \sum_{s'} P(s, a, s') \cdot \text{max} \big( Q_{\pi}(s',a') \big)$$</span>
 
