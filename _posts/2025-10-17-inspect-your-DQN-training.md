@@ -199,7 +199,7 @@ and learning rate (<span class="math display">$$ \alpha $$</span>) decay spread 
 various durations of training can lead to different training outcomes! In other words, there seems to be the right
 orchestration between how we position the decay of <span class="math display">$$ \varepsilon $$</span> and 
 <span class="math display">$$ \alpha $$</span> over the duration of training, all other hyper-parameters
-being equal. Below is a small schematic where I locate the same decay schemes either over 500 or 1000 episodes.
+being equal. Below is a small illustration where I locate the same decay schemes, either over 500 or 1000 episodes.
 The exploration probability decays linearly from 0.1 at the first episode to 0.0 at the last episode 
 (being either 500 or 1000). In the same way, the cosine learning rate decay is spread over the episodes 
 from <span class="math display">$$ 10^{-2} $$</span> at the first episode 
@@ -223,7 +223,7 @@ Take a look at the outcomes of these two trainings, the first ran for 500 episod
 
 > But if all we had ever tried was 1000 episodes, we would have also learned the policy perfectly,
 > but we would not have known that a much shorter training period could have already accomplished the task!
-> Notice that here, at episode 500, we're still not solving the task correctly even half the time even though
+> Notice that here, at episode 500, we're still not solving the task correctly even half of the time, even though
 > <span class="math display">$$ \varepsilon = 0.05 $$</span> at episode 500
 > (*i.e.*, random actions are taken only 5% of the time–a reasonably small number 
 > that a well-trained policy should be able to correct for by taking on-policy actions the remaining 95% of the time).
