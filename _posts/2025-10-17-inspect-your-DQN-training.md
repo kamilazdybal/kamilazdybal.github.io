@@ -115,7 +115,7 @@ They plateau at the end of training and become much less noisy than at the begin
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-end-of-training.png" width="450">
 </p>
 
-### 3. Q-values for all actions should approach the expected reward value
+### 3. The maximum Q-values should approach the expected reward value
 
 Observe, that the numerical values of the final Q-values are within some ballpark of 1.0, which, 
 not incidentally, is the maximum achievable reward over one full episode in this environment. This is what one should
