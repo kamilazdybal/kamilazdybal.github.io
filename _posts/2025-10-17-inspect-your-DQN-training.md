@@ -104,7 +104,7 @@ is indeed to go right because the maximum Q-value for that state is the fourth Q
 <span class="math display">$$ Q_4 $$</span>.
 Notice that it wasn't necessarily the case at the beginning of training. 
 If we zoom in at the Q-values at the early episodes,
-the action "go up" wouldn't always be the winning one:
+the action "go right" wouldn't always be the winning one:
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-Q-values-for-fixed-transition-zoom-too-early.png" width="450">
