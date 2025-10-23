@@ -34,7 +34,7 @@ which can guide your hyper-parameter choice.
 In this post, we'll use a simple instance of training a deep Q-learning RL agent 
 ([`DqnAgent`](https://www.tensorflow.org/agents/api_docs/python/tf_agents/agents/DqnAgent) from 
 [TF-Agents](https://www.tensorflow.org/agents)). 
-We'll use a simple 6-by-4 grid world environment where the agent (blue) moves towards the target (red) tile, and once it does,
+We'll use a 6-by-4 grid world environment where the agent (blue) moves towards the target (red) tile, and once it does,
 it receives a +1 reward. Any other transition results in a 0 reward. 
 The state is described by the tuple (agent's position, target's position).
 
@@ -45,7 +45,7 @@ The state is described by the tuple (agent's position, target's position).
 ## Rewards should be higher with a better policy
 
 The first indication that your policy is improving with training is that as it's queried later in the training 
-it yields high rewards. To check this, you can implement the exploration probability decay with training time.
+it yields higher rewards. To check this, you can implement the exploration probability decay with training time.
 For example, you may decay the exploration probability, <span class="math display">$$ \varepsilon $$</span>, from, 
 say, 0.5 at the beginning of training to 0.0 at the end of training, 
 and even let it stay zero for a couple of final episodes.
@@ -55,7 +55,7 @@ As a result, at the end of training, you should see high (or highest possible) r
 
 Below is the result that you'd like to see 
 as <span class="math display">$$ \varepsilon \rightarrow 0 $$</span> with training time. With more training, 
-the learned policy starts to successfully move the agent towards the target every time, resulting in a +1 reward.
+the learned policy starts to successfully move the agent towards the target **every time**, resulting in a +1 reward.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/DQN-rewards-over-episodes-good.png" width="800">
@@ -75,8 +75,8 @@ Of course, you also don't want the rewards to increase and then come back down a
 
 The outputs of the deep Q-network are the Q-values. 
 They are estimates of the value of taking a given action when in a particular state.
-The action selected by the trained policy is the argmax over all Q-values. In this environment, I allow four actions:
-go up, do down, go left, go right. Hence, I have four Q-values.
+The action selected by the trained policy is the argmax over all Q-values. In this environment, we allow four actions:
+go up, do down, go left, go right. Hence, we have four Q-values.
 
 During training, we can inspect a selection of Q-values for fixed state transitions in the environment in order to see
 if the Q-values behave the way they should. 
