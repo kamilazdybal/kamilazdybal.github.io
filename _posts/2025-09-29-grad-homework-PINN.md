@@ -50,10 +50,10 @@ L = 1         # m
 T_infty = 900 # K
 ```
 
-everything else that needs to change is how we compute the new residual! This ODE in a residual form looks like this:
+everything else that needs to change is how we compute the new residual! This ODE in the residual form looks like this:
 
 <span class="math display">$$ \begin{equation}
-\frac{d^2 T(x)}{d x^2} - \alpha(T^4(x) - T_{\infty}^4) = 0
+\frac{d^2 T(x)}{d x^2} - \alpha \left( T^4(x) - T_{\infty}^4 \right) = 0
 \end{equation}$$</span>
 
 Hence, we need to replace this part in our training loop:
@@ -124,7 +124,7 @@ Converged in 4 iterations.
 Maybe PINNs are useful for something after all! 😉
 
 Note that for this warm-starting application, you might not even need to fully converge 
-on the residual loss when training a PINN model. A reasonably good approximation
+on the residual loss when training the PINN model. A reasonably good approximation
 that captures the general trend well can be still way more accurate than your own best guess.
 In fact, I tried training for just 300 epochs instead of 5000, where the residual loss is still pretty high,
 and we get just the same saving of two iterations. In this case, the PINN approximation is worse:

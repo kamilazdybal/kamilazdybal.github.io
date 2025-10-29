@@ -246,7 +246,7 @@ We will train the ANN such that this equation gets as close to zero as possible.
 the mean-squared-error (MSE) over some mini-batch of <span class="math display">$$ n $$</span> points:
 
 <span class="math display">$$ \begin{equation}
-\mathcal{L} = \text{MSE}_{i=0}^{n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} |_{x = x_i}  - \frac{2h}{\lambda r}(\tilde{T}(x_i) - T_{\infty}) \right)
+\mathcal{L} = \text{MSE}_{i=0}^{n} \left( \frac{d^2 \tilde{T}(x)}{d x^2} |_{x = x_i}  - \frac{2h}{\lambda r} \left( \tilde{T}(x_i) - T_{\infty} \right) \right)
 \end{equation}$$</span>
 
 But, as you may rightly wonder, this loss contains a second derivative of 
