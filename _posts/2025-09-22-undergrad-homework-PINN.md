@@ -236,13 +236,13 @@ PINN_model = PINN(solution_network).to(device).to(dtype)
 
 ## The residual loss
 
-Now we need to construct the residual loss! When we write our ODE in a residual form, we get:
+Now we need to construct the residual loss! When we write our ODE in the residual form, we get:
 
 <span class="math display">$$ \begin{equation}
-\frac{d^2 T(x)}{d x^2} - \frac{2h}{\lambda r}(T(x) - T_{\infty}) = 0
+\frac{d^2 T(x)}{d x^2} - \frac{2h}{\lambda r} \left( T(x) - T_{\infty} \right) = 0
 \end{equation}$$</span>
 
-We will train the ANN such that this equation gives *almost* zero. Our loss function will simply be 
+We will train the ANN such that this equation gets as close to zero as possible. Our loss function will simply be 
 the mean-squared-error (MSE) over some mini-batch of <span class="math display">$$ n $$</span> points:
 
 <span class="math display">$$ \begin{equation}
