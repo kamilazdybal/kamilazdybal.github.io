@@ -117,7 +117,8 @@ obtain the optimal policy (or train the RL). In particular, the policy gradient 
 is one of the RL algorithms where we directly learn the policy function with its trainable parameters.
 This document is an educational tutorial deriving and explaining the PGM in more depth. 
 I specifically wanted to root the intuition behind PGM in the intuition that you may already have from training 
-general-purpose ANNs. This document is a bit mathy, but stick with it and you will find that it's actually not 
+general-purpose artificial neural networks. 
+This document is a bit mathy, but stick with it and you will find that it's actually not 
 that much more of a conceptual advance from the math of gradient descent!
 
 <div class="row">
