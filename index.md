@@ -125,7 +125,7 @@ that much more of a conceptual advance from the math of gradient descent!
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PGM-method.png" alt="PGM" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/reinforcement-learning-101/raw/main/on-policy-gradient-methods.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/raw/main/reinforcement-learning-101/on-policy-gradient-methods.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
