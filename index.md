@@ -108,7 +108,7 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 <ul id="PGM-tutorial"></ul>
 
-# Deriving and understanding the policy gradient method (PGM)
+# On the policy gradient method
 
 Reinforcement learning (RL) is all about finding optimal *policies*–rules of acting on or behaving in an environment. 
 The policy is simply a function that takes observations of the environment as inputs and it outputs actions 
@@ -126,7 +126,7 @@ that much more of a conceptual advance from the math of gradient descent!
     <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PGM-method.png" alt="PGM" style="width:150px"></a>
   </div>
   <div class="column">
-    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/raw/main/reinforcement-learning-101/on-policy-gradient-methods.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/raw/main/reinforcement-learning-101/on-the-policy-gradient-method.pdf" target="_blank"> Tutorial</a></h4>
   </div>
 </div>
 
