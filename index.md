@@ -106,6 +106,29 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="PGM-tutorial"></ul>
+
+# Deriving and understanding the policy gradient method (PGM)
+
+Reinforcement learning (RL) is all about finding optimal *policies*–rules of acting on or behaving in an environment. 
+The policy is simply a function that takes observations of the environment as inputs and it outputs actions 
+to be executed in that environment. There's a couple of different methodological approaches to how one can 
+obtain the optimal policy (or train the RL). In particular, the policy gradient method (PGM) 
+is one of the RL algorithms where we directly learn the policy function with its trainable parameters.
+This document is an educational tutorial deriving and explaining the PGM in more depth. 
+I specifically wanted to root the intuition behind PGM in the intuition that you may already have from training 
+general-purpose ANNs. This document is a bit mathy, but stick with it and you will find that it's actually not 
+that much more of a conceptual advance from the math of gradient descent!
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/PGM-method.png" alt="PGM" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/reinforcement-learning-101/raw/main/on-policy-gradient-methods.pdf" target="_blank"> Tutorial</a></h4>
+  </div>
+</div>
+
 <ul id="LIMA-padding"></ul>
 
 # Improving the performance of a lightweight convolutional neural network for particle image velocimetry
