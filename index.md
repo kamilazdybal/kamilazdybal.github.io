@@ -127,6 +127,7 @@ that much more of a conceptual advance from the math of gradient descent!
   </div>
   <div class="column">
     <h4><span class="fa fa-file-pdf-o"></span><a href="https://github.com/kamilazdybal/teaching-ml/raw/main/reinforcement-learning-101/on-the-policy-gradient-method.pdf" target="_blank"> Tutorial</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/kamilazdybal/https://github.com/kamilazdybal/teaching-ml/blob/main/reinforcement-learning-101/on-the-policy-gradient-method.ipynb" target="_blank"> Code</a></h4>
   </div>
 </div>
 
