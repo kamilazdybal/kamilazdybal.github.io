@@ -26,7 +26,7 @@ a complete rookie in what it means to be an academic and to do research, and sud
 what I do is of help to the world. Do I really have that much power in me to make this happen? 
 In the midst of the next two months of hard work and the COVID-19 pandemic, 
 which unfortunately caused me to prematurely evacuate from the U.S. back to Europe, 
-I think I've forgotten about that sentence.
+I forgot about that sentence.
 
 It was only a couple of months later when I had a chance to work on the development of a new scientific software 
 when thoughts about usefulness of my work appeared in my mind again. 
