@@ -23,7 +23,7 @@ he said: “*I hope your research is useful to humanity.*”
 
 This sentence provoked some unusual thoughts in my head. Here I was, merely at the start of my Ph.D., 
 a complete rookie in what it means to be an academic and to do research, and suddenly someone had hopes that 
-what I do is of help to the world. Do I really have it in me to make this happen? 
+what I do is of help to the world. Do I really have that much power in me to make this happen? 
 In the midst of the next two months of hard work and the COVID-19 pandemic, 
 which unfortunately caused me to prematurely evacuate from the U.S. back to Europe, 
 I think I've forgotten about that sentence.
