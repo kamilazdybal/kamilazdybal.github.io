@@ -13,30 +13,30 @@ categories: jekyll update
 
 # On the unexpected ways in which our research can be useful
 
-It was January 2020, and I have just landed in the United States for the first time in my life. 
-With my J-1 research visa in hand, I was about to complete a part of my Ph.D. at The University of Utah. 
-After leaving the plane, I headed to the U.S. Customs to have my documents checked. 
-The customs officer asked me a bunch of standard questions like why am I coming to the U.S., 
-how long will I be staying, and what my research is going to be about. 
-As the officer approved my entry to the U.S. with a big stamp and handed my passport back, 
+It was January 2020, and I had just landed in the United States for the first time in my life. 
+With my J-1 research visa in hand, I was about to complete part of my Ph.D. at the University of Utah. 
+After leaving the plane, I headed to U.S. Customs to have my documents checked. 
+The customs officer asked me a bunch of standard questions like why I was coming to the U.S., 
+how long I would be staying, and what my research was going to be about. 
+As the officer approved my entry into the U.S. with a big stamp and handed my passport back, 
 he said: “*I hope your research is useful to humanity.*”
 
 This sentence provoked some unusual thoughts in my head. Here I was, merely at the start of my Ph.D., 
-a complete rookie in what it means to be an academic and to do research, and suddenly someone had hopes that 
-what I do is of help to the world. Do I really have that much power in me to make this happen? 
+a complete rookie in what it meant to be an academic and to do research, and suddenly someone had hopes that 
+what I did would be of help to the world. Did I really have that much power in me to make this happen? 
 In the midst of the next two months of hard work and the COVID-19 pandemic, 
 which unfortunately caused me to prematurely evacuate from the U.S. back to Europe, 
 I forgot about that sentence.
 
 It was only a couple of months later when I had a chance to work on the development of a new scientific software 
-when thoughts about usefulness of my work appeared in my mind again. 
-Working on the new Python library prompted me to think some more about 
-what it means for the output of my work to be useful to someone: another researcher, another grad student. 
+when thoughts about the usefulness of my work appeared in my mind again. 
+Working on this new Python library prompted me to think some more about 
+what it meant for the output of my work to be useful to someone: another researcher, another grad student. 
 I thought: 
-Clearly, it needs to have functionalities that other researchers are currently interested in and can benefit from. 
-Clearly, it needs to be well-documented so that people know *how* to use it and their time is not wasted in trying to understand my code. 
-Clearly, I need to provide a couple of tutorials so that people have a good sense of what is even possible to accomplish with this library. 
-I did all of those things and I think the efforts were worthwhile. 
+Clearly, it needed to have functionalities that other researchers were currently interested in and can benefit from. 
+Clearly, it needed to be well-documented so that people knew *how* to use it and their time was not wasted in trying to understand my code. 
+Clearly, I needed to provide a couple of tutorials so that people had a good sense of what was even possible to accomplish with this library. 
+I did all of those things, and I think the efforts were worthwhile. 
 Every once in a while, Ph.D. students from all over the world email me to let me know that our software has been useful to them.
 
 After my first software publication, it was time to roll my sleeves and produce research papers. 
