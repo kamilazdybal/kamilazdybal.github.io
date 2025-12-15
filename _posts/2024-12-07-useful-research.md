@@ -39,34 +39,35 @@ Clearly, I needed to provide a couple of tutorials so that people had a good sen
 I did all of those things, and I think the efforts were worthwhile. 
 Every once in a while, Ph.D. students from all over the world email me to let me know that our software has been useful to them.
 
-After my first software publication, it was time to roll my sleeves and produce research papers. 
+After my first software publication, it was time to roll up my sleeves and produce research papers. 
 At this point, I was already halfway through my Ph.D. program. 
-I realized that I can apply the same rules when describing our research ideas and results 
-as I did when coding the Python library. 
-My advisor, James, helped me a lot on the journey to make our research work useful to the community. 
-With each paper we wrote, he prompted me to imagine that another grad student will be reading it. 
-What information then, would a grad student need and appreciate if they wanted to reproduce our results 
+I realized that I could apply the same rules when describing our research ideas and results 
+as I had when coding the Python library. 
+My advisor, James, helped me a lot on this journey to make our research work useful to the community. 
+With each paper we wrote, he prompted me to imagine that another graduate student would be reading it. 
+What information, then, would a graduate student need and appreciate if they wanted to reproduce our results 
 and learn something new from our research that could fuel their own? 
-This helped me to write papers with grad students as my main audience in mind. 
-I since strive to teach the reader something interesting about our field of research 
+This helped me to write papers with graduate students as my main audience in mind. 
+Since then, I've strived to teach the reader something interesting about our area of research 
 by writing sections that are illustrative and didactic. 
-I've made it a personal goal for myself to share all the code that can be used to reproduce figures from our papers. 
-I also make sure to provide all the details on our work, 
-which can easily be outsourced to the supplementary materials, 
-even if the format of the journal does not allow enough space in the manuscript itself. 
-I continue to hear from researchers and students that reading my papers was useful to them, 
-that those papers helped them get familiar with our research discipline, that they applied our methods in their own work.
+I've made it a personal goal to share all the code that can be used to reproduce figures from our papers. 
+I also make sure to provide all the details of our work 
+that can be easily outsourced to the supplementary materials, 
+even when the format of the journal does not allow enough space in the manuscript itself. 
+I continue to hear from researchers and students that reading my papers has been useful to them, 
+that the papers helped them become familiar with our research discipline, 
+and that they have applied our methods in their own work.
 
 So what's the upshot of this story? 
-Well, I have no illusions that the ideas that I developed in my research so far are useful to humanity. 
-In the end, we, researchers, all make tiny, incremental advances with each paper that we write, 
+Well, I have no illusions that the ideas that I've developed in my research so far are useful to humanity. 
+In the end, we, researchers, all make tiny, incremental advances with each paper we write, 
 adding just one more voice to the vast sea of the ongoing academic discussions. 
 But I sure can shape the outputs of my work in such a way that they invite another academic 
 to build something of their own on top of what I've done. 
 Maybe, here and there, I've also found a way to say something inspiring in my academic prose 
-that another researcher really needed to hear in that moment in time. 
-And who knows, maybe, if we all advance together that way as researchers, 
-our collective effort, one day, becomes useful to humanity.
+that another researcher really needed to hear at that moment in time. 
+And who knows, maybe, if we all advance together in that way as researchers, 
+our collective effort will one day become useful to humanity.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/on-useful-research.jpg">
