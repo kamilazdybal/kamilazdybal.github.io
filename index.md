@@ -68,7 +68,7 @@ where I combine reinforcement learning and data-driven modeling with experimenta
 Previously, I was a Ph.D. student at Université Libre de Bruxelles and The University of Utah, working with 
 Prof. [Alessandro Parente](https://brite-research.be/) and 
 Prof. [James C. Sutherland](https://sutherland.che.utah.edu/) on reduced-order modeling of reacting flows.
-Even before that, I've spent some great time working with Prof. [Miguel A. Mendez](https://www.mendezma.com/) at
+Even before that, I spent some great time working with Prof. [Miguel A. Mendez](https://www.mendezma.com/) at
 The von Karman Institute.
 
 My research interests are in using **representation learning** to **understand high-dimensional datasets** and 
