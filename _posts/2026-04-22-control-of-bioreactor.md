@@ -76,11 +76,42 @@ the first ODE:
 
 ## Control of a bioreactor
 
-This dynamical system is controlled by establishing the right inflow rate, <span class="math display">$$ F $$</span>,
-such that we maximize the rate of biomass expelled from the reactor <span class="math display">$$ D X $$</span>, also known as the reactor's productivity. 
-Note that too low <span class="math display">$$ F $$</span> will hamper the growth of biomass with too little
-nutrients provided and equally small biomass output. But too high <span class="math display">$$ F $$</span> can lead
-to reactor washout, _i.e._, too fast removal of biomass from the reactor.
+This dynamical system is controlled by establishing the right dilution rate, <span class="math display">$$ D $$</span>,
+such that we maximize the rate of biomass expelled from the reactor, <span class="math display">$$ D X $$</span>, also known as the reactor's productivity. 
+Note that too low <span class="math display">$$ D $$</span> will hamper the growth of biomass with too little
+nutrients provided and equally small biomass output. But too high <span class="math display">$$ D $$</span> can lead
+to reactor washout, _i.e._, complete removal of biomass from the reactor with time.
+
+Below, we visualize a couple of scenarios starting from initial condition 
+
+<span class="math display">$$
+\begin{equation}
+    \begin{cases}
+        X(t = 0) = 1.0 \frac{g}{L} \\
+        S(t = 0) = 5.0 \frac{g}{L}
+    \end{cases}
+\end{equation}$$</span>
+
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-good.png" width="800">
+</p>
+
+> First, a good control case where dilution rate is not too low and not too high. With just
+the right amount of substrate continually supplied to the reactor the biomass concentration establishes a steady-state at some high value.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-zero.png" width="800">
+</p>
+
+> Second, zero dilution rate causes the biomass to gradually decay due to starvation.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-washout.png" width="800">
+</p>
+
+> Third, too high dilution rate causes washout, where at some point in time the biomass is completely removed from the bioreactor and
+> its production cannot be restored.
 
 ## REINFORCE model for bioreactor control
 
