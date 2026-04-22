@@ -18,10 +18,16 @@ categories: jekyll update
 
 ## Zero-dimensional model of a bioreactor
 
-A bioreactor is a dynamical system that can be modeled as a zero-dimensional reactor of volume <span class="math display">$$ V $$</span> 
+A bioreactor is a dynamical system that can be modeled as a zero-dimensional, perfectly stirred reactor 
+of constant volume <span class="math display">$$ V $$</span> 
 where biomass is produced from a substrate.
-The substrate is continually added to the bioreactor at the rate <span class="math display">$$ F $$</span>, and the products 
+The substrate is continually added to the bioreactor at the rate <span class="math display">$$ F $$</span> 
+(in <span class="math display">$$ L/h $$</span>), and the products 
 of the bioreactor are expelled at the same rate, thus maintaining a constant volume in the reactor.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-bioreactor.png" width="400">
+</p>
 
 The system of initial value ordinary differential equations (ODEs) that describes this process can be written as:
 
@@ -74,7 +80,7 @@ the first ODE:
 \frac{d X}{d t} = \left( \mu(S) - D - k_d \right) X
 \end{equation}$$</span>
 
-## Control of a bioreactor
+## Control action
 
 This dynamical system is controlled by establishing the right dilution rate, <span class="math display">$$ D $$</span>,
 such that we maximize the rate of biomass expelled from the reactor, <span class="math display">$$ D X $$</span>, also known as the reactor's productivity. 
@@ -91,7 +97,6 @@ Below, we visualize a couple of scenarios starting from initial condition
         S(t = 0) = 5.0 \frac{g}{L}
     \end{cases}
 \end{equation}$$</span>
-
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-good.png" width="800">
