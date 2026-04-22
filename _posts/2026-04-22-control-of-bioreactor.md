@@ -26,7 +26,7 @@ The substrate is continually added to the bioreactor at the rate <span class="ma
 of the bioreactor are expelled at the same rate, thus maintaining a constant volume in the reactor.
 
 <p align="center">
-  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-bioreactor.png" width="400">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-bioreactor.png" width="300">
 </p>
 
 The system of initial value ordinary differential equations (ODEs) that describes this process can be written as:
@@ -69,10 +69,10 @@ where
 <span class="math display">$$ \mu_{\text{max}} $$</span> is the maximum growth rate in <span class="math display">$$ 1/h $$</span> and
 <span class="math display">$$ K_S $$</span> is the half-saturation constant in <span class="math display">$$ g/L $$</span>.
 
-For more realism, we may also model gradual decay of biomass if substrate is not continuously provided. With the current
+For more realism, we may also model gradual decay of biomass if substrate is not continually provided. With the current
 ODE model, <span class="math display">$$ X $$</span> stays constant once <span class="math display">$$ D \rightarrow 0 $$</span> 
-and <span class="math display">$$ S \rightarrow 0 $$</span>. Realistically, without new substrate, biomass eventually
-starves. This can be modeled by adding an additional decay term, <span class="math display">$$ k_d $$</span>, in 
+and <span class="math display">$$ S \rightarrow 0 $$</span>. Realistically, without new substrate biomass eventually
+starves. This can be modeled by an additional decay term, <span class="math display">$$ k_d $$</span>, in 
 the first ODE:
 
 <span class="math display">$$
