@@ -59,7 +59,7 @@ and
 <span class="math display">$$ Y_d $$</span> is the yield coefficient specifying how much biomass can be obtained 
 from the unit mass of substrate.
 
-The biomass growth rate is often modeled using Monod kinetics:
+The biomass growth rate is often modeled using the Monod's model [[1](https://www.sciencedirect.com/science/article/abs/pii/0923046794870349)]:
 
 <span class="math display">$$ \begin{equation}
 \mu(S) = \mu_{\text{max}} \frac{S}{K_S + S}
