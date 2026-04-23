@@ -98,25 +98,31 @@ Below, we visualize a couple of scenarios starting from initial condition
     \end{cases}
 \end{equation}$$</span>
 
+### Good control
+
+First, a good control case where dilution rate is not too low and not too high. With just
+the right amount of substrate continually supplied to the reactor the biomass concentration establishes a steady state at some high value.
+
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-good.png" width="800">
 </p>
 
-> First, a good control case where dilution rate is not too low and not too high. With just
-the right amount of substrate continually supplied to the reactor the biomass concentration establishes a steady-state at some high value.
+### Zero dilution rate
+
+Second, zero dilution rate causes the biomass to gradually decay due to starvation.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-zero.png" width="800">
 </p>
 
-> Second, zero dilution rate causes the biomass to gradually decay due to starvation.
+### High dilution rate
+
+Third, too high dilution rate causes washout, where at some point in time the biomass is completely removed from the bioreactor and
+its production cannot be restored.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-washout.png" width="800">
 </p>
-
-> Third, too high dilution rate causes washout, where at some point in time the biomass is completely removed from the bioreactor and
-> its production cannot be restored.
 
 ## REINFORCE model for bioreactor control
 
