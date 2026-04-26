@@ -167,6 +167,9 @@ is the output of the policy network.
 
 The reward is computed as <span class="math display">$$ D \cdot X $$</span>.
 
+We assume that washout occurs if <span class="math display">$$ X $$</span> drops below <span class="math display">$$ 10^{-3} g\L $$</span>
+and is penalized with an additional <span class="math display">$$ -10.0 $$</span> reward.
+
 ## REINFORCE model for bioreactor control
 
 We are using the REINFORCE [[2]()] agent from TF-Agents [[3]()]:
@@ -185,7 +188,6 @@ agent = reinforce_agent.ReinforceAgent(time_step_spec=train_env.time_step_spec()
 where the policy network is a fully-connected dense neural network:
 
 ```python
-
 actor_net = actor_distribution_network.ActorDistributionNetwork(
     input_tensor_spec=train_env.observation_spec(),
     output_tensor_spec=train_env.action_spec(),
@@ -197,12 +199,12 @@ actor_net = actor_distribution_network.ActorDistributionNetwork(
 ```
 
 Below, we show how the average per-step reward develops during the 2000 training episodes. Note that the 
-theoretical maximum instantaneous reward is <span class="math display">$$ D_{\text{max}} \cdot X_{\text{max}} = 1 \,\, 1/h \cdot 10.0 \,\, g\L = 10.0 g\L\h $$</span>,
+theoretical maximum instantaneous reward is <span class="math display">$$ D_{\text{max}} \cdot X_{\text{max}} = 1 \,\, 1/h \cdot 10.0 \,\, g/L = 10.0 \frac{g}{Lh} $$</span>,
 but in practice, this may not lead to the optimal operating conditions of the bioreactor 
 as maintaining the highest possible <span class="math display">$$ D $$</span> may lead to reactor washout.
 What the highest optimal <span class="math display">$$ D \cdot X $$</span> is determined by the reactor's parameters.
-For example, a higher yield may allow for higher <span class="math display">$$ D \cdot X $$</span> as more biomass is
-produced from the substrate at any instance in time.
+For example, a higher yield may allow for higher <span class="math display">$$ D $$</span> as more biomass is
+produced from the substrate at any instance in time and washout is less likely.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-average-per-step-reward.png" width="800">
@@ -210,12 +212,60 @@ produced from the substrate at any instance in time.
 
 ### Comparison with a constant action
 
+Post training, we compare the RL control with a constant action, <span class="math display">$$ D = \text{const} $$</span>.
+We find the best possible constant action that leads to the highest cumulative <span class="math display">$$ D \cdot X $$</span>, which
+seems to be at <span class="math display">$$ D \approx 0.3 \,\, 1/h $$</span>. 
+The nonlinear RL control slightly outperforms this constant action for this initial condition:
 
+<span class="math display">$$
+\begin{equation}
+    \begin{cases}
+        X(t = 0) = 1.0 \frac{g}{L} \\
+        S(t = 0) = 2.0 \frac{g}{L}
+    \end{cases}
+\end{equation}$$</span>
 
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-comparison-with-constant-action.png" width="800">
+</p>
 
+Note that if the constant action matched the steady-state value of the RL control action, it would lead to a much worse
+outcome:
 
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-comparison-with-constant-action-higher.png" width="800">
+</p>
 
-### Response to random perturbations
+### Challenging initial condition
 
+Let's also start the bioreactor at a challenging initial condition that is close to washout:
 
+<span class="math display">$$
+\begin{equation}
+    \begin{cases}
+        X(t = 0) = 0.03 \frac{g}{L} \\
+        S(t = 0) = 0.0 \frac{g}{L}
+    \end{cases}
+\end{equation}$$</span>
 
+This time, the best constant action has to be decreased to <span class="math display">$$ D \approx 0.15 \,\, 1/h $$</span>.
+The RL control first decreases <span class="math display">$$ D $$</span> in order to prevent washout, and
+starts to increase <span class="math display">$$ D $$</span> only after sufficient amount of biomass is accumulated in 
+the bioreactor.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-comparison-close-to-washout.png" width="800">
+</p>
+
+### Response to perturbations
+
+Finally, let's introduce some perturbation in the reactor to see how the RL agent responds. We are going to suddenly
+drop <span class="math display">$$ X $$</span> in the reactor by <span class="math display">$$ 3.0 g\L $$</span>.
+The RL agent chooses to decrease <span class="math display">$$ D $$</span> for a while after this event most
+likely to stay away from possible washout. However, there is a better constant action that leads to higher
+cumulative productivity at <span class="math display">$$ D \approx 0.3 \,\, 1/h $$</span>. 
+There is room to improve the RL training! :) 
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-with-perturbation.png" width="800">
+</p>
