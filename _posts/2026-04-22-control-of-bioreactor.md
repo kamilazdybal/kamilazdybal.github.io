@@ -141,32 +141,81 @@ its production cannot be restored.
 
 We are going to use the following training parameters:
 
-| Parameter                                                      | Value                                                   |
-|----------------------------------------------------------------|---------------------------------------------------------|
-| Optimizer                                                      | Adam                                                    |
-| Initial <span class="math display">$$ \alpha $$</span>         | <span class="math display">$$ 1 \cdot 10^{-4} $$</span> |
-| Final <span class="math display">$$ \alpha $$</span>           | <span class="math display">$$ 1 \cdot 10^{-5} $$</span> |
-| <span class="math display">$$ \alpha $$</span> decay           | Cosine                                                  |
-| Discount factor <span class="math display">$$ \gamma $$</span> | <span class="math display">$$ 0.99 $$</span>            |
-| Policy network architecture                                    | in-64-64-out                                            |
-| Activation function                                            | ReLU                                                    |
-| Number of episodes                                             | 2000                                                    |
+| Parameter                                                       | Value                                                   |
+|-----------------------------------------------------------------|---------------------------------------------------------|
+| Optimizer                                                       | Adam                                                    |
+| Initial <span class="math display">$$ \alpha $$</span>          | <span class="math display">$$ 1 \cdot 10^{-4} $$</span> |
+| Final <span class="math display">$$ \alpha $$</span>            | <span class="math display">$$ 1 \cdot 10^{-5} $$</span> |
+| <span class="math display">$$ \alpha $$</span> decay            | Cosine                                                  |
+| Discount factor, <span class="math display">$$ \gamma $$</span> | <span class="math display">$$ 0.99 $$</span>            |
+| Policy network architecture                                     | in-64-64-out                                            |
+| Activation function                                             | ReLU                                                    |
+| Number of episodes                                              | 2000                                                    |
+| Random seed                                                     | 100                                                     |
+
+The state is determined by five values that are inputs to the policy network:
+
+- The current <span class="math display">$$ X $$</span>
+- The current <span class="math display">$$ S $$</span>
+- The difference between the current and previous <span class="math display">$$ X $$</span>, <span class="math display">$$ \Delta X $$</span>
+- The difference between the current and previous <span class="math display">$$ S $$</span>, <span class="math display">$$ \Delta S $$</span>
+- The previous action, <span class="math display">$$ D_{\text{prev}} $$</span>
+
+The continuous action is the value for <span class="math display">$$ D $$</span> which we assume bounded between 
+<span class="math display">$$ 0.0 \,\, 1/h $$</span> and <span class="math display">$$ 1.0 \,\, 1/h $$</span>. This
+is the output of the policy network.
+
+The reward is computed as <span class="math display">$$ D \cdot X $$</span>.
 
 ## REINFORCE model for bioreactor control
 
+We are using the REINFORCE [[2]()] agent from TF-Agents [[3]()]:
+
+```python
+agent = reinforce_agent.ReinforceAgent(time_step_spec=train_env.time_step_spec(),
+                                       action_spec=train_env.action_spec(),
+                                       actor_network=actor_net,
+                                       optimizer=agent_optimizer,
+                                       train_step_counter=train_step_counter, 
+                                       gamma=discount_factor, 
+                                       normalize_returns=True, 
+                                       entropy_regularization=None)
+```
+
+where the policy network is a fully-connected dense neural network:
+
+```python
+
+actor_net = actor_distribution_network.ActorDistributionNetwork(
+    input_tensor_spec=train_env.observation_spec(),
+    output_tensor_spec=train_env.action_spec(),
+    fc_layer_params=(64, 64),
+    activation_fn=tf.keras.activations.relu,
+    kernel_initializer=tf.keras.initializers.GlorotUniform(seed=random_seed),
+    seed=random_seed,
+)
+```
+
+Below, we show how the average per-step reward develops during the 2000 training episodes. Note that the 
+theoretical maximum instantaneous reward is <span class="math display">$$ D_{\text{max}} \cdot X_{\text{max}} = 1 \,\, 1/h \cdot 10.0 \,\, g\L = 10.0 g\L\h $$</span>,
+but in practice, this may not lead to the optimal operating conditions of the bioreactor 
+as maintaining the highest possible <span class="math display">$$ D $$</span> may lead to reactor washout.
+What the highest optimal <span class="math display">$$ D \cdot X $$</span> is determined by the reactor's parameters.
+For example, a higher yield may allow for higher <span class="math display">$$ D \cdot X $$</span> as more biomass is
+produced from the substrate at any instance in time.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-average-per-step-reward.png" width="800">
+</p>
+
+### Comparison with a constant action
 
 
 
 
 
 
-## Comparison with a constant action
-
-
-
-
-
-## Response to random perturbations
+### Response to random perturbations
 
 
 
