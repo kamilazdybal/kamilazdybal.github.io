@@ -260,9 +260,9 @@ the bioreactor.
 ### Response to perturbations
 
 Finally, let's introduce some perturbation in the reactor to see how the RL agent responds. We are going to suddenly
-drop <span class="math display">$$ X $$</span> in the reactor by <span class="math display">$$ 3.0 g\L $$</span>.
+drop <span class="math display">$$ X $$</span> in the reactor by <span class="math display">$$ 3.0 g/L $$</span>.
 The RL agent chooses to decrease <span class="math display">$$ D $$</span> for a while after this event most
-likely to stay away from possible washout. However, there is a better constant action that leads to higher
+likely to avoid potential washout. However, there is a better constant action that leads to higher
 cumulative productivity at <span class="math display">$$ D \approx 0.3 \,\, 1/h $$</span>. 
 There is room to improve the RL training! :) 
 
