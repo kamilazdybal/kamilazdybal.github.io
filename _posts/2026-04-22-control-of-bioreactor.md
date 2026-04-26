@@ -137,12 +137,30 @@ its production cannot be restored.
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-washout.png" width="800">
 </p>
 
+## Setting up reinforcement learning training
+
+We are going to use the following training parameters:
+
+| Parameter                                                      | Value                                                   |
+|----------------------------------------------------------------|---------------------------------------------------------|
+| Optimizer                                                      | Adam                                                    |
+| Initial <span class="math display">$$ \alpha $$</span>         | <span class="math display">$$ 1 \cdot 10^{-4} $$</span> |
+| Final <span class="math display">$$ \alpha $$</span>           | <span class="math display">$$ 1 \cdot 10^{-5} $$</span> |
+| <span class="math display">$$ \alpha $$</span> decay           | Cosine                                                  |
+| Discount factor <span class="math display">$$ \gamma $$</span> | <span class="math display">$$ 0.99 $$</span>            |
+| Policy network architecture                                    | in-64-64-out                                            |
+| Activation function                                            | ReLU                                                    |
+| Number of episodes                                             | 2000                                                    |
+
 ## REINFORCE model for bioreactor control
 
 
 
 
 
+
+
+## Comparison with a constant action
 
 
 
