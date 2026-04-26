@@ -167,7 +167,7 @@ is the output of the policy network.
 
 The reward is computed as <span class="math display">$$ D \cdot X $$</span>.
 
-We assume that washout occurs if <span class="math display">$$ X $$</span> drops below <span class="math display">$$ 10^{-3} g\L $$</span>
+We assume that washout occurs if <span class="math display">$$ X $$</span> drops below <span class="math display">$$ 10^{-3} g/L $$</span>
 and is penalized with an additional <span class="math display">$$ -10.0 $$</span> reward.
 
 ## REINFORCE model for bioreactor control
@@ -243,7 +243,7 @@ Let's also start the bioreactor at a challenging initial condition that is close
 <span class="math display">$$
 \begin{equation}
     \begin{cases}
-        X(t = 0) = 0.03 \frac{g}{L} \\
+        X(t = 0) = 0.002 \frac{g}{L} \\
         S(t = 0) = 0.0 \frac{g}{L}
     \end{cases}
 \end{equation}$$</span>
@@ -264,7 +264,7 @@ drop <span class="math display">$$ X $$</span> in the reactor by <span class="ma
 The RL agent chooses to decrease <span class="math display">$$ D $$</span> for a while after this event most
 likely to avoid potential washout. However, there is a better constant action that leads to higher
 cumulative productivity at <span class="math display">$$ D \approx 0.3 \,\, 1/h $$</span>. 
-There is room to improve the RL training! :) 
+There is room to improve the RL training 🙂 
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-with-perturbation.png" width="800">
