@@ -18,12 +18,11 @@ categories: jekyll update
 
 ## Zero-dimensional model of a bioreactor
 
-A bioreactor is a dynamical system that can be modeled as a zero-dimensional, perfectly stirred reactor 
-of constant volume <span class="math display">$$ V $$</span> 
+A bioreactor is a dynamical system that can be modeled as a zero-dimensional, perfectly stirred reactor
 where biomass is produced from a substrate.
 The substrate is continually added to the bioreactor at the rate <span class="math display">$$ F $$</span> 
 (in <span class="math display">$$ L/h $$</span>), and the products 
-of the bioreactor are expelled at the same rate, thus maintaining a constant volume in the reactor.
+of the bioreactor are expelled at the same rate, thus maintaining a constant volume, <span class="math display">$$ V $$</span>, in the reactor.
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/bioreactor-control-bioreactor.png" width="300">
@@ -79,6 +78,20 @@ the first ODE:
 \begin{equation}
 \frac{d X}{d t} = \left( \mu(S) - D - k_d \right) X
 \end{equation}$$</span>
+
+## Bioreactor parameters
+
+We are going to use the following parameters for the bioreactor:
+
+| Parameter                                                | Value                                             |
+|----------------------------------------------------------|---------------------------------------------------|
+| <span class="math display">$$ \mu_{\text{max}} $$</span> | <span class="math display">$$ 0.4 1/h $$</span>   |
+| <span class="math display">$$ K_S $$</span>              | <span class="math display">$$ 0.1 g/L $$</span>   |
+| <span class="math display">$$ S_{\text{in}} $$</span>    | <span class="math display">$$ 10.0 g/L $$</span>  |
+| <span class="math display">$$ k_d $$</span>              | <span class="math display">$$ 0.01 1/h $$</span>  |
+| <span class="math display">$$ Y_d $$</span>              | <span class="math display">$$ 0.5 gX/gS $$</span> |
+| Max. <span class="math display">$$ X $$</span>           | <span class="math display">$$ 10.0 g/L $$</span>  |
+| Max. <span class="math display">$$ S $$</span>           | <span class="math display">$$ 20.0 g/L $$</span>  |
 
 ## Control action
 
