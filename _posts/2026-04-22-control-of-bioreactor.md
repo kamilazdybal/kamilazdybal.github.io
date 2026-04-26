@@ -83,15 +83,15 @@ the first ODE:
 
 We are going to use the following parameters for the bioreactor:
 
-| Parameter                                                | Value                                             |
-|----------------------------------------------------------|---------------------------------------------------|
-| <span class="math display">$$ \mu_{\text{max}} $$</span> | <span class="math display">$$ 0.4 1/h $$</span>   |
-| <span class="math display">$$ K_S $$</span>              | <span class="math display">$$ 0.1 g/L $$</span>   |
-| <span class="math display">$$ S_{\text{in}} $$</span>    | <span class="math display">$$ 10.0 g/L $$</span>  |
-| <span class="math display">$$ k_d $$</span>              | <span class="math display">$$ 0.01 1/h $$</span>  |
-| <span class="math display">$$ Y_d $$</span>              | <span class="math display">$$ 0.5 gX/gS $$</span> |
-| Max. <span class="math display">$$ X $$</span>           | <span class="math display">$$ 10.0 g/L $$</span>  |
-| Max. <span class="math display">$$ S $$</span>           | <span class="math display">$$ 20.0 g/L $$</span>  |
+| Parameter                                                | Value                                                  |
+|----------------------------------------------------------|--------------------------------------------------------|
+| <span class="math display">$$ \mu_{\text{max}} $$</span> | <span class="math display">$$ 0.4 \,\, 1/h $$</span>   |
+| <span class="math display">$$ K_S $$</span>              | <span class="math display">$$ 0.1 \,\, g/L $$</span>   |
+| <span class="math display">$$ S_{\text{in}} $$</span>    | <span class="math display">$$ 10.0 \,\, g/L $$</span>  |
+| <span class="math display">$$ k_d $$</span>              | <span class="math display">$$ 0.01 \,\, 1/h $$</span>  |
+| <span class="math display">$$ Y_d $$</span>              | <span class="math display">$$ 0.5 \,\, gX/gS $$</span> |
+| Max. <span class="math display">$$ X $$</span>           | <span class="math display">$$ 10.0 \,\, g/L $$</span>  |
+| Max. <span class="math display">$$ S $$</span>           | <span class="math display">$$ 20.0 \,\, g/L $$</span>  |
 
 ## Control action
 
