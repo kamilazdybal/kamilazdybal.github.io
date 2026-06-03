@@ -106,6 +106,41 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="pv-optimization-manifold"></ul>
+
+# Progress variable optimization: Effects on the manifold topology and reduced-order modeling
+
+Reduced-order models (ROMs) replace computationally expensive simulations of high-dimensional systems 
+with cheaper surrogates. ROMs can be used to design, optimize, and control energy systems of industrial 
+and engineering relevance, including reacting flows, electrochemical processes, thermal systems, 
+and multiphysics energy devices. In reacting flow simulation, a common way to build a ROM is to 
+project the original high-dimensional state-space onto a low-dimensional manifold, typically defined 
+by a set of heuristic parameters being linear combinations of the original state variables. Recently, 
+an encoder–decoder has emerged as a promising neural network architecture to automatically define and 
+optimize the manifold parameterization. However, the literature lacks in-depth understanding of how 
+optimized parameterizations improve the accuracy of ROMs compared to heuristic parameterizations. 
+In this paper, an encoder–decoder is used to identify the optimized parameterization of the thermo-chemical 
+state-space of a hydrogen combustion system. 
+This leads to an improved representation of key quantities of interest (QoIs) and hence a more accurate 
+ROM simulation when contrasted with heuristic parameterizations. The novel introduction of a trainable 
+scaling layer prior to the encoder and a log-transformation of the highly non-linear decoded 
+QoIs is found to be beneficial to smooth the QoI gradients on the manifold and it facilitates 
+regression of the QoIs during ROM simulation. Moreover, we show that sparsifying the parameter 
+definition is possible with no major impact on the manifold topology. We show how improvements 
+in manifold parameterization lead to improved numeric simulations of reacting systems.
+
+<sup>G. Corlùy, K. Zdybał, A. Parente. *Progress variable optimization: Effects on the manifold topology and reduced-order modeling*, Energy and AI (2026)</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/pv-optimization-manifold.png" alt="pv-optimization-manifold" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://doi.org/10.1016/j.egyai.2026.100783" target="_blank"> Article</a></h4>
+    <h4><span class="fa fa-github"></span><a href="https://github.com/GregoireCorluy/PV-optimization-for-ROM" target="_blank"> Code</a></h4>
+  </div>
+</div>
+
 <ul id="PGM-tutorial"></ul>
 
 # On the policy gradient method
