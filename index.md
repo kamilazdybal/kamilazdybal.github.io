@@ -108,7 +108,7 @@ As a thank you for your support be sure to get your free [extras](https://buymea
 
 <ul id="autonomous-velocimetry"></ul>
 
-# Autonomous optical velocimetry via deep reinforcement learning: A proof-of-concept agentic autofocus
+# Autonomous optical velocimetry *via* deep reinforcement learning: A proof-of-concept agentic autofocus
 
 Optical velocimetry is the state-of-the-art experimental technique in fluid dynamics offering a non-intrusive 
 method to obtain high-resolution velocity fields in wind and water tunnel experiments. Despite exceptional theoretical, 
