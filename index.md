@@ -106,6 +106,34 @@ I have hopes that you will find doing science fascinating, rewarding, and inspir
 you can make a small donation on [buymeacoffee.com/kamilazdybal](https://buymeacoffee.com/kamilazdybal)!**
 As a thank you for your support be sure to get your free [extras](https://buymeacoffee.com/kamilazdybal/extras)! 🙂
 
+<ul id="autonomous-velocimetry"></ul>
+
+# Autonomous optical velocimetry via deep reinforcement learning: A proof-of-concept agentic autofocus
+
+Optical velocimetry is the state-of-the-art experimental technique in fluid dynamics offering a non-intrusive 
+method to obtain high-resolution velocity fields in wind and water tunnel experiments. Despite exceptional theoretical, 
+experimental, and hardware advances made over the last two decades by the particle image velocimetry (PIV) community, 
+experimental setups continue to require time-consuming supervision from the expert human operator. Notably, 
+navigating complex geometries with difficult optical access, avoiding light reflections from solid surfaces, 
+losing focus, and escaping occlusion of important flow features require strenuous human input. 
+Here, we propose a reinforcement learning (RL) framework for autonomous optical velocimetry experimentation. 
+An RL agent is pre-trained in a virtual PIV environment and deployed on a robotic arm with a mounted 
+PIV camera in a small-scale water tunnel with optical access. The experimental setup is autonomously 
+operated by the learned control policy. We demonstrate the first proof-of-concept task where the learned 
+control policy adjusts distance from the experimental setup for autofocus, using a Fourier-based image sharpness metric. 
+This work represents the first-of-its-kind agentic experimentation in fluid dynamics with reduced to no human intervention.
+
+<sup>K. Zdybał, C. Mucignat, I. Lunati. *Autonomous optical velocimetry via deep reinforcement learning: A proof-of-concept agentic autofocus*, 22nd International Symposium on Application of Laser and Imaging Techniques to Fluid Mechanics (2026)</sup>
+
+<div class="row">
+  <div class="column">
+    <a><img src="https://github.com/kamilazdybal/kamilazdybal.github.io/raw/main/_posts/autonomous-velocimetry.png" alt="autonomous-velocimetry" style="width:150px"></a>
+  </div>
+  <div class="column">
+    <h4><span class="fa fa-file-pdf-o"></span><a href="https://www.researchgate.net/publication/408251934_Autonomous_optical_velocimetry_via_deep_reinforcement_learning_A_proof-of-concept_agentic_autofocus" target="_blank"> Preprint</a></h4>
+  </div>
+</div>
+
 <ul id="pv-optimization-manifold"></ul>
 
 # Progress variable optimization: Effects on the manifold topology and reduced-order modeling
